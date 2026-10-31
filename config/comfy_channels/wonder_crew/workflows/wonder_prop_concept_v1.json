@@ -1,0 +1,16 @@
+{
+  "workflow_id": "wonder_prop_concept_v1",
+  "workflow_version": "v1",
+  "title": "PROP_CONCEPT",
+  "asset_type": "prop",
+  "backend_preference": [
+    "checkpoint",
+    "z_image_turbo"
+  ],
+  "default_width": 1024,
+  "default_height": 1024,
+  "require_references": false,
+  "allow_transparent_bg": false,
+  "forbid_text_in_image": true,
+  "description": ""
+}

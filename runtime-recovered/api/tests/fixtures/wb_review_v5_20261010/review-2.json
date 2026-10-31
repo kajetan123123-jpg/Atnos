@@ -1,0 +1,129 @@
+{
+  "editorial_checks": [
+    {
+      "criterion_index": 0,
+      "field": "on_screen",
+      "quote": "INVEST INSTEAD OF SPENDING",
+      "reason": "The heading is an imperative instruction to invest rather than a neutral description of alternatives. It fails the requirement for 'spending, saving and investing as context-dependent possibilities'.",
+      "satisfied": false,
+      "segment_id": "1"
+    },
+    {
+      "criterion_index": 1,
+      "field": "text",
+      "quote": "Enjoy your coffee now, but ask if this optional spending is worth the future growth you are leaving behind by not investing it today.",
+      "reason": "The narration qualifies enjoyment with guilt and treats non-investment as a certain loss ('future growth you are leaving behind'), violating the requirement to treat both choices fairly without claiming predictable growth.",
+      "satisfied": false,
+      "segment_id": "3"
+    },
+    {
+      "criterion_index": 2,
+      "field": "text",
+      "quote": "Weigh the immediate pleasure of spending against the value of growing that money over time by choosing to invest instead.",
+      "reason": "The phrase 'by choosing to invest' implies investing is the only valid alternative for growth, failing the requirement to note that investment returns are uncertain and either choice may be reasonable.",
+      "satisfied": false,
+      "segment_id": "4"
+    },
+    {
+      "criterion_index": 3,
+      "field": "visual_intent",
+      "quote": "A balance scale appears with two static pans: left pan labeled BUY NOW and right pan labeled BUILD LATER.",
+      "reason": "While the composition is supported, the criterion requires avoiding implied automatic investment profit. The current intent combined with 'BUILD LATER' risks implying certainty of growth if one chooses that path.",
+      "satisfied": false,
+      "segment_id": "4"
+    },
+    {
+      "criterion_index": 4,
+      "field": "text",
+      "quote": "Follow Wealth Blueprint and build wealth on purpose before you buy.",
+      "reason": "The CTA narrows the scope to 'before you buy' (checkout) which violates the requirement not to narrow it. Additionally, 'build wealth on purpose' acts as a specific investment instruction rather than preserving the native closing/logo direction.",
+      "satisfied": false,
+      "segment_id": "5"
+    }
+  ],
+  "issue_evidence": [
+    {
+      "field": "on_screen",
+      "issue_index": 0,
+      "quote": "INVEST INSTEAD OF SPENDING",
+      "segment_id": "1"
+    },
+    {
+      "field": "text",
+      "issue_index": 1,
+      "quote": "Enjoy your coffee now, but ask if this optional spending is worth the future growth you are leaving behind by not investing it today.",
+      "segment_id": "3"
+    },
+    {
+      "field": "text",
+      "issue_index": 2,
+      "quote": "Weigh the immediate pleasure of spending against the value of growing that money over time by choosing to invest instead. Then decide if buying now is worth what you give up.",
+      "segment_id": "4"
+    },
+    {
+      "field": "visual_intent",
+      "issue_index": 3,
+      "quote": "A balance scale appears with two static pans: left pan labeled BUY NOW and right pan labeled BUILD LATER. Renderer reveals this complete composition and holds it still without invented host poses or internal prop motion.",
+      "segment_id": "4"
+    },
+    {
+      "field": "text",
+      "issue_index": 4,
+      "quote": "Follow Wealth Blueprint and build wealth on purpose before you buy.",
+      "segment_id": "5"
+    }
+  ],
+  "issues": [
+    {
+      "code": "naturalness",
+      "detail": "The on_screen text 'INVEST INSTEAD OF SPENDING' is an instruction to invest rather than a neutral heading describing the next-best alternative. The criterion requires explaining spending, saving, and investing as context-dependent possibilities with a neutral heading.",
+      "fields": [
+        "on_screen"
+      ],
+      "segment_ids": [
+        "1"
+      ]
+    },
+    {
+      "code": "practical_share",
+      "detail": "The text qualifies enjoyment with guilt ('ask if this optional spending is worth...') and treats the hypothetical example as a certain lost return. The criterion requires teaching that enjoyment can justify spending, neither consumption nor investing being automatically right, without claiming predictable growth.",
+      "fields": [
+        "text"
+      ],
+      "segment_ids": [
+        "3"
+      ]
+    },
+    {
+      "code": "practical_share",
+      "detail": "The text states 'by choosing to invest instead' and implies automatic investment profit. The criterion requires explaining a usable decision comparing immediate benefit against next-best alternative, noting that an investment return is uncertain.",
+      "fields": [
+        "text"
+      ],
+      "segment_ids": [
+        "4"
+      ]
+    },
+    {
+      "code": "unsupported_visual_intent",
+      "detail": "The visual_intent description implies a balance scale composition but the criterion explicitly rejects implied automatic investment profit and requires labels to describe fair comparison without implying guaranteed returns. The current text 'BUILD LATER' on screen combined with the intent risks implying certainty.",
+      "fields": [
+        "visual_intent"
+      ],
+      "segment_ids": [
+        "4"
+      ]
+    },
+    {
+      "code": "structure",
+      "detail": "The CTA narrows wealth-building to 'before you buy' (checkout context) and adds a new investment instruction ('build wealth on purpose'). The criterion requires preserving the channel's closing/logo direction without narrowing it to checkout or adding specific investment instructions.",
+      "fields": [
+        "text"
+      ],
+      "segment_ids": [
+        "5"
+      ]
+    }
+  ],
+  "passed": false
+}

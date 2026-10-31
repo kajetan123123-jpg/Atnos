@@ -1,0 +1,134 @@
+{
+  "contract": "AdaptedScriptRepair",
+  "decoding_schema": {
+    "$defs": {
+      "ScriptSegment": {
+        "additionalProperties": false,
+        "properties": {
+          "claim_ids": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Claim Ids",
+            "type": "array"
+          },
+          "fact_ids": {
+            "items": {
+              "type": "string"
+            },
+            "maxItems": 0,
+            "title": "Fact Ids",
+            "type": "array"
+          },
+          "id": {
+            "enum": [
+              "1",
+              "3",
+              "4",
+              "5"
+            ],
+            "title": "Id",
+            "type": "string"
+          },
+          "on_screen": {
+            "maxLength": 70,
+            "minLength": 1,
+            "title": "On Screen",
+            "type": "string"
+          },
+          "pronunciation_terms": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Pronunciation Terms",
+            "type": "array"
+          },
+          "text": {
+            "title": "Text",
+            "type": "string"
+          },
+          "type": {
+            "enum": [
+              "hook",
+              "practical",
+              "explanation",
+              "caution",
+              "cta"
+            ],
+            "title": "Type",
+            "type": "string"
+          },
+          "visual_intent": {
+            "title": "Visual Intent",
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "type",
+          "text",
+          "visual_intent",
+          "on_screen"
+        ],
+        "title": "ScriptSegment",
+        "type": "object"
+      }
+    },
+    "additionalProperties": false,
+    "properties": {
+      "replacements": {
+        "items": {
+          "$ref": "#/$defs/ScriptSegment"
+        },
+        "title": "Replacements",
+        "type": "array"
+      }
+    },
+    "required": [
+      "replacements"
+    ],
+    "title": "AdaptedScriptRepair",
+    "type": "object"
+  },
+  "effective_model": "qwen3.5:9b",
+  "model": "qwen3.5:9b",
+  "prompt": "Repair ONLY the flagged segments for the listed validator issues. For practical_share, rewrite the whole targeted thought around a specific action the viewer can perform: what to examine, which alternatives to compare and which decision follows, within the actual requested topic. Do not retain a mostly explanatory paragraph and append a generic command. The majority of a practical segment must genuinely teach that action; a type label is not evidence. For a complete replacement object, classify that genuine actionable instruction as type=practical. Keep explanations without an actionable instruction as type=explanation; never relabel unchanged text to pass. For unsupported_visual_intent, actually change the targeted visual_intent field. Describe the physical still-image composition and, if useful, a renderer reveal/hold of the complete still. Reveal is presentation only; do not invent a hand placing an object, internal prop motion, or a transformation. Generated pictures contain no typography; on_screen is a separate renderer field. Return JSON {\"replacements\":[complete segment objects]}; no claims key. Only explicitly allowed metadata keys may be added. Do not rewrite unflagged segments, change identifiers, or remove the numerical assumptions that remain valid. Use the bundle's exact per-segment numeric_inventory. For edits that do not explicitly repair a financial-amount issue, preserve each targeted segment's spoken number occurrences and units exactly as listed in its inventory. If a targeted segment lists no spoken numbers, do not introduce or repeat any numeric amount there; refer to the same money qualitatively without a number. Existing amount-repair exceptions remain narrow: remove unsupported amounts when that issue requires removal, and use only the exact supplied calculation/fact when an issue permits a supported value. Keep spoken numbers in words; use concrete practical advice and natural English. Correct only the registered meaning defects in the currently allowed segments. Do not preserve the specific defective meaning that the registered request asks to replace. All other scenes and global criteria provide context, not permission to edit them. Preserve frozen financial assumptions, numbers, claims and metadata. Preserve every locked scene and field outside the current repair scope; registered goals never widen that scope. Do not add new facts. Every repaired segment MUST end with . ! or ?. Preserve the requested cadence in examples, narration, titles and screen text. A weekly savings request must not become monthly transfers to fit a calculation. For a practical habit without an explicitly requested calculation, prefer no numerical example. Do not invent review intervals or a first/second-year timeline. Ordinal-year wording is only a pronunciation rule when an actual multi-year scenario requires it. Only TEXT is spoken. Keep on_screen SHORT (at most 70 characters); digits and symbols ARE allowed in on_screen. Return every flagged segment that actually needs changing. Do not merely copy the original. Every current registered repair target must change a relevant field, not just its type or claim IDs. A narration issue requires changed narration; a visual issue requires changed visual_intent. If a target is obsolete, do not invent an edit to pass: stop and report it for review. When fixing word_budget, count spoken words including number words; genuinely shorten or expand the flagged text. When fixing long_segment, each replacement must contain at most 32 spoken words; preserve a complete thought rather than cutting it mid-sentence. When fixing unverified_number or spoken_amount_mismatch with no matching calculation, REMOVE the unsupported rate/amount from narration (and headline if needed) — do not keep 'ten percent' without a claim. Use word_allocation and frozen_writing_rules_and_budget in the active bundle. Meet the complete replacement range without padding; per-segment counts are flexible guidance. Preserve the requested outcome, numerical assumptions and practical instructions while removing repetition and filler. When fixing unverified_number, attach the matching existing claim ID or add the correct arithmetic claim. Change title or description ONLY if explicitly listed as allowed; otherwise omit them.  ACTIVE HYPOTHETICAL STUDIO REPAIR BUNDLE (single authoritative current input): {\"topic\": \"The $10 Trap That Keeps You Broke\", \"language\": \"en\", \"target_duration_seconds\": null, \"corrected_brief\": {\"language\": \"en\", \"evidence_kind\": \"hypothetical_assumptions\", \"calculation_plan\": {\"rationale\": \"Illustrate opportunity cost through one stated hypothetical growth assumption, never a market average.\", \"examples\": [{\"id\": \"c1\", \"kind\": \"lump_sum\", \"purpose\": \"Show the alternative future value of one initial ten-dollar deposit.\", \"currency\": \"dollars\", \"principal\": 10, \"annual_rate\": 0.08, \"years\": 30, \"spoken_rounding\": 1}]}, \"editorial_corrections\": [\"Use conditional wording: this is an assumed constant annual rate, not a historical average or a promise.\", \"State that the example is one initial deposit with no recurring deposits; fees, taxes and inflation are omitted.\", \"Keep coffee, food and enjoyable spending in proportion; opportunity cost is a tradeoff, not a shame message.\", \"Use the verified checkpoints only: ten dollars, about twenty-two dollars, about forty-seven dollars and about one hundred one dollars.\", \"Show a readable assumption disclosure near the chart and keep all visible text out of generated illustrations.\"]}, \"registered_note\": \"One registered local script-only correction of the current canonical opportunity-cost story. Revise only segments 1, 3, 4 and 5; lock entire segments 0 and 2, all claims, the original intake, calculator assumptions, title and description. Present spending, saving and investing as context-dependent choices about the next-best alternative, not an order to invest or a claim that every purchase loses certain growth. Compare the value of enjoyment and other needs fairly. Keep second-person address, complete natural English sentences, 96-118 total spoken words and the frozen practical-content threshold. No new spoken amounts, rates or time periods in nonnumeric scenes. Retain the hypothetical wording in segment 2, before fees, taxes and inflation in its immutable claim context; do not describe the assumed rate as a historical average or a promise. The practical decision applies to allocating money, not exclusively checkout. Retain following Wealth Blueprint and building wealth on purpose as the final CTA. Renderer overlays all headings, labels and numbers; generated artwork contains no text. Preserve supported static objects, use reveal/hold only, and do not invent an unavailable Alex pose. This request grants no image, voice, scene-generation, render, publication, mail, restart or paid-API permission. Historical counts and v3 receipts must remain intact. A model PASS without complete current quotations and an independent semantic check is insufficient. Next unregistered DRAFT: use author26/validator32 with named registered review and current-target stagnation detection. Correct the actual meaning defects; if any finding is obsolete, stop for review rather than manufacture a change. Existing immutable scenes, claims, title and CTA intent remain binding. This draft is not authorization, registration or a quality receipt.\", \"registered_acceptance_targets\": [{\"code\": \"naturalness\", \"segment_ids\": [\"1\"], \"fields\": [], \"acceptance_criterion\": \"The actual canonical headline INVEST INSTEAD OF SPENDING is an instruction to invest. The actual narration contrasts buying with letting that money sit idle, assuming it earns nothing. Explain the next-best use of the same money and the value of the current option, with spending, saving and investing as context-dependent possibilities. Use a neutral heading. The alternative is not simply inactivity. No invented facts or numbers. Preserve the existing static blank-card and blank-screen-phone direction, with separate renderer labels.\"}, {\"code\": \"practical_share\", \"segment_ids\": [\"3\"], \"fields\": [], \"acceptance_criterion\": \"Actual narration says future growth you are leaving behind by not investing it today. It treats the hypothetical example as a certain lost return and qualifies enjoyment with guilt. Teach the viewer to count enjoyment and needs in the comparison; enjoyment can justify spending. Neither consumption nor investing is automatically the right answer. No claim of predictable growth, no invented numbers. Keep a complete natural second-person thought and the static intact uncrossed coffee cup.\"}, {\"code\": \"practical_share\", \"segment_ids\": [\"4\"], \"fields\": [], \"acceptance_criterion\": \"Actual canonical narration says growing that money over time by choosing to invest instead; rejected v3 substitutes letting that money sit idle. Explain a usable decision: identify the immediate benefit and next-best alternative use, consider the trade, then decide based on needs. Apply it to money allocation, not only purchases. Either choice may be reasonable; an investment return is uncertain. Use no new amounts or rates; preserve an understandable comparison and neutral renderer labels.\"}, {\"code\": \"unsupported_visual_intent\", \"segment_ids\": [\"4\"], \"fields\": [], \"acceptance_criterion\": \"The current visual_intent asks for Alex standing between BUY NOW and BUILD LATER despite no verified pose or action. Use the supported static balance-scale composition to explain alternatives, without an invented host pose, internal movement or lettering baked into the image. Labels belong to on_screen or the renderer and should describe the fair comparison; do not imply automatic investment profit.\"}, {\"code\": \"structure\", \"segment_ids\": [\"5\"], \"fields\": [], \"acceptance_criterion\": \"The actual closing appends before you buy to Follow Wealth Blueprint and build wealth on purpose. Preserve following the channel and intentional wealth-building as the CTA, without narrowing it to checkout or adding a new investment instruction. The decision rule belongs in segment 4. Use the native closing/logo direction, renderer overlay and consistent second-person address. Do not repeat the stale allegation of first-person wording: no I occurs in the actual text.\"}], \"current_validator_findings\": [{\"code\": \"naturalness\", \"segment_ids\": [\"1\"]}, {\"code\": \"practical_share\", \"segment_ids\": [\"3\"]}, {\"code\": \"practical_share\", \"segment_ids\": [\"4\"]}, {\"code\": \"unsupported_visual_intent\", \"segment_ids\": [\"4\"]}, {\"code\": \"structure\", \"segment_ids\": [\"5\"]}], \"frozen_writing_rules_and_budget\": {\"language\": \"en\", \"word_budget\": [96, 118], \"minimum_practical_share\": 0.[REDACTED_PAYMENT_CARD], \"narrative_rules\": [\"Speak directly to the viewer, firmly and naturally, without breathy acting or hype.\", \"At least one third must give specific achievable actions, not generic encouragement.\", \"Spell out numbers for TTS. Separate adjacent amounts and durations into clear sentences.\", \"Only when the topic requires a multi-year timeline, use ordinal year wording. Never invent a first-year or second-year schedule for a regular savings habit.\", \"Give significant honest stakes, state assumptions and never promise market returns.\", \"Use conditional everyday wording rather than repeated hypothetical hedging.\", \"Distinguish accumulating starting capital from the later investment horizon.\", \"Do not copy reference transcripts. End with one concrete action.\"]}, \"word_allocation\": {\"current_total\": 117, \"unchanged_words\": 32, \"replacement_total_range\": [64, 86]}, \"numeric_inventory\": [{\"segment_id\": \"1\", \"spoken_numbers\": []}, {\"segment_id\": \"3\", \"spoken_numbers\": []}, {\"segment_id\": \"4\", \"spoken_numbers\": []}, {\"segment_id\": \"5\", \"spoken_numbers\": []}], \"compiled_calculations\": {\"c1\": {\"id\": \"c1\", \"operation\": \"compound\", \"operands\": [10.0, 0.08, 30.0], \"result\": 100.[REDACTED_PAYMENT_CARD], \"unit\": \"dollars\", \"spoken_result\": \"one hundred one\", \"spoken_rounding\": 1, \"assumptions\": \"One initial deposit of 10 dollars, no recurring deposits, 30 years at an assumed 8 percent annual rate. Annual compounding; not a forecast; before fees, tax and inflation.\"}}, \"reviewed_source_facts\": {}, \"render_contract\": {\"still_image_reveal_hold\": \"Supported: the renderer can reveal the complete static illustration and then hold it still.\", \"unsupported_physical_motion\": \"Do not imply a hand places an object, a prop moves internally, or a still image transforms. Reveal describes renderer presentation only.\", \"image_text\": \"Generated illustrations contain no text; on_screen is a separate, nonempty renderer overlay.\"}, \"allowed_segment_ids\": [\"1\", \"3\", \"4\", \"5\"], \"locked_segment_ids\": [\"0\", \"2\"], \"scope_policy\": \"Only current allowed_segment_ids may be replaced. Historical targets and the note never expand this scope.\", \"allowed_metadata_fields\": [], \"current_script\": {\"title\": \"The $10 Trap That Keeps You Broke\", \"description\": \"Every $10 you spend has two prices: what it costs today and what it could become. Learn how to think in opportunity cost.\", \"segments\": [{\"id\": \"0\", \"type\": \"hook\", \"text\": \"This ten-dollar purchase isn't costing you just ten dollars.\", \"visual_intent\": \"A $10 bill is shown next to a small shopping bag. Text appears: \\\"$10 ≠ Just Ten\\\". No host gesture.\", \"on_screen\": \"$10 ≠ JUST TEN\", \"claim_ids\": [\"c1\"], \"fact_ids\": [], \"pronunciation_terms\": []}, {\"id\": \"1\", \"type\": \"practical\", \"text\": \"Ask yourself if buying this item today is better than letting that money sit idle, assuming it earns nothing.\", \"visual_intent\": \"Reveal a single plain blank teal paper slip representing the alternative alongside one blank-screen phone. Renderer holds still; labels added separately by renderer.\", \"on_screen\": \"INVEST INSTEAD OF SPENDING\", \"claim_ids\": [], \"fact_ids\": [], \"pronunciation_terms\": []}, {\"id\": \"2\", \"type\": \"explanation\", \"text\": \"If that ten dollars earned an assumed eight percent a year for thirty years, it could grow to roughly one hundred one dollars.\", \"visual_intent\": \"$10 → $22 → $47 → $101. A small graph grows upward. Text: “Compound growth”.\", \"on_screen\": \"Compound growth\", \"claim_ids\": [\"c1\"], \"fact_ids\": [], \"pronunciation_terms\": []}, {\"id\": \"3\", \"type\": \"practical\", \"text\": \"Enjoy your coffee now, but ask if this optional spending is worth the future growth you are leaving behind by not investing it today.\", \"visual_intent\": \"Renderer reveals an ordinary upright intact uncrossed coffee cup already still on the desk. Renderer holds this static illustration without internal transformation or hand motion.\", \"on_screen\": \"ENJOY NOW / CHOOSE LATER\", \"claim_ids\": [], \"fact_ids\": [], \"pronunciation_terms\": []}, {\"id\": \"4\", \"type\": \"practical\", \"text\": \"Weigh the immediate pleasure of spending against the value of growing that money over time by choosing to invest instead. Then decide if buying now is worth what you give up.\", \"visual_intent\": \"A balance scale appears. Left: BUY NOW. Right: BUILD LATER. Alex stands between them.\", \"on_screen\": \"BUY NOW / BUILD LATER\", \"claim_ids\": [], \"fact_ids\": [], \"pronunciation_terms\": []}, {\"id\": \"5\", \"type\": \"cta\", \"text\": \"Follow Wealth Blueprint and build wealth on purpose before you buy.\", \"visual_intent\": \"Wealth Blueprint logo appears. Text: PRICE ≠ COST / Think in opportunity cost.\", \"on_screen\": \"PRICE ≠ COST / THINK IN OPPORTUNITY COST\", \"claim_ids\": [], \"fact_ids\": [], \"pronunciation_terms\": []}], \"claims\": [{\"id\": \"c1\", \"operation\": \"compound\", \"operands\": [10.0, 0.08, 30.0], \"result\": 100.[REDACTED_PAYMENT_CARD], \"unit\": \"dollars\", \"spoken_result\": \"one hundred one\", \"spoken_rounding\": 1, \"assumptions\": \"One initial deposit of 10 dollars, no recurring deposits, 30 years at an assumed 8 percent annual rate. Annual compounding; not a forecast; before fees, tax and inflation.\"}]}, \"metadata_policy\": \"Preserve title and description unless an allowed metadata field is explicitly listed.\"} The registered acceptance targets are the desired outcome, not claims that historical wording remains. Inspect the full current_script. Repair only an actual defect in an allowed segment; do not satisfy a false or obsolete reviewer description.  LOCKED CALCULATION CONTRACT: Return replacements and only explicitly allowed metadata. Use only the supplied calculation IDs, never write or change claim definitions. If no supplied calculation supports a flagged financial amount, remove that unsupported amount from the flagged narration, headline and visual direction. Do not merely spell it out or attach an unrelated calculation. Preserve the requested topic and practical action. All on_screen and narration must be English. PREVIOUS RESPONSE WAS REJECTED. Correct this exact format error: Registered author returned unchanged current repair targets: 5:text/on_screen. Correct the actual defect; an obsolete finding requires review, not an arbitrary edit.",
+  "response": {
+    "replacements": [
+      {
+        "id": "1",
+        "on_screen": "INVEST INSTEAD OF SPENDING",
+        "text": "Ask yourself if buying today is better than letting that money sit idle.",
+        "type": "explanation",
+        "visual_intent": "Reveal a single plain blank teal paper slip representing the alternative alongside one blank-screen phone. Renderer holds still; labels added separately by renderer."
+      },
+      {
+        "id": "3",
+        "on_screen": "ENJOY NOW / CHOOSE LATER",
+        "text": "Count your enjoyment against what you might save, then decide if this choice fits your needs today.",
+        "type": "practical",
+        "visual_intent": "Renderer reveals an ordinary upright intact uncrossed coffee cup already still on the desk. Renderer holds this static illustration without internal transformation or hand motion."
+      },
+      {
+        "id": "4",
+        "on_screen": "BUY NOW / BUILD LATER",
+        "text": "Weigh immediate pleasure against growing money over time, then decide what best serves your needs now.",
+        "type": "practical",
+        "visual_intent": "A balance scale appears showing two sides. Renderer reveals the complete static illustration and holds it still without internal movement or invented poses."
+      },
+      {
+        "id": "5",
+        "on_screen": "PRICE ≠ COST / THINK IN OPPORTUNITY COST",
+        "text": "Follow Wealth Blueprint and build wealth on purpose before you buy.",
+        "type": "cta",
+        "visual_intent": "Wealth Blueprint logo appears. Text: PRICE ≠ COST / Think in opportunity cost."
+      }
+    ]
+  },
+  "reviewing": false,
+  "script_model_lane_model_digest": "6488c96fa5faab64bb65cbd30d4289e20e6130ef535a93ef9a49f42eda893ea7",
+  "script_model_lane_receipt_digest": "625a3435b67d1b0754c5d4d38c82c4b423654ace9285eeb29be6998ce952f0f8",
+  "script_model_lane_scope": "normal_produce_script_authoring",
+  "status": "response_received",
+  "thinking": false
+}

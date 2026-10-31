@@ -1,0 +1,52 @@
+{
+  "channel_id": "",
+  "channel_name": "YT Finanse PL",
+  "language": "pl",
+  "region": "PL",
+  "format": "shorts",
+  "max_duration_seconds": 60,
+  "niches": [
+    "finanse osobiste",
+    "oszczedzanie pieniedzy",
+    "zarabianie online"
+  ],
+  "target_audience": "Polacy 18-35, ktorzy chca prosto zrozumiec pieniadze i unikac kosztownych bledow.",
+  "visual_style": "dark finance, kontrastowe wykresy, szybkie ciecia, czytelne polskie napisy",
+  "tone": "konkretny, lekko dramatyczny, bez lania wody",
+  "reference_channels": [
+    "https://www.youtube.com/@alux"
+  ],
+  "competitor_channels": [],
+  "publish_schedule": {
+    "enabled": false,
+    "frequency_per_week": 4,
+    "days_of_week": [
+      "mon",
+      "wed",
+      "fri",
+      "sat"
+    ],
+    "time_utc": "14:00"
+  },
+  "production": {
+    "privacy_status": "private",
+    "require_qa": true,
+    "auto_upload_private": true,
+    "allow_public_upload": false
+  },
+  "monetization": {
+    "estimated": false,
+    "currency": "PLN",
+    "notes": "Brak realnych danych zarobkowych do czasu podpiecia YouTube Analytics."
+  },
+  "narration_style": "konkretny, lekko dramatyczny, naturalny glos, bez lania wody",
+  "allowed_topics": [
+    "budzet domowy",
+    "psychologia pieniedzy",
+    "proste bledy finansowe"
+  ],
+  "forbidden_topics": [
+    "indywidualne porady inwestycyjne",
+    "gwarancje zysku"
+  ]
+}

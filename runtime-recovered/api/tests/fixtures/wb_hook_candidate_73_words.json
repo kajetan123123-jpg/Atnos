@@ -1,0 +1,67 @@
+{
+  "claims": [],
+  "description": "A revised Wealth Blueprint Short clarifying emergency readiness versus long-term goals.",
+  "segments": [
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s01-hook",
+      "on_screen": "Can you pay for this fix now?",
+      "pronunciation_terms": [],
+      "text": "Imagine your car breaks down. Can you cover the repair today?",
+      "type": "hook",
+      "visual_intent": "reveal CAR REPAIR object showing a stationary vehicle with an open hood, no motion or labels inside the image."
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s02-practical",
+      "on_screen": "Locate your emergency funds.",
+      "pronunciation_terms": [],
+      "text": "Name that repair as your essential expense. Locate your reserve money immediately.",
+      "type": "practical",
+      "visual_intent": "identify CAR REPAIR object in close-up view, holding a READY RESERVE icon near the vehicle without animation or transfer effects."
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s03-practical",
+      "on_screen": "Verify your access rules.",
+      "pronunciation_terms": [],
+      "text": "Check how to access it. Verify actual conditions before relying on that balance.",
+      "type": "practical",
+      "visual_intent": "show READY RESERVE object with three small question marks drawn beside it, no moving parts or filled containers in the static render."
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s04-explanation",
+      "on_screen": "Separate short-term and long-term funds.",
+      "pronunciation_terms": [],
+      "text": "Label this emergency reserve separately from a future goal meant for later plans only.",
+      "type": "explanation",
+      "visual_intent": "compare READY RESERVE object with FUTURE GOAL object side by side, showing distinct separation without any transfer lines or motion between them."
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s05-caution",
+      "on_screen": "Re-evaluate if needs shift.",
+      "pronunciation_terms": [],
+      "text": "Review the separation when your personal circumstances change unexpectedly in life.",
+      "type": "caution",
+      "visual_intent": "hold both READY RESERVE and FUTURE GOAL objects static, showing a review symbol overlaying them without internal movement or filling actions."
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s06-cta",
+      "on_screen": "Build wealth on purpose.",
+      "pronunciation_terms": [],
+      "text": "Follow Wealth Blueprint. Build wealth on purpose with clear financial boundaries today.",
+      "type": "cta",
+      "visual_intent": "show brand logo overlaying the scene, holding all objects in a final stable state without independent motion or new elements appearing inside the frame."
+    }
+  ],
+  "title": "Your Emergency Fund Is Not an Investment"
+}

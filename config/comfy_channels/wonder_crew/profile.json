@@ -1,0 +1,162 @@
+{
+  "channel_id": "wonder_crew",
+  "display_name": "Wonder Crew",
+  "legacy_project_key": "children_stories",
+  "comfy_project_dir": "E:\\Atnos\\Tools\\Comfy-Desktop\\ComfyUI-Projects\\wonder_crew",
+  "role": "3D pipeline concept/reference art (not final 3D renders)",
+  "style_summary": "stylized children's feature concept art",
+  "primary_characters": [
+    "niko",
+    "pif",
+    "tika",
+    "mira"
+  ],
+  "reference_files": [
+    "E:\\Atnos\\App\\config\\channel_references\\20260916\\crops\\niko_portrait_v1.png",
+    "E:\\Atnos\\App\\config\\channel_references\\20260916\\crops\\niko_front_v1.png",
+    "E:\\Atnos\\App\\config\\channel_references\\20260916\\image-3.png",
+    "E:\\Atnos\\App\\config\\channel_references\\20260916\\image-4.png",
+    "E:\\Atnos\\App\\config\\channel_references\\20260916\\image-5.png",
+    "E:\\Atnos\\App\\config\\channel_references\\20260916\\image-6.png",
+    "E:\\Atnos\\App\\config\\channel_references\\20260916\\archipelag-snow-world.png"
+  ],
+  "image_models": [
+    "checkpoints/sd_xl_turbo_1.0_fp16.safetensors"
+  ],
+  "image_fallback": "checkpoints/sd_xl_base_1.0_0.9vae.safetensors",
+  "workflows": [
+    {
+      "workflow_id": "wonder_character_reference_v1",
+      "workflow_version": "v1",
+      "title": "CHARACTER_REFERENCE",
+      "asset_type": "character_reference",
+      "backend_preference": [
+        "checkpoint",
+        "z_image_turbo",
+        "flux2_klein"
+      ],
+      "default_width": 1024,
+      "default_height": 1024,
+      "require_references": true,
+      "allow_transparent_bg": false,
+      "forbid_text_in_image": true,
+      "description": "Niko/Pif/Tika/Mira reference for 3D pipeline"
+    },
+    {
+      "workflow_id": "wonder_character_expression_v1",
+      "workflow_version": "v1",
+      "title": "CHARACTER_EXPRESSION_SHEET",
+      "asset_type": "expression",
+      "backend_preference": [
+        "checkpoint",
+        "z_image_turbo"
+      ],
+      "default_width": 1024,
+      "default_height": 1024,
+      "require_references": true,
+      "allow_transparent_bg": false,
+      "forbid_text_in_image": true,
+      "description": "Expression concept sheets"
+    },
+    {
+      "workflow_id": "wonder_character_pose_v1",
+      "workflow_version": "v1",
+      "title": "CHARACTER_POSE_REFERENCE",
+      "asset_type": "pose",
+      "backend_preference": [
+        "checkpoint",
+        "z_image_turbo"
+      ],
+      "default_width": 1024,
+      "default_height": 1024,
+      "require_references": true,
+      "allow_transparent_bg": false,
+      "forbid_text_in_image": true,
+      "description": ""
+    },
+    {
+      "workflow_id": "wonder_costume_concept_v1",
+      "workflow_version": "v1",
+      "title": "COSTUME_CONCEPT",
+      "asset_type": "costume",
+      "backend_preference": [
+        "checkpoint",
+        "z_image_turbo"
+      ],
+      "default_width": 1024,
+      "default_height": 1024,
+      "require_references": false,
+      "allow_transparent_bg": false,
+      "forbid_text_in_image": true,
+      "description": ""
+    },
+    {
+      "workflow_id": "wonder_environment_concept_v1",
+      "workflow_version": "v1",
+      "title": "ENVIRONMENT_CONCEPT",
+      "asset_type": "environment",
+      "backend_preference": [
+        "checkpoint",
+        "z_image_turbo",
+        "flux2_klein"
+      ],
+      "default_width": 1344,
+      "default_height": 768,
+      "require_references": false,
+      "allow_transparent_bg": false,
+      "forbid_text_in_image": true,
+      "description": "Magical island / world concepts for Blender"
+    },
+    {
+      "workflow_id": "wonder_island_concept_v1",
+      "workflow_version": "v1",
+      "title": "ISLAND_CONCEPT",
+      "asset_type": "island",
+      "backend_preference": [
+        "checkpoint",
+        "z_image_turbo"
+      ],
+      "default_width": 1344,
+      "default_height": 768,
+      "require_references": false,
+      "allow_transparent_bg": false,
+      "forbid_text_in_image": true,
+      "description": ""
+    },
+    {
+      "workflow_id": "wonder_prop_concept_v1",
+      "workflow_version": "v1",
+      "title": "PROP_CONCEPT",
+      "asset_type": "prop",
+      "backend_preference": [
+        "checkpoint",
+        "z_image_turbo"
+      ],
+      "default_width": 1024,
+      "default_height": 1024,
+      "require_references": false,
+      "allow_transparent_bg": false,
+      "forbid_text_in_image": true,
+      "description": ""
+    },
+    {
+      "workflow_id": "wonder_storyboard_frame_v1",
+      "workflow_version": "v1",
+      "title": "STORYBOARD_FRAME",
+      "asset_type": "storyboard",
+      "backend_preference": [
+        "checkpoint",
+        "z_image_turbo"
+      ],
+      "default_width": 1280,
+      "default_height": 720,
+      "require_references": false,
+      "allow_transparent_bg": false,
+      "forbid_text_in_image": true,
+      "description": ""
+    }
+  ],
+  "output_subdir": "wonder_crew",
+  "negative_profile_id": "wonder_crew",
+  "prompt_profile_id": "wonder_crew"
+}

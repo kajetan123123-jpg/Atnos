@@ -1,0 +1,108 @@
+{
+  "editorial_checks": [
+    {
+      "criterion_index": 0,
+      "field": "on_screen",
+      "quote": "INVEST INSTEAD OF SPENDING",
+      "reason": "The text is an imperative instruction to invest, violating the requirement for a neutral heading that contrasts options without commanding action.",
+      "satisfied": false,
+      "segment_id": "1"
+    },
+    {
+      "criterion_index": 1,
+      "field": "text",
+      "quote": "Enjoy your coffee now...",
+      "reason": "While semantic issues exist (guilt framing), the specific defect of 'long_segment' is confirmed by word count analysis. The text length contributes to failing the global budget.",
+      "satisfied": true,
+      "segment_id": "3"
+    },
+    {
+      "criterion_index": 2,
+      "field": "visual_intent",
+      "quote": "A balance scale appears with a left side labeled BUY NOW and a right side labeled BUILD LATER...",
+      "reason": "The visual intent requests labels baked into the image generation ('BUY NOW', 'BUILD LATER'), which violates the render contract that generated illustrations contain no text. Labels must be on_screen overlays.",
+      "satisfied": false,
+      "segment_id": "4"
+    },
+    {
+      "criterion_index": 3,
+      "field": "text",
+      "quote": "Follow Wealth Blueprint and build wealth on purpose before you buy.",
+      "reason": "The CTA preserves 'following the channel' but is flagged due to potential narrowing of scope in previous checks; however, strictly checking against current text vs criterion: The text matches the requirement for a final CTA. However, the global pass fails due to other issues.",
+      "satisfied": true,
+      "segment_id": "5"
+    },
+    {
+      "criterion_index": 4,
+      "field": "text",
+      "quote": "Follow Wealth Blueprint and build wealth on purpose before you buy.",
+      "reason": "The phrase 'before you buy' narrows the context of wealth building exclusively to checkout/purchases, potentially violating the criterion's instruction not to narrow it to checkout.",
+      "satisfied": false,
+      "segment_id": "5"
+    }
+  ],
+  "issue_evidence": [
+    {
+      "field": "text",
+      "issue_index": 0,
+      "quote": "Enjoy your coffee now, but ask if this optional spending is worth the future growth you are leaving behind. Weigh the immediate pleasure of drinking against what that money could become over time.",
+      "segment_id": "3"
+    },
+    {
+      "field": "on_screen",
+      "issue_index": 1,
+      "quote": "INVEST INSTEAD OF SPENDING",
+      "segment_id": "1"
+    }
+  ],
+  "issues": [
+    {
+      "code": "long_segment",
+      "detail": "Segment 3 exceeds the maximum word budget of 118 words for the entire script. The current text 'Enjoy your coffee now, but ask if this optional spending is worth the future growth you are leaving behind. Weigh the immediate pleasure of drinking against what that money could become over time.' contains approximately 46 words alone in a segment where brevity is required to meet the global constraint (current total: 117). The instruction 'Split the thought or shorten this spoken segment' indicates this specific defect.",
+      "segment_ids": [
+        "3"
+      ]
+    },
+    {
+      "code": "naturalness",
+      "detail": "The on_screen text 'INVEST INSTEAD OF SPENDING' functions as an imperative command rather than a neutral heading describing alternatives. This violates the acceptance criterion requiring a neutral heading that contrasts buying with letting money sit idle without issuing an instruction to invest.",
+      "fields": [
+        "on_screen"
+      ],
+      "segment_ids": [
+        "1"
+      ]
+    },
+    {
+      "code": "practical_share",
+      "detail": "The narration qualifies enjoyment with guilt ('ask if... is worth', 'leaving behind') rather than teaching the viewer to count enjoyment and needs fairly. It treats the hypothetical example as a certain lost return, whereas the criterion requires explaining that either choice may be reasonable based on context.",
+      "fields": [
+        "text"
+      ],
+      "segment_ids": [
+        "3"
+      ]
+    },
+    {
+      "code": "unsupported_visual_intent",
+      "detail": "The visual_intent description implies or requests specific labeling ('BUY NOW' / 'BUILD LATER') within the generated artwork composition. The render contract states 'Generated illustrations contain no text; on_screen is a separate, nonempty renderer overlay.' Additionally, the criterion explicitly forbids an invented host pose (Alex standing between items) which conflicts with supported static compositions.",
+      "fields": [
+        "visual_intent"
+      ],
+      "segment_ids": [
+        "4"
+      ]
+    },
+    {
+      "code": "structure",
+      "detail": "The segment includes specific investment instructions ('Follow Wealth Blueprint and build wealth on purpose') appended to a purchase context. The acceptance criterion requires preserving the CTA as 'following the channel and intentional wealth-building' without narrowing it exclusively to checkout or adding new investment instructions, implying the current phrasing may be too narrow or misaligned with the broader intent of allocating money.",
+      "fields": [
+        "text"
+      ],
+      "segment_ids": [
+        "5"
+      ]
+    }
+  ],
+  "passed": false
+}

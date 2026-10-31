@@ -1,0 +1,16 @@
+{
+  "workflow_id": "wealth_character_v1",
+  "workflow_version": "v1",
+  "title": "WB_CHARACTER",
+  "asset_type": "character",
+  "backend_preference": [
+    "flux2_klein",
+    "checkpoint"
+  ],
+  "default_width": 1024,
+  "default_height": 1024,
+  "require_references": true,
+  "allow_transparent_bg": true,
+  "forbid_text_in_image": true,
+  "description": "Alex and character poses for Remotion stills"
+}

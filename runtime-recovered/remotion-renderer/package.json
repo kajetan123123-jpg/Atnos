@@ -1,0 +1,32 @@
+{
+  "name": "atnos-wealth-blueprint-renderer",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "render": "tsx scripts/render-browser.ts",
+    "render:native": "tsx scripts/render.ts",
+    "render:browser": "tsx scripts/render-browser.ts",
+    "render:showcase": "tsx scripts/render-showcase-browser.ts",
+    "render:dataviz": "tsx scripts/render-dataviz-showcase-browser.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/bundler": "4.0.507",
+    "@remotion/player": "4.0.507",
+    "@remotion/renderer": "4.0.507",
+    "playwright-core": "1.55.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.507"
+  },
+  "devDependencies": {
+    "@types/node": "22.15.30",
+    "@types/react": "18.3.23",
+    "@types/react-dom": "18.3.7",
+    "tsx": "4.20.6",
+    "typescript": "5.8.3",
+    "vitest": "2.1.9"
+  }
+}

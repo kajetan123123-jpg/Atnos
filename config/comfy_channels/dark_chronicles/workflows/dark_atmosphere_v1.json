@@ -1,0 +1,16 @@
+{
+  "workflow_id": "dark_atmosphere_v1",
+  "workflow_version": "v1",
+  "title": "DC_ATMOSPHERE",
+  "asset_type": "atmosphere",
+  "backend_preference": [
+    "flux2_klein",
+    "checkpoint"
+  ],
+  "default_width": 1344,
+  "default_height": 768,
+  "require_references": false,
+  "allow_transparent_bg": false,
+  "forbid_text_in_image": true,
+  "description": ""
+}

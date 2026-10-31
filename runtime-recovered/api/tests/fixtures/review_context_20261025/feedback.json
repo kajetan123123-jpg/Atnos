@@ -1,0 +1,97 @@
+{
+  "editor": "Codex independent operator",
+  "reason": "Same authorized local Ryan-B trial. Current narration is complete at75words and must stay locked. Reauthor only the three rejected illustration descriptions from narration, without copying old graphic directions now omitted from the writer input. Do not replace physical artwork with a UI switch, title or printed label. Existing concise imperative headlines remain locked. One draft, bounded retry, independent review, no media, paid API, new order or publication.",
+  "target_segments": [
+    4,
+    4
+  ],
+  "max_drafts": 1,
+  "issues": [
+    {
+      "code": "brief_fidelity",
+      "segment_ids": [
+        "s01"
+      ],
+      "field": "text",
+      "detail": "Introduce the renewal or cancellation cutoff as something to check in the trial agreement, conditional on whether auto-renewal applies. Address you naturally. No claim that a deadline is hidden and no contrast with sign-up day.",
+      "forbidden_phrases": [
+        "hidden",
+        "signed up",
+        "sign-up",
+        "sign up"
+      ]
+    },
+    {
+      "code": "brief_fidelity",
+      "segment_ids": [
+        "s02"
+      ],
+      "field": "text",
+      "detail": "Give a concrete first check of the agreement: renewal terms, renewal price and cancellation cutoff. Equivalent natural wording is acceptable. Explain what the viewer checks, not a scene prop. Do not instruct enabling auto-renewal.",
+      "forbidden_phrases": [
+        "make sure automatic renewal is enabled",
+        "ensure automatic renewal is enabled"
+      ]
+    },
+    {
+      "code": "brief_fidelity",
+      "segment_ids": [
+        "s03"
+      ],
+      "field": "text",
+      "detail": "Set a reminder before the cutoff without inventing a specific number of days. Deliberately choose keep or cancel. If choosing cancellation, check the provider confirmation. Include all three operations in natural language, at most 32 words. Do not demand cancellation of a useful service."
+    },
+    {
+      "code": "brief_fidelity",
+      "segment_ids": [
+        "s04"
+      ],
+      "field": "text",
+      "detail": "Preserve the existing CTA purpose: follow Wealth Blueprint and build wealth intentionally. The reference wording is Follow Wealth Blueprint. Build wealth on purpose. Faithful paraphrase is acceptable. Do not promise a guide, link, future video or returns."
+    },
+    {
+      "code": "brief_fidelity",
+      "segment_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04"
+      ],
+      "field": "on_screen",
+      "detail": "Each headline is a short meaningful English viewer message matching that scene. Concise imperatives and sentence fragments are valid; object lists and scene directions are not headlines. An imperative with its objects, such as checking a price and cutoff, is an action rather than a bare object list. An ampersand alone is not a defect."
+    },
+    {
+      "code": "word_budget",
+      "segment_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04"
+      ],
+      "field": "text",
+      "detail": "Use the current deterministic word counts. Whole narration must contain 66-81 natural English words, each segment at most32. Develop concrete middle steps; do not pad the CTA, glue words or invent dates, prices or facts. This is a requirement, not an assertion that the current candidate is too short."
+    },
+    {
+      "code": "unsupported_visual_intent",
+      "segment_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04"
+      ],
+      "field": "visual_intent",
+      "detail": "Physical illustrated stills of a paper calendar and blank agreement card explain the narration. Describe physical objects, material and position. The calendar has a reminder mark before a separate cutoff mark. No document titles, printed labels, quoted lettering, interface switches, app screenshots, random icons or independently moving raster objects. Renderer adds all wording and dates. The logo supports the closing."
+    }
+  ],
+  "editable_fields": {
+    "s01": [
+      "visual_intent"
+    ],
+    "s02": [
+      "visual_intent"
+    ],
+    "s03": [
+      "visual_intent"
+    ]
+  }
+}

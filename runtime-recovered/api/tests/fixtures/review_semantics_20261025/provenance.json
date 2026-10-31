@@ -1,0 +1,10 @@
+{
+  "source": "E:\\Atnos\\Profiles\\AtnosSystem\\AppData\\Roaming\\Atnos\\data\\production\\wealth_blueprint\\prod-60eff989e0b6\\model_calls\\5ef4f13ba7b64d0fb4bd1711010c07c6.raw.json",
+  "source_sha256": "128112804fd284c4dbaa3c34a943e46429f45b71db6d6574e2f97af55a1d3ddb",
+  "fixtures": {
+    "candidate.json": "07f3d5b82c6434dd49f842d6f17992182410eaf9f7355a321d7fdf07cb420c13",
+    "feedback.json": "f9a7f2e66ef806dc366f01e4c5d98ce9d438b56f45ee41eeb27d838f5eaff029",
+    "review.json": "37e851373de2fde86ebb28d17fb19a856ab8eae01aa03444abcfcd98b7cb291b"
+  },
+  "quality_receipt": false
+}

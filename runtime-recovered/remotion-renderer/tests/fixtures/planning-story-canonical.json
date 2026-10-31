@@ -1,0 +1,67 @@
+{
+  "title": "One Balance. Two Promises.",
+  "description": "Wealth Blueprint Short",
+  "segments": [
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s01",
+      "on_screen": "One Balance. Two Promises.",
+      "pronunciation_terms": [],
+      "text": "You have not spent your savings, but you may have promised them twice to different goals today.",
+      "type": "hook",
+      "visual_intent": "identify (actual need and reserve)"
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s02",
+      "on_screen": "Identify Reserve vs Goal",
+      "pronunciation_terms": [],
+      "text": "Open your savings plan notebook to identify the emergency reserve and name one specific future purchase goal clearly.",
+      "type": "practical",
+      "visual_intent": "identify (actual need and reserve)"
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s03",
+      "on_screen": "Locate Double-Counted Portion",
+      "pronunciation_terms": [],
+      "text": "Inspect the single balance to locate any portion currently counted for both purposes simultaneously right now.",
+      "type": "practical",
+      "visual_intent": "separate (reserve versus future goal)"
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s04",
+      "on_screen": "Review Competing Claims",
+      "pronunciation_terms": [],
+      "text": "Assigning the same funds to two competing claims reduces availability for one purpose if an emergency occurs unexpectedly.",
+      "type": "explanation",
+      "visual_intent": "review (review both roles)"
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s05",
+      "on_screen": "Adjust Plan Timeline",
+      "pronunciation_terms": [],
+      "text": "Decide which plan changes if the reserve is used, then review the impact on your future-goal timeline immediately.",
+      "type": "practical",
+      "visual_intent": "review (review both roles)"
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s06",
+      "on_screen": "Follow Wealth Blueprint.",
+      "pronunciation_terms": [],
+      "text": "Follow Wealth Blueprint. Build wealth on purpose.",
+      "type": "cta",
+      "visual_intent": "Wealth Blueprint logo only, no host or props"
+    }
+  ],
+  "claims": []
+}

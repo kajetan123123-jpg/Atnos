@@ -1,0 +1,44 @@
+{
+  "account_id": "local-horror_stories",
+  "channel_name": "Straszne historie",
+  "language": "en",
+  "production": {
+    "version": 1,
+    "content_kind": "fiction_horror",
+    "language": "en",
+    "audience": "General older audience for fictional suspense; not a children’s channel",
+    "duration_seconds": [
+      35,
+      50
+    ],
+    "word_budget": [
+      90,
+      115
+    ],
+    "max_attempts_per_element": 20,
+    "max_provider_calls": 10000,
+    "max_cost_usd": 1000,
+    "script_model": {
+      "generator": "qwen3:14b",
+      "reviewer": "qwen3:14b",
+      "context_tokens": 12288,
+      "output_tokens": 7000,
+      "timeout_seconds": 750,
+      "thinking": false
+    },
+    "narrative_rules": [
+      "Write original fiction and clearly identify it as fiction in the description.",
+      "Build suspense around one specific setting and recurring clue or object.",
+      "Escalate through coherent cause and effect; plant the clue before its payoff.",
+      "Deliver an understandable unsettling ending, not an unexplained random twist.",
+      "Use natural English narration; no historical trivia or claims that invented events actually happened.",
+      "Use tension without graphic gore and without promotional calls to action."
+    ],
+    "visual_rules": [
+      "Moody but readable illustrations; clear silhouettes and important objects.",
+      "Preserve the same location, characters and recurring prop across scenes.",
+      "Describe one visible moment per scene; keep the eventual sound design subordinate to narration."
+    ],
+    "publish": false
+  }
+}

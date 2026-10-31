@@ -1,0 +1,16 @@
+{
+  "workflow_id": "wealth_icon_or_symbol_v1",
+  "workflow_version": "v1",
+  "title": "WB_ICON_OR_SYMBOL",
+  "asset_type": "icon",
+  "backend_preference": [
+    "flux2_klein",
+    "checkpoint"
+  ],
+  "default_width": 768,
+  "default_height": 768,
+  "require_references": false,
+  "allow_transparent_bg": true,
+  "forbid_text_in_image": true,
+  "description": "Simple finance symbols"
+}

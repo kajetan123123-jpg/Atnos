@@ -1,0 +1,35 @@
+{
+  "job": "prod-d9c21367ddda",
+  "request_digest": "8ad96c22c1bacce19f0cdda563bddde2c7d1e803a170f34a2dba341b237f4ce7",
+  "scope": "OFFLINE_REGRESSION_NOT_ACCEPTANCE_RECEIPT",
+  "responses": [
+    {
+      "source_call": "E:\\Atnos\\App\\reports\\scenario_repair_production_delivery_20261009\\evidence\\live-review-v26-text-action-20261010\\model-calls\\6bdc620812184328b805b822023b1b1d.json",
+      "source_call_sha256": "3ced9bfd81b2c8d60c33a9ceb456a9dd3b99c781497ae552c03f3a4c293f7c12",
+      "raw_sha256": "c45d47892ea7001d8972e8499931afa1bb1e15bd0fff7d144cd1ab4b9255cc7c",
+      "fixture": "review-1.json",
+      "fixture_sha256": "568a889098a7676da871d24015110289d8ae81cb088c3f43aabd09b2a2ff1491",
+      "script": "initial-script.json"
+    },
+    {
+      "source_call": "E:\\Atnos\\App\\reports\\scenario_repair_production_delivery_20261009\\evidence\\live-review-v26-text-action-20261010\\model-calls\\3b006106242f4465936497430feda7df.json",
+      "source_call_sha256": "bcae269dc9355a041a14dfac85a5a9b586466cc3fb49f7817862aae93c0a8d91",
+      "raw_sha256": "a302c811d324e98be7c8bd1efa8f2e4f08d15ca21dd1640cbd58d0eeee89fbfe",
+      "fixture": "review-2.json",
+      "fixture_sha256": "c71bac51168b5f009ac03cd9b542de6bebccbdc5a1aa5e47872b1d103aa9ad6b",
+      "script": "initial-script.json"
+    },
+    {
+      "source_call": "E:\\Atnos\\App\\reports\\scenario_repair_production_delivery_20261009\\evidence\\live-review-v26-text-action-20261010\\model-calls\\b951abbdad4043b6bca1ca9cc0643d02.json",
+      "source_call_sha256": "6ce482e3f6edd2797181e7c543867c4574d41dcf0d5b5bec22dd5318246e2355",
+      "raw_sha256": "b7cc8e07c040f766fa6fd782a16baa4bfeb201ff5b51a26f948ff821112d72b1",
+      "fixture": "review-3.json",
+      "fixture_sha256": "3f8d890b9db7c1cd2625e3783e5d755d1d2fcdc319c6e691e1e878010efb874a",
+      "script": "latest-script.json"
+    }
+  ],
+  "script_sha256": {
+    "initial-script.json": "b37c993b05fb9205a361c974caea37ed607c44bc17562ac631a07c4ee24660ad",
+    "latest-script.json": "3f391fec89ce4355333e23f10b94bd6dfa7fca442c06cb03bf2449bc7c8e836b"
+  }
+}

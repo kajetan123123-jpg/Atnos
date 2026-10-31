@@ -1,0 +1,99 @@
+{
+  "schema_version": "1.0",
+  "profile_id": "wealth_blueprint_visual_v1",
+  "channel": "wealth_blueprint",
+  "status": "active",
+  "authority": [
+    "api/config/brand-kits/wealth-blueprint-alex-01/VISUAL-BIBLE.md",
+    "api/config/brand-kits/wealth-blueprint-alex-01/brand.json",
+    "api/config/brand-kits/wealth-blueprint-alex-01/visual-bible-board.jpg",
+    "config/channel_references/20260916/image-1.png",
+    "config/channel_references/20260916/crops/alex_portrait_v1.png"
+  ],
+  "supersedes": [
+    "channel_profiles/wealth_blueprint.json neon black-mint brand.colors",
+    "channel_profile.WEALTH_BLUEPRINT_PROFILE emerald/charcoal fintech strings",
+    "remotion DEFAULT_BRAND #33423B / #39FF9F",
+    "design_systems/wealth_blueprint_style_v1.json pre-alignment neon pack colors"
+  ],
+  "language": {
+    "published_content": "en",
+    "user_facing_ui": "pl"
+  },
+  "style": {
+    "summary": "premium hand-drawn mature editorial illustration + blueprint visual language + subtle 2.5D depth",
+    "outline": "#142633",
+    "paper_texture": true,
+    "blueprint_elements": "low-opacity grids, circles, dimensions, pencil lines",
+    "forbidden": [
+      "neon fintech glow",
+      "black-neon dashboard look",
+      "photorealism",
+      "flat whiteboard",
+      "stock business people",
+      "luxury cars",
+      "realistic cash piles",
+      "trading candles everywhere",
+      "glitch or flash TikTok cuts"
+    ]
+  },
+  "palette": {
+    "navy": "#142633",
+    "cream": "#F0E5D2",
+    "blueprint_blue": "#426579",
+    "muted_teal": "#4B7977",
+    "warm_orange": "#C18A49",
+    "warm_gold": "#D5AD6C",
+    "muted_red": "#995E4B",
+    "roles": {
+      "background": "#142633",
+      "panel": "#1C3344",
+      "accent": "#D5AD6C",
+      "accentSoft": "#426579",
+      "text": "#F0E5D2",
+      "muted": "#4B7977",
+      "wordmark": "WEALTH BLUEPRINT",
+      "captionStyle": "plain_phrase"
+    }
+  },
+  "character": {
+    "id": "WB_ALEX_01",
+    "name": "Alex",
+    "policy": "Presenter only in justified scenes (layouts with alex=true). Not a logo or permanent fullscreen wallpaper.",
+    "wardrobe": "navy overshirt, cream T-shirt, dark trousers, off-white sneakers, analog watch"
+  },
+  "comfy": {
+    "style_prompt": "premium hand-drawn mature editorial illustration, designer's sketchbook with subtle 2.5D depth, varying-width navy graphite outlines, soft dimensional shadows, warm paper texture, restrained navy cream blueprint-blue muted teal and sparse warm gold, low-opacity blueprint grids, no photorealism, no neon fintech, no text in image, no charts, no numbers",
+    "negative_extra": "neon mint glow, black neon UI, cyberpunk finance dashboard, photorealistic stock photo, luxury cars, trading candles, garish gold coins pile"
+  },
+  "covers_and_thumbnails": {
+    "style": "hand-drawn mature finance illustration on navy or paper cream, muted warm gold accent, max three English words typeset in post, one concrete metaphor, Alex only when the cover is host-led",
+    "forbidden": ["emerald neon accent", "dark charcoal neon mint", "faceless-only when Alex is the approved host identity"]
+  },
+  "animation": {
+    "defaults": {
+      "text": "TEXT_FADE",
+      "number": "NUMBER_COUNT",
+      "chart": "CHART_GROW",
+      "character_left": "CHARACTER_ENTER_LEFT",
+      "character_right": "CHARACTER_ENTER_RIGHT",
+      "icon": "ICON_POP"
+    },
+    "motion_feel": "calm readable — transform information, do not cut every 0.5s"
+  },
+  "layout_composition_keys": {
+    "character_left_text_right": {"image_side": "left", "text_side": "right", "alex": true},
+    "character_right_text_left": {"image_side": "right", "text_side": "left", "alex": true},
+    "icon_explainer": {"image_side": "center_upper", "text_side": "below", "alex": false},
+    "comparison": {"panels": "split_two", "alex": false},
+    "split_screen": {"image_side": "right", "text_side": "left", "alex": true}
+  },
+  "references_on_disk": {
+    "visual_bible_md": "E:/Atnos/App/runtime-recovered/api/config/brand-kits/wealth-blueprint-alex-01/VISUAL-BIBLE.md",
+    "visual_bible_board": "E:/Atnos/App/runtime-recovered/api/config/brand-kits/wealth-blueprint-alex-01/visual-bible-board.jpg",
+    "brand_contract": "E:/Atnos/App/runtime-recovered/api/config/brand-kits/wealth-blueprint-alex-01/brand.json",
+    "character_sheet": "E:/Atnos/App/config/channel_references/20260916/image-1.png",
+    "alex_portrait": "E:/Atnos/App/config/channel_references/20260916/crops/alex_portrait_v1.png",
+    "alex_front": "E:/Atnos/App/config/channel_references/20260916/crops/alex_front_v1.png"
+  }
+}

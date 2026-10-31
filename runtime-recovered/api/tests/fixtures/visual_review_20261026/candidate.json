@@ -1,0 +1,47 @@
+{
+  "claims": [],
+  "description": "Explain the conditional nature of auto-renewal, check specific terms and prices, set an early reminder for your decision, verify cancellation confirmation if needed, then follow Wealth Blueprint to build wealth on purpose.",
+  "segments": [
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s01",
+      "on_screen": "Check Renewal Status",
+      "pronunciation_terms": [],
+      "text": "Your free trial renews only if auto-renewal applies. Check your agreement for the specific cancellation cutoff.",
+      "type": "hook",
+      "visual_intent": "A physical paper agreement card lies flat on a neutral surface. A blank calendar sheet rests beside it, showing no specific dates or moving elements."
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s02",
+      "on_screen": "Check Renewal Price & Cutoff",
+      "pronunciation_terms": [],
+      "text": "Open your agreement now. Read the stated renewal price and record the specific cancellation cutoff date listed there clearly for yourself to see later.",
+      "type": "practical",
+      "visual_intent": "A physical paper agreement card lies flat. Beside it, a blank calendar sheet rests with no specific dates or moving elements."
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s03",
+      "on_screen": "Set Reminder & Decide",
+      "pronunciation_terms": [],
+      "text": "Set a reminder before that cutoff arrives. Decide whether to keep the useful service or cancel it, then check for provider confirmation if you choose cancellation.",
+      "type": "practical",
+      "visual_intent": "The same static scene shows the paper agreement and blank calendar resting on the surface without movement or added labels."
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s04",
+      "on_screen": "Build Wealth On Purpose",
+      "pronunciation_terms": [],
+      "text": "Follow Wealth Blueprint and build wealth on purpose today.",
+      "type": "cta",
+      "visual_intent": "A static illustration of the 'Wealth Blueprint' logo centered clearly in a neutral background with no moving elements or embedded text other than what the renderer adds as captions."
+    }
+  ],
+  "title": "Your free trial has a second deadline"
+}

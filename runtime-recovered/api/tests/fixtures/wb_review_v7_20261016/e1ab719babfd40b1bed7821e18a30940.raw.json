@@ -1,0 +1,18 @@
+{
+  "response": {
+    "created_at": "2026-10-15T23:12:37.5462676Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 287,
+    "eval_duration": 10134956000,
+    "load_duration": 7653153100,
+    "message": {
+      "content": "{\"replacements\":[{\"id\":\"1\",\"type\":\"explanation\",\"text\":\"Ask yourself if buying this item today is better than letting that money sit idle.\",\"visual_intent\":\"Reveal a single plain blank teal paper slip representing the alternative alongside one blank-screen phone. Renderer holds still; labels added separately by renderer.\",\"on_screen\":\"INVEST INSTEAD OF SPENDING\"},{\"id\":\"3\",\"type\":\"practical\",\"text\":\"Count your enjoyment and needs against the next-best use of that money, then decide if spending now is worth giving up a possible future alternative.\",\"visual_intent\":\"Renderer reveals an ordinary upright intact uncrossed coffee cup already still on the desk. Renderer holds this static illustration without internal transformation or hand motion.\",\"on_screen\":\"ENJOY NOW / CHOOSE LATER\"},{\"id\":\"4\",\"type\":\"practical\",\"text\":\"Identify the immediate benefit and next-best alternative use, consider the trade based on your needs, then decide if buying now is worth what you give up.\",\"visual_intent\":\"A balance scale appears. Left: BUY NOW. Right: BUILD LATER.\",\"on_screen\":\"BUY NOW / BUILD LATER\"},{\"id\":\"5\",\"type\":\"cta\",\"text\":\"Follow Wealth Blueprint and build wealth on purpose before you buy.\",\"visual_intent\":\"Wealth Blueprint logo appears. Text: PRICE ≠ COST / Think in opportunity cost.\",\"on_screen\":\"PRICE ≠ COST / THINK IN OPPORTUNITY COST\"}]}",
+      "role": "assistant"
+    },
+    "model": "qwen3.5:9b",
+    "prompt_eval_count": 3634,
+    "prompt_eval_duration": 4493723000,
+    "total_duration": 22312282900
+  }
+}

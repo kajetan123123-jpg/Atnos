@@ -1,0 +1,51 @@
+{
+  "name": "atnos-frontend",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "node ./scripts/verify-design-tokens.mjs && node ./scripts/verify-polish-text-encoding.mjs && tsc -b && vite build",
+    "build:desktop": "node ./scripts/verify-design-tokens.mjs && node ./scripts/verify-polish-text-encoding.mjs && tsc -b && vite build && powershell -ExecutionPolicy Bypass -File ../scripts/deploy_frontend_to_desktop_web.ps1",
+    "lint": "node ./scripts/verify-design-tokens.mjs && node ./scripts/verify-polish-text-encoding.mjs && eslint .",
+    "test": "node ./scripts/verify-design-tokens.mjs && node ./scripts/verify-polish-text-encoding.mjs && vitest run",
+    "verify:design": "node ./scripts/verify-design-tokens.mjs && node ./scripts/verify-polish-text-encoding.mjs",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "focus-trap-react": "^10.3.1",
+    "framer-motion": "^11.18.2",
+    "fuse.js": "^7.1.0",
+    "lucide-react": "^0.511.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.30.1",
+    "react-textarea-autosize": "^8.5.9",
+    "shiki": "^1.29.2",
+    "zustand": "^4.5.7"
+  },
+  "devDependencies": {
+    "@axe-core/react": "^4.10.2",
+    "@eslint/js": "^9.39.0",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/node": "^22.15.30",
+    "@types/react": "^18.3.23",
+    "@types/react-dom": "^18.3.7",
+    "@vitejs/plugin-react": "^4.7.0",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.39.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "globals": "^16.4.0",
+    "jsdom": "^26.1.0",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.17",
+    "typescript": "~5.8.3",
+    "typescript-eslint": "^8.46.4",
+    "vite": "^5.4.21",
+    "vitest": "^2.1.9"
+  }
+}

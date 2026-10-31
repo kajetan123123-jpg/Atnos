@@ -1,0 +1,183 @@
+{
+  "claims": [],
+  "description": "A revised Wealth Blueprint Short clarifying emergency fund roles versus long-term goals.",
+  "provenance": {
+    "frozen_generator": "qwen3:14b",
+    "generator": "qwen3.5:9b",
+    "reference_source": {
+      "path": "learning/active-reference-shorts/latest_editorial_profile_wealth_blueprint.json",
+      "sha256": "920ba59cd7f31dcb7d2ab1a05d91e10c4d9e9584089275a8b694fd04600aaf1e"
+    },
+    "reviewer": "qwen3:14b",
+    "scoped_revision": {
+      "attempts_reset": false,
+      "editor": "Codex independent review following current user rejection",
+      "feedback_hash": "5ffcfc3a5d6975b3f42fb4a99783b7db500ea0d26292b7a3051d7fcc74f75a8c",
+      "generator": "qwen3.5:9b",
+      "original_script_hash": "7c5e3ffa253406c1a915bf8111cef193753ef8a90dec71a89be1c1174cadbf11",
+      "reviewer": "qwen3:14b",
+      "user_appearance_approved": false
+    },
+    "script_model_lane": {
+      "execution_scope": "normal_produce_script_authoring",
+      "model_digest": "6488c96fa5faab64bb65cbd30d4289e20e6130ef535a93ef9a49f42eda893ea7",
+      "receipt_digest": "b2b488d387c7340e434df8cfac89bc63544efc2060c748dcb697908aa13f6d7b"
+    },
+    "usage": {
+      "knowledge_matches": 3,
+      "reference_samples": 40
+    }
+  },
+  "qa": {
+    "claim_classification_summary": {
+      "confirmed_count": 0,
+      "needs_source_count": 0,
+      "risky_promise_count": 0,
+      "source_policy": "never_invent_source"
+    },
+    "claim_classifications": [
+      {
+        "claim_ids": [],
+        "classification": "opinion",
+        "confidence": 0.7,
+        "fact_ids": [],
+        "invented_source": false,
+        "issue_codes": [],
+        "reason": "Hook/CTA bez claim — traktowane jako opinia/wezwanie, nie fakt.",
+        "segment_id": "s01-hook",
+        "source": "segment_type"
+      },
+      {
+        "claim_ids": [],
+        "classification": "opinion",
+        "confidence": 0.65,
+        "fact_ids": [],
+        "invented_source": false,
+        "issue_codes": [],
+        "reason": "Brak claim/fact — treść jakościowa, nie potwierdzony fakt finansowy.",
+        "segment_id": "s02-practical",
+        "source": "absence_of_claim"
+      },
+      {
+        "claim_ids": [],
+        "classification": "opinion",
+        "confidence": 0.65,
+        "fact_ids": [],
+        "invented_source": false,
+        "issue_codes": [],
+        "reason": "Brak claim/fact — treść jakościowa, nie potwierdzony fakt finansowy.",
+        "segment_id": "s03-practical",
+        "source": "absence_of_claim"
+      },
+      {
+        "claim_ids": [],
+        "classification": "opinion",
+        "confidence": 0.65,
+        "fact_ids": [],
+        "invented_source": false,
+        "issue_codes": [],
+        "reason": "Brak claim/fact — treść jakościowa, nie potwierdzony fakt finansowy.",
+        "segment_id": "s04-explanation",
+        "source": "absence_of_claim"
+      },
+      {
+        "claim_ids": [],
+        "classification": "opinion",
+        "confidence": 0.65,
+        "fact_ids": [],
+        "invented_source": false,
+        "issue_codes": [],
+        "reason": "Brak claim/fact — treść jakościowa, nie potwierdzony fakt finansowy.",
+        "segment_id": "s05-caution",
+        "source": "absence_of_claim"
+      },
+      {
+        "claim_ids": [],
+        "classification": "opinion",
+        "confidence": 0.7,
+        "fact_ids": [],
+        "invented_source": false,
+        "issue_codes": [],
+        "reason": "Hook/CTA bez claim — traktowane jako opinia/wezwanie, nie fakt.",
+        "segment_id": "s06-cta",
+        "source": "segment_type"
+      }
+    ],
+    "editorial_checks": [],
+    "feedback_checks": "performed",
+    "feedback_hash": "5ffcfc3a5d6975b3f42fb4a99783b7db500ea0d26292b7a3051d7fcc74f75a8c",
+    "human_review": "not_performed",
+    "issue_evidence": [],
+    "issues": [],
+    "practical_word_share": 0.3548387096774194,
+    "revision": 4,
+    "script_hash": "e1751adc4e9356c64c924df1de73d4641b362c01bd21c14858d1a41c97839aad",
+    "semantic_review": "model_reviewed",
+    "status": "passed"
+  },
+  "segments": [
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s01-hook",
+      "on_screen": "Car Breakdown? Pay Today?",
+      "pronunciation_terms": [],
+      "text": "Imagine your car breaks down today. How do you cover this essential repair right now?",
+      "type": "hook",
+      "visual_intent": "reveal CAR REPAIR and question overlay on a still illustration of a broken vehicle."
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s02-practical",
+      "on_screen": "Locate Reserve Now.",
+      "pronunciation_terms": [],
+      "text": "Name this specific repair cost now to address it directly. Locate your reserve money immediately for that need.",
+      "type": "practical",
+      "visual_intent": "identify CAR REPAIR object in close-up view and show READY RESERVE icon nearby."
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s03-practical",
+      "on_screen": "Check Access Rules.",
+      "pronunciation_terms": [],
+      "text": "Check how you access these funds today. Review the actual conditions needed before any withdrawal.",
+      "type": "practical",
+      "visual_intent": "show READY RESERVE with three unchecked question marks representing access procedures and conditions."
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s04-explanation",
+      "on_screen": "Separate Roles Clearly.",
+      "pronunciation_terms": [],
+      "text": "Label this emergency reserve separately from your future goal. This keeps their distinct purposes clear always.",
+      "type": "explanation",
+      "visual_intent": "compare READY RESERVE readiness with FUTURE GOAL without showing transfer language or access steps."
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s05-caution",
+      "on_screen": "Review Separation.",
+      "pronunciation_terms": [],
+      "text": "Review how these roles separate when personal circumstances change over time. Unexpected events may alter your needs.",
+      "type": "caution",
+      "visual_intent": "review separation of the two financial objects in a wide shot showing distinct states."
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s06-cta",
+      "on_screen": "Follow Wealth Blueprint.",
+      "pronunciation_terms": [],
+      "text": "Follow Wealth Blueprint. Build wealth on purpose with clear emergency readiness today.",
+      "type": "cta",
+      "visual_intent": "hold brand logo and CTA text over a stable background without new raster generation."
+    }
+  ],
+  "text": "Imagine your car breaks down today. How do you cover this essential repair right now? Name this specific repair cost now to address it directly. Locate your reserve money immediately for that need. Check how you access these funds today. Review the actual conditions needed before any withdrawal. Label this emergency reserve separately from your future goal. This keeps their distinct purposes clear always. Review how these roles separate when personal circumstances change over time. Unexpected events may alter your needs. Follow Wealth Blueprint. Build wealth on purpose with clear emergency readiness today.",
+  "title": "Your Emergency Fund Is Not an Investment",
+  "word_count": 93
+}

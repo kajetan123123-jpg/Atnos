@@ -1,0 +1,263 @@
+{
+  "description": "Actual three local workflows from 2026-10-12; transport graphs only, no synthetic quality receipt or user approval",
+  "workflows": [
+    {
+      "1": {
+        "inputs": {
+          "ckpt_name": "dreamshaper_sdxl_alpha2_wb_candidate.safetensors"
+        },
+        "class_type": "CheckpointLoaderSimple"
+      },
+      "2": {
+        "inputs": {
+          "text": "(one small stationary mint compact car inside a quiet garage:1.25), (2D illustrated educational animation with organic curved silhouettes and two-tone graphic shadows:1.15), deep indigo and navy shadows, turquoise and mint objects, warm cream surfaces, amber light and coral accents, clear foreground and background color planes, crisp designed contours and clean silhouettes, coherent soft ground shadows, Single frame. Rounded flat 2D cartoon forms, two-tone graphic shadows. One complete car in side view, space around both bumpers and all wheels. Cream garage, indigo shadows, warm amber light, coral accents. Quiet space above and below.",
+          "clip": [
+            "1",
+            1
+          ]
+        },
+        "class_type": "CLIPTextEncode"
+      },
+      "3": {
+        "inputs": {
+          "text": "malformed hands, inconsistent character identity, unreadable text, random letters, random numbers, charts with labels, UI screens with text, watermark, logo, cheap stock photo aesthetic, excessive clutter, distorted objects, duplicate objects, photorealistic corporate stock, neon fintech glow, collage, panels, contact sheet, multiple views, extra cars, vintage car, people, printed license plate, letters, numbers, logos, realistic photography., photograph, photorealism, product photography, glossy 3D render, plastic CGI, text, letters, numbers, currency portraits, written text, handwriting, letters, numbers, labels, logos, charts, photorealism, plastic 3D, anime",
+          "clip": [
+            "1",
+            1
+          ]
+        },
+        "class_type": "CLIPTextEncode"
+      },
+      "4": {
+        "inputs": {
+          "width": 768,
+          "height": 1024,
+          "batch_size": 1
+        },
+        "class_type": "EmptyLatentImage"
+      },
+      "5": {
+        "inputs": {
+          "seed": 1307411855,
+          "steps": 30,
+          "cfg": 6.5,
+          "sampler_name": "dpmpp_2m_sde",
+          "scheduler": "karras",
+          "denoise": 1,
+          "model": [
+            "1",
+            0
+          ],
+          "positive": [
+            "2",
+            0
+          ],
+          "negative": [
+            "3",
+            0
+          ],
+          "latent_image": [
+            "4",
+            0
+          ]
+        },
+        "class_type": "KSampler"
+      },
+      "6": {
+        "inputs": {
+          "samples": [
+            "5",
+            0
+          ],
+          "vae": [
+            "1",
+            2
+          ]
+        },
+        "class_type": "VAEDecode"
+      },
+      "7": {
+        "inputs": {
+          "filename_prefix": "atnos_471b144c8ad7497ea97944c320128b17",
+          "images": [
+            "6",
+            0
+          ]
+        },
+        "class_type": "SaveImage"
+      }
+    },
+    {
+      "1": {
+        "inputs": {
+          "ckpt_name": "dreamshaper_sdxl_alpha2_wb_candidate.safetensors"
+        },
+        "class_type": "CheckpointLoaderSimple"
+      },
+      "2": {
+        "inputs": {
+          "text": "(one small stationary mint compact car inside a quiet garage:1.25), (2D illustrated educational animation with organic curved silhouettes and two-tone graphic shadows:1.15), deep indigo and navy shadows, turquoise and mint objects, warm cream surfaces, amber light and coral accents, clear foreground and background color planes, crisp designed contours and clean silhouettes, coherent soft ground shadows, Single frame. Rounded flat 2D cartoon forms, two-tone graphic shadows. One complete car in side view, space around both bumpers and all wheels. Cream garage, indigo shadows, warm amber light, coral accents. Quiet space above and below.",
+          "clip": [
+            "1",
+            1
+          ]
+        },
+        "class_type": "CLIPTextEncode"
+      },
+      "3": {
+        "inputs": {
+          "text": "malformed hands, inconsistent character identity, unreadable text, random letters, random numbers, charts with labels, UI screens with text, watermark, logo, cheap stock photo aesthetic, excessive clutter, distorted objects, duplicate objects, photorealistic corporate stock, neon fintech glow, collage, panels, contact sheet, multiple views, extra cars, vintage car, people, printed license plate, letters, numbers, logos, realistic photography., photograph, photorealism, product photography, glossy 3D render, plastic CGI, text, letters, numbers, currency portraits, written text, handwriting, letters, numbers, labels, logos, charts, photorealism, plastic 3D, anime",
+          "clip": [
+            "1",
+            1
+          ]
+        },
+        "class_type": "CLIPTextEncode"
+      },
+      "4": {
+        "inputs": {
+          "width": 768,
+          "height": 1024,
+          "batch_size": 1
+        },
+        "class_type": "EmptyLatentImage"
+      },
+      "5": {
+        "inputs": {
+          "seed": 263409724,
+          "steps": 30,
+          "cfg": 6.5,
+          "sampler_name": "dpmpp_2m_sde",
+          "scheduler": "karras",
+          "denoise": 1,
+          "model": [
+            "1",
+            0
+          ],
+          "positive": [
+            "2",
+            0
+          ],
+          "negative": [
+            "3",
+            0
+          ],
+          "latent_image": [
+            "4",
+            0
+          ]
+        },
+        "class_type": "KSampler"
+      },
+      "6": {
+        "inputs": {
+          "samples": [
+            "5",
+            0
+          ],
+          "vae": [
+            "1",
+            2
+          ]
+        },
+        "class_type": "VAEDecode"
+      },
+      "7": {
+        "inputs": {
+          "filename_prefix": "atnos_a83c029c82864cc1b0174811e6107be2",
+          "images": [
+            "6",
+            0
+          ]
+        },
+        "class_type": "SaveImage"
+      }
+    },
+    {
+      "1": {
+        "inputs": {
+          "ckpt_name": "dreamshaper_sdxl_alpha2_wb_candidate.safetensors"
+        },
+        "class_type": "CheckpointLoaderSimple"
+      },
+      "2": {
+        "inputs": {
+          "text": "(one small stationary mint compact car inside a quiet garage:1.25), (2D illustrated educational animation with organic curved silhouettes and two-tone graphic shadows:1.15), deep indigo and navy shadows, turquoise and mint objects, warm cream surfaces, amber light and coral accents, clear foreground and background color planes, crisp designed contours and clean silhouettes, coherent soft ground shadows, Single frame. Rounded flat 2D cartoon forms, two-tone graphic shadows. One complete car in side view, space around both bumpers and all wheels. Cream garage, indigo shadows, warm amber light, coral accents. Quiet space above and below.",
+          "clip": [
+            "1",
+            1
+          ]
+        },
+        "class_type": "CLIPTextEncode"
+      },
+      "3": {
+        "inputs": {
+          "text": "malformed hands, inconsistent character identity, unreadable text, random letters, random numbers, charts with labels, UI screens with text, watermark, logo, cheap stock photo aesthetic, excessive clutter, distorted objects, duplicate objects, photorealistic corporate stock, neon fintech glow, collage, panels, contact sheet, multiple views, extra cars, vintage car, people, printed license plate, letters, numbers, logos, realistic photography., photograph, photorealism, product photography, glossy 3D render, plastic CGI, text, letters, numbers, currency portraits, written text, handwriting, letters, numbers, labels, logos, charts, photorealism, plastic 3D, anime",
+          "clip": [
+            "1",
+            1
+          ]
+        },
+        "class_type": "CLIPTextEncode"
+      },
+      "4": {
+        "inputs": {
+          "width": 768,
+          "height": 1024,
+          "batch_size": 1
+        },
+        "class_type": "EmptyLatentImage"
+      },
+      "5": {
+        "inputs": {
+          "seed": 1844876550,
+          "steps": 30,
+          "cfg": 6.5,
+          "sampler_name": "dpmpp_2m_sde",
+          "scheduler": "karras",
+          "denoise": 1,
+          "model": [
+            "1",
+            0
+          ],
+          "positive": [
+            "2",
+            0
+          ],
+          "negative": [
+            "3",
+            0
+          ],
+          "latent_image": [
+            "4",
+            0
+          ]
+        },
+        "class_type": "KSampler"
+      },
+      "6": {
+        "inputs": {
+          "samples": [
+            "5",
+            0
+          ],
+          "vae": [
+            "1",
+            2
+          ]
+        },
+        "class_type": "VAEDecode"
+      },
+      "7": {
+        "inputs": {
+          "filename_prefix": "atnos_9cc73d068cde40b5bfd5f3ebdd89c937",
+          "images": [
+            "6",
+            0
+          ]
+        },
+        "class_type": "SaveImage"
+      }
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "version": 2,
+  "shared_models_root": "E:\\Atnos\\Tools\\Comfy-Desktop\\ComfyUI-Shared\\models",
+  "optional_experimental": [
+    "flux2_klein",
+    "z_image_turbo"
+  ],
+  "inventory_notes": "Local-only; no downloads. WB two-tier from wealth_blueprint_model_quality_benchmark.md (2026-09-18).",
+  "channels": {
+    "wealth_blueprint": {
+      "fast_model": "checkpoints/sd_xl_turbo_1.0_fp16.safetensors",
+      "quality_model": "checkpoints/sd_xl_base_1.0_0.9vae.safetensors",
+      "primary_model": "checkpoints/sd_xl_turbo_1.0_fp16.safetensors",
+      "fallback_model": "checkpoints/sd_xl_turbo_1.0_fp16.safetensors",
+      "quality_fallback_model": "checkpoints/sd_xl_turbo_1.0_fp16.safetensors",
+      "quality_asset_types": [
+        "character",
+        "editorial_scene",
+        "object"
+      ],
+      "fast_asset_types": [
+        "icon",
+        "background"
+      ],
+      "quality_candidate": "checkpoints/Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+      "quality_candidate_note": "Juggernaut loads and generates on AMD but leans photoreal — not WB QUALITY tier (editorial). Keep for DC.",
+      "reference_mode": "core_img2img",
+      "reference_denoise": 0.4,
+      "img2img_preset": "WB_IMG2IMG_V1",
+      "no_flux_dependency": true
+    },
+    "wonder_crew": {
+      "primary_model": "checkpoints/sd_xl_turbo_1.0_fp16.safetensors",
+      "fallback_model": "checkpoints/sd_xl_base_1.0_0.9vae.safetensors",
+      "reference_mode": "core_img2img",
+      "reference_denoise": 0.36,
+      "img2img_preset": "WC_IMG2IMG_V1"
+    },
+    "dark_chronicles": {
+      "primary_model": "checkpoints/Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+      "fallback_model": "checkpoints/sd_xl_turbo_1.0_fp16.safetensors",
+      "reference_mode": "core_img2img",
+      "reference_denoise": 0.7,
+      "img2img_preset": "DC_IMG2IMG_V1"
+    }
+  }
+}

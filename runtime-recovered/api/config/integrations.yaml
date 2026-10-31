@@ -1,0 +1,196 @@
+integrations:
+  - id: local_short_pipeline
+    name: Local Short Pipeline
+    type: local
+    priority: P0
+    enabled: true
+    requires_api_key: false
+    requires_browser_login: false
+    risk_level: low
+    use_cases:
+      - default short render
+      - local drafts
+      - private iteration
+    not_for:
+      - official publishing
+      - premium external video generation
+    env_vars: []
+    status: ready
+
+  - id: litellm_gateway
+    name: LiteLLM Gateway
+    type: api
+    priority: P0
+    enabled: true
+    requires_api_key: false
+    requires_browser_login: false
+    risk_level: medium
+    use_cases:
+      - central model gateway
+      - Ollama/GPT/Claude/Gemini routing
+      - ask-all multi-model quality gate
+    not_for:
+      - direct publishing
+      - browser subscription fallback
+    env_vars:
+      - LITELLM_GATEWAY_URL
+      - OLLAMA_BASE_URL
+      - OPENAI_API_KEY
+      - ANTHROPIC_API_KEY
+      - GEMINI_API_KEY
+    status: scaffold
+
+  - id: youtube_api
+    name: YouTube API
+    type: api
+    priority: P1
+    enabled: true
+    requires_api_key: true
+    requires_browser_login: false
+    risk_level: high
+    use_cases:
+      - private upload
+      - analytics
+      - publishing target
+    not_for:
+      - silent publish
+      - paid promotion
+    env_vars:
+      - GOOGLE_CLIENT_ID
+      - GOOGLE_CLIENT_SECRET
+      - YOUTUBE_CHANNEL_ID
+    status: config_required
+
+  - id: zebracat_api
+    name: Zebracat API
+    type: api
+    priority: P2
+    enabled: false
+    requires_api_key: true
+    requires_browser_login: false
+    risk_level: high
+    use_cases:
+      - premium video generation
+      - script-to-video
+      - url-to-video
+    not_for:
+      - default local short render
+      - silent paid actions
+    env_vars:
+      - ZEBRACAT_API_KEY
+      - ZEBRACAT_ENABLED
+      - ZEBRACAT_DEFAULT_ASPECT_RATIO
+      - ZEBRACAT_DEFAULT_RESOLUTION
+    status: scaffold
+
+  - id: rendi_ffmpeg_mcp
+    name: Rendi FFmpeg MCP/API
+    type: mcp
+    priority: P2
+    enabled: false
+    requires_api_key: true
+    requires_browser_login: false
+    risk_level: high
+    use_cases:
+      - cloud FFmpeg rendering
+      - remote transcoding
+      - compression
+      - thumbnail extraction
+      - FFmpeg documentation lookup through MCP
+    not_for:
+      - default local short render
+      - silent paid render
+      - public publishing
+    env_vars:
+      - RENDI_API_KEY
+      - RENDI_ENABLED
+      - RENDI_MCP_URL
+    status: config_required
+
+  - id: chatgpt_ui_bridge
+    name: ChatGPT UI Bridge
+    type: browser
+    priority: P2
+    enabled: false
+    requires_api_key: false
+    requires_browser_login: true
+    risk_level: medium
+    use_cases:
+      - subscription UI quality gate
+      - fallback prompt execution
+    not_for:
+      - core backend routing
+      - auto-send without approval
+    env_vars: []
+    status: scaffold
+
+  - id: claude_ui_bridge
+    name: Claude UI Bridge
+    type: browser
+    priority: P2
+    enabled: false
+    requires_api_key: false
+    requires_browser_login: true
+    risk_level: medium
+    use_cases:
+      - subscription UI quality gate
+      - fallback prompt execution
+    not_for:
+      - core backend routing
+      - auto-send without approval
+    env_vars: []
+    status: scaffold
+
+  - id: gemini_ui_bridge
+    name: Gemini UI Bridge
+    type: browser
+    priority: P2
+    enabled: false
+    requires_api_key: false
+    requires_browser_login: true
+    risk_level: medium
+    use_cases:
+      - subscription UI quality gate
+      - fallback prompt execution
+    not_for:
+      - core backend routing
+      - auto-send without approval
+    env_vars: []
+    status: scaffold
+
+  - id: videdge_browser_recipe
+    name: VidEdge Browser Recipe
+    type: browser
+    priority: P3
+    enabled: false
+    requires_api_key: false
+    requires_browser_login: true
+    risk_level: medium
+    use_cases:
+      - SaaS inspiration
+      - niche research
+      - scripts
+      - thumbnails
+    not_for:
+      - core backend
+      - automated publishing
+    env_vars: []
+    status: scaffold
+
+  - id: facelessreels_browser_recipe
+    name: FacelessReels Browser Recipe
+    type: browser
+    priority: P3
+    enabled: false
+    requires_api_key: false
+    requires_browser_login: true
+    risk_level: medium
+    use_cases:
+      - SaaS inspiration
+      - prompt-to-video research
+      - workflow benchmarking
+    not_for:
+      - core backend
+      - automated paid generation
+    env_vars: []
+    status: scaffold

@@ -1,0 +1,191 @@
+{
+  "claims": [],
+  "description": "Clarify the distinct roles of your accessible reserve versus long-term goals to ensure readiness without chasing returns.",
+  "provenance": {
+    "frozen_generator": "qwen3:14b",
+    "generator": "qwen3.5:9b",
+    "reference_source": {
+      "path": "learning/active-reference-shorts/latest_editorial_profile_wealth_blueprint.json",
+      "sha256": "920ba59cd7f31dcb7d2ab1a05d91e10c4d9e9584089275a8b694fd04600aaf1e"
+    },
+    "reviewer": "qwen3:14b",
+    "scoped_revision": {
+      "attempts_reset": false,
+      "editor": "Codex independent production review",
+      "feedback_hash": "5fcabe2d7bac974ff5c7c30e41f3665f58a850f623a8d3b00f6e0a46e4442122",
+      "generator": "qwen3.5:9b",
+      "original_script_hash": "d8051d4daa72d15d8815bfa8bcf7e06ed10dd802249bd750828805b2c5cdb59f",
+      "reviewer": "qwen3:14b",
+      "user_appearance_approved": false
+    },
+    "script_model_lane": {
+      "execution_scope": "normal_produce_script_authoring",
+      "model_digest": "6488c96fa5faab64bb65cbd30d4289e20e6130ef535a93ef9a49f42eda893ea7",
+      "receipt_digest": "4f3b68710a0b602fae46510eca9c523e93e3cf21b4f2fd90e9f7345dcd7c08d4"
+    },
+    "studio_recovery": {
+      "attempts_reset": false,
+      "base_feedback_hash": null,
+      "budget_reset": false,
+      "request_digest": "eae816c990bf1d5f7ed74716ffda3a0c4fb3d412ef52a3c0798447ef08e6ce85",
+      "request_key": "wb-chat-current-quality-repair-20261010-v2",
+      "user_appearance_approved": false
+    },
+    "usage": {
+      "knowledge_matches": 3,
+      "reference_samples": 40
+    }
+  },
+  "qa": {
+    "claim_classification_summary": {
+      "confirmed_count": 0,
+      "needs_source_count": 0,
+      "risky_promise_count": 0,
+      "source_policy": "never_invent_source"
+    },
+    "claim_classifications": [
+      {
+        "claim_ids": [],
+        "classification": "opinion",
+        "confidence": 0.7,
+        "fact_ids": [],
+        "invented_source": false,
+        "issue_codes": [],
+        "reason": "Hook/CTA bez claim — traktowane jako opinia/wezwanie, nie fakt.",
+        "segment_id": "s01-hook",
+        "source": "segment_type"
+      },
+      {
+        "claim_ids": [],
+        "classification": "opinion",
+        "confidence": 0.65,
+        "fact_ids": [],
+        "invented_source": false,
+        "issue_codes": [],
+        "reason": "Brak claim/fact — treść jakościowa, nie potwierdzony fakt finansowy.",
+        "segment_id": "s02-practical",
+        "source": "absence_of_claim"
+      },
+      {
+        "claim_ids": [],
+        "classification": "opinion",
+        "confidence": 0.65,
+        "fact_ids": [],
+        "invented_source": false,
+        "issue_codes": [],
+        "reason": "Brak claim/fact — treść jakościowa, nie potwierdzony fakt finansowy.",
+        "segment_id": "s03-practical",
+        "source": "absence_of_claim"
+      },
+      {
+        "claim_ids": [],
+        "classification": "estimate",
+        "confidence": 0.55,
+        "fact_ids": [],
+        "invented_source": false,
+        "issue_codes": [],
+        "reason": "Sformułowanie szacunkowe bez twardego claim — nie wymyślaj liczby.",
+        "segment_id": "s04-explanation",
+        "source": "heuristics"
+      },
+      {
+        "claim_ids": [],
+        "classification": "opinion",
+        "confidence": 0.65,
+        "fact_ids": [],
+        "invented_source": false,
+        "issue_codes": [],
+        "reason": "Brak claim/fact — treść jakościowa, nie potwierdzony fakt finansowy.",
+        "segment_id": "s05-practical",
+        "source": "absence_of_claim"
+      },
+      {
+        "claim_ids": [],
+        "classification": "opinion",
+        "confidence": 0.7,
+        "fact_ids": [],
+        "invented_source": false,
+        "issue_codes": [],
+        "reason": "Hook/CTA bez claim — traktowane jako opinia/wezwanie, nie fakt.",
+        "segment_id": "s06-cta",
+        "source": "segment_type"
+      }
+    ],
+    "editorial_checks": [],
+    "feedback_checks": "performed",
+    "feedback_hash": "5fcabe2d7bac974ff5c7c30e41f3665f58a850f623a8d3b00f6e0a46e4442122",
+    "human_review": "not_performed",
+    "issue_evidence": [],
+    "issues": [],
+    "practical_word_share": 0.4782608695652174,
+    "revision": 2,
+    "script_hash": "835147bde3a4d8abbf19bb05178788993f20f6ae8f4c09e33f87a1c300848675",
+    "semantic_review": "model_reviewed",
+    "status": "passed"
+  },
+  "segments": [
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s01-hook",
+      "on_screen": "Unexpected Need?",
+      "pronunciation_terms": [],
+      "text": "Is your savings ready for an unexpected medical bill or urgent home repair today?",
+      "type": "hook",
+      "visual_intent": "A calm still illustration showing a person looking at a document labeled 'Unexpected Need' with a question mark nearby."
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s02-practical",
+      "on_screen": "Name One Essential Cost",
+      "pronunciation_terms": [],
+      "text": "Identify one plausible essential expense like sudden car repairs and name it clearly now.",
+      "type": "practical",
+      "visual_intent": "A still diagram displaying a single text box labeled 'Essential Expense' connected by an arrow to the viewer's perspective."
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s03-practical",
+      "on_screen": "Check Access Rules",
+      "pronunciation_terms": [],
+      "text": "Locate where this reserve money is currently held and verify its actual access conditions immediately.",
+      "type": "practical",
+      "visual_intent": "A still flow diagram showing a container labeled 'Reserve Account' with an open lock icon next to it, no motion inside."
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s04-explanation",
+      "on_screen": "Readiness vs. Returns",
+      "pronunciation_terms": [],
+      "text": "This reserve is about readiness for immediate needs rather than chasing higher investment returns over time.",
+      "type": "explanation",
+      "visual_intent": "A still comparison showing two distinct areas: one labeled 'Ready Reserve' and another separate area labeled 'Future Goal', separated by a clear line."
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s05-practical",
+      "on_screen": "Review Separation Often",
+      "pronunciation_terms": [],
+      "text": "Review the separation between these funds whenever your personal circumstances or job situation changes significantly.",
+      "type": "practical",
+      "visual_intent": "A still diagram with a label 'Life Changes' pointing to both areas, indicating they remain distinct but reviewed together."
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s06-cta",
+      "on_screen": "Start Building Now",
+      "pronunciation_terms": [],
+      "text": "Follow Wealth Blueprint. Build wealth on purpose with clear distinctions between your safety net and growth plans today.",
+      "type": "cta",
+      "visual_intent": "A still final card displaying the text 'Build Wealth on Purpose' in a clean, professional font against a muted background."
+    }
+  ],
+  "text": "Is your savings ready for an unexpected medical bill or urgent home repair today? Identify one plausible essential expense like sudden car repairs and name it clearly now. Locate where this reserve money is currently held and verify its actual access conditions immediately. This reserve is about readiness for immediate needs rather than chasing higher investment returns over time. Review the separation between these funds whenever your personal circumstances or job situation changes significantly. Follow Wealth Blueprint. Build wealth on purpose with clear distinctions between your safety net and growth plans today.",
+  "title": "Your Emergency Fund Is Not an Investment",
+  "word_count": 92
+}

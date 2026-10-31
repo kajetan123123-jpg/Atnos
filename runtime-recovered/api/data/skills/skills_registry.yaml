@@ -1,0 +1,1160 @@
+skills:
+  - id: sanity:deploy-schema
+    namespace: sanity
+    name: deploy-schema
+    description: Wdraza schemat Sanity do Content Lake z walidacja i kontrola rolloutu.
+    category: sanity
+    triggers: [sanity, schema, content lake, deploy schema]
+    good_for: [wdrozenie schematu sanity, publikacja schematu, sanity schema deploy]
+    not_for: [projektowanie grafiki, onboarding hr]
+    input_requirements: [repozytorium Sanity lub pakiet schematow]
+    output_type: deployment_plan
+    execution_type: connector
+    risk_level: medium
+    requires_human_approval: true
+    requires_network: true
+    requires_files: true
+    requires_credentials: true
+    priority: 82
+    status: external
+    notes: Wymaga realnego connectora Sanity lub CLI execution path.
+
+  - id: sanity:review
+    namespace: sanity
+    name: review
+    description: Przeglada kod i konfiguracje pod katem najlepszych praktyk Sanity.
+    category: sanity
+    triggers: [sanity, groq, schema review, studio review]
+    good_for: [review sanity, audyt sanity, sanity best practices]
+    not_for: [render video, desktop automation]
+    input_requirements: [repozytorium lub pliki konfiguracji Sanity]
+    output_type: review
+    execution_type: local
+    risk_level: low
+    requires_human_approval: false
+    requires_network: false
+    requires_files: true
+    requires_credentials: false
+    priority: 74
+    status: available
+    notes: Nadaje sie do analizy lokalnej bez connectora.
+
+  - id: sanity:sanity
+    namespace: sanity
+    name: sanity
+    description: Listuje dostepne skille Sanity i tematy pomocy dla ekosystemu Sanity CMS.
+    category: sanity
+    triggers: [sanity help, sanity skills, sanity cms]
+    good_for: [przeglad skilli sanity, wybierz skill sanity]
+    not_for: [ogolny chat]
+    input_requirements: [opis problemu Sanity]
+    output_type: skill_overview
+    execution_type: local
+    risk_level: low
+    requires_human_approval: false
+    requires_network: false
+    requires_files: false
+    requires_credentials: false
+    priority: 60
+    status: available
+    notes: Meta-skill orientacyjny.
+
+  - id: sanity:typegen
+    namespace: sanity
+    name: typegen
+    description: Uruchamia lub diagnozuje Sanity TypeGen oraz problemy z generowaniem typow.
+    category: sanity
+    triggers: [typegen, sanity typegen, types generation]
+    good_for: [naprawa sanity typegen, generowanie typow sanity]
+    not_for: [pptx, pdf]
+    input_requirements: [repozytorium Sanity z konfiguracja TypeGen]
+    output_type: diagnostics
+    execution_type: local
+    risk_level: medium
+    requires_human_approval: false
+    requires_network: false
+    requires_files: true
+    requires_credentials: false
+    priority: 76
+    status: available
+    notes: Dobre pod repo-level code work.
+
+  - id: sanity:portable-text-conversion
+    namespace: sanity
+    name: portable-text-conversion
+    description: Konwertuje HTML i Markdown na bloki Portable Text.
+    category: sanity
+    triggers: [portable text, markdown, html, conversion]
+    good_for: [portable text conversion, markdown to portable text, html to portable text]
+    not_for: [ux copy, youtube analytics]
+    input_requirements: [zrodlowy markdown lub html]
+    output_type: portable_text
+    execution_type: local
+    risk_level: low
+    requires_human_approval: false
+    requires_network: false
+    requires_files: true
+    requires_credentials: false
+    priority: 84
+    status: available
+    notes: Przydaje sie przy migracjach tresci.
+
+  - id: sanity:portable-text-serialization
+    namespace: sanity
+    name: portable-text-serialization
+    description: Renderuje Portable Text do React, Svelte, Vue, Astro, HTML albo Markdown.
+    category: sanity
+    triggers: [portable text serialization, render portable text]
+    good_for: [serializacja portable text, rendering portable text]
+    not_for: [pdf ocr]
+    input_requirements: [bloki Portable Text i target framework]
+    output_type: code
+    execution_type: local
+    risk_level: low
+    requires_human_approval: false
+    requires_network: false
+    requires_files: true
+    requires_credentials: false
+    priority: 78
+    status: available
+    notes: Dobre do handoffu dla frontend teamu.
+
+  - id: sanity:content-modeling-best-practices
+    namespace: sanity
+    name: content-modeling-best-practices
+    description: Zasady modelowania tresci, schematow i taksonomii w Sanity.
+    category: sanity
+    triggers: [content model, taxonomy, sanity modeling]
+    good_for: [projektowanie modelu tresci, sanity taxonomy]
+    not_for: [system commands]
+    input_requirements: [opis domeny tresci]
+    output_type: guidance
+    execution_type: manual
+    risk_level: low
+    requires_human_approval: false
+    requires_network: false
+    requires_files: false
+    requires_credentials: false
+    priority: 70
+    status: available
+    notes: Guidance skill.
+
+  - id: sanity:content-experimentation-best-practices
+    namespace: sanity
+    name: content-experimentation-best-practices
+    description: Projektowanie eksperymentow A/B i testow tresciowych dla Sanity.
+    category: sanity
+    triggers: [a/b test, experimentation, content experiments]
+    good_for: [eksperymenty tresci, sanity ab test]
+    not_for: [ssh]
+    input_requirements: [cel eksperymentu i model tresci]
+    output_type: guidance
+    execution_type: manual
+    risk_level: low
+    requires_human_approval: false
+    requires_network: false
+    requires_files: false
+    requires_credentials: false
+    priority: 64
+    status: available
+    notes: Guidance skill.
+
+  - id: sanity:sanity-best-practices
+    namespace: sanity
+    name: sanity-best-practices
+    description: Zbior najlepszych praktyk Sanity dla schematow, GROQ, TypeGen i integracji.
+    category: sanity
+    triggers: [sanity best practices, groq, schema design]
+    good_for: [ogolny przeglad sanity, sanity review]
+    not_for: [image generation]
+    input_requirements: [opis implementacji Sanity]
+    output_type: guidance
+    execution_type: manual
+    risk_level: low
+    requires_human_approval: false
+    requires_network: false
+    requires_files: false
+    requires_credentials: false
+    priority: 66
+    status: available
+    notes: Guidance skill.
+
+  - id: sanity:seo-aeo-best-practices
+    namespace: sanity
+    name: seo-aeo-best-practices
+    description: "SEO i AEO dla Sanity: metadata, Open Graph, sitemapy i JSON-LD."
+    category: sanity
+    triggers: [seo, aeo, json-ld, open graph, sitemap]
+    good_for: [sanity seo, sanity metadata, answer engine optimization]
+    not_for: [desktop control]
+    input_requirements: [model tresci i wymagania SEO]
+    output_type: guidance
+    execution_type: manual
+    risk_level: low
+    requires_human_approval: false
+    requires_network: false
+    requires_files: false
+    requires_credentials: false
+    priority: 62
+    status: available
+    notes: Guidance skill.
+
+  - id: brand-voice:discover-brand
+    namespace: brand-voice
+    name: discover-brand
+    description: Przeszukuje zrodla firmowe w poszukiwaniu materialow brandowych i stylu komunikacji.
+    category: brand-voice
+    triggers: [brand voice, brand guidelines, tone of voice, discover brand]
+    good_for: [odkrywanie glosu marki, zebranie materialow brandowych]
+    not_for: [pdf merge]
+    input_requirements: [dostep do dokumentow marki albo wskazane zrodla]
+    output_type: brand_sources
+    execution_type: connector
+    risk_level: medium
+    requires_human_approval: true
+    requires_network: true
+    requires_files: false
+    requires_credentials: true
+    priority: 72
+    status: external
+    notes: Wymaga prawdziwych connectorow typu Notion, Drive, Slack.
+
+  - id: brand-voice:enforce-voice
+    namespace: brand-voice
+    name: enforce-voice
+    description: "Stosuje wytyczne marki przy tworzeniu tresci: maile, propozycje, posty i copy."
+    category: brand-voice
+    triggers: [glos marki, tone of voice, email, mail, brand copy]
+    good_for: [napisz maila zgodnie z glosam marki, brand-safe copy]
+    not_for: [ssh, repo fix]
+    input_requirements: [brief tresci i wytyczne glosu marki]
+    output_type: branded_copy
+    execution_type: local
+    risk_level: low
+    requires_human_approval: false
+    requires_network: false
+    requires_files: false
+    requires_credentials: false
+    priority: 88
+    status: available
+    notes: Dziala najlepiej, gdy istnieja juz guidelines marki.
+
+  - id: brand-voice:brand-voice-enforcement
+    namespace: brand-voice
+    name: brand-voice-enforcement
+    description: Alias skilla enforce-voice do zastosowania wytycznych marki.
+    category: brand-voice
+    triggers: [brand voice enforcement]
+    good_for: [alias enforce voice]
+    not_for: []
+    input_requirements: [brief tresci i wytyczne glosu marki]
+    output_type: branded_copy
+    execution_type: local
+    risk_level: low
+    requires_human_approval: false
+    requires_network: false
+    requires_files: false
+    requires_credentials: false
+    priority: 40
+    status: available
+    notes: Alias for brand-voice:enforce-voice
+
+  - id: brand-voice:generate-guidelines
+    namespace: brand-voice
+    name: generate-guidelines
+    description: Generuje wytyczne glosu marki z dokumentow, transkryptow albo raportow.
+    category: brand-voice
+    triggers: [generate brand guidelines, tone guidelines, brand voice guidelines]
+    good_for: [stworz wytyczne glosu marki, synteza tonu marki]
+    not_for: [youtube analytics]
+    input_requirements: [dokumenty lub probki komunikacji marki]
+    output_type: guidelines
+    execution_type: local
+    risk_level: low
+    requires_human_approval: false
+    requires_network: false
+    requires_files: true
+    requires_credentials: false
+    priority: 84
+    status: available
+    notes: Lokalna synteza wytycznych na podstawie dostarczonych materialow.
+
+  - id: brand-voice:guideline-generation
+    namespace: brand-voice
+    name: guideline-generation
+    description: Alias skilla generate-guidelines dla generowania wytycznych glosu marki.
+    category: brand-voice
+    triggers: [guideline generation]
+    good_for: [alias generate guidelines]
+    not_for: []
+    input_requirements: [dokumenty lub probki komunikacji marki]
+    output_type: guidelines
+    execution_type: local
+    risk_level: low
+    requires_human_approval: false
+    requires_network: false
+    requires_files: true
+    requires_credentials: false
+    priority: 40
+    status: available
+    notes: Alias for brand-voice:generate-guidelines
+
+  - id: cowork-plugin-management:cowork-plugin-customizer
+    namespace: cowork-plugin-management
+    name: cowork-plugin-customizer
+    description: Dostosowuje plugin Claude Code / Cowork dla organizacji i jej workflow.
+    category: dev
+    triggers: [cowork plugin, claude code plugin, plugin customizer]
+    good_for: [dostosuj plugin cowork, konfig plugin organizacji]
+    not_for: [pdf analysis]
+    input_requirements: [opis organizacji i wymagan pluginu]
+    output_type: plugin_plan
+    execution_type: manual
+    risk_level: medium
+    requires_human_approval: false
+    requires_network: false
+    requires_files: false
+    requires_credentials: false
+    priority: 58
+    status: planned
+    notes: Kontrakt plugin management, bez live integracji w tym passie.
+
+  - id: cowork-plugin-management:create-cowork-plugin
+    namespace: cowork-plugin-management
+    name: create-cowork-plugin
+    description: Prowadzi przez tworzenie nowego pluginu Cowork od zera.
+    category: dev
+    triggers: [create cowork plugin, new cowork plugin]
+    good_for: [stworz plugin cowork, scaffold plugin]
+    not_for: [hr onboarding]
+    input_requirements: [cel pluginu, uprawnienia, target tools]
+    output_type: plugin_plan
+    execution_type: manual
+    risk_level: medium
+    requires_human_approval: false
+    requires_network: false
+    requires_files: false
+    requires_credentials: false
+    priority: 62
+    status: planned
+    notes: Kontrakt plugin management, bez live integracji w tym passie.
+
+  - id: human-resources:org-planning
+    namespace: human-resources
+    name: org-planning
+    description: Planowanie etatow, struktury organizacyjnej i odpowiedzialnosci.
+    category: human-resources
+    triggers: [org planning, headcount, struktura organizacyjna]
+    good_for: [plan organizacji, headcount planning]
+    not_for: [code review]
+    input_requirements: [cele biznesowe i aktualna struktura]
+    output_type: org_plan
+    execution_type: manual
+    risk_level: medium
+    requires_human_approval: false
+    requires_network: false
+    requires_files: false
+    requires_credentials: false
+    priority: 60
+    status: available
+    notes: Guidance skill.
+
+  - id: human-resources:performance-review
+    namespace: human-resources
+    name: performance-review
+    description: Strukturyzuje oceny pracownicze, feedback i ramy review.
+    category: human-resources
+    triggers: [performance review, review pracownika, feedback review]
+    good_for: [ocena pracownika, struktura feedbacku]
+    not_for: [system commands]
+    input_requirements: [zakres review i kryteria]
+    output_type: review_framework
+    execution_type: manual
+    risk_level: medium
+    requires_human_approval: false
+    requires_network: false
+    requires_files: false
+    requires_credentials: false
+    priority: 56
+    status: available
+    notes: Guidance skill.
+
+  - id: human-resources:people-report
+    namespace: human-resources
+    name: people-report
+    description: Raporty headcount, rotacji, roznorodnosci i zdrowia organizacji.
+    category: human-resources
+    triggers: [people report, headcount, attrition, diversity]
+    good_for: [raport people ops, headcount report]
+    not_for: [image generation]
+    input_requirements: [dane HR lub tabela people ops]
+    output_type: report
+    execution_type: manual
+    risk_level: medium
+    requires_human_approval: false
+    requires_network: false
+    requires_files: true
+    requires_credentials: false
+    priority: 55
+    status: available
+    notes: Guidance skill.
+
+  - id: human-resources:draft-offer
+    namespace: human-resources
+    name: draft-offer
+    description: Pisze oferty pracy z warunkami wynagrodzenia i zakresem stanowiska.
+    category: human-resources
+    triggers: [job offer, draft offer, oferta pracy]
+    good_for: [napisz oferte pracy, employment offer]
+    not_for: [repo bugfix]
+    input_requirements: [rola, zakres, wynagrodzenie]
+    output_type: job_offer
+    execution_type: local
+    risk_level: medium
+    requires_human_approval: false
+    requires_network: false
+    requires_files: false
+    requires_credentials: false
+    priority: 58
+    status: available
+    notes: Lokalny draft offer workflow.
+
+  - id: human-resources:policy-lookup
+    namespace: human-resources
+    name: policy-lookup
+    description: Wyjasnia polityki firmowe prostym jezykiem.
+    category: human-resources
+    triggers: [policy lookup, hr policy, regulamin]
+    good_for: [wyjasnij polityke, policy q&a]
+    not_for: [youtube upload]
+    input_requirements: [tekst polityki albo referencja do dokumentu]
+    output_type: explanation
+    execution_type: local
+    risk_level: low
+    requires_human_approval: false
+    requires_network: false
+    requires_files: true
+    requires_credentials: false
+    priority: 50
+    status: available
+    notes: Lokalna analiza polityk.
+
+  - id: human-resources:interview-prep
+    namespace: human-resources
+    name: interview-prep
+    description: Tworzy plan rozmowy rekrutacyjnej z pytaniami i scorecarda.
+    category: human-resources
+    triggers: [interview prep, rozmowa rekrutacyjna, scorecard]
+    good_for: [przygotuj rozmowe rekrutacyjna, hiring interview]
+    not_for: [pdf ocr]
+    input_requirements: [rola, poziom stanowiska, kompetencje]
+    output_type: interview_plan
+    execution_type: local
+    risk_level: low
+    requires_human_approval: false
+    requires_network: false
+    requires_files: false
+    requires_credentials: false
+    priority: 54
+    status: available
+    notes: Lokalny interview prep workflow.
+
+  - id: human-resources:comp-analysis
+    namespace: human-resources
+    name: comp-analysis
+    description: Analiza wynagrodzen, benchmarkingu i equity.
+    category: human-resources
+    triggers: [compensation, salary benchmarking, equity]
+    good_for: [benchmark plac, analiza wynagrodzen]
+    not_for: [pptx design]
+    input_requirements: [zakres stanowisk i dane kompensacyjne]
+    output_type: comp_report
+    execution_type: manual
+    risk_level: medium
+    requires_human_approval: false
+    requires_network: false
+    requires_files: true
+    requires_credentials: false
+    priority: 52
+    status: available
+    notes: Guidance skill.
+
+  - id: human-resources:recruiting-pipeline
+    namespace: human-resources
+    name: recruiting-pipeline
+    description: Sledzi i porzadkuje pipeline rekrutacyjny.
+    category: human-resources
+    triggers: [recruiting pipeline, hiring funnel, kandydaci]
+    good_for: [zarzadzanie pipeline rekrutacji, hiring ops]
+    not_for: [desktop automation]
+    input_requirements: [lista kandydatow lub etapow]
+    output_type: pipeline_plan
+    execution_type: manual
+    risk_level: medium
+    requires_human_approval: false
+    requires_network: false
+    requires_files: true
+    requires_credentials: false
+    priority: 51
+    status: available
+    notes: Guidance skill.
+
+  - id: human-resources:onboarding
+    namespace: human-resources
+    name: onboarding
+    description: Tworzy checklisty onboardingu i plan pierwszego tygodnia nowego pracownika.
+    category: human-resources
+    triggers: [onboarding, nowy pracownik, first week plan]
+    good_for: [onboarding nowego pracownika, plan pierwszego tygodnia]
+    not_for: [repo debugging]
+    input_requirements: [rola, data startu, podstawowy kontekst firmy]
+    output_type: onboarding_plan
+    execution_type: local
+    risk_level: low
+    requires_human_approval: false
+    requires_network: false
+    requires_files: false
+    requires_credentials: false
+    priority: 90
+    status: available
+    notes: Kluczowy onboarding workflow.
+
+  - id: design:design-critique
+    namespace: design
+    name: design-critique
+    description: Strukturalna krytyka designu pod wzgledem uzytecznosci, hierarchii i spojnosci.
+    category: design
+    triggers: [design critique, audyt designu, hierarchy]
+    good_for: [ocena designu, critique ui, feedback ux]
+    not_for: [ssh]
+    input_requirements: [zrzut ekranu, link albo opis interfejsu]
+    output_type: critique
+    execution_type: local
+    risk_level: low
+    requires_human_approval: false
+    requires_network: false
+    requires_files: true
+    requires_credentials: false
+    priority: 78
+    status: available
+    notes: Lokalny design review.
+
+  - id: design:accessibility-review
+    namespace: design
+    name: accessibility-review
+    description: Audyt dostepnosci WCAG 2.1 AA dla interfejsu, makiety albo flow.
+    category: design
+    triggers: [accessibility, a11y, wcag, audyt dostepnosci]
+    good_for: [audyt dostepnosci, wcag review, a11y audit]
+    not_for: [video render]
+    input_requirements: [widok UI, makieta albo opis flow]
+    output_type: accessibility_audit
+    execution_type: local
+    risk_level: low
+    requires_human_approval: false
+    requires_network: false
+    requires_files: true
+    requires_credentials: false
+    priority: 95
+    status: available
+    notes: Preferowany skill dla dostepnosci.
+
+  - id: design:user-research
+    namespace: design
+    name: user-research
+    description: Planowanie badan uzytkownikow i scenariuszy researchu.
+    category: design
+    triggers: [user research, badania uzytkownikow, interview plan]
+    good_for: [plan badan ux, user research plan]
+    not_for: [repo code fix]
+    input_requirements: [cel badania i grupa docelowa]
+    output_type: research_plan
+    execution_type: manual
+    risk_level: low
+    requires_human_approval: false
+    requires_network: false
+    requires_files: false
+    requires_credentials: false
+    priority: 66
+    status: available
+    notes: Guidance skill.
+
+  - id: design:research-synthesis
+    namespace: design
+    name: research-synthesis
+    description: Synteza badan w tematy, insighty i rekomendacje.
+    category: design
+    triggers: [research synthesis, insights, recommendations]
+    good_for: [synteza badan, ux insights]
+    not_for: [desktop control]
+    input_requirements: [notatki lub raporty z badan]
+    output_type: synthesis
+    execution_type: local
+    risk_level: low
+    requires_human_approval: false
+    requires_network: false
+    requires_files: true
+    requires_credentials: false
+    priority: 70
+    status: available
+    notes: Lokalna synteza researchu.
+
+  - id: design:ux-copy
+    namespace: design
+    name: ux-copy
+    description: "Pisanie i recenzja UX copy: mikrocopy, bledy i CTA."
+    category: design
+    triggers: [ux copy, microcopy, cta, error message]
+    good_for: [napisz ux copy, popraw mikrocopy]
+    not_for: [ssh]
+    input_requirements: [ekran lub cel komunikatu]
+    output_type: ux_copy
+    execution_type: local
+    risk_level: low
+    requires_human_approval: false
+    requires_network: false
+    requires_files: false
+    requires_credentials: false
+    priority: 80
+    status: available
+    notes: Lokalny microcopy workflow.
+
+  - id: design:design-system
+    namespace: design
+    name: design-system
+    description: Audyt, dokumentacja i rozszerzanie design systemu.
+    category: design
+    triggers: [design system, tokens, component library]
+    good_for: [audyt design systemu, tokeny, komponenty]
+    not_for: [youtube analytics]
+    input_requirements: [repozytorium UI albo spec design systemu]
+    output_type: system_audit
+    execution_type: local
+    risk_level: low
+    requires_human_approval: false
+    requires_network: false
+    requires_files: true
+    requires_credentials: false
+    priority: 82
+    status: available
+    notes: Pasuje do Atnos frontend i UX cleanup.
+
+  - id: design:design-handoff
+    namespace: design
+    name: design-handoff
+    description: Generuje specyfikacje wdrozeniowe dla developerow.
+    category: design
+    triggers: [design handoff, spec for devs, implementation spec]
+    good_for: [spec handoff, design to dev]
+    not_for: [ocr]
+    input_requirements: [makieta, flow albo opis funkcji]
+    output_type: handoff
+    execution_type: local
+    risk_level: low
+    requires_human_approval: false
+    requires_network: false
+    requires_files: true
+    requires_credentials: false
+    priority: 79
+    status: available
+    notes: Lokalny handoff workflow.
+
+  - id: anthropic-skills:canvas-design
+    namespace: anthropic-skills
+    name: canvas-design
+    description: Tworzy wizualna sztuke i artefakty PNG/PDF, np. plakaty lub layouty.
+    category: documents
+    triggers: [canvas design, poster, visual design, png, pdf art]
+    good_for: [plakat, wizualna sztuka, layout graficzny]
+    not_for: [repo debugging]
+    input_requirements: [brief wizualny i format wyjsciowy]
+    output_type: image_or_pdf
+    execution_type: manual
+    risk_level: low
+    requires_human_approval: false
+    requires_network: false
+    requires_files: false
+    requires_credentials: false
+    priority: 68
+    status: planned
+    notes: Artefact skill, wykonanie do podpiecia pozniej.
+
+  - id: anthropic-skills:docx
+    namespace: anthropic-skills
+    name: docx
+    description: Tworzy, czyta i edytuje dokumenty Word.
+    category: documents
+    triggers: [docx, word, dokument word]
+    good_for: [word, docx, raport w wordzie]
+    not_for: [youtube upload]
+    input_requirements: [plik docx lub brief dokumentu]
+    output_type: docx
+    execution_type: local
+    risk_level: low
+    requires_human_approval: false
+    requires_network: false
+    requires_files: true
+    requires_credentials: false
+    priority: 92
+    status: available
+    notes: Wspiera lokalne workflow Word.
+
+  - id: anthropic-skills:pptx
+    namespace: anthropic-skills
+    name: pptx
+    description: Pracuje z prezentacjami PowerPoint i slajdami.
+    category: documents
+    triggers: [pptx, powerpoint, slides, slajdy]
+    good_for: [prezentacja, slajdy, powerpoint]
+    not_for: [ssh]
+    input_requirements: [brief prezentacji albo plik pptx]
+    output_type: pptx
+    execution_type: local
+    risk_level: low
+    requires_human_approval: false
+    requires_network: false
+    requires_files: true
+    requires_credentials: false
+    priority: 92
+    status: available
+    notes: Wspiera lokalne workflow slajdow.
+
+  - id: anthropic-skills:pdf
+    namespace: anthropic-skills
+    name: pdf
+    description: Czyta, laczy, dzieli i analizuje PDF, lacznie z OCR.
+    category: documents
+    triggers: [pdf, ocr, merge pdf, split pdf]
+    good_for: [analiza pdf, ocr pdf, laczenie pdf]
+    not_for: [desktop automation]
+    input_requirements: [ścieżka do PDF]
+    output_type: pdf_analysis
+    execution_type: local
+    risk_level: low
+    requires_human_approval: false
+    requires_network: false
+    requires_files: true
+    requires_credentials: false
+    priority: 98
+    status: available
+    notes: Preferowany skill do pracy z PDF.
+
+  - id: anthropic-skills:xlsx
+    namespace: anthropic-skills
+    name: xlsx
+    description: Pracuje z arkuszami Excel i CSV, w tym formuly, wykresy i czyszczenie danych.
+    category: documents
+    triggers: [xlsx, excel, csv, spreadsheet]
+    good_for: [arkusz excel, csv cleanup, spreadsheet]
+    not_for: [system commands]
+    input_requirements: [plik xlsx lub csv]
+    output_type: spreadsheet
+    execution_type: local
+    risk_level: low
+    requires_human_approval: false
+    requires_network: false
+    requires_files: true
+    requires_credentials: false
+    priority: 93
+    status: available
+    notes: Preferowany skill do arkuszy i CSV.
+
+  - id: anthropic-skills:theme-factory
+    namespace: anthropic-skills
+    name: theme-factory
+    description: Stosuje motywy graficzne do artefaktow i dokumentow.
+    category: documents
+    triggers: [theme, styling, visual theme]
+    good_for: [theme artefaktu, motyw prezentacji]
+    not_for: [ubuntu ssh]
+    input_requirements: [artefakt bazowy i brief motywu]
+    output_type: themed_artifact
+    execution_type: manual
+    risk_level: low
+    requires_human_approval: false
+    requires_network: false
+    requires_files: true
+    requires_credentials: false
+    priority: 50
+    status: planned
+    notes: Przyda sie do artefact polish, ale bez live adaptera.
+
+  - id: anthropic-skills:setup-cowork
+    namespace: anthropic-skills
+    name: setup-cowork
+    description: Przewodnik konfiguracji Cowork i powiazanych skilli.
+    category: dev
+    triggers: [setup cowork, cowork config]
+    good_for: [konfiguracja cowork, setup pluginow]
+    not_for: [pdf ocr]
+    input_requirements: [opis srodowiska i celu]
+    output_type: setup_guide
+    execution_type: manual
+    risk_level: low
+    requires_human_approval: false
+    requires_network: false
+    requires_files: false
+    requires_credentials: false
+    priority: 45
+    status: planned
+    notes: Guidance skill.
+
+  - id: anthropic-skills:consolidate-memory
+    namespace: anthropic-skills
+    name: consolidate-memory
+    description: Porzadkuje pliki pamieci i konsoliduje notatki z wielu zrodel.
+    category: memory
+    triggers: [memory, consolidate memory, notes cleanup]
+    good_for: [porzadkowanie pamieci, cleanup notatek]
+    not_for: [render video]
+    input_requirements: [zbior notatek albo wskazane katalogi]
+    output_type: memory_cleanup
+    execution_type: local
+    risk_level: medium
+    requires_human_approval: true
+    requires_network: false
+    requires_files: true
+    requires_credentials: false
+    priority: 82
+    status: available
+    notes: Pracuje na lokalnych plikach pamieci.
+
+  - id: anthropic-skills:doc-coauthoring
+    namespace: anthropic-skills
+    name: doc-coauthoring
+    description: Strukturalny workflow wspolpisania dokumentacji.
+    category: documents
+    triggers: [doc coauthoring, documentation workflow]
+    good_for: [wspolpisanie dokumentacji, outline plus draft]
+    not_for: [ssh]
+    input_requirements: [outline i zakres dokumentu]
+    output_type: document_draft
+    execution_type: local
+    risk_level: low
+    requires_human_approval: false
+    requires_network: false
+    requires_files: false
+    requires_credentials: false
+    priority: 57
+    status: available
+    notes: Guidance plus draft workflow.
+
+  - id: anthropic-skills:algorithmic-art
+    namespace: anthropic-skills
+    name: algorithmic-art
+    description: Generatywna sztuka algorytmiczna w p5.js.
+    category: documents
+    triggers: [algorithmic art, p5, generative art]
+    good_for: [grafika algorytmiczna, generative visuals]
+    not_for: [repo bug fix]
+    input_requirements: [brief wizualny i rozmiar outputu]
+    output_type: code_or_image
+    execution_type: manual
+    risk_level: low
+    requires_human_approval: false
+    requires_network: false
+    requires_files: false
+    requires_credentials: false
+    priority: 61
+    status: planned
+    notes: Skill kreatywny do podpiecia pozniej.
+
+  - id: anthropic-skills:skill-creator
+    namespace: anthropic-skills
+    name: skill-creator
+    description: Tworzy, edytuje i optymalizuje skille oraz ich kontrakty.
+    category: dev
+    triggers: [skill creator, new skill, edit skill, improve skill]
+    good_for: [stworz nowy skill, popraw skill, optimize skill]
+    not_for: [youtube upload]
+    input_requirements: [opis celu nowego skilla i zakres integracji]
+    output_type: skill_spec
+    execution_type: local
+    risk_level: low
+    requires_human_approval: false
+    requires_network: false
+    requires_files: false
+    requires_credentials: false
+    priority: 97
+    status: available
+    notes: Kluczowy skill do rozwoju systemu skilli.
+
+  - id: anthropic-skills:mcp-builder
+    namespace: anthropic-skills
+    name: mcp-builder
+    description: Buduje serwery MCP i kontrakty narzedziowe.
+    category: dev
+    triggers: [mcp, model context protocol, mcp server]
+    good_for: [budowa mcp, nowe serwery mcp]
+    not_for: [general chat]
+    input_requirements: [opis serwera MCP i zestawu narzedzi]
+    output_type: mcp_spec
+    execution_type: local
+    risk_level: medium
+    requires_human_approval: false
+    requires_network: false
+    requires_files: false
+    requires_credentials: false
+    priority: 85
+    status: available
+    notes: Przygotowuje kontrakt i implementacyjny scaffold.
+
+  - id: atnos:codex-repo-work
+    namespace: atnos
+    name: codex-repo-work
+    description: "Uzyj Codexa do pracy na repo: kod, testy, refaktoryzacja, debugging i zmiany architektury."
+    category: dev
+    triggers: [repo, repository, bug, test, tests, refactor, cli, github, code]
+    good_for: [napraw bug w repo, uruchom testy, review kodu, refactor]
+    not_for: [mail zgodny z glosem marki, hr onboarding]
+    input_requirements: [repozytorium albo zakres zmian]
+    output_type: code_change
+    execution_type: local
+    risk_level: medium
+    requires_human_approval: false
+    requires_network: false
+    requires_files: true
+    requires_credentials: false
+    priority: 100
+    status: available
+    notes: Preferowany skill do pracy na repozytorium i testach.
+
+  - id: atnos:deep-research
+    namespace: atnos
+    name: deep-research
+    description: Research webowy z cytatami, linkami i weryfikacja zrodel w stylu answer engine.
+    category: research
+    triggers: [research, latest, links, citations, porownanie, porównanie, documentation]
+    good_for: [research z linkami, aktualne fakty, analiza rynku, docs review]
+    not_for: [lokalny plik bez potrzeby internetu]
+    input_requirements: [temat researchu i zakres pytania]
+    output_type: research_report
+    execution_type: local
+    risk_level: low
+    requires_human_approval: false
+    requires_network: true
+    requires_files: false
+    requires_credentials: false
+    priority: 96
+    status: available
+    notes: Meta-skill do researchu z cytatami i web search.
+
+  - id: atnos:obsidian-memory
+    namespace: atnos
+    name: obsidian-memory
+    description: Zapis i odczyt notatek z Obsidiana jako widocznej pamieci Atnosa.
+    category: memory
+    triggers: [obsidian, notes, memory, vault]
+    good_for: [zapisz do obsydiana, czytaj notatki, pamiec projektu]
+    not_for: [youtube analytics]
+    input_requirements: [vault lub zakres notatek]
+    output_type: note
+    execution_type: local
+    risk_level: medium
+    requires_human_approval: true
+    requires_network: false
+    requires_files: true
+    requires_credentials: false
+    priority: 94
+    status: available
+    notes: Pracuje na lokalnym vaultcie Obsidiana.
+
+  - id: atnos:ubuntu-full-control
+    namespace: atnos
+    name: ubuntu-full-control
+    description: Kontrola drugiego laptopa Ubuntu przez SSH, komendy systemowe i provisioning.
+    category: system
+    triggers: [ubuntu, ssh, systemd, apt, package install, provisioning]
+    good_for: [skonfiguruj laptop ubuntu, napraw usluge systemd, ssh setup]
+    not_for: [mail brandowy, pptx]
+    input_requirements: [host, user, private_key_path lub inne SSH credentials]
+    output_type: remote_execution
+    execution_type: local
+    risk_level: high
+    requires_human_approval: true
+    requires_network: true
+    requires_files: false
+    requires_credentials: true
+    priority: 98
+    status: available
+    notes: Laptop Ubuntu jest sandboxem, ale decyzja musi oznaczac wysokie ryzyko.
+
+  - id: atnos:content-pipeline
+    namespace: atnos
+    name: content-pipeline
+    description: "Pipeline tworzenia tresci: trend, script, TTS, subtitles, render, thumbnail, upload."
+    category: automation
+    triggers: [content pipeline, short video, reels, tts, thumbnail, render]
+    good_for: [pipeline contentu social media, short video workflow]
+    not_for: [repo bug]
+    input_requirements: [brief tresci i target platforma]
+    output_type: content_plan
+    execution_type: local
+    risk_level: medium
+    requires_human_approval: true
+    requires_network: true
+    requires_files: true
+    requires_credentials: false
+    priority: 84
+    status: available
+    notes: Orkiestruje pipeline tresci, ale nie zastępuje poszczegolnych connectorow.
+
+  - id: atnos:youtube-automation
+    namespace: atnos
+    name: youtube-automation
+    description: "YouTube API: upload prywatny, metadata i analytics."
+    category: automation
+    triggers: [youtube, upload, analytics, studio, metadata]
+    good_for: [wgraj film na youtube, pobierz analytics, ustaw metadata]
+    not_for: [ssh]
+    input_requirements: [plik wideo lub video_id oraz podlaczone konto YouTube]
+    output_type: youtube_result
+    execution_type: connector
+    risk_level: medium
+    requires_human_approval: true
+    requires_network: true
+    requires_files: true
+    requires_credentials: true
+    priority: 99
+    status: external
+    notes: Wymaga OAuth i realnego execution path do YouTube API.
+
+  - id: atnos:image-generation
+    namespace: atnos
+    name: image-generation
+    description: Generowanie grafiki przez lokalny image lane Atnosa z automatycznym wyborem ComfyUI albo lokalnego canvas composera.
+    category: design
+    triggers: [grafika, obraz, image generation, thumbnail, poster, banner, cover]
+    good_for: [zrob grafike, wygeneruj obraz, przygotuj miniature, stworz plakat]
+    not_for: [pdf analysis, ssh provisioning]
+    input_requirements: [brief grafiki lub oczekiwany efekt wizualny]
+    output_type: image
+    execution_type: local
+    risk_level: low
+    requires_human_approval: false
+    requires_network: false
+    requires_files: false
+    requires_credentials: false
+    priority: 97
+    status: available
+    notes: Meta-skill nad lokalnym operatorem grafiki; wybiera ComfyUI dla generatywnej ilustracji albo lokalny composer dla czytelnej grafiki z tekstem.
+
+  - id: atnos:local-llm
+    namespace: atnos
+    name: local-llm
+    description: Lokalna odpowiedz przez Ollama, gdy task nie wymaga specjalistycznych skilli.
+    category: system
+    triggers: [general, explain, answer, local]
+    good_for: [ogolna odpowiedz bez narzedzi, zwykly chat]
+    not_for: [pdf, repo, youtube, ssh, skill creation]
+    input_requirements: [opis pytania]
+    output_type: answer
+    execution_type: local
+    risk_level: low
+    requires_human_approval: false
+    requires_network: false
+    requires_files: false
+    requires_credentials: false
+    priority: 10
+    status: available
+    notes: Fallback dla zwyklego chatu bez specjalistycznych potrzeb.
+
+  - id: atnos:file-analysis
+    namespace: atnos
+    name: file-analysis
+    description: Analiza plikow uzytkownika i wyciaganie informacji z artefaktow.
+    category: documents
+    triggers: [file analysis, analizuj plik, attachment, dokument, pdf]
+    good_for: [analiza pliku, analiza zalacznika, analiza pdf]
+    not_for: [ssh]
+    input_requirements: [plik lub ścieżka do pliku]
+    output_type: file_analysis
+    execution_type: local
+    risk_level: low
+    requires_human_approval: false
+    requires_network: false
+    requires_files: true
+    requires_credentials: false
+    priority: 90
+    status: available
+    notes: Meta-skill wspierajacy inne file-centric skille.
+
+  - id: atnos:tool-selection
+    namespace: atnos
+    name: tool-selection
+    description: Wybiera wlasciwe skille i narzedzia przed odpowiedzia lub wykonaniem zadania.
+    category: system
+    triggers: [select skill, choose tool, route task]
+    good_for: [routing skilli, wybor narzedzi]
+    not_for: [bezposrednia obrobka pliku]
+    input_requirements: [opis zadania]
+    output_type: route_decision
+    execution_type: local
+    risk_level: low
+    requires_human_approval: false
+    requires_network: false
+    requires_files: false
+    requires_credentials: false
+    priority: 95
+    status: available
+    notes: Meta-skill stojacy nad routerem.
+
+  - id: atnos:browser-operator
+    namespace: atnos
+    name: browser-operator
+    description: Lokalne operowanie przegladarka, analiza aktywnej karty i browser workflows.
+    category: system
+    triggers: [chrome, browser, karta, tab, website, otwarta karta]
+    good_for: [jakie karty sa otwarte, przeanalizuj strone, browser workflow]
+    not_for: [word document generation]
+    input_requirements: [opis celu browserowego]
+    output_type: browser_action
+    execution_type: local
+    risk_level: medium
+    requires_human_approval: true
+    requires_network: false
+    requires_files: false
+    requires_credentials: false
+    priority: 89
+    status: available
+    notes: Mapuje na istniejacy local browser operator.
+
+  - id: atnos:channel-ops
+    namespace: atnos
+    name: channel-ops
+    description: Zarzadza kanalami YouTube, kolejka shortow, approval queue i analytics learning loop.
+    category: content
+    triggers: [kanal, kanale, channel ops, przygotuj shorty, kolejka approval, analytics kanalu, zaproponuj tematy, wygeneruj tematy, hooki]
+    good_for: [przygotuj shorty na kanal, pokaz kolejke approval, co dziala najlepiej na kanale, wygeneruj tematy i hooki do zatwierdzenia]
+    not_for: [pojedynczy render bez kanalu, publiczny upload bez zgody]
+    input_requirements: [istniejacy profil kanalu w ChannelOps]
+    output_type: channel_plan
+    execution_type: local
+    risk_level: medium
+    requires_human_approval: true
+    requires_network: false
+    requires_files: true
+    requires_credentials: false
+    priority: 92
+    status: available
+    notes: Publiczny upload pozostaje poza V1 i wymaga osobnej zgody.
+
+  - id: atnos:desktop-operator
+    namespace: atnos
+    name: desktop-operator
+    description: Lokalne operowanie aplikacjami desktopowymi przez host control i desktop bridge.
+    category: system
+    triggers: [obsidian, desktop, aplikacja, otworz program, focus app]
+    good_for: [otworz obsydiana, desktop workflow, focus app]
+    not_for: [latest web research]
+    input_requirements: [nazwa aplikacji i cel akcji]
+    output_type: desktop_action
+    execution_type: local
+    risk_level: medium
+    requires_human_approval: true
+    requires_network: false
+    requires_files: false
+    requires_credentials: false
+    priority: 88
+    status: available
+    notes: Mapuje na istniejacy local desktop operator.

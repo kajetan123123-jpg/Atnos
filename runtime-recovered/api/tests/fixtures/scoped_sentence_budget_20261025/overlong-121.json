@@ -1,0 +1,47 @@
+{
+  "claims": [],
+  "description": "Explain conditional auto-renewal checks via still illustrations.",
+  "segments": [
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s01",
+      "on_screen": "Check Auto-Renewal Status",
+      "pronunciation_terms": [],
+      "text": "A renewal cutoff matters only if automatic renewal is enabled in your agreement terms. Check this condition first before assuming charges will start immediately after the trial period ends without further action required from you.",
+      "type": "hook",
+      "visual_intent": "Physical illustrated still of a calendar page and an open contract card showing conditional text about auto-renewal status, no quoted labels or moving objects."
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s02",
+      "on_screen": "Record Cancellation Date",
+      "pronunciation_terms": [],
+      "text": "Read the specific renewal price and date listed in your document. Record that cancellation cutoff clearly so you know exactly when to act if you do not wish for charges to continue automatically without further notice.",
+      "type": "practical",
+      "visual_intent": "Physical illustrated still of a calendar page with a marked line indicating the recorded cancellation cutoff, no moving elements or text overlays."
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s03",
+      "on_screen": "Verify Cancellation Confirmation",
+      "pronunciation_terms": [],
+      "text": "Set an early reminder to decide whether you will keep this service active or cancel it before the deadline arrives. If choosing cancellation, verify that your provider sends a confirmation notice proving the request was processed successfully.",
+      "type": "practical",
+      "visual_intent": "Physical illustrated still of a calendar page with a marked reminder line preceding the cutoff and a checkmark icon indicating successful verification upon choice."
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s04",
+      "on_screen": "Build Wealth On Purpose",
+      "pronunciation_terms": [],
+      "text": "Follow Wealth Blueprint to build wealth on purpose with intentional financial decisions today.",
+      "type": "cta",
+      "visual_intent": "Physical illustrated still of a calendar page fading into the channel logo, no moving elements or text overlays."
+    }
+  ],
+  "title": "Your free trial has a second deadline"
+}

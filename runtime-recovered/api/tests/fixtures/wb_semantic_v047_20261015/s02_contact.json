@@ -1,0 +1,50 @@
+{
+  "clip_sha256": "565aeaafa3822f73702cdab36b931bd79712ed527ae741bff22a05636031884a",
+  "frame_window": {
+    "end_frame_exclusive": 430,
+    "frame_rate": 30.0,
+    "start_frame": 226
+  },
+  "manifest_sha256": "98597f425f57b73c24beff8e6d36f4b3d26de321970982bc097adb3e47a9c22e",
+  "sample_frame_indices": [
+    226,
+    267,
+    307,
+    348,
+    388,
+    429
+  ],
+  "sampling": "six exact decoded frame indices inside the quantized ProjectManifest scene range on final MP4",
+  "scene_id": "s02",
+  "segment_id": "s02",
+  "source": "remotion_manifest_mp4",
+  "status": "failed",
+  "timing": {
+    "end_sec": 14.348,
+    "start_sec": 7.544
+  },
+  "verdict": {
+    "audit_input": {
+      "audit_height": 1020,
+      "audit_size_bytes": 155497,
+      "audit_width": 826,
+      "encoding": "jpeg",
+      "max_edge_px": 1024,
+      "original_height": 1020,
+      "original_width": 826,
+      "source_sha256": "c85a63cc5b65534f18c30ee1aeaba00b28de57cef2d481196aa04619d68d0783",
+      "source_size_bytes": 432008
+    },
+    "confidence": 9.0,
+    "contract_satisfied": false,
+    "model": "qwen3-vl:8b-instruct",
+    "response_field": "content",
+    "status": "fail",
+    "violations": [
+      "The hand is not consistently tracing underlines as required; in some frames it appears to point or hover without drawing.",
+      "In FRAME 307, the text 'Then name your future purchase' is shown but no underline is drawn beneath 'FUTURE GOAL', violating the visible_change requirement.",
+      "In FRAME 348, the hand is pointing at 'FUTURE GOAL' with a gold underline already present, but the contract requires tracing underlines sequentially as spoken cues; this appears to be an out-of-order or premature action."
+    ]
+  },
+  "video_sha256": "565aeaafa3822f73702cdab36b931bd79712ed527ae741bff22a05636031884a"
+}

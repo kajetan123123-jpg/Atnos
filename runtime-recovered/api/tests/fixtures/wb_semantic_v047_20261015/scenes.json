@@ -1,0 +1,473 @@
+[
+  {
+    "scene_id": "s02",
+    "scene_type": "HookScene",
+    "timing": {
+      "end_sec": 14.348,
+      "start_sec": 7.544
+    },
+    "narration": "Name the emergency role first. Then name your future purchase goal clearly in separate sections of that single account.",
+    "caption": "Name the emergency role first. Then name your future purchase goal clearly in separate sections of that single account.",
+    "caption_words": [
+      {
+        "end_sec": 7.784,
+        "segment_id": "s02",
+        "start_sec": 7.544,
+        "text": "Name"
+      },
+      {
+        "end_sec": 7.944,
+        "segment_id": "s02",
+        "start_sec": 7.864,
+        "text": "the"
+      },
+      {
+        "end_sec": 8.465,
+        "segment_id": "s02",
+        "start_sec": 8.004,
+        "text": "emergency"
+      },
+      {
+        "end_sec": 8.765,
+        "segment_id": "s02",
+        "start_sec": 8.565,
+        "text": "role"
+      },
+      {
+        "end_sec": 9.185,
+        "segment_id": "s02",
+        "start_sec": 8.845,
+        "text": "first."
+      },
+      {
+        "end_sec": 9.785,
+        "segment_id": "s02",
+        "start_sec": 9.625,
+        "text": "Then"
+      },
+      {
+        "end_sec": 10.146,
+        "segment_id": "s02",
+        "start_sec": 9.905,
+        "text": "name"
+      },
+      {
+        "end_sec": 10.326,
+        "segment_id": "s02",
+        "start_sec": 10.206,
+        "text": "your"
+      },
+      {
+        "end_sec": 10.686,
+        "segment_id": "s02",
+        "start_sec": 10.386,
+        "text": "future"
+      },
+      {
+        "end_sec": 11.106,
+        "segment_id": "s02",
+        "start_sec": 10.766,
+        "text": "purchase"
+      },
+      {
+        "end_sec": 11.366,
+        "segment_id": "s02",
+        "start_sec": 11.166,
+        "text": "goal"
+      },
+      {
+        "end_sec": 11.826,
+        "segment_id": "s02",
+        "start_sec": 11.466,
+        "text": "clearly"
+      },
+      {
+        "end_sec": 11.926,
+        "segment_id": "s02",
+        "start_sec": 11.886,
+        "text": "in"
+      },
+      {
+        "end_sec": 12.307,
+        "segment_id": "s02",
+        "start_sec": 12.007,
+        "text": "separate"
+      },
+      {
+        "end_sec": 12.767,
+        "segment_id": "s02",
+        "start_sec": 12.367,
+        "text": "sections"
+      },
+      {
+        "end_sec": 12.867,
+        "segment_id": "s02",
+        "start_sec": 12.827,
+        "text": "of"
+      },
+      {
+        "end_sec": 13.067,
+        "segment_id": "s02",
+        "start_sec": 12.947,
+        "text": "that"
+      },
+      {
+        "end_sec": 13.447,
+        "segment_id": "s02",
+        "start_sec": 13.187,
+        "text": "single"
+      },
+      {
+        "end_sec": 13.887,
+        "segment_id": "s02",
+        "start_sec": 13.507,
+        "text": "account."
+      }
+    ],
+    "headline": "Separate: Reserve vs Future Goal",
+    "semantic_overlay_kind": "reserve_readiness",
+    "visual_relation": {
+      "action": "compare_roles",
+      "compliance_criterion": "Show the named qualitative roles and the current check; no amounts, runway months, returns or completed transfer",
+      "condition": null,
+      "destination": null,
+      "direction": null,
+      "final_state": "Readiness and a future goal are shown as distinct roles, not a quantified allocation",
+      "initial_state": "Reserve and need have distinct roles",
+      "kind": "reserve_readiness",
+      "objects": [
+        {
+          "id": "unexpected_need",
+          "label": "UNEXPECTED NEED",
+          "role": "expense"
+        },
+        {
+          "id": "ready_reserve",
+          "label": "READY RESERVE",
+          "role": "reserve"
+        },
+        {
+          "id": "future_goal",
+          "label": "FUTURE GOAL",
+          "role": "goal"
+        }
+      ],
+      "planning_desk_action": "write-purposes",
+      "source": null,
+      "stage": "separate",
+      "unsupported_gap": null,
+      "viewer_should_understand": "Readiness and a future goal are shown as distinct roles, not a quantified allocation"
+    },
+    "input_hash": "4c3f31aec67e3528af42d4b0945fd857eb6cc053044b4bac469f3fe43e946514"
+  },
+  {
+    "scene_id": "s03",
+    "scene_type": "HookScene",
+    "timing": {
+      "end_sec": 21.231,
+      "start_sec": 14.348
+    },
+    "narration": "If you assign the same funds to both, an emergency claim reduces money available for your planned purchase immediately.",
+    "caption": "If you assign the same funds to both, an emergency claim reduces money available for your planned purchase immediately.",
+    "caption_words": [
+      {
+        "end_sec": 14.388,
+        "segment_id": "s03",
+        "start_sec": 14.348,
+        "text": "If"
+      },
+      {
+        "end_sec": 14.528,
+        "segment_id": "s03",
+        "start_sec": 14.428,
+        "text": "you"
+      },
+      {
+        "end_sec": 14.948,
+        "segment_id": "s03",
+        "start_sec": 14.608,
+        "text": "assign"
+      },
+      {
+        "end_sec": 15.108,
+        "segment_id": "s03",
+        "start_sec": 15.028,
+        "text": "the"
+      },
+      {
+        "end_sec": 15.368,
+        "segment_id": "s03",
+        "start_sec": 15.168,
+        "text": "same"
+      },
+      {
+        "end_sec": 15.748,
+        "segment_id": "s03",
+        "start_sec": 15.468,
+        "text": "funds"
+      },
+      {
+        "end_sec": 15.909,
+        "segment_id": "s03",
+        "start_sec": 15.809,
+        "text": "to"
+      },
+      {
+        "end_sec": 16.309,
+        "segment_id": "s03",
+        "start_sec": 15.989,
+        "text": "both,"
+      },
+      {
+        "end_sec": 16.729,
+        "segment_id": "s03",
+        "start_sec": 16.689,
+        "text": "an"
+      },
+      {
+        "end_sec": 17.269,
+        "segment_id": "s03",
+        "start_sec": 16.789,
+        "text": "emergency"
+      },
+      {
+        "end_sec": 17.569,
+        "segment_id": "s03",
+        "start_sec": 17.329,
+        "text": "claim"
+      },
+      {
+        "end_sec": 18.13,
+        "segment_id": "s03",
+        "start_sec": 17.669,
+        "text": "reduces"
+      },
+      {
+        "end_sec": 18.45,
+        "segment_id": "s03",
+        "start_sec": 18.25,
+        "text": "money"
+      },
+      {
+        "end_sec": 18.97,
+        "segment_id": "s03",
+        "start_sec": 18.51,
+        "text": "available"
+      },
+      {
+        "end_sec": 19.11,
+        "segment_id": "s03",
+        "start_sec": 19.03,
+        "text": "for"
+      },
+      {
+        "end_sec": 19.29,
+        "segment_id": "s03",
+        "start_sec": 19.15,
+        "text": "your"
+      },
+      {
+        "end_sec": 19.631,
+        "segment_id": "s03",
+        "start_sec": 19.33,
+        "text": "planned"
+      },
+      {
+        "end_sec": 20.051,
+        "segment_id": "s03",
+        "start_sec": 19.691,
+        "text": "purchase"
+      },
+      {
+        "end_sec": 20.771,
+        "segment_id": "s03",
+        "start_sec": 20.171,
+        "text": "immediately."
+      }
+    ],
+    "headline": "Review: Check Overlap",
+    "semantic_overlay_kind": "reserve_readiness",
+    "visual_relation": {
+      "action": "review_separation",
+      "compliance_criterion": "Show the named qualitative roles and the current check; no amounts, runway months, returns or completed transfer",
+      "condition": null,
+      "destination": null,
+      "direction": null,
+      "final_state": "Changed circumstances prompt a review of both distinct roles",
+      "initial_state": "Reserve and need have distinct roles",
+      "kind": "reserve_readiness",
+      "objects": [
+        {
+          "id": "unexpected_need",
+          "label": "UNEXPECTED NEED",
+          "role": "expense"
+        },
+        {
+          "id": "ready_reserve",
+          "label": "READY RESERVE",
+          "role": "reserve"
+        },
+        {
+          "id": "future_goal",
+          "label": "FUTURE GOAL",
+          "role": "goal"
+        }
+      ],
+      "planning_desk_action": "shared-balance",
+      "source": null,
+      "stage": "review",
+      "unsupported_gap": null,
+      "viewer_should_understand": "Changed circumstances prompt a review of both distinct roles"
+    },
+    "input_hash": "fda069747c1ec9be391c5c043a4fb1aa2046487bce5e2a4bf2468603159c415d"
+  },
+  {
+    "scene_id": "s05",
+    "scene_type": "HookScene",
+    "timing": {
+      "end_sec": 34.018,
+      "start_sec": 27.815
+    },
+    "narration": "Record which plan changes if funds are used today. Note the impact on your future goal timeline.",
+    "caption": "Record which plan changes if funds are used today. Note the impact on your future goal timeline.",
+    "caption_words": [
+      {
+        "end_sec": 28.135,
+        "segment_id": "s05",
+        "start_sec": 27.815,
+        "text": "Record"
+      },
+      {
+        "end_sec": 28.435,
+        "segment_id": "s05",
+        "start_sec": 28.235,
+        "text": "which"
+      },
+      {
+        "end_sec": 28.835,
+        "segment_id": "s05",
+        "start_sec": 28.555,
+        "text": "plan"
+      },
+      {
+        "end_sec": 29.336,
+        "segment_id": "s05",
+        "start_sec": 28.976,
+        "text": "changes"
+      },
+      {
+        "end_sec": 29.476,
+        "segment_id": "s05",
+        "start_sec": 29.436,
+        "text": "if"
+      },
+      {
+        "end_sec": 29.836,
+        "segment_id": "s05",
+        "start_sec": 29.556,
+        "text": "funds"
+      },
+      {
+        "end_sec": 29.976,
+        "segment_id": "s05",
+        "start_sec": 29.896,
+        "text": "are"
+      },
+      {
+        "end_sec": 30.236,
+        "segment_id": "s05",
+        "start_sec": 30.096,
+        "text": "used"
+      },
+      {
+        "end_sec": 30.556,
+        "segment_id": "s05",
+        "start_sec": 30.276,
+        "text": "today."
+      },
+      {
+        "end_sec": 31.277,
+        "segment_id": "s05",
+        "start_sec": 31.057,
+        "text": "Note"
+      },
+      {
+        "end_sec": 31.457,
+        "segment_id": "s05",
+        "start_sec": 31.357,
+        "text": "the"
+      },
+      {
+        "end_sec": 31.997,
+        "segment_id": "s05",
+        "start_sec": 31.597,
+        "text": "impact"
+      },
+      {
+        "end_sec": 32.117,
+        "segment_id": "s05",
+        "start_sec": 32.077,
+        "text": "on"
+      },
+      {
+        "end_sec": 32.277,
+        "segment_id": "s05",
+        "start_sec": 32.157,
+        "text": "your"
+      },
+      {
+        "end_sec": 32.678,
+        "segment_id": "s05",
+        "start_sec": 32.337,
+        "text": "future"
+      },
+      {
+        "end_sec": 32.958,
+        "segment_id": "s05",
+        "start_sec": 32.758,
+        "text": "goal"
+      },
+      {
+        "end_sec": 33.578,
+        "segment_id": "s05",
+        "start_sec": 33.058,
+        "text": "timeline."
+      }
+    ],
+    "headline": "Record: Plan Change Impact",
+    "semantic_overlay_kind": "reserve_readiness",
+    "visual_relation": {
+      "action": "review_separation",
+      "compliance_criterion": "Show the named qualitative roles and the current check; no amounts, runway months, returns or completed transfer",
+      "condition": null,
+      "destination": null,
+      "direction": null,
+      "final_state": "Changed circumstances prompt a review of both distinct roles",
+      "initial_state": "Reserve and need have distinct roles",
+      "kind": "reserve_readiness",
+      "objects": [
+        {
+          "id": "unexpected_need",
+          "label": "UNEXPECTED NEED",
+          "role": "expense"
+        },
+        {
+          "id": "ready_reserve",
+          "label": "READY RESERVE",
+          "role": "reserve"
+        },
+        {
+          "id": "future_goal",
+          "label": "FUTURE GOAL",
+          "role": "goal"
+        }
+      ],
+      "planning_desk_action": "revisit-goal",
+      "source": null,
+      "stage": "review",
+      "unsupported_gap": null,
+      "viewer_should_understand": "Changed circumstances prompt a review of both distinct roles"
+    },
+    "input_hash": "245309efe5a2021df275e2511f7e9d1796804ed8e8c0e407485d314eaedb86ea"
+  }
+]

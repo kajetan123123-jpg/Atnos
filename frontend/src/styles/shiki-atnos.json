@@ -1,0 +1,47 @@
+{
+  "name": "atnos-shell",
+  "type": "dark",
+  "colors": {
+    "editor.background": "#11141B",
+    "editor.foreground": "#EDEAE0"
+  },
+  "tokenColors": [
+    {
+      "scope": ["comment", "punctuation.definition.comment"],
+      "settings": {
+        "foreground": "#5C5E63",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": ["keyword", "storage", "entity.name.tag"],
+      "settings": {
+        "foreground": "#C2E5FF"
+      }
+    },
+    {
+      "scope": ["string", "string.quoted", "constant.other.symbol"],
+      "settings": {
+        "foreground": "#FF5B2ECC"
+      }
+    },
+    {
+      "scope": ["constant.numeric", "constant.language", "support.constant"],
+      "settings": {
+        "foreground": "#C2E5FF"
+      }
+    },
+    {
+      "scope": ["entity.name.function", "support.function", "variable.function"],
+      "settings": {
+        "foreground": "#EDEAE0"
+      }
+    },
+    {
+      "scope": ["variable", "meta.object-literal.key", "entity.name.type"],
+      "settings": {
+        "foreground": "#EDEAE0"
+      }
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "claims": [],
+  "description": "Wealth Blueprint Short about counting a planned future purchase and an emergency reserve as if both could use the same balance.",
+  "provenance": {
+    "frozen_generator": "qwen3:14b",
+    "frozen_reviewer": "qwen3:14b",
+    "generator": "qwen3.5:9b",
+    "reference_source": {
+      "path": "learning/active-reference-shorts/latest_editorial_profile_wealth_blueprint.json",
+      "sha256": "920ba59cd7f31dcb7d2ab1a05d91e10c4d9e9584089275a8b694fd04600aaf1e"
+    },
+    "reviewer": "qwen3.5:9b",
+    "script_model_lane": {
+      "execution_scope": "normal_produce_script_authoring",
+      "model_digest": "6488c96fa5faab64bb65cbd30d4289e20e6130ef535a93ef9a49f42eda893ea7",
+      "receipt_digest": "05e0f5a0e05243c5a57f0b39d209f9114b31b3298915b0ac2173b0afb9c7b432"
+    },
+    "script_review_model_lane": {
+      "execution_scope": "normal_produce_script_review",
+      "model_digest": "6488c96fa5faab64bb65cbd30d4289e20e6130ef535a93ef9a49f42eda893ea7",
+      "receipt_digest": "e14e8c31cd1f5c36029974e494ec67851b101b0e88b693f40437f2ecbae99aa8",
+      "same_model_as_writer": true
+    },
+    "usage": {
+      "knowledge_matches": 3,
+      "reference_samples": 40
+    }
+  },
+  "qa": {
+    "claim_classification_summary": {
+      "confirmed_count": 0,
+      "needs_source_count": 0,
+      "risky_promise_count": 0,
+      "source_policy": "never_invent_source"
+    },
+    "claim_classifications": [
+      {
+        "claim_ids": [],
+        "classification": "opinion",
+        "confidence": 0.7,
+        "fact_ids": [],
+        "invented_source": false,
+        "issue_codes": [],
+        "reason": "Hook/CTA bez claim — traktowane jako opinia/wezwanie, nie fakt.",
+        "segment_id": "s01",
+        "source": "segment_type"
+      },
+      {
+        "claim_ids": [],
+        "classification": "opinion",
+        "confidence": 0.65,
+        "fact_ids": [],
+        "invented_source": false,
+        "issue_codes": [],
+        "reason": "Brak claim/fact — treść jakościowa, nie potwierdzony fakt finansowy.",
+        "segment_id": "s02",
+        "source": "absence_of_claim"
+      },
+      {
+        "claim_ids": [],
+        "classification": "opinion",
+        "confidence": 0.65,
+        "fact_ids": [],
+        "invented_source": false,
+        "issue_codes": [],
+        "reason": "Brak claim/fact — treść jakościowa, nie potwierdzony fakt finansowy.",
+        "segment_id": "s03",
+        "source": "absence_of_claim"
+      },
+      {
+        "claim_ids": [],
+        "classification": "opinion",
+        "confidence": 0.65,
+        "fact_ids": [],
+        "invented_source": false,
+        "issue_codes": [],
+        "reason": "Brak claim/fact — treść jakościowa, nie potwierdzony fakt finansowy.",
+        "segment_id": "s04",
+        "source": "absence_of_claim"
+      },
+      {
+        "claim_ids": [],
+        "classification": "opinion",
+        "confidence": 0.65,
+        "fact_ids": [],
+        "invented_source": false,
+        "issue_codes": [],
+        "reason": "Brak claim/fact — treść jakościowa, nie potwierdzony fakt finansowy.",
+        "segment_id": "s05",
+        "source": "absence_of_claim"
+      },
+      {
+        "claim_ids": [],
+        "classification": "opinion",
+        "confidence": 0.7,
+        "fact_ids": [],
+        "invented_source": false,
+        "issue_codes": [],
+        "reason": "Hook/CTA bez claim — traktowane jako opinia/wezwanie, nie fakt.",
+        "segment_id": "s06",
+        "source": "segment_type"
+      }
+    ],
+    "editorial_checks": [],
+    "human_review": "not_performed",
+    "issue_evidence": [],
+    "issues": [],
+    "practical_word_share": 0.5833333333333334,
+    "revision": 2,
+    "script_hash": "52dfa492c84e2488e43628515de193e08e3ecea04034d29a1e8a02d95a0afc13",
+    "semantic_review": "model_reviewed",
+    "status": "passed"
+  },
+  "segments": [
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s01",
+      "on_screen": "Identify The Need And Reserve",
+      "pronunciation_terms": [],
+      "text": "You think one account covers both needs. But money has two distinct jobs right now.",
+      "type": "hook",
+      "visual_intent": "identify (actual need and reserve)"
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s02",
+      "on_screen": "Separate Reserve From Future Goal",
+      "pronunciation_terms": [],
+      "text": "Open your ledger to name the emergency reserve separately from any planned future purchase you intend to make.",
+      "type": "practical",
+      "visual_intent": "separate (reserve versus future goal)"
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s03",
+      "on_screen": "Review Both Roles As Circumstances Change",
+      "pronunciation_terms": [],
+      "text": "Check what is already committed and record the clear distinction between safety funds dedicated now versus specific plans for later.",
+      "type": "practical",
+      "visual_intent": "review (review both roles)"
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s04",
+      "on_screen": "Review Both Roles As Circumstances Change",
+      "pronunciation_terms": [],
+      "text": "Mixing these purposes creates hidden risk when unexpected expenses arrive, leaving your essential buffer exposed to unnecessary depletion.",
+      "type": "explanation",
+      "visual_intent": "review (review both roles)"
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s05",
+      "on_screen": "Access Reserve And Questions About Access",
+      "pronunciation_terms": [],
+      "text": "Verify that your current balance meets the reserve requirement before funding any new specific plan or future project.",
+      "type": "practical",
+      "visual_intent": "access (reserve and questions about access, timing and conditions)"
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s06",
+      "on_screen": "Build Wealth On Purpose",
+      "pronunciation_terms": [],
+      "text": "Follow Wealth Blueprint. Build wealth on purpose.",
+      "type": "cta",
+      "visual_intent": "Wealth Blueprint logo only, no host or props"
+    }
+  ],
+  "text": "You think one account covers both needs. But money has two distinct jobs right now. Open your ledger to name the emergency reserve separately from any planned future purchase you intend to make. Check what is already committed and record the clear distinction between safety funds dedicated now versus specific plans for later. Mixing these purposes creates hidden risk when unexpected expenses arrive, leaving your essential buffer exposed to unnecessary depletion. Verify that your current balance meets the reserve requirement before funding any new specific plan or future project. Follow Wealth Blueprint. Build wealth on purpose.",
+  "title": "The Same Savings Cannot Pay For Two Plans",
+  "word_count": 96
+}

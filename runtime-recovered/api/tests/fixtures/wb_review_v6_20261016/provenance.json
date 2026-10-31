@@ -1,0 +1,40 @@
+{
+  "scope": "EXACT_FAILED_V6_OFFLINE_REGRESSION_NOT_ACCEPTANCE_RECEIPT",
+  "files": [
+    {
+      "fixture": "candidate.json",
+      "source": "E:\\Atnos\\App\\reports\\scenario_repair_production_delivery_20261009\\evidence\\goal-continuation-20261015\\v6-actual-draft.json",
+      "sha256": "3ef101100244c6817ce0902b36662668769769e2e7bd6f70e8b659cfbdde91c2"
+    },
+    {
+      "fixture": "request.json",
+      "source": "E:\\Atnos\\App\\reports\\scenario_repair_production_delivery_20261009\\evidence\\goal-continuation-20261015\\DRAFT-v6-script-only-request-20261016.json",
+      "sha256": "9b8f98392f16a4fdf37757424d67dc3d6ed7a7b8e3c2dbad029c06eb99195f39"
+    },
+    {
+      "fixture": "canonical.json",
+      "source": "E:\\Atnos\\Profiles\\AtnosSystem\\AppData\\Roaming\\Atnos\\data\\production\\wealth_blueprint\\prod-d9c21367ddda\\script.json",
+      "sha256": "c277998b9143fe92b851ea7cb5bce7c4dc35778029fef1302ed4cbe40d7b78bb"
+    },
+    {
+      "fixture": "a6391b3c758e4865bed19500c40106e4.json",
+      "source": "E:\\Atnos\\App\\reports\\scenario_repair_production_delivery_20261009\\evidence\\goal-continuation-20261015\\v6-actual-model-responses\\a6391b3c758e4865bed19500c40106e4.json",
+      "sha256": "24637eade652a08628c1d0eb76b448e8ed71680537758a5709d470d3b909d7cb"
+    },
+    {
+      "fixture": "c2f5da30d71c4c1ab6a3dd61880a8217.json",
+      "source": "E:\\Atnos\\App\\reports\\scenario_repair_production_delivery_20261009\\evidence\\goal-continuation-20261015\\v6-actual-model-responses\\c2f5da30d71c4c1ab6a3dd61880a8217.json",
+      "sha256": "79b4a5a4f0e3c5c730a534f9795b482c460a1567445951ddb59b6343c2531d6e"
+    },
+    {
+      "fixture": "386c8efe45d8499ca81bd36262858162.json",
+      "source": "E:\\Atnos\\App\\reports\\scenario_repair_production_delivery_20261009\\evidence\\goal-continuation-20261015\\v6-actual-model-responses\\386c8efe45d8499ca81bd36262858162.json",
+      "sha256": "57756d6ef20657dd19364597f7fbc2b4e532b7359517d38cfaa70d2e52005dc9"
+    },
+    {
+      "fixture": "b155bef1789841108841b1bf05a9bede.json",
+      "source": "E:\\Atnos\\App\\reports\\scenario_repair_production_delivery_20261009\\evidence\\goal-continuation-20261015\\v6-actual-model-responses\\b155bef1789841108841b1bf05a9bede.json",
+      "sha256": "db9be9decf4b5f7d21a6eae65ffe7fe05a465681bebc2dd882db797484a4c3b2"
+    }
+  ]
+}

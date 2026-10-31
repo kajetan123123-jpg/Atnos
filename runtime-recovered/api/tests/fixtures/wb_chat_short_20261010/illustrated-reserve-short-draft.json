@@ -1,0 +1,67 @@
+{
+  "claims": [],
+  "description": "Is your emergency fund actually ready? We check the conditions for access, timing and limits so you know if it can cover unexpected repairs without draining your future goals.",
+  "segments": [
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s01",
+      "on_screen": "Car Needs Repair Today",
+      "pronunciation_terms": [],
+      "text": "Your car breaks down today. Is that reserve actually ready to pay for the repair?",
+      "type": "hook",
+      "visual_intent": "opening visual intent describes exactly one stationary car in a quiet garage; no host, sign footage or internal animation."
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s02",
+      "on_screen": "Check Access Conditions",
+      "pronunciation_terms": [],
+      "text": "Identify the repair invoice first. Then locate your reserve and read its specific access conditions carefully.",
+      "type": "practical",
+      "visual_intent": "identify (repair invoice and reserve)"
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s03",
+      "on_screen": "Check Timing Limits",
+      "pronunciation_terms": [],
+      "text": "Ask about timing limits. Does the account allow immediate withdrawal or require a waiting period?",
+      "type": "practical",
+      "visual_intent": "access (reserve and questions about access procedure, timing and conditions)"
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s04",
+      "on_screen": "Keep Funds Separate",
+      "pronunciation_terms": [],
+      "text": "Separate this money from your future goal. Do not mix emergency funds with long term savings.",
+      "type": "practical",
+      "visual_intent": "separate (reserve versus future goal)"
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s05",
+      "on_screen": "Verify Reserve Role",
+      "pronunciation_terms": [],
+      "text": "Review both roles now. Ensure your emergency reserve can handle the shock without touching retirement.",
+      "type": "practical",
+      "visual_intent": "review (review both roles)"
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s06",
+      "on_screen": "Build Wealth On Purpose",
+      "pronunciation_terms": [],
+      "text": "Follow Wealth Blueprint. Build wealth on purpose.",
+      "type": "cta",
+      "visual_intent": "closing visual intent is ONLY the Wealth Blueprint logo, no host or extra props."
+    }
+  ],
+  "title": "Can Your Emergency Fund Handle a Car Repair?"
+}

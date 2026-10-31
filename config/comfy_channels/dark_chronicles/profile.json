@@ -1,0 +1,150 @@
+{
+  "channel_id": "dark_chronicles",
+  "display_name": "Dark Chronicles",
+  "legacy_project_key": "horror_stories",
+  "comfy_project_dir": "E:\\Atnos\\Tools\\Comfy-Desktop\\ComfyUI-Projects\\dark_chronicles",
+  "role": "cinematic horror concepts, locations, storyboards",
+  "style_summary": "atmospheric cinematic horror",
+  "primary_characters": [],
+  "reference_files": [
+    "E:\\Atnos\\App\\config\\channel_references\\20260916\\crops\\dc_env_mood_anchor_v1.png"
+  ],
+  "image_models": [
+    "checkpoints/Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+    "checkpoints/sd_xl_turbo_1.0_fp16.safetensors"
+  ],
+  "image_fallback": "checkpoints/sd_xl_turbo_1.0_fp16.safetensors",
+  "workflows": [
+    {
+      "workflow_id": "dark_establishing_shot_v1",
+      "workflow_version": "v1",
+      "title": "DC_ESTABLISHING_SHOT",
+      "asset_type": "establishing",
+      "backend_preference": [
+        "flux2_klein",
+        "checkpoint"
+      ],
+      "default_width": 1344,
+      "default_height": 768,
+      "require_references": false,
+      "allow_transparent_bg": false,
+      "forbid_text_in_image": true,
+      "description": ""
+    },
+    {
+      "workflow_id": "dark_location_v1",
+      "workflow_version": "v1",
+      "title": "DC_LOCATION",
+      "asset_type": "location",
+      "backend_preference": [
+        "flux2_klein",
+        "checkpoint"
+      ],
+      "default_width": 1344,
+      "default_height": 768,
+      "require_references": false,
+      "allow_transparent_bg": false,
+      "forbid_text_in_image": true,
+      "description": ""
+    },
+    {
+      "workflow_id": "dark_character_reference_v1",
+      "workflow_version": "v1",
+      "title": "DC_CHARACTER_REFERENCE",
+      "asset_type": "character",
+      "backend_preference": [
+        "flux2_klein",
+        "checkpoint"
+      ],
+      "default_width": 1024,
+      "default_height": 1024,
+      "require_references": false,
+      "allow_transparent_bg": false,
+      "forbid_text_in_image": true,
+      "description": ""
+    },
+    {
+      "workflow_id": "dark_object_v1",
+      "workflow_version": "v1",
+      "title": "DC_OBJECT",
+      "asset_type": "object",
+      "backend_preference": [
+        "flux2_klein",
+        "checkpoint"
+      ],
+      "default_width": 1024,
+      "default_height": 1024,
+      "require_references": false,
+      "allow_transparent_bg": false,
+      "forbid_text_in_image": true,
+      "description": ""
+    },
+    {
+      "workflow_id": "dark_horror_event_v1",
+      "workflow_version": "v1",
+      "title": "DC_HORROR_EVENT",
+      "asset_type": "event",
+      "backend_preference": [
+        "flux2_klein",
+        "checkpoint"
+      ],
+      "default_width": 1344,
+      "default_height": 768,
+      "require_references": false,
+      "allow_transparent_bg": false,
+      "forbid_text_in_image": true,
+      "description": ""
+    },
+    {
+      "workflow_id": "dark_storyboard_frame_v1",
+      "workflow_version": "v1",
+      "title": "DC_STORYBOARD_FRAME",
+      "asset_type": "storyboard",
+      "backend_preference": [
+        "flux2_klein",
+        "checkpoint"
+      ],
+      "default_width": 1280,
+      "default_height": 720,
+      "require_references": false,
+      "allow_transparent_bg": false,
+      "forbid_text_in_image": true,
+      "description": ""
+    },
+    {
+      "workflow_id": "dark_atmosphere_v1",
+      "workflow_version": "v1",
+      "title": "DC_ATMOSPHERE",
+      "asset_type": "atmosphere",
+      "backend_preference": [
+        "flux2_klein",
+        "checkpoint"
+      ],
+      "default_width": 1344,
+      "default_height": 768,
+      "require_references": false,
+      "allow_transparent_bg": false,
+      "forbid_text_in_image": true,
+      "description": ""
+    },
+    {
+      "workflow_id": "dark_thumbnail_concept_v1",
+      "workflow_version": "v1",
+      "title": "DC_THUMBNAIL_CONCEPT",
+      "asset_type": "thumbnail",
+      "backend_preference": [
+        "flux2_klein",
+        "checkpoint"
+      ],
+      "default_width": 1280,
+      "default_height": 720,
+      "require_references": false,
+      "allow_transparent_bg": false,
+      "forbid_text_in_image": true,
+      "description": ""
+    }
+  ],
+  "output_subdir": "dark_chronicles",
+  "negative_profile_id": "dark_chronicles",
+  "prompt_profile_id": "dark_chronicles"
+}

@@ -1,0 +1,30 @@
+{
+  "job_id": "prod-60eff989e0b6",
+  "source_feedback_hash": "ee698b47f314532438155ad4b0eda6009b6e00435f4291d6e68942a89917397f",
+  "source_call": "6a4693b4ebba400e91de5e1a0e357ec7",
+  "invalid_complete_call": "c2c88d570c6d4ac6825203410bd8c379",
+  "frozen_profile_hash": "4f1e8742b7c3a15fdfd0cba9fcff474a107a6082fc88038f2ec8ff75d94e79bc",
+  "note": "Audit prompt contains redactions; writing-profile.json was read separately from the unchanged stored writing policy, not reconstructed from redacted JSON.",
+  "files": [
+    {
+      "file": "candidate.json",
+      "sha256": "07f3d5b82c6434dd49f842d6f17992182410eaf9f7355a321d7fdf07cb420c13"
+    },
+    {
+      "file": "feedback.json",
+      "sha256": "8cfdea60eabd9d50dd2ff13e3eda4ee91e3f34a658fa08b241f740553c6a19e7"
+    },
+    {
+      "file": "invalid-complete-review.json",
+      "sha256": "265ba4a66f66d34bed8d95bc94f3fb1f4167f48d5cc1f9b76d827ba1716f447b"
+    },
+    {
+      "file": "legacy-call.json",
+      "sha256": "e63d66cab9ac325913c6af7881b7967aa6954f0374c75e5039d354d054a84bdb"
+    },
+    {
+      "file": "writing-profile.json",
+      "sha256": "55ba81d7d6540c6aafbab6844bd9276181e2823d9ccffc918d2480a5d5ac2a95"
+    }
+  ]
+}

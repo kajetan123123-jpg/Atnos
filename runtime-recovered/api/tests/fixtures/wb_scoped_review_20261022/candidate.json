@@ -1,0 +1,47 @@
+{
+  "claims": [],
+  "description": "A short explainer about managing a free trial that renews automatically.",
+  "segments": [
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s01",
+      "on_screen": "trial card, calendar",
+      "pronunciation_terms": [],
+      "text": "Your free trial may end not on the sign-up date, but on a hidden renewal or cancellation cutoff.",
+      "type": "hook",
+      "visual_intent": "A subscription trial card with a calendar showing a date and a small icon indicating automatic renewal if enabled."
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s02",
+      "on_screen": "trial card, calendar",
+      "pronunciation_terms": [],
+      "text": "Check the trial agreement for the renewal price and note the cutoff date where you can cancel before automatic renewal starts.",
+      "type": "practical",
+      "visual_intent": "The same trial card now has a highlighted cutoff date and a calendar with a new event marked."
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s03",
+      "on_screen": "calendar, trial card",
+      "pronunciation_terms": [],
+      "text": "Set a reminder a few days before the cutoff date to decide whether to keep or cancel the service.",
+      "type": "practical",
+      "visual_intent": "Calendar with a reminder set earlier than the cutoff date, and the trial card showing a keep/cancel choice."
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s04",
+      "on_screen": "trial card",
+      "pronunciation_terms": [],
+      "text": "Follow Wealth Blueprint. Build wealth on purpose.",
+      "type": "cta",
+      "visual_intent": "Trial card with a confirmation message showing a deliberate choice and a clear final state."
+    }
+  ],
+  "title": "Your free trial has a second deadline"
+}

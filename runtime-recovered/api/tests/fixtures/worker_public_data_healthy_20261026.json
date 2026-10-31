@@ -1,0 +1,55 @@
+{
+  "status": "HEALTHY",
+  "capability": "FX_RATES",
+  "provider": "frankfurter",
+  "freshness": "delayed",
+  "cache": "miss",
+  "detail": "Kurs USD/EUR odczytany.",
+  "value": {
+    "base": "USD",
+    "quote": "EUR",
+    "rate": 0.89148,
+    "observation_date": "2026-10-26"
+  },
+  "provenance": {
+    "provider": "frankfurter",
+    "source": "https://api.frankfurter.dev/v2/rate/USD/EUR",
+    "fetched_at": "2026-10-26T07:19:34.450527+00:00",
+    "requested": {
+      "base": "USD",
+      "quote": "EUR"
+    },
+    "observation_date": "2026-10-26"
+  },
+  "diagnostics": {
+    "http_status": 200
+  },
+  "routing": {
+    "request_id": "f7da87616594",
+    "requested_capability": "FX_RATES",
+    "candidates": [
+      "frankfurter"
+    ],
+    "selected_provider": "frankfurter",
+    "reason": "capability_match,enabled,free_before_paid",
+    "fallback": null,
+    "fallback_used": false,
+    "events": [],
+    "freshness_requirement": null
+  },
+  "brain_provenance": {
+    "source_type": "public_data",
+    "provider": "frankfurter",
+    "capability": "FX_RATES",
+    "observation": {
+      "base": "USD",
+      "quote": "EUR",
+      "rate": 0.89148,
+      "observation_date": "2026-10-26"
+    },
+    "fetched_at": "2026-10-26T07:19:34.450527+00:00",
+    "source": "https://api.frankfurter.dev/v2/rate/USD/EUR",
+    "observation_date": "2026-10-26",
+    "confidence": "source_data"
+  }
+}

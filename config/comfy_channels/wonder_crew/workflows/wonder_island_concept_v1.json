@@ -1,0 +1,16 @@
+{
+  "workflow_id": "wonder_island_concept_v1",
+  "workflow_version": "v1",
+  "title": "ISLAND_CONCEPT",
+  "asset_type": "island",
+  "backend_preference": [
+    "checkpoint",
+    "z_image_turbo"
+  ],
+  "default_width": 1344,
+  "default_height": 768,
+  "require_references": false,
+  "allow_transparent_bg": false,
+  "forbid_text_in_image": true,
+  "description": ""
+}

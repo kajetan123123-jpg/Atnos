@@ -1,0 +1,16 @@
+{
+  "workflow_id": "dark_storyboard_frame_v1",
+  "workflow_version": "v1",
+  "title": "DC_STORYBOARD_FRAME",
+  "asset_type": "storyboard",
+  "backend_preference": [
+    "flux2_klein",
+    "checkpoint"
+  ],
+  "default_width": 1280,
+  "default_height": 720,
+  "require_references": false,
+  "allow_transparent_bg": false,
+  "forbid_text_in_image": true,
+  "description": ""
+}

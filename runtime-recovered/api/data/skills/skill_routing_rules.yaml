@@ -1,0 +1,184 @@
+rules:
+  - id: explicit-file-read
+    match_any: [fs_read, fs_list]
+    select: [atnos:file-analysis]
+    reject: [atnos:local-llm]
+    reason: Jawne odczytanie lub wyszukanie lokalnego pliku.
+
+  - id: explicit-file-code-write
+    match_any: [fs_write]
+    select: [atnos:codex-repo-work]
+    reject: [atnos:local-llm]
+    reason: Jawne przygotowanie pliku przez narzedzie.
+
+  - id: explicit-codex-repo
+    match_any: [repo, repository, bug, testy, tests, refactor, refaktoryzacja, cli, github]
+    select: [atnos:codex-repo-work]
+    reject: [atnos:local-llm]
+    reason: Zadanie dotyczy repo, kodu lub testow.
+
+  - id: explicit-pdf
+    match_any: [pdf]
+    select: [anthropic-skills:pdf, atnos:file-analysis]
+    reject: [atnos:local-llm]
+    reason: Task dotyczy PDF i wymaga file-aware analizy.
+
+  - id: explicit-docx
+    match_any: [docx, word, dokument word]
+    select: [anthropic-skills:docx]
+    reject: [atnos:local-llm]
+    reason: Task dotyczy dokumentu Word.
+
+  - id: explicit-xlsx
+    match_any: [xlsx, excel, csv, spreadsheet, arkusz]
+    select: [anthropic-skills:xlsx]
+    reject: [atnos:local-llm]
+    reason: Task dotyczy arkusza lub CSV.
+
+  - id: explicit-pptx
+    match_any: [pptx, powerpoint, slajdy, slides, prezentacja]
+    select: [anthropic-skills:pptx]
+    reject: [atnos:local-llm]
+    reason: Task dotyczy prezentacji.
+
+  - id: explicit-image
+    match_any: [grafika, grafike, grafiki, ilustracja, ilustracje, plakat, obraz, image, visual, wizualna sztuka]
+    select: [atnos:image-generation, anthropic-skills:canvas-design]
+    prefer: [anthropic-skills:algorithmic-art]
+    reject: [atnos:local-llm]
+    reason: Task dotyczy grafiki lub wizualnej sztuki.
+
+  - id: explicit-skill-creator
+    match_any: [skill, stworzyc skill, stworz skill, nowy skill, edit skill, improve skill]
+    match_all: [skill]
+    select: [anthropic-skills:skill-creator]
+    reject: [atnos:local-llm]
+    reason: Task dotyczy tworzenia lub poprawy skilla.
+
+  - id: explicit-mcp
+    match_any: [mcp, model context protocol]
+    select: [anthropic-skills:mcp-builder]
+    reject: [atnos:local-llm]
+    reason: Task dotyczy MCP.
+
+  - id: explicit-memory
+    match_any: [obsidian, obsidiana, obsidianie, obsydian, obsydiana, obsydianie, notatki, notes, memory, pamiec]
+    select: [anthropic-skills:consolidate-memory, atnos:obsidian-memory]
+    prefer: [atnos:desktop-operator]
+    reject: [atnos:local-llm]
+    reason: Task dotyczy pamieci, notatek lub Obsidiana.
+
+  - id: explicit-brand-voice-enforce
+    match_any: [glos marki, glosem marki, brand voice, tone of voice, zgodnie z marka, mail]
+    select: [brand-voice:enforce-voice]
+    prefer: [brand-voice:discover-brand, brand-voice:generate-guidelines]
+    reject: [atnos:local-llm]
+    reason: Task dotyczy tonu marki lub stylu komunikacji.
+
+  - id: explicit-design-accessibility
+    match_any: [accessibility, a11y, wcag, dostepnosci]
+    select: [design:accessibility-review]
+    reject: [atnos:local-llm]
+    reason: Task dotyczy dostepnosci.
+
+  - id: explicit-design-handoff
+    match_any: [handoff, spec dla dev, implementation spec, dev handoff]
+    select: [design:design-handoff]
+    reject: [atnos:local-llm]
+    reason: Task dotyczy handoffu dla developerow.
+
+  - id: explicit-design-copy
+    match_any: [ux copy, microcopy, mikrocopy, cta, error message]
+    select: [design:ux-copy]
+    reject: [atnos:local-llm]
+    reason: Task dotyczy UX copy.
+
+  - id: explicit-design-system
+    match_any: [design system, token, tokens, component library]
+    select: [design:design-system]
+    reject: [atnos:local-llm]
+    reason: Task dotyczy design systemu.
+
+  - id: explicit-design-general
+    match_any: [design, ux, ui, critique, research synthesis, user research]
+    select: [design:design-critique]
+    prefer: [design:user-research, design:research-synthesis]
+    reject: [atnos:local-llm]
+    reason: Ogolny task UI/UX lub designowy.
+
+  - id: explicit-sanity-portable-text-conversion
+    match_any: [portable text, markdown, html]
+    match_all: [sanity]
+    select: [sanity:portable-text-conversion]
+    reject: [atnos:local-llm]
+    reason: Task dotyczy konwersji Markdown lub HTML do Portable Text w Sanity.
+
+  - id: explicit-sanity
+    match_any: [sanity, portable text, groq, typegen, content lake]
+    select: [sanity:sanity-best-practices]
+    prefer: [sanity:portable-text-conversion, sanity:portable-text-serialization, sanity:typegen, sanity:review]
+    reject: [atnos:local-llm]
+    reason: Task dotyczy Sanity CMS.
+
+  - id: explicit-hr-onboarding
+    match_any: [onboarding, nowy pracownik, first week]
+    select: [human-resources:onboarding]
+    reject: [atnos:local-llm]
+    reason: Task dotyczy onboardingu.
+
+  - id: explicit-hr-general
+    match_any: [hr, rekrut, recruit, interview, offer, wynagrodz, compensation, people report]
+    select: [human-resources:org-planning]
+    prefer: [human-resources:interview-prep, human-resources:draft-offer, human-resources:comp-analysis, human-resources:people-report, human-resources:recruiting-pipeline]
+    reject: [atnos:local-llm]
+    reason: Task dotyczy obszaru HR i people ops.
+
+  - id: explicit-deep-research
+    match_any: [research, latest, aktualne, linki, linkami, links, citations, porownanie, dokumentacja, docs, market]
+    select: [atnos:deep-research]
+    reject: [atnos:local-llm]
+    reason: Task wymaga aktualnych faktow, linkow albo porownan rynkowych.
+
+  - id: explicit-ubuntu
+    match_any: [ubuntu, ssh, systemd, apt, pakiet, package install, laptop, sandbox, 192.168.1.101]
+    select: [atnos:ubuntu-full-control]
+    reject: [atnos:local-llm]
+    reason: Task dotyczy zdalnego laptopa Ubuntu lub SSH.
+
+  - id: explicit-youtube
+    match_any: [upload, analytics, studio, metadata, video_id]
+    match_all: [youtube]
+    select: [atnos:youtube-automation]
+    prefer: [atnos:content-pipeline]
+    reject: [atnos:local-llm]
+    reason: Task dotyczy YouTube uploadu lub analytics.
+
+  - id: explicit-channel-ops
+    match_any: [przygotuj shorty, zaplanuj kanal, kanal, kana, kanale, kanalu, approval, kolejka upload, analytics kanalu, co dziala najlepiej, zaproponuj tematy, wygeneruj tematy, hooki]
+    select: [atnos:channel-ops]
+    prefer: [atnos:content-pipeline, atnos:youtube-automation]
+    reject: [atnos:local-llm]
+    reason: Task dotyczy zarzadzania kanalem, kolejka produkcji, approval albo analytics.
+
+  - id: explicit-content-pipeline
+    match_any: [reels, short video, shorta, shorts, wideo, video, rolka, rolke, reel, clip, klip, subtitles, thumbnail, tts, render]
+    select: [atnos:content-pipeline]
+    reject: [atnos:local-llm]
+    reason: Task dotyczy pipeline'u tresci i short form.
+
+  - id: explicit-browser-operator
+    match_any: [chrome, browser, karta, tab, strona, strone, strony, strona internetowa, website]
+    select: [atnos:browser-operator]
+    reject: [atnos:local-llm]
+    reason: Task dotyczy przegladarki lub aktywnej strony.
+
+  - id: explicit-desktop-operator
+    match_any: [obsydian, obsydiana, obsidian, obsidiana, otworz aplikacje, otworz lokalna aplikacje, desktop, focus app]
+    select: [atnos:desktop-operator]
+    reject: [atnos:local-llm]
+    reason: Task dotyczy lokalnej aplikacji desktopowej.
+
+  - id: fallback-local-llm
+    match_any: []
+    select: [atnos:local-llm]
+    reason: Domyslny fallback dla zwyklej odpowiedzi bez potrzeby specjalnych narzedzi.

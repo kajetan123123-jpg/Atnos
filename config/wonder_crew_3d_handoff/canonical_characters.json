@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "channel": "wonder_crew",
+  "updated_at": "2026-09-19T15:54:30.265811+00:00",
+  "characters": {
+    "niko": {
+      "character_id": "niko",
+      "display_name": "Niko",
+      "canonical_package_id": null,
+      "canonical_package_version": null,
+      "canonical": false,
+      "package_path": null,
+      "manifest_path": null,
+      "notes": "Cleared false canonical WC_NIKO_V001 \u2014 content control failed (BACK face-sheet fragment; bootstrap approval revoked)."
+    },
+    "pif": {
+      "character_id": "pif",
+      "display_name": "Pif",
+      "canonical_package_id": null,
+      "canonical_package_version": null,
+      "canonical": false,
+      "notes": "No package yet. Brand-kit legacy id 'puf' maps to 'pif'."
+    },
+    "tika": {
+      "character_id": "tika",
+      "display_name": "Tika",
+      "canonical_package_id": null,
+      "canonical_package_version": null,
+      "canonical": false,
+      "notes": "No package yet."
+    },
+    "mira": {
+      "character_id": "mira",
+      "display_name": "Mira",
+      "canonical_package_id": null,
+      "canonical_package_version": null,
+      "canonical": false,
+      "notes": "No package yet."
+    }
+  }
+}

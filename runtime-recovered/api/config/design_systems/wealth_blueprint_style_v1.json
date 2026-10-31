@@ -1,0 +1,258 @@
+{
+  "schema_version": "1.0",
+  "style_id": "wealth_blueprint_style_v1",
+  "channel": "wealth_blueprint",
+  "canvas": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "presets": {
+      "shorts_portrait": {"width": 1080, "height": 1920, "fps": 30},
+      "landscape_later": {"width": 1920, "height": 1080, "fps": 30, "status": "TODO(later)"}
+    }
+  },
+  "visual_profile_id": "wealth_blueprint_visual_v1",
+  "colors": {
+    "source": "visual_profiles/wealth_blueprint_visual_v1.json (VISUAL-BIBLE authority)",
+    "primary": "#142633",
+    "secondary": "#426579",
+    "accent": "#D5AD6C",
+    "background": "#142633",
+    "text_on_dark": "#F0E5D2",
+    "extended": {
+      "source": "brand-kits/wealth-blueprint-alex-01 VISUAL-BIBLE palette",
+      "navy": "#142633",
+      "paper": "#F0E5D2",
+      "blueprint_blue": "#426579",
+      "muted_teal": "#4B7977",
+      "warm_orange": "#C18A49",
+      "gold": "#D5AD6C",
+      "muted_red": "#995E4B",
+      "muted": "#4B7977",
+      "panel": "#1C3344"
+    },
+    "forbidden": ["#FF0000", "pure red loss associations", "#39FF9F", "neon mint", "black-neon dashboard"],
+    "superseded_neon_pack": {
+      "status": "superseded",
+      "background": "#111111",
+      "accent": "#39FF9F",
+      "note": "Do not treat black-neon as authoritative merely because older profiles used it."
+    },
+    "legacy_remotion_default_background": {
+      "value": "#33423B",
+      "status": "superseded",
+      "note": "Remotion DEFAULT_BRAND aligned to wealth_blueprint_visual_v1 navy/cream/gold."
+    }
+  },
+  "typography": {
+    "families": ["Montserrat", "Atnos"],
+    "weights": {"bold": 700, "extra_bold": 900},
+    "source": "Remotion FontLoader + thumbnail_rules",
+    "scales": {
+      "display": {"fontSize": 96, "lineHeight": 1.05, "weight": 900},
+      "title": {"fontSize": 64, "lineHeight": 1.1, "weight": 800},
+      "body": {"fontSize": 42, "lineHeight": 1.25, "weight": 700},
+      "caption": {"fontSize": 32, "lineHeight": 1.2, "weight": 700, "max_words": 5, "max_characters": 32},
+      "number": {"fontSize": 120, "lineHeight": 1.0, "weight": 900}
+    }
+  },
+  "spacing": {
+    "grid_px": 8,
+    "note": "TODO if profile omits denser spacing tokens — use 8px grid only"
+  },
+  "safe_zones": {
+    "production_safe_area": [60, 180, 1020, 1690],
+    "production_safe_area_meaning": "[x0, y0, x1, y1] inclusive content box from channel profile",
+    "remotion_legacy": {
+      "SAFE_X": 72,
+      "SAFE_TOP": 96,
+      "SAFE_BOTTOM": 220,
+      "status": "TODO(align-safe-area)",
+      "note": "Prefer production_safe_area for new layout slots; Remotion SceneShell still uses SAFE_* constants"
+    },
+    "platforms": {
+      "youtube_shorts": {"top_ui_px": 180, "bottom_ui_px": 230, "side_px": 60},
+      "tiktok": {"top_ui_px": 180, "bottom_ui_px": 280, "side_px": 60},
+      "instagram_reels": {"top_ui_px": 160, "bottom_ui_px": 260, "side_px": 60}
+    }
+  },
+  "text_hierarchy": ["hook", "statement", "supporting", "caption"],
+  "max_elements_on_screen_default": 4,
+  "transitions": {
+    "allowed": ["cut", "fade"],
+    "presets": {
+      "cut": {"duration_sec": 0.0},
+      "fade": {"duration_sec": 0.25}
+    }
+  },
+  "animation_presets": {
+    "text": "TEXT_FADE",
+    "number": "NUMBER_COUNT",
+    "chart": "CHART_GROW",
+    "map_to_motion_registry": true,
+    "source": "remotion-renderer/src/motion"
+  },
+  "chart_styles": {
+    "accent_on_key_value": true,
+    "avoid_red": true,
+    "vector_only": true,
+    "note": "Charts are Remotion SVG dataviz — never AI bitmaps"
+  },
+  "character_placement": {
+    "slots": ["left", "right", "off"],
+    "alex_policy": "only when layout.alex is true and scene purpose requires host"
+  },
+  "asset_placement": {
+    "regions_in_safe_zone": true
+  },
+  "motion_defaults": {
+    "text": "TEXT_FADE",
+    "number": "NUMBER_COUNT",
+    "chart": "CHART_GROW"
+  },
+  "layouts": {
+    "character_left_text_right": {
+      "alex": true,
+      "max_elements": 3,
+      "focus": "character",
+      "scene_type_hint": "ImageScene",
+      "slots": [
+        {"id": "character", "kind": "character", "region_pct": [0, 15, 45, 85]},
+        {"id": "title", "kind": "text", "region_pct": [48, 25, 95, 55]},
+        {"id": "caption", "kind": "caption", "region_pct": [48, 70, 95, 88]}
+      ],
+      "animation_presets": ["CHARACTER_ENTER_LEFT", "TEXT_FADE"],
+      "transition_in": "fade",
+      "transition_out": "cut"
+    },
+    "character_right_text_left": {
+      "alex": true,
+      "max_elements": 3,
+      "focus": "character",
+      "scene_type_hint": "ImageScene",
+      "slots": [
+        {"id": "title", "kind": "text", "region_pct": [5, 25, 52, 55]},
+        {"id": "character", "kind": "character", "region_pct": [55, 15, 100, 85]},
+        {"id": "caption", "kind": "caption", "region_pct": [5, 70, 52, 88]}
+      ],
+      "animation_presets": ["CHARACTER_ENTER_RIGHT", "TEXT_FADE"],
+      "transition_in": "fade",
+      "transition_out": "cut"
+    },
+    "fullscreen_statement": {
+      "alex": false,
+      "max_elements": 2,
+      "focus": "statement",
+      "scene_type_hint": "HookScene",
+      "slots": [
+        {"id": "statement", "kind": "text", "region_pct": [8, 30, 92, 70]},
+        {"id": "caption", "kind": "caption", "region_pct": [8, 78, 92, 90]}
+      ],
+      "animation_presets": ["TEXT_FADE"],
+      "transition_in": "fade",
+      "transition_out": "cut"
+    },
+    "big_number": {
+      "alex": false,
+      "max_elements": 2,
+      "focus": "number",
+      "scene_type_hint": "NumberScene",
+      "slots": [
+        {"id": "number", "kind": "number", "region_pct": [10, 28, 90, 55]},
+        {"id": "label", "kind": "text", "region_pct": [10, 58, 90, 75]}
+      ],
+      "animation_presets": ["NUMBER_COUNT", "TEXT_FADE"],
+      "transition_in": "fade",
+      "transition_out": "cut"
+    },
+    "chart_focus": {
+      "alex": false,
+      "max_elements": 3,
+      "focus": "chart",
+      "scene_type_hint": "ChartScene",
+      "slots": [
+        {"id": "title", "kind": "text", "region_pct": [8, 12, 92, 22]},
+        {"id": "chart", "kind": "chart", "region_pct": [8, 24, 92, 72]},
+        {"id": "caption", "kind": "caption", "region_pct": [8, 78, 92, 90]}
+      ],
+      "animation_presets": ["CHART_GROW", "TEXT_FADE"],
+      "transition_in": "fade",
+      "transition_out": "cut"
+    },
+    "comparison": {
+      "alex": false,
+      "max_elements": 3,
+      "focus": "comparison",
+      "scene_type_hint": "ChartScene",
+      "slots": [
+        {"id": "left", "kind": "text", "region_pct": [6, 30, 48, 70]},
+        {"id": "right", "kind": "text", "region_pct": [52, 30, 94, 70]},
+        {"id": "caption", "kind": "caption", "region_pct": [8, 78, 92, 90]}
+      ],
+      "animation_presets": ["TEXT_FADE"],
+      "transition_in": "cut",
+      "transition_out": "cut"
+    },
+    "three_points": {
+      "alex": false,
+      "max_elements": 4,
+      "focus": "statement",
+      "scene_type_hint": "HookScene",
+      "slots": [
+        {"id": "title", "kind": "text", "region_pct": [8, 18, 92, 28]},
+        {"id": "point_1", "kind": "text", "region_pct": [8, 34, 92, 46]},
+        {"id": "point_2", "kind": "text", "region_pct": [8, 48, 92, 60]},
+        {"id": "point_3", "kind": "text", "region_pct": [8, 62, 92, 74]}
+      ],
+      "animation_presets": ["TEXT_FADE"],
+      "transition_in": "fade",
+      "transition_out": "cut"
+    },
+    "icon_explainer": {
+      "alex": false,
+      "max_elements": 3,
+      "focus": "icon",
+      "scene_type_hint": "ImageScene",
+      "slots": [
+        {"id": "icon", "kind": "icon", "region_pct": [30, 18, 70, 42]},
+        {"id": "title", "kind": "text", "region_pct": [8, 48, 92, 62]},
+        {"id": "caption", "kind": "caption", "region_pct": [8, 78, 92, 90]}
+      ],
+      "animation_presets": ["ICON_POP", "TEXT_FADE"],
+      "transition_in": "fade",
+      "transition_out": "cut"
+    },
+    "split_screen": {
+      "alex": true,
+      "max_elements": 4,
+      "focus": "comparison",
+      "scene_type_hint": "ImageScene",
+      "slots": [
+        {"id": "left_panel", "kind": "text", "region_pct": [4, 20, 48, 75]},
+        {"id": "right_panel", "kind": "character", "region_pct": [52, 20, 96, 75]},
+        {"id": "caption", "kind": "caption", "region_pct": [8, 80, 92, 92]}
+      ],
+      "animation_presets": ["CHARACTER_ENTER_RIGHT", "TEXT_FADE"],
+      "transition_in": "cut",
+      "transition_out": "cut"
+    },
+    "quote_or_fact": {
+      "alex": false,
+      "max_elements": 2,
+      "focus": "statement",
+      "scene_type_hint": "CTAScene",
+      "slots": [
+        {"id": "quote", "kind": "text", "region_pct": [10, 35, 90, 65]},
+        {"id": "attribution", "kind": "caption", "region_pct": [10, 72, 90, 84]}
+      ],
+      "animation_presets": ["TEXT_FADE"],
+      "transition_in": "fade",
+      "transition_out": "fade"
+    }
+  },
+  "notes": [
+    "Scene Planner selects layout_id; Remotion renders via layout_id + layout_to_scene_type → SceneType.",
+    "Do not invent a parallel VideoProject contract.",
+    "Active visual identity is wealth_blueprint_visual_v1 (hand-drawn navy/cream/gold). Neon black-mint is superseded."
+  ]
+}

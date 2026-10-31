@@ -1,0 +1,15 @@
+{
+  "channel": "wealth_blueprint",
+  "role": "base",
+  "compose": [
+    "style",
+    "asset_type",
+    "subject",
+    "action",
+    "emotion",
+    "composition",
+    "lighting",
+    "camera",
+    "quality"
+  ]
+}

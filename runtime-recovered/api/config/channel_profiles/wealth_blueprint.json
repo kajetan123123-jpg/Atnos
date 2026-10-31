@@ -1,0 +1,285 @@
+{
+  "account_id": "yt-wealth-blueprint",
+  "channel_id": "",
+  "channel_name": "Wealth Blueprint",
+  "look_bank_kit": "wealth-blueprint-alex-01",
+  "channel_handle": "@WealthBlueprintShorts",
+  "niche": "personal_finance",
+  "sub_niches": [
+    "long-term investing",
+    "compound interest",
+    "ETF and index funds",
+    "financial psychology",
+    "budgeting for Gen Z and Millennials",
+    "inflation and purchasing power"
+  ],
+  "language": "en",
+  "region": "US",
+  "target_market": "US/Global",
+  "target_audience": "Gen Z and Millennials (18-34), English-speaking, interested in building wealth without get-rich-quick schemes",
+  "format": "shorts",
+  "max_duration_seconds": 58,
+  "publish_mode": "private_only",
+  "upload_as_private_first": true,
+  "auto_publish_after_qa": false,
+  "made_for_kids": false,
+  "self_declared_made_for_kids": false,
+  "schedule": {
+    "phase_1_bootstrap": {
+      "weeks": "1-8",
+      "videos_per_day": 2,
+      "publish_times_utc": [
+        "14:00",
+        "20:00"
+      ],
+      "note": "High-frequency bootstrap to train the algorithm. Both slots target US EST prime time."
+    },
+    "phase_2_steady": {
+      "weeks": "9+",
+      "videos_per_day": 1,
+      "publish_times_utc": [
+        "15:00"
+      ],
+      "note": "Reduce cadence once channel has 500+ subscribers and algorithm is seeded."
+    },
+    "longform_cadence": "Every 5th topic produced as a 3-5 minute video to accumulate watch hours for YPP"
+  },
+  "style": "hand_drawn_editorial_blueprint",
+  "visual_style": "Premium hand-drawn mature editorial illustration with blueprint visual language: charcoal navy, paper cream, muted teal and sparse warm gold. Subtle grids and dimensions. Calm readable motion. Alex only in justified host scenes. No neon fintech glow.",
+  "narration_style": "calm_expert",
+  "narration_notes": "Confident but not condescending. Measured pace around 140 wpm. Never hype, never panic. Like a smart friend who happens to know finance.",
+  "tts_voice": "en-US-GuyNeural",
+  "tts_voice_fallback": "en-US-ChristopherNeural",
+  "hook_strategy": "Open with a source-backed concrete contrast or provocative question. The stakes must be large enough to justify attention; do not lead with tiny arithmetic examples. Keep assumptions explicit and never imply a guaranteed return. First 2 seconds must create cognitive dissonance.",
+  "hook_target_seconds": 1.5,
+  "reference_channels": [
+    "@humphrey",
+    "@GrahamStephan",
+    "@AndreiJikh",
+    "@AliAbdaal",
+    "@ThePlainBagel"
+  ],
+  "competitor_channels": [
+    "generic AI-voice financial motivation channels",
+    "hustle culture TikTokers",
+    "dropshipping gurus",
+    "crypto pump channels"
+  ],
+  "allowed_topics": [
+    "compound interest mechanics",
+    "ETF and index fund strategy",
+    "DCA dollar cost averaging",
+    "inflation and purchasing power",
+    "50/30/20 budgeting rule",
+    "emergency fund sizing",
+    "Roth IRA vs Traditional IRA",
+    "net worth building",
+    "financial psychology and behavior",
+    "common money myths debunked",
+    "opportunity cost explained",
+    "rule of 72",
+    "debt avalanche vs snowball",
+    "passive income realism"
+  ],
+  "forbidden_topics": [
+    "specific stock picks or buy/sell recommendations",
+    "cryptocurrency pumping or price predictions",
+    "day trading strategies",
+    "MLM or pyramid scheme content",
+    "get-rich-quick or overnight wealth claims",
+    "options trading for beginners",
+    "NFTs",
+    "direct investment advice"
+  ],
+  "monetization": {
+    "primary": "AdSense",
+    "rpm_estimate_usd": {
+      "min": 18,
+      "max": 42
+    },
+    "secondary": [
+      {
+        "type": "affiliate",
+        "partners": [
+          "Interactive Brokers",
+          "Trading 212",
+          "Revolut",
+          "M1 Finance"
+        ],
+        "placement": "video description and pinned comment",
+        "estimated_per_signup_usd": "10-50"
+      }
+    ],
+    "future": [
+      "Sponsored segments from fintech brands",
+      "Digital product: budgeting template"
+    ],
+    "ypp_target": {
+      "subscribers": 500,
+      "watch_hours_or_views": "3M Shorts views OR 4000 longform watch hours",
+      "estimated_timeline_months": "3-5"
+    }
+  },
+  "brand": {
+    "colors": {
+      "primary": "#142633",
+      "secondary": "#426579",
+      "accent": "#D5AD6C",
+      "background": "#142633",
+      "text_on_dark": "#F0E5D2"
+    },
+    "visual_profile_id": "wealth_blueprint_visual_v1",
+    "thumbnail_style": "hand_drawn_editorial_navy_cream",
+    "thumbnail_rules": [
+      "Max 3 bold English words on thumbnail (typeset in post)",
+      "Font: Montserrat ExtraBold or Atnos",
+      "Navy / paper cream / muted warm gold — no neon mint",
+      "One strong visual metaphor from the Visual Bible",
+      "Alex only when the cover is host-led",
+      "No red arrows or clickbait borders",
+      "Color accent only on key number or word"
+    ],
+    "logo_description": "Minimalist rising line with blueprint compass motif. Navy and muted gold on cream or navy field. Hand-drawn editorial, not neon fintech.",
+    "example_video_titles": [
+      "Why Inflation Is Melting Your Savings",
+      "The 50/30/20 Rule: Master Your Budget in 60 Seconds",
+      "Investing vs. Speculation: The Brutal Difference",
+      "Why Your Savings Account Is Lying to You",
+      "The Rule of 72: Double Your Money Explained"
+    ],
+    "notes": "Active identity: wealth_blueprint_visual_v1 (VISUAL-BIBLE). Neon black-mint is superseded. Never use pure red for loss bait. Avoid sensationalism. Every claim must be sourceable."
+  },
+  "research": {
+    "signals_refresh_hours": 6,
+    "trend_sources": [
+      "YouTube Data API",
+      "Google Trends US",
+      "Reddit r/personalfinance",
+      "reference_channels"
+    ],
+    "keyword_strategy": "Start with long-tail low-competition queries in weeks 1-4, shift to trending topics after 500 subscribers",
+    "seasonal_topics": {
+      "january": [
+        "new year budgeting",
+        "financial resolutions that work"
+      ],
+      "april": [
+        "tax filing basics",
+        "what to do with tax refund"
+      ],
+      "november": [
+        "Black Friday spending psychology",
+        "year-end portfolio review"
+      ]
+    }
+  },
+  "production": {
+    "version": 1,
+    "renderer": "remotion",
+    "renderer_remotion_opt_in": true,
+    "renderer_default_switch_requires": "two_consecutive_green_remotion_order_e2e",
+    "renderer_notes": "Remotion is wired (produce_edit REMOTION_REQUIRED). Keep editorial default until two green Remotion Production Order E2Es past script QA; then set renderer to remotion.",
+    "language": "en",
+    "duration_seconds": [
+      35,
+      50
+    ],
+    "word_budget": [
+      90,
+      125
+    ],
+    "minimum_practical_share": 0.3333333333333333,
+    "max_attempts_per_element": 20,
+    "max_provider_calls": 10000,
+    "max_cost_usd": 1000.0,
+    "script_model": {
+      "generator": "qwen3:14b",
+      "reviewer": "qwen3:14b",
+      "context_tokens": 12288,
+      "output_tokens": 7000,
+      "timeout_seconds": 750,
+      "thinking": false
+    },
+    "assets": {
+      "manifests": [
+        "production/youtube-atnos-int.pl/golden-compound-forty-year-v15-20260905/licensed_broll/sources.json"
+      ],
+      "embedding_model": "bge-m3:latest",
+      "candidates_per_scene": 5,
+      "max_assets": 60
+    },
+    "voice": {
+      "provider": "elevenlabs",
+      "voice_id": "iP95p4xoKVk53GoZ742B",
+      "model": "eleven_multilingual_v2",
+      "stability": 0.7,
+      "similarity": 0.78,
+      "speed": 1.12,
+      "pacing_mode": "script_length",
+      "style": 0.0,
+      "speaker_boost": false,
+      "reservation_usd_per_1000_characters": 0.4
+    },
+    "narrative_rules": [
+      "Speak directly to the viewer, firmly and naturally, without breathy acting or hype.",
+      "At least one third must give specific achievable actions, not generic encouragement.",
+      "Spell out numbers for TTS. Separate adjacent amounts and durations into clear sentences.",
+      "Only when the topic requires a multi-year timeline, use ordinal year wording. Never invent a first-year or second-year schedule for a regular savings habit.",
+      "Give significant honest stakes, state assumptions and never promise market returns.",
+      "Use conditional everyday wording rather than repeated hypothetical hedging.",
+      "Distinguish accumulating starting capital from the later investment horizon.",
+      "Do not copy reference transcripts. End with one concrete action."
+    ],
+    "visual_rules": [
+      "Hand-drawn mature editorial + blueprint language: navy, paper cream, muted teal, sparse warm gold.",
+      "Use approved Alex stills only in alex=true layouts; otherwise icon/diagram/comparison compositions.",
+      "Choose assets by the scene's meaning. Do not use unrelated clips as filler.",
+      "Hold final numbers long enough to read. Continue graphs on consistent axes.",
+      "Calm readable motion — no neon flashes, random zoom resets or glitch cuts."
+    ],
+    "reference_profile": "learning/active-reference-shorts/latest_editorial_profile_wealth_blueprint.json",
+    "knowledge_queries": [
+      "Wealth Blueprint reference analysis",
+      "Wealth Blueprint viewer feedback"
+    ],
+    "caption_max_words": 5,
+    "caption_max_characters": 32,
+    "safe_area": [
+      60,
+      180,
+      1020,
+      1690
+    ],
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "thumbnail_rules": [
+      "One strong relevant visual and a readable hook",
+      "Amounts and time horizons must match the script",
+      "Use IF IT GROWS for a conditional rate, never a guarantee",
+      "Export portrait and landscape variants"
+    ],
+    "required_gates": [
+      "script",
+      "voice",
+      "captions",
+      "media",
+      "semantic",
+      "package"
+    ],
+    "publish": false
+  },
+  "qa_gate": {
+    "min_duration_seconds": 25,
+    "max_duration_seconds": 58,
+    "min_file_size_kb": 800,
+    "resolution": [
+      1080,
+      1920
+    ],
+    "require_subtitles": true,
+    "require_thumbnail": true,
+    "min_script_words": 80,
+    "audio_min_rms_db": -38
+  }
+}

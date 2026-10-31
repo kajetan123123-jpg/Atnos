@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "policy": "CORE_ONLY",
+  "disable_all_custom_nodes": true,
+  "allowlist": [],
+  "blocklist": ["comfyui-f5-tts", "ComfyUI_wav2lip"],
+  "rationale": [
+    "Atnos production uses programmatic API graphs from core nodes only.",
+    "Installed custom packs: comfyui-f5-tts (IMPORT FAILED on ROCm/torch) and historically ComfyUI_wav2lip (quarantined).",
+    "IPAdapter pack and models are not present; do not enable all custom nodes to chase missing packs.",
+    "Reference conditioning production path: core LoadImage+VAEEncode+KSampler img2img (no custom nodes).",
+    "Background removal: local U2-Net ONNX outside Comfy (local_cutout_service)."
+  ],
+  "optional_future_allowlist": {
+    "ipadapter": {
+      "status": "NOT_INSTALLED",
+      "requires": ["ComfyUI_IPAdapter_plus", "clip_vision models", "ipadapter models"],
+      "action": "Do not install until AMD/ROCm validation plan exists"
+    }
+  },
+  "inventory": [
+    {
+      "custom_node": "comfyui-f5-tts",
+      "status": "BROKEN",
+      "required_by": "none (TTS is separate Atnos path)",
+      "error": "Import fails: missing f5_tts / App Control DLL / torch.distributed.ReduceOp on ROCm",
+      "amd_rocm_compatible": false,
+      "action": "KEEP DISABLED via --disable-all-custom-nodes"
+    },
+    {
+      "custom_node": "ComfyUI_wav2lip",
+      "status": "QUARANTINED",
+      "required_by": "legacy lip-sync experiments",
+      "error": "Blocked startup historically; moved to Storage/Quarantine",
+      "amd_rocm_compatible": false,
+      "action": "DO NOT RESTORE"
+    },
+    {
+      "custom_node": "IPAdapter / ControlNet packs",
+      "status": "ABSENT",
+      "required_by": "desired character consistency (not currently installable without new packs+models)",
+      "error": "Nodes and models missing under Shared models",
+      "amd_rocm_compatible": "unknown",
+      "action": "DO NOT INSTALL in this phase; use core img2img reference path"
+    }
+  ]
+}
