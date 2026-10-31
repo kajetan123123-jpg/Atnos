@@ -1,0 +1,41 @@
+{
+  "schema_version": "wb-illustration-checkpoint-1",
+  "candidate_id": "dreamshaper-xl-alpha2",
+  "checkpoint_path": "E:\\Atnos\\Tools\\Comfy-Desktop\\ComfyUI-Shared\\models\\checkpoints\\dreamshaper_sdxl_alpha2_wb_candidate.safetensors",
+  "verification": {
+    "sha256": "0f1b80cfe81b9c3bde7fdcbf6898897b2811b27be1df684583c3d85cbc9b1fa4",
+    "size_bytes": 6938068556,
+    "header_bytes": 392504,
+    "tensor_count": 2516,
+    "components": [
+      "unet",
+      "clip_l",
+      "clip_g",
+      "vae"
+    ]
+  },
+  "source": {
+    "repository": "Lykon/DreamShaper",
+    "revision": "228d79cb20811466f5c5710aa91f05dabd0b8a14",
+    "filename": "DreamShaperXL1.0Alpha2_fixedVae_half_00001_.safetensors",
+    "url": "https://huggingface.co/Lykon/DreamShaper/blob/228d79cb20811466f5c5710aa91f05dabd0b8a14/DreamShaperXL1.0Alpha2_fixedVae_half_00001_.safetensors",
+    "metadata_path": "E:\\Atnos\\Storage\\ModelSources\\Lykon-DreamShaper\\228d79cb20811466f5c5710aa91f05dabd0b8a14\\hub-source.json",
+    "metadata_sha256": "5326a7c7a95653d70c0cb7c54e1f55932d1b0afe20f061eee57074a079786c89"
+  },
+  "license": {
+    "commercial_images": true,
+    "author_model_url": "https://civitai.com/models/112902",
+    "author_version_id": 126688,
+    "metadata_path": "E:\\Atnos\\Storage\\ModelSources\\Lykon-DreamShaper\\228d79cb20811466f5c5710aa91f05dabd0b8a14\\author-model-license.json",
+    "metadata_sha256": "9b45f3eb3a7a54317921ecc64de56d8ad448f34656a4dbe5e8683689c21eaec7",
+    "base_license": "SDXL Open RAIL++; author permits commercial generated images"
+  },
+  "installed_at": "2026-10-05T18:22:40.071135+00:00",
+  "appearance_approval": "pending",
+  "user_approved": false,
+  "limitations": [
+    "Alpha2 candidate; not a verified Wealth Blueprint visual standard",
+    "Checkpoint selection alone does not lock Alex identity or create animation",
+    "Generated assets still require actual image and scene review"
+  ]
+}

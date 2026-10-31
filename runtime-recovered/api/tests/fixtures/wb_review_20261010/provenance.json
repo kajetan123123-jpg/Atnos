@@ -1,0 +1,39 @@
+{
+  "purpose": "Regression inputs from rejected LIVE responses, not acceptance or quality receipts.",
+  "script_sha256": "3591192ff256e226dbaa8ab559e805692f88aa8ecc1b726fc53cb1452d2868a8",
+  "responses": [
+    {
+      "fixture": "review-1.json",
+      "fixture_sha256": "8861bf4f9b97e27f3d7006b90116724bd0b286ccf315687f1044681f6dd2d336",
+      "source_call": "13f5d8e3f4a14f279724114fcd221bb6",
+      "source_artifact": "reports\\scenario_repair_production_delivery_20261009\\evidence\\live-single-repair-20261010\\model-calls\\13f5d8e3f4a14f279724114fcd221bb6.json",
+      "source_sha256": "23a1f5d65d9592364159f07b5a628b247be22bc4e4471cc57ff787c1cf0482cd",
+      "raw_sha256": "0013709bfacc0f9136432a2127b00fa3ea1f42eb3c319dd5c9060368741d68ad",
+      "model": "qwen3.5:9b",
+      "created_at": "2026-10-10T00:08:38.2360592Z",
+      "done_reason": "stop"
+    },
+    {
+      "fixture": "review-2.json",
+      "fixture_sha256": "8861bf4f9b97e27f3d7006b90116724bd0b286ccf315687f1044681f6dd2d336",
+      "source_call": "1f053ee6941848a6af1bd091887beaf1",
+      "source_artifact": "reports\\scenario_repair_production_delivery_20261009\\evidence\\live-single-repair-20261010\\model-calls\\1f053ee6941848a6af1bd091887beaf1.json",
+      "source_sha256": "23a1f5d65d9592364159f07b5a628b247be22bc4e4471cc57ff787c1cf0482cd",
+      "raw_sha256": "67e6738d24c4e37f99f48ba394eeb8e3dabcd4b09c6ef8b5b06e1bd08315754e",
+      "model": "qwen3.5:9b",
+      "created_at": "2026-10-10T00:09:24.0195518Z",
+      "done_reason": "stop"
+    },
+    {
+      "fixture": "review-3.json",
+      "fixture_sha256": "8861bf4f9b97e27f3d7006b90116724bd0b286ccf315687f1044681f6dd2d336",
+      "source_call": "b93ac4e4544d47d58ec2c3377b48a413",
+      "source_artifact": "reports\\scenario_repair_production_delivery_20261009\\evidence\\live-single-repair-20261010\\model-calls\\b93ac4e4544d47d58ec2c3377b48a413.json",
+      "source_sha256": "23a1f5d65d9592364159f07b5a628b247be22bc4e4471cc57ff787c1cf0482cd",
+      "raw_sha256": "b8534f334919e0ee559e060bd6be82ea2ec1f95807280a854bb5aafb8dd17358",
+      "model": "qwen3.5:9b",
+      "created_at": "2026-10-10T00:10:10.010157Z",
+      "done_reason": "stop"
+    }
+  ]
+}

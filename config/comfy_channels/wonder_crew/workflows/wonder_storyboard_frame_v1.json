@@ -1,0 +1,16 @@
+{
+  "workflow_id": "wonder_storyboard_frame_v1",
+  "workflow_version": "v1",
+  "title": "STORYBOARD_FRAME",
+  "asset_type": "storyboard",
+  "backend_preference": [
+    "checkpoint",
+    "z_image_turbo"
+  ],
+  "default_width": 1280,
+  "default_height": 720,
+  "require_references": false,
+  "allow_transparent_bg": false,
+  "forbid_text_in_image": true,
+  "description": ""
+}

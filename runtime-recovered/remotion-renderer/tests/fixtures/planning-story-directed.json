@@ -1,0 +1,1030 @@
+[
+  {
+    "scene_id": "s01",
+    "scene_type": "HookScene",
+    "timing": {
+      "start_sec": 0.0,
+      "end_sec": 5.883
+    },
+    "narration": "You have not spent your savings, but you may have promised them twice to different goals today.",
+    "caption": "You have not spent your savings, but you may have promised them twice to different goals today.",
+    "headline": "One Balance. Two Promises.",
+    "overlay_text": "",
+    "layout_id": "",
+    "animation_presets": [],
+    "caption_words": [
+      {
+        "text": "You",
+        "start_sec": 0.1,
+        "end_sec": 0.24,
+        "segment_id": "s01"
+      },
+      {
+        "text": "have",
+        "start_sec": 0.34,
+        "end_sec": 0.48,
+        "segment_id": "s01"
+      },
+      {
+        "text": "not",
+        "start_sec": 0.64,
+        "end_sec": 0.86,
+        "segment_id": "s01"
+      },
+      {
+        "text": "spent",
+        "start_sec": 0.941,
+        "end_sec": 1.201,
+        "segment_id": "s01"
+      },
+      {
+        "text": "your",
+        "start_sec": 1.261,
+        "end_sec": 1.401,
+        "segment_id": "s01"
+      },
+      {
+        "text": "savings,",
+        "start_sec": 1.481,
+        "end_sec": 1.921,
+        "segment_id": "s01"
+      },
+      {
+        "text": "but",
+        "start_sec": 2.361,
+        "end_sec": 2.561,
+        "segment_id": "s01"
+      },
+      {
+        "text": "you",
+        "start_sec": 2.681,
+        "end_sec": 2.781,
+        "segment_id": "s01"
+      },
+      {
+        "text": "may",
+        "start_sec": 2.881,
+        "end_sec": 3.022,
+        "segment_id": "s01"
+      },
+      {
+        "text": "have",
+        "start_sec": 3.082,
+        "end_sec": 3.202,
+        "segment_id": "s01"
+      },
+      {
+        "text": "promised",
+        "start_sec": 3.282,
+        "end_sec": 3.662,
+        "segment_id": "s01"
+      },
+      {
+        "text": "them",
+        "start_sec": 3.682,
+        "end_sec": 3.802,
+        "segment_id": "s01"
+      },
+      {
+        "text": "twice",
+        "start_sec": 3.902,
+        "end_sec": 4.242,
+        "segment_id": "s01"
+      },
+      {
+        "text": "to",
+        "start_sec": 4.282,
+        "end_sec": 4.382,
+        "segment_id": "s01"
+      },
+      {
+        "text": "different",
+        "start_sec": 4.442,
+        "end_sec": 4.742,
+        "segment_id": "s01"
+      },
+      {
+        "text": "goals",
+        "start_sec": 4.802,
+        "end_sec": 5.062,
+        "segment_id": "s01"
+      },
+      {
+        "text": "today.",
+        "start_sec": 5.122,
+        "end_sec": 5.403,
+        "segment_id": "s01"
+      }
+    ],
+    "number_value": null,
+    "chart_values": [],
+    "chart_labels": [],
+    "chart_unit": "",
+    "claim_ids": [],
+    "verified_series": null,
+    "comparison_left": "",
+    "comparison_right": "",
+    "semantic_overlay_kind": null,
+    "visual_prompt": "",
+    "visual_story": null,
+    "visual_relation": {
+      "kind": "reserve_readiness",
+      "stage": "identify",
+      "viewer_should_understand": "Two purposes claim the same unchanged portion of savings",
+      "objects": [
+        {
+          "role": "shared_portion",
+          "label": "SAME PORTION"
+        },
+        {
+          "role": "reserve",
+          "label": "EMERGENCY RESERVE"
+        },
+        {
+          "role": "goal",
+          "label": "FUTURE GOAL"
+        }
+      ],
+      "initial_state": "One portion remains unchanged; no spending or transfer is shown",
+      "action": "compare_claims",
+      "direction": null,
+      "condition": null,
+      "final_state": "Two purposes claim the same unchanged portion of savings",
+      "compliance_criterion": "Show two claims on one portion; no invented expense, amounts, allocation ratio or transfer",
+      "unsupported_gap": null,
+      "source": null,
+      "destination": null,
+      "planning_desk_action": "shared-balance",
+      "editorial_direction": {
+        "version": 1,
+        "mode": "planning_claims",
+        "narration_hash": "a208157da9d08d72a8d2f79105610865cff55f981f5992e69e726289f9c3180d",
+        "timing_source": "final_voice_word_alignment",
+        "duration_sec": 5.883,
+        "measurement": "qualitative_no_amounts",
+        "hold_seconds": 0.8,
+        "action_sec": 3.282,
+        "risk_sec": 3.902,
+        "planning_action": "shared-balance",
+        "cue_times": {
+          "first": 3.282,
+          "second": 3.902,
+          "portion": 1.481,
+          "not_spent": 0.941
+        },
+        "visible_change": "Show one unchanged portion, then its first and second claims at their actual phrases. Hold the common source; no amounts, allocation ratio or transfer."
+      }
+    },
+    "input_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "assets": [],
+    "qa": {
+      "status": "pending",
+      "action": "WARN",
+      "score": null,
+      "reasons": []
+    }
+  },
+  {
+    "scene_id": "s02",
+    "scene_type": "HookScene",
+    "timing": {
+      "start_sec": 5.883,
+      "end_sec": 13.326
+    },
+    "narration": "Open your savings plan notebook to identify the emergency reserve and name one specific future purchase goal clearly.",
+    "caption": "Open your savings plan notebook to identify the emergency reserve and name one specific future purchase goal clearly.",
+    "headline": "Identify Reserve vs Goal",
+    "overlay_text": "",
+    "layout_id": "",
+    "animation_presets": [],
+    "caption_words": [
+      {
+        "text": "Open",
+        "start_sec": 5.883,
+        "end_sec": 6.063,
+        "segment_id": "s02"
+      },
+      {
+        "text": "your",
+        "start_sec": 6.123,
+        "end_sec": 6.263,
+        "segment_id": "s02"
+      },
+      {
+        "text": "savings",
+        "start_sec": 6.323,
+        "end_sec": 6.683,
+        "segment_id": "s02"
+      },
+      {
+        "text": "plan",
+        "start_sec": 6.723,
+        "end_sec": 6.883,
+        "segment_id": "s02"
+      },
+      {
+        "text": "notebook",
+        "start_sec": 7.003,
+        "end_sec": 7.344,
+        "segment_id": "s02"
+      },
+      {
+        "text": "to",
+        "start_sec": 7.424,
+        "end_sec": 7.504,
+        "segment_id": "s02"
+      },
+      {
+        "text": "identify",
+        "start_sec": 7.624,
+        "end_sec": 8.104,
+        "segment_id": "s02"
+      },
+      {
+        "text": "the",
+        "start_sec": 8.184,
+        "end_sec": 8.264,
+        "segment_id": "s02"
+      },
+      {
+        "text": "emergency",
+        "start_sec": 8.324,
+        "end_sec": 8.824,
+        "segment_id": "s02"
+      },
+      {
+        "text": "reserve",
+        "start_sec": 8.904,
+        "end_sec": 9.284,
+        "segment_id": "s02"
+      },
+      {
+        "text": "and",
+        "start_sec": 9.625,
+        "end_sec": 9.705,
+        "segment_id": "s02"
+      },
+      {
+        "text": "name",
+        "start_sec": 9.785,
+        "end_sec": 10.005,
+        "segment_id": "s02"
+      },
+      {
+        "text": "one",
+        "start_sec": 10.305,
+        "end_sec": 10.445,
+        "segment_id": "s02"
+      },
+      {
+        "text": "specific",
+        "start_sec": 10.545,
+        "end_sec": 11.085,
+        "segment_id": "s02"
+      },
+      {
+        "text": "future",
+        "start_sec": 11.185,
+        "end_sec": 11.506,
+        "segment_id": "s02"
+      },
+      {
+        "text": "purchase",
+        "start_sec": 11.586,
+        "end_sec": 11.946,
+        "segment_id": "s02"
+      },
+      {
+        "text": "goal",
+        "start_sec": 12.026,
+        "end_sec": 12.286,
+        "segment_id": "s02"
+      },
+      {
+        "text": "clearly.",
+        "start_sec": 12.446,
+        "end_sec": 12.866,
+        "segment_id": "s02"
+      }
+    ],
+    "number_value": null,
+    "chart_values": [],
+    "chart_labels": [],
+    "chart_unit": "",
+    "claim_ids": [],
+    "verified_series": null,
+    "comparison_left": "",
+    "comparison_right": "",
+    "semantic_overlay_kind": null,
+    "visual_prompt": "",
+    "visual_story": null,
+    "visual_relation": {
+      "kind": "reserve_readiness",
+      "stage": "separate",
+      "viewer_should_understand": "Mark two distinct planning purposes without inventing a specific purchase",
+      "objects": [
+        {
+          "role": "reserve",
+          "label": "EMERGENCY RESERVE"
+        },
+        {
+          "role": "goal",
+          "label": "FUTURE GOAL"
+        },
+        {
+          "role": "planning_notebook",
+          "label": "SAVINGS PLAN"
+        }
+      ],
+      "initial_state": "The reserve and future goal refer to the same established savings plan",
+      "action": "mark_purpose_labels",
+      "direction": null,
+      "condition": null,
+      "final_state": "Mark two distinct planning purposes without inventing a specific purchase",
+      "compliance_criterion": "Keep both purposes distinct; no invented expense, purchase name, date, amount, ratio or transfer",
+      "unsupported_gap": null,
+      "source": null,
+      "destination": null,
+      "planning_desk_action": "write-purposes",
+      "editorial_direction": {
+        "version": 1,
+        "mode": "purpose_naming",
+        "narration_hash": "002a755a5a0c915e2c1aaedde4ad46be4d0f4bef45d6db39285fdada108c367c",
+        "timing_source": "final_voice_word_alignment",
+        "duration_sec": 7.4430000000000005,
+        "measurement": "qualitative_no_amounts",
+        "hold_seconds": 0.8,
+        "action_sec": 2.441,
+        "risk_sec": 5.3020000000000005,
+        "planning_action": "write-purposes",
+        "cue_times": {
+          "open": 0.0,
+          "reserve": 2.441,
+          "name": 3.902,
+          "goal": 5.3020000000000005
+        },
+        "visible_change": "Expand the same two purpose cards into one planning page at Open; mark reserve then future goal at their phrases. Prompt a specific purchase without inventing its name."
+      }
+    },
+    "input_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "assets": [],
+    "qa": {
+      "status": "pending",
+      "action": "WARN",
+      "score": null,
+      "reasons": []
+    }
+  },
+  {
+    "scene_id": "s03",
+    "scene_type": "HookScene",
+    "timing": {
+      "start_sec": 13.326,
+      "end_sec": 20.35
+    },
+    "narration": "Inspect the single balance to locate any portion currently counted for both purposes simultaneously right now.",
+    "caption": "Inspect the single balance to locate any portion currently counted for both purposes simultaneously right now.",
+    "headline": "Locate Double-Counted Portion",
+    "overlay_text": "",
+    "layout_id": "",
+    "animation_presets": [],
+    "caption_words": [
+      {
+        "text": "Inspect",
+        "start_sec": 13.326,
+        "end_sec": 13.767,
+        "segment_id": "s03"
+      },
+      {
+        "text": "the",
+        "start_sec": 13.847,
+        "end_sec": 13.927,
+        "segment_id": "s03"
+      },
+      {
+        "text": "single",
+        "start_sec": 14.027,
+        "end_sec": 14.307,
+        "segment_id": "s03"
+      },
+      {
+        "text": "balance",
+        "start_sec": 14.387,
+        "end_sec": 14.747,
+        "segment_id": "s03"
+      },
+      {
+        "text": "to",
+        "start_sec": 14.827,
+        "end_sec": 14.907,
+        "segment_id": "s03"
+      },
+      {
+        "text": "locate",
+        "start_sec": 14.967,
+        "end_sec": 15.348,
+        "segment_id": "s03"
+      },
+      {
+        "text": "any",
+        "start_sec": 15.528,
+        "end_sec": 15.668,
+        "segment_id": "s03"
+      },
+      {
+        "text": "portion",
+        "start_sec": 15.768,
+        "end_sec": 16.108,
+        "segment_id": "s03"
+      },
+      {
+        "text": "currently",
+        "start_sec": 16.228,
+        "end_sec": 16.548,
+        "segment_id": "s03"
+      },
+      {
+        "text": "counted",
+        "start_sec": 16.628,
+        "end_sec": 16.968,
+        "segment_id": "s03"
+      },
+      {
+        "text": "for",
+        "start_sec": 17.228,
+        "end_sec": 17.349,
+        "segment_id": "s03"
+      },
+      {
+        "text": "both",
+        "start_sec": 17.428,
+        "end_sec": 17.649,
+        "segment_id": "s03"
+      },
+      {
+        "text": "purposes",
+        "start_sec": 17.729,
+        "end_sec": 18.189,
+        "segment_id": "s03"
+      },
+      {
+        "text": "simultaneously",
+        "start_sec": 18.269,
+        "end_sec": 19.089,
+        "segment_id": "s03"
+      },
+      {
+        "text": "right",
+        "start_sec": 19.389,
+        "end_sec": 19.59,
+        "segment_id": "s03"
+      },
+      {
+        "text": "now.",
+        "start_sec": 19.67,
+        "end_sec": 19.85,
+        "segment_id": "s03"
+      }
+    ],
+    "number_value": null,
+    "chart_values": [],
+    "chart_labels": [],
+    "chart_unit": "",
+    "claim_ids": [],
+    "verified_series": null,
+    "comparison_left": "",
+    "comparison_right": "",
+    "semantic_overlay_kind": null,
+    "visual_prompt": "",
+    "visual_story": null,
+    "visual_relation": {
+      "kind": "reserve_readiness",
+      "stage": "review",
+      "viewer_should_understand": "Inspect whether the same portion is counted for both purposes",
+      "objects": [
+        {
+          "role": "shared_portion",
+          "label": "SAME PORTION"
+        },
+        {
+          "role": "reserve",
+          "label": "EMERGENCY RESERVE"
+        },
+        {
+          "role": "goal",
+          "label": "FUTURE GOAL"
+        }
+      ],
+      "initial_state": "The reserve and future goal refer to the same established savings plan",
+      "action": "inspect_shared_claims",
+      "direction": null,
+      "condition": null,
+      "final_state": "Inspect whether the same portion is counted for both purposes",
+      "compliance_criterion": "Keep both purposes distinct; no invented expense, purchase name, date, amount, ratio or transfer",
+      "unsupported_gap": null,
+      "source": null,
+      "destination": null,
+      "planning_desk_action": "shared-balance",
+      "editorial_direction": {
+        "version": 1,
+        "mode": "portion_audit",
+        "narration_hash": "741766786bdec974753887ee43328dbfb05e9e86a88c59d98837a756dfde8694",
+        "timing_source": "final_voice_word_alignment",
+        "duration_sec": 7.024000000000001,
+        "measurement": "qualitative_no_amounts",
+        "hold_seconds": 0.8,
+        "action_sec": 2.442,
+        "risk_sec": 4.102,
+        "planning_action": "shared-balance",
+        "cue_times": {
+          "inspect": 0.0,
+          "balance": 1.061,
+          "portion": 2.442,
+          "counted": 3.3019999999999996,
+          "both": 4.102
+        },
+        "visible_change": "Inspect one portion in a planning ledger, then question its reserve and goal claims. Highlight possible overlap, never stamp a real account as checked or create another pot."
+      }
+    },
+    "input_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "assets": [],
+    "qa": {
+      "status": "pending",
+      "action": "WARN",
+      "score": null,
+      "reasons": []
+    }
+  },
+  {
+    "scene_id": "s04",
+    "scene_type": "HookScene",
+    "timing": {
+      "start_sec": 20.35,
+      "end_sec": 28.674
+    },
+    "narration": "Assigning the same funds to two competing claims reduces availability for one purpose if an emergency occurs unexpectedly.",
+    "caption": "Assigning the same funds to two competing claims reduces availability for one purpose if an emergency occurs unexpectedly.",
+    "headline": "Review Competing Claims",
+    "overlay_text": "",
+    "layout_id": "",
+    "animation_presets": [],
+    "caption_words": [
+      {
+        "text": "Assigning",
+        "start_sec": 20.35,
+        "end_sec": 20.81,
+        "segment_id": "s04"
+      },
+      {
+        "text": "the",
+        "start_sec": 20.85,
+        "end_sec": 20.93,
+        "segment_id": "s04"
+      },
+      {
+        "text": "same",
+        "start_sec": 21.01,
+        "end_sec": 21.23,
+        "segment_id": "s04"
+      },
+      {
+        "text": "funds",
+        "start_sec": 21.37,
+        "end_sec": 21.671,
+        "segment_id": "s04"
+      },
+      {
+        "text": "to",
+        "start_sec": 21.771,
+        "end_sec": 21.851,
+        "segment_id": "s04"
+      },
+      {
+        "text": "two",
+        "start_sec": 21.951,
+        "end_sec": 22.111,
+        "segment_id": "s04"
+      },
+      {
+        "text": "competing",
+        "start_sec": 22.211,
+        "end_sec": 22.671,
+        "segment_id": "s04"
+      },
+      {
+        "text": "claims",
+        "start_sec": 22.751,
+        "end_sec": 23.111,
+        "segment_id": "s04"
+      },
+      {
+        "text": "reduces",
+        "start_sec": 23.411,
+        "end_sec": 23.912,
+        "segment_id": "s04"
+      },
+      {
+        "text": "availability",
+        "start_sec": 23.992,
+        "end_sec": 24.692,
+        "segment_id": "s04"
+      },
+      {
+        "text": "for",
+        "start_sec": 24.932,
+        "end_sec": 25.032,
+        "segment_id": "s04"
+      },
+      {
+        "text": "one",
+        "start_sec": 25.212,
+        "end_sec": 25.312,
+        "segment_id": "s04"
+      },
+      {
+        "text": "purpose",
+        "start_sec": 25.412,
+        "end_sec": 25.793,
+        "segment_id": "s04"
+      },
+      {
+        "text": "if",
+        "start_sec": 25.953,
+        "end_sec": 25.993,
+        "segment_id": "s04"
+      },
+      {
+        "text": "an",
+        "start_sec": 26.093,
+        "end_sec": 26.133,
+        "segment_id": "s04"
+      },
+      {
+        "text": "emergency",
+        "start_sec": 26.193,
+        "end_sec": 26.773,
+        "segment_id": "s04"
+      },
+      {
+        "text": "occurs",
+        "start_sec": 26.853,
+        "end_sec": 27.253,
+        "segment_id": "s04"
+      },
+      {
+        "text": "unexpectedly.",
+        "start_sec": 27.533,
+        "end_sec": 28.334,
+        "segment_id": "s04"
+      }
+    ],
+    "number_value": null,
+    "chart_values": [],
+    "chart_labels": [],
+    "chart_unit": "",
+    "claim_ids": [],
+    "verified_series": null,
+    "comparison_left": "",
+    "comparison_right": "",
+    "semantic_overlay_kind": null,
+    "visual_prompt": "",
+    "visual_story": null,
+    "visual_relation": {
+      "kind": "reserve_readiness",
+      "stage": "review",
+      "viewer_should_understand": "Only in the stated emergency scenario, less is available for the competing goal; no amount is asserted",
+      "objects": [
+        {
+          "role": "shared_portion",
+          "label": "SAME PORTION"
+        },
+        {
+          "role": "reserve",
+          "label": "EMERGENCY RESERVE"
+        },
+        {
+          "role": "goal",
+          "label": "FUTURE GOAL"
+        }
+      ],
+      "initial_state": "The reserve and future goal refer to the same established savings plan",
+      "action": "inspect_shared_claims",
+      "direction": null,
+      "condition": "if an emergency occurs unexpectedly",
+      "final_state": "Only in the stated emergency scenario, less is available for the competing goal; no amount is asserted",
+      "compliance_criterion": "Keep both purposes distinct; no invented expense, purchase name, date, amount, ratio or transfer",
+      "unsupported_gap": null,
+      "source": null,
+      "destination": null,
+      "planning_desk_action": "shared-balance",
+      "editorial_direction": {
+        "version": 1,
+        "mode": "conditional_availability",
+        "narration_hash": "819e87fc5879d0b507c0103ea45b12a4c594c15a9f64e375bbb9223af219c9b4",
+        "timing_source": "final_voice_word_alignment",
+        "duration_sec": 8.323999999999998,
+        "measurement": "qualitative_no_amounts",
+        "hold_seconds": 0.8,
+        "action_sec": 5.843,
+        "risk_sec": 6.293,
+        "planning_action": "shared-balance",
+        "cue_times": {
+          "condition": 5.843,
+          "effect": 6.293
+        },
+        "visible_change": "Keep both claims visible as a conditional scenario. At emergency mark the reserve claim; only afterwards show less availability for the goal, without a numeric reduction or transfer."
+      }
+    },
+    "input_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "assets": [],
+    "qa": {
+      "status": "pending",
+      "action": "WARN",
+      "score": null,
+      "reasons": []
+    }
+  },
+  {
+    "scene_id": "s05",
+    "scene_type": "HookScene",
+    "timing": {
+      "start_sec": 28.674,
+      "end_sec": 36.998
+    },
+    "narration": "Decide which plan changes if the reserve is used, then review the impact on your future-goal timeline immediately.",
+    "caption": "Decide which plan changes if the reserve is used, then review the impact on your future-goal timeline immediately.",
+    "headline": "Adjust Plan Timeline",
+    "overlay_text": "",
+    "layout_id": "",
+    "animation_presets": [],
+    "caption_words": [
+      {
+        "text": "Decide",
+        "start_sec": 28.674,
+        "end_sec": 29.094,
+        "segment_id": "s05"
+      },
+      {
+        "text": "which",
+        "start_sec": 29.194,
+        "end_sec": 29.374,
+        "segment_id": "s05"
+      },
+      {
+        "text": "plan",
+        "start_sec": 29.454,
+        "end_sec": 29.634,
+        "segment_id": "s05"
+      },
+      {
+        "text": "changes",
+        "start_sec": 29.814,
+        "end_sec": 30.255,
+        "segment_id": "s05"
+      },
+      {
+        "text": "if",
+        "start_sec": 30.455,
+        "end_sec": 30.495,
+        "segment_id": "s05"
+      },
+      {
+        "text": "the",
+        "start_sec": 30.575,
+        "end_sec": 30.655,
+        "segment_id": "s05"
+      },
+      {
+        "text": "reserve",
+        "start_sec": 30.715,
+        "end_sec": 31.075,
+        "segment_id": "s05"
+      },
+      {
+        "text": "is",
+        "start_sec": 31.135,
+        "end_sec": 31.215,
+        "segment_id": "s05"
+      },
+      {
+        "text": "used,",
+        "start_sec": 31.395,
+        "end_sec": 31.635,
+        "segment_id": "s05"
+      },
+      {
+        "text": "then",
+        "start_sec": 32.116,
+        "end_sec": 32.296,
+        "segment_id": "s05"
+      },
+      {
+        "text": "review",
+        "start_sec": 32.536,
+        "end_sec": 32.876,
+        "segment_id": "s05"
+      },
+      {
+        "text": "the",
+        "start_sec": 32.976,
+        "end_sec": 33.076,
+        "segment_id": "s05"
+      },
+      {
+        "text": "impact",
+        "start_sec": 33.216,
+        "end_sec": 33.616,
+        "segment_id": "s05"
+      },
+      {
+        "text": "on",
+        "start_sec": 33.797,
+        "end_sec": 33.837,
+        "segment_id": "s05"
+      },
+      {
+        "text": "your",
+        "start_sec": 33.897,
+        "end_sec": 34.017,
+        "segment_id": "s05"
+      },
+      {
+        "text": "future-goal",
+        "start_sec": 34.097,
+        "end_sec": 34.777,
+        "segment_id": "s05"
+      },
+      {
+        "text": "timeline",
+        "start_sec": 34.877,
+        "end_sec": 35.417,
+        "segment_id": "s05"
+      },
+      {
+        "text": "immediately.",
+        "start_sec": 35.617,
+        "end_sec": 36.218,
+        "segment_id": "s05"
+      }
+    ],
+    "number_value": null,
+    "chart_values": [],
+    "chart_labels": [],
+    "chart_unit": "",
+    "claim_ids": [],
+    "verified_series": null,
+    "comparison_left": "",
+    "comparison_right": "",
+    "semantic_overlay_kind": null,
+    "visual_prompt": "",
+    "visual_story": null,
+    "visual_relation": {
+      "kind": "reserve_readiness",
+      "stage": "review",
+      "viewer_should_understand": "Review the other plan and its undated timeline if the reserve is used",
+      "objects": [
+        {
+          "role": "reserve",
+          "label": "EMERGENCY RESERVE"
+        },
+        {
+          "role": "goal",
+          "label": "FUTURE GOAL"
+        },
+        {
+          "role": "goal_timeline",
+          "label": "GOAL TIMELINE"
+        }
+      ],
+      "initial_state": "The reserve and future goal refer to the same established savings plan",
+      "action": "review_goal_timeline",
+      "direction": null,
+      "condition": "if the reserve is used",
+      "final_state": "Review the other plan and its undated timeline if the reserve is used",
+      "compliance_criterion": "Keep both purposes distinct; no invented expense, purchase name, date, amount, ratio or transfer",
+      "unsupported_gap": null,
+      "source": null,
+      "destination": null,
+      "planning_desk_action": "revisit-goal",
+      "editorial_direction": {
+        "version": 1,
+        "mode": "goal_review",
+        "narration_hash": "9531b26eb6d33b06de5946f87153c03ad02d299bc1a9e2d2959a2cf16a319e8a",
+        "timing_source": "final_voice_word_alignment",
+        "duration_sec": 8.323999999999998,
+        "measurement": "qualitative_no_amounts",
+        "hold_seconds": 0.8,
+        "action_sec": 2.721,
+        "risk_sec": 6.203000000000003,
+        "planning_action": "revisit-goal",
+        "cue_times": {
+          "choice": 1.1400000000000006,
+          "condition": 2.721,
+          "review": 3.862000000000002,
+          "timeline": 6.203000000000003
+        },
+        "visible_change": "Mark the conditional reserve use, focus the competing goal, then reveal its undated timeline as a question. Do not assert a delay or invent dates."
+      }
+    },
+    "input_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "assets": [],
+    "qa": {
+      "status": "pending",
+      "action": "WARN",
+      "score": null,
+      "reasons": []
+    }
+  },
+  {
+    "scene_id": "s06",
+    "scene_type": "CTAScene",
+    "timing": {
+      "start_sec": 36.998,
+      "end_sec": 41.04
+    },
+    "narration": "Follow Wealth Blueprint. Build wealth on purpose.",
+    "caption": "Follow Wealth Blueprint. Build wealth on purpose.",
+    "headline": "Follow Wealth Blueprint.",
+    "overlay_text": "",
+    "layout_id": "",
+    "animation_presets": [],
+    "caption_words": [
+      {
+        "text": "Follow",
+        "start_sec": 36.998,
+        "end_sec": 37.358,
+        "segment_id": "s06"
+      },
+      {
+        "text": "Wealth",
+        "start_sec": 37.498,
+        "end_sec": 37.758,
+        "segment_id": "s06"
+      },
+      {
+        "text": "Blueprint.",
+        "start_sec": 37.879,
+        "end_sec": 38.379,
+        "segment_id": "s06"
+      },
+      {
+        "text": "Build",
+        "start_sec": 39.279,
+        "end_sec": 39.519,
+        "segment_id": "s06"
+      },
+      {
+        "text": "wealth",
+        "start_sec": 39.639,
+        "end_sec": 39.919,
+        "segment_id": "s06"
+      },
+      {
+        "text": "on",
+        "start_sec": 40.24,
+        "end_sec": 40.32,
+        "segment_id": "s06"
+      },
+      {
+        "text": "purpose.",
+        "start_sec": 40.42,
+        "end_sec": 40.84,
+        "segment_id": "s06"
+      }
+    ],
+    "number_value": null,
+    "chart_values": [],
+    "chart_labels": [],
+    "chart_unit": "",
+    "claim_ids": [],
+    "verified_series": null,
+    "comparison_left": "",
+    "comparison_right": "",
+    "semantic_overlay_kind": null,
+    "visual_prompt": "",
+    "visual_story": null,
+    "visual_relation": {
+      "kind": "unsupported",
+      "editorial_direction": {
+        "version": 1,
+        "narration_hash": "6b2be55a57bbf2b3b6c3e040bd19d38475128f81fed69bed42862c651bc04b58",
+        "timing_source": "final_voice_word_alignment",
+        "duration_sec": 4.042000000000002,
+        "measurement": "schematic_not_company_data",
+        "hold_seconds": 0.8,
+        "mode": "closing",
+        "action_sec": 0.0,
+        "risk_sec": 0.0,
+        "visible_change": "The research-question motif resolves into the original channel CTA; hold it."
+      }
+    },
+    "input_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "assets": [],
+    "qa": {
+      "status": "pending",
+      "action": "WARN",
+      "score": null,
+      "reasons": []
+    }
+  }
+]

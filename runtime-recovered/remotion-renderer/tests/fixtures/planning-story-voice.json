@@ -1,0 +1,644 @@
+[
+  {
+    "scene_id": "s01",
+    "scene_type": "HookScene",
+    "narration": "You have not spent your savings, but you may have promised them twice to different goals today.",
+    "caption": "You have not spent your savings, but you may have promised them twice to different goals today.",
+    "headline": "One Balance. Two Promises.",
+    "timing": {
+      "end_sec": 5.883,
+      "start_sec": 0.0
+    },
+    "caption_words": [
+      {
+        "end_sec": 0.24,
+        "segment_id": "s01",
+        "start_sec": 0.1,
+        "text": "You"
+      },
+      {
+        "end_sec": 0.48,
+        "segment_id": "s01",
+        "start_sec": 0.34,
+        "text": "have"
+      },
+      {
+        "end_sec": 0.86,
+        "segment_id": "s01",
+        "start_sec": 0.64,
+        "text": "not"
+      },
+      {
+        "end_sec": 1.201,
+        "segment_id": "s01",
+        "start_sec": 0.941,
+        "text": "spent"
+      },
+      {
+        "end_sec": 1.401,
+        "segment_id": "s01",
+        "start_sec": 1.261,
+        "text": "your"
+      },
+      {
+        "end_sec": 1.921,
+        "segment_id": "s01",
+        "start_sec": 1.481,
+        "text": "savings,"
+      },
+      {
+        "end_sec": 2.561,
+        "segment_id": "s01",
+        "start_sec": 2.361,
+        "text": "but"
+      },
+      {
+        "end_sec": 2.781,
+        "segment_id": "s01",
+        "start_sec": 2.681,
+        "text": "you"
+      },
+      {
+        "end_sec": 3.022,
+        "segment_id": "s01",
+        "start_sec": 2.881,
+        "text": "may"
+      },
+      {
+        "end_sec": 3.202,
+        "segment_id": "s01",
+        "start_sec": 3.082,
+        "text": "have"
+      },
+      {
+        "end_sec": 3.662,
+        "segment_id": "s01",
+        "start_sec": 3.282,
+        "text": "promised"
+      },
+      {
+        "end_sec": 3.802,
+        "segment_id": "s01",
+        "start_sec": 3.682,
+        "text": "them"
+      },
+      {
+        "end_sec": 4.242,
+        "segment_id": "s01",
+        "start_sec": 3.902,
+        "text": "twice"
+      },
+      {
+        "end_sec": 4.382,
+        "segment_id": "s01",
+        "start_sec": 4.282,
+        "text": "to"
+      },
+      {
+        "end_sec": 4.742,
+        "segment_id": "s01",
+        "start_sec": 4.442,
+        "text": "different"
+      },
+      {
+        "end_sec": 5.062,
+        "segment_id": "s01",
+        "start_sec": 4.802,
+        "text": "goals"
+      },
+      {
+        "end_sec": 5.403,
+        "segment_id": "s01",
+        "start_sec": 5.122,
+        "text": "today."
+      }
+    ]
+  },
+  {
+    "scene_id": "s02",
+    "scene_type": "HookScene",
+    "narration": "Open your savings plan notebook to identify the emergency reserve and name one specific future purchase goal clearly.",
+    "caption": "Open your savings plan notebook to identify the emergency reserve and name one specific future purchase goal clearly.",
+    "headline": "Identify Reserve vs Goal",
+    "timing": {
+      "end_sec": 13.326,
+      "start_sec": 5.883
+    },
+    "caption_words": [
+      {
+        "end_sec": 6.063,
+        "segment_id": "s02",
+        "start_sec": 5.883,
+        "text": "Open"
+      },
+      {
+        "end_sec": 6.263,
+        "segment_id": "s02",
+        "start_sec": 6.123,
+        "text": "your"
+      },
+      {
+        "end_sec": 6.683,
+        "segment_id": "s02",
+        "start_sec": 6.323,
+        "text": "savings"
+      },
+      {
+        "end_sec": 6.883,
+        "segment_id": "s02",
+        "start_sec": 6.723,
+        "text": "plan"
+      },
+      {
+        "end_sec": 7.344,
+        "segment_id": "s02",
+        "start_sec": 7.003,
+        "text": "notebook"
+      },
+      {
+        "end_sec": 7.504,
+        "segment_id": "s02",
+        "start_sec": 7.424,
+        "text": "to"
+      },
+      {
+        "end_sec": 8.104,
+        "segment_id": "s02",
+        "start_sec": 7.624,
+        "text": "identify"
+      },
+      {
+        "end_sec": 8.264,
+        "segment_id": "s02",
+        "start_sec": 8.184,
+        "text": "the"
+      },
+      {
+        "end_sec": 8.824,
+        "segment_id": "s02",
+        "start_sec": 8.324,
+        "text": "emergency"
+      },
+      {
+        "end_sec": 9.284,
+        "segment_id": "s02",
+        "start_sec": 8.904,
+        "text": "reserve"
+      },
+      {
+        "end_sec": 9.705,
+        "segment_id": "s02",
+        "start_sec": 9.625,
+        "text": "and"
+      },
+      {
+        "end_sec": 10.005,
+        "segment_id": "s02",
+        "start_sec": 9.785,
+        "text": "name"
+      },
+      {
+        "end_sec": 10.445,
+        "segment_id": "s02",
+        "start_sec": 10.305,
+        "text": "one"
+      },
+      {
+        "end_sec": 11.085,
+        "segment_id": "s02",
+        "start_sec": 10.545,
+        "text": "specific"
+      },
+      {
+        "end_sec": 11.506,
+        "segment_id": "s02",
+        "start_sec": 11.185,
+        "text": "future"
+      },
+      {
+        "end_sec": 11.946,
+        "segment_id": "s02",
+        "start_sec": 11.586,
+        "text": "purchase"
+      },
+      {
+        "end_sec": 12.286,
+        "segment_id": "s02",
+        "start_sec": 12.026,
+        "text": "goal"
+      },
+      {
+        "end_sec": 12.866,
+        "segment_id": "s02",
+        "start_sec": 12.446,
+        "text": "clearly."
+      }
+    ]
+  },
+  {
+    "scene_id": "s03",
+    "scene_type": "HookScene",
+    "narration": "Inspect the single balance to locate any portion currently counted for both purposes simultaneously right now.",
+    "caption": "Inspect the single balance to locate any portion currently counted for both purposes simultaneously right now.",
+    "headline": "Locate Double-Counted Portion",
+    "timing": {
+      "end_sec": 20.35,
+      "start_sec": 13.326
+    },
+    "caption_words": [
+      {
+        "end_sec": 13.767,
+        "segment_id": "s03",
+        "start_sec": 13.326,
+        "text": "Inspect"
+      },
+      {
+        "end_sec": 13.927,
+        "segment_id": "s03",
+        "start_sec": 13.847,
+        "text": "the"
+      },
+      {
+        "end_sec": 14.307,
+        "segment_id": "s03",
+        "start_sec": 14.027,
+        "text": "single"
+      },
+      {
+        "end_sec": 14.747,
+        "segment_id": "s03",
+        "start_sec": 14.387,
+        "text": "balance"
+      },
+      {
+        "end_sec": 14.907,
+        "segment_id": "s03",
+        "start_sec": 14.827,
+        "text": "to"
+      },
+      {
+        "end_sec": 15.348,
+        "segment_id": "s03",
+        "start_sec": 14.967,
+        "text": "locate"
+      },
+      {
+        "end_sec": 15.668,
+        "segment_id": "s03",
+        "start_sec": 15.528,
+        "text": "any"
+      },
+      {
+        "end_sec": 16.108,
+        "segment_id": "s03",
+        "start_sec": 15.768,
+        "text": "portion"
+      },
+      {
+        "end_sec": 16.548,
+        "segment_id": "s03",
+        "start_sec": 16.228,
+        "text": "currently"
+      },
+      {
+        "end_sec": 16.968,
+        "segment_id": "s03",
+        "start_sec": 16.628,
+        "text": "counted"
+      },
+      {
+        "end_sec": 17.349,
+        "segment_id": "s03",
+        "start_sec": 17.228,
+        "text": "for"
+      },
+      {
+        "end_sec": 17.649,
+        "segment_id": "s03",
+        "start_sec": 17.428,
+        "text": "both"
+      },
+      {
+        "end_sec": 18.189,
+        "segment_id": "s03",
+        "start_sec": 17.729,
+        "text": "purposes"
+      },
+      {
+        "end_sec": 19.089,
+        "segment_id": "s03",
+        "start_sec": 18.269,
+        "text": "simultaneously"
+      },
+      {
+        "end_sec": 19.59,
+        "segment_id": "s03",
+        "start_sec": 19.389,
+        "text": "right"
+      },
+      {
+        "end_sec": 19.85,
+        "segment_id": "s03",
+        "start_sec": 19.67,
+        "text": "now."
+      }
+    ]
+  },
+  {
+    "scene_id": "s04",
+    "scene_type": "HookScene",
+    "narration": "Assigning the same funds to two competing claims reduces availability for one purpose if an emergency occurs unexpectedly.",
+    "caption": "Assigning the same funds to two competing claims reduces availability for one purpose if an emergency occurs unexpectedly.",
+    "headline": "Review Competing Claims",
+    "timing": {
+      "end_sec": 28.674,
+      "start_sec": 20.35
+    },
+    "caption_words": [
+      {
+        "end_sec": 20.81,
+        "segment_id": "s04",
+        "start_sec": 20.35,
+        "text": "Assigning"
+      },
+      {
+        "end_sec": 20.93,
+        "segment_id": "s04",
+        "start_sec": 20.85,
+        "text": "the"
+      },
+      {
+        "end_sec": 21.23,
+        "segment_id": "s04",
+        "start_sec": 21.01,
+        "text": "same"
+      },
+      {
+        "end_sec": 21.671,
+        "segment_id": "s04",
+        "start_sec": 21.37,
+        "text": "funds"
+      },
+      {
+        "end_sec": 21.851,
+        "segment_id": "s04",
+        "start_sec": 21.771,
+        "text": "to"
+      },
+      {
+        "end_sec": 22.111,
+        "segment_id": "s04",
+        "start_sec": 21.951,
+        "text": "two"
+      },
+      {
+        "end_sec": 22.671,
+        "segment_id": "s04",
+        "start_sec": 22.211,
+        "text": "competing"
+      },
+      {
+        "end_sec": 23.111,
+        "segment_id": "s04",
+        "start_sec": 22.751,
+        "text": "claims"
+      },
+      {
+        "end_sec": 23.912,
+        "segment_id": "s04",
+        "start_sec": 23.411,
+        "text": "reduces"
+      },
+      {
+        "end_sec": 24.692,
+        "segment_id": "s04",
+        "start_sec": 23.992,
+        "text": "availability"
+      },
+      {
+        "end_sec": 25.032,
+        "segment_id": "s04",
+        "start_sec": 24.932,
+        "text": "for"
+      },
+      {
+        "end_sec": 25.312,
+        "segment_id": "s04",
+        "start_sec": 25.212,
+        "text": "one"
+      },
+      {
+        "end_sec": 25.793,
+        "segment_id": "s04",
+        "start_sec": 25.412,
+        "text": "purpose"
+      },
+      {
+        "end_sec": 25.993,
+        "segment_id": "s04",
+        "start_sec": 25.953,
+        "text": "if"
+      },
+      {
+        "end_sec": 26.133,
+        "segment_id": "s04",
+        "start_sec": 26.093,
+        "text": "an"
+      },
+      {
+        "end_sec": 26.773,
+        "segment_id": "s04",
+        "start_sec": 26.193,
+        "text": "emergency"
+      },
+      {
+        "end_sec": 27.253,
+        "segment_id": "s04",
+        "start_sec": 26.853,
+        "text": "occurs"
+      },
+      {
+        "end_sec": 28.334,
+        "segment_id": "s04",
+        "start_sec": 27.533,
+        "text": "unexpectedly."
+      }
+    ]
+  },
+  {
+    "scene_id": "s05",
+    "scene_type": "HookScene",
+    "narration": "Decide which plan changes if the reserve is used, then review the impact on your future-goal timeline immediately.",
+    "caption": "Decide which plan changes if the reserve is used, then review the impact on your future-goal timeline immediately.",
+    "headline": "Adjust Plan Timeline",
+    "timing": {
+      "end_sec": 36.998,
+      "start_sec": 28.674
+    },
+    "caption_words": [
+      {
+        "end_sec": 29.094,
+        "segment_id": "s05",
+        "start_sec": 28.674,
+        "text": "Decide"
+      },
+      {
+        "end_sec": 29.374,
+        "segment_id": "s05",
+        "start_sec": 29.194,
+        "text": "which"
+      },
+      {
+        "end_sec": 29.634,
+        "segment_id": "s05",
+        "start_sec": 29.454,
+        "text": "plan"
+      },
+      {
+        "end_sec": 30.255,
+        "segment_id": "s05",
+        "start_sec": 29.814,
+        "text": "changes"
+      },
+      {
+        "end_sec": 30.495,
+        "segment_id": "s05",
+        "start_sec": 30.455,
+        "text": "if"
+      },
+      {
+        "end_sec": 30.655,
+        "segment_id": "s05",
+        "start_sec": 30.575,
+        "text": "the"
+      },
+      {
+        "end_sec": 31.075,
+        "segment_id": "s05",
+        "start_sec": 30.715,
+        "text": "reserve"
+      },
+      {
+        "end_sec": 31.215,
+        "segment_id": "s05",
+        "start_sec": 31.135,
+        "text": "is"
+      },
+      {
+        "end_sec": 31.635,
+        "segment_id": "s05",
+        "start_sec": 31.395,
+        "text": "used,"
+      },
+      {
+        "end_sec": 32.296,
+        "segment_id": "s05",
+        "start_sec": 32.116,
+        "text": "then"
+      },
+      {
+        "end_sec": 32.876,
+        "segment_id": "s05",
+        "start_sec": 32.536,
+        "text": "review"
+      },
+      {
+        "end_sec": 33.076,
+        "segment_id": "s05",
+        "start_sec": 32.976,
+        "text": "the"
+      },
+      {
+        "end_sec": 33.616,
+        "segment_id": "s05",
+        "start_sec": 33.216,
+        "text": "impact"
+      },
+      {
+        "end_sec": 33.837,
+        "segment_id": "s05",
+        "start_sec": 33.797,
+        "text": "on"
+      },
+      {
+        "end_sec": 34.017,
+        "segment_id": "s05",
+        "start_sec": 33.897,
+        "text": "your"
+      },
+      {
+        "end_sec": 34.777,
+        "segment_id": "s05",
+        "start_sec": 34.097,
+        "text": "future-goal"
+      },
+      {
+        "end_sec": 35.417,
+        "segment_id": "s05",
+        "start_sec": 34.877,
+        "text": "timeline"
+      },
+      {
+        "end_sec": 36.218,
+        "segment_id": "s05",
+        "start_sec": 35.617,
+        "text": "immediately."
+      }
+    ]
+  },
+  {
+    "scene_id": "s06",
+    "scene_type": "CTAScene",
+    "narration": "Follow Wealth Blueprint. Build wealth on purpose.",
+    "caption": "Follow Wealth Blueprint. Build wealth on purpose.",
+    "headline": "Follow Wealth Blueprint.",
+    "timing": {
+      "end_sec": 41.04,
+      "start_sec": 36.998
+    },
+    "caption_words": [
+      {
+        "end_sec": 37.358,
+        "segment_id": "s06",
+        "start_sec": 36.998,
+        "text": "Follow"
+      },
+      {
+        "end_sec": 37.758,
+        "segment_id": "s06",
+        "start_sec": 37.498,
+        "text": "Wealth"
+      },
+      {
+        "end_sec": 38.379,
+        "segment_id": "s06",
+        "start_sec": 37.879,
+        "text": "Blueprint."
+      },
+      {
+        "end_sec": 39.519,
+        "segment_id": "s06",
+        "start_sec": 39.279,
+        "text": "Build"
+      },
+      {
+        "end_sec": 39.919,
+        "segment_id": "s06",
+        "start_sec": 39.639,
+        "text": "wealth"
+      },
+      {
+        "end_sec": 40.32,
+        "segment_id": "s06",
+        "start_sec": 40.24,
+        "text": "on"
+      },
+      {
+        "end_sec": 40.84,
+        "segment_id": "s06",
+        "start_sec": 40.42,
+        "text": "purpose."
+      }
+    ]
+  }
+]

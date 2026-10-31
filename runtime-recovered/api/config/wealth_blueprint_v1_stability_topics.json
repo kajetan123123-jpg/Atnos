@@ -1,0 +1,169 @@
+{
+  "schema_version": "1.0",
+  "suite_id": "WEALTH_BLUEPRINT_V1_STABILITY_TOPICS_001",
+  "channel": "wealth_blueprint",
+  "language_code": "en",
+  "source_checked_at": "2026-08-11T00:00:00Z",
+  "topics": [
+    {
+      "id": "wealth-v1-stability-compound-interest",
+      "title": "Why Compound Interest Rewards Time More Than Hype",
+      "description": "Explain that compound interest earns interest on prior interest. Use only the official $100 at 5% example: $105 after year one and $110.25 after year two. Educational content, not a return promise.",
+      "source_name": "Investor.gov - What is compound interest?",
+      "source_url": "https://www.investor.gov/additional-resources/information/youth/teachers-classroom-resources/what-compound-interest",
+      "source_facts": ["Compound interest includes interest earned on prior interest.", "$100 growing by 5% becomes $105 after one year and $110.25 after two years."],
+      "forbidden_claims": ["guaranteed returns", "a specific investment recommendation"],
+      "visual_test_focus": ["HookScene", "ImageScene", "ChartScene", "CTAScene"],
+      "production_brief": {
+        "hook_strategy": "Contrast patient compounding with financial hype in the opening line.",
+        "image_subject": "A mature editorial desk with a calendar, calculator, and handwritten ledger; no coins, piggy banks, or fantasy wealth imagery.",
+        "cta_action": "Ask the viewer to calculate one long-term contribution scenario.",
+        "expected_scene_evidence": ["Hook states the time-versus-hype contrast", "Image is grounded in a real financial planning context", "Chart uses only the sourced $100, 5%, $105, and $110.25 example", "CTA requests a calculation, not an investment"]
+      }
+    },
+    {
+      "id": "wealth-v1-stability-rule-of-72",
+      "title": "The Rule of 72 in One Honest Example",
+      "description": "Show the Rule of 72 as an approximation: divide 72 by an expected annual rate to estimate doubling time. The official 9% example gives about eight years. State clearly that actual returns are not guaranteed.",
+      "source_name": "Investor.gov - What is compound interest?",
+      "source_url": "https://www.investor.gov/additional-resources/information/youth/teachers-classroom-resources/what-compound-interest",
+      "source_facts": ["The Rule of 72 estimates doubling time by dividing 72 by an expected annual rate.", "At 9%, the estimate is about eight years."],
+      "forbidden_claims": ["exact doubling date", "guaranteed 9% return"],
+      "visual_test_focus": ["HookScene", "NumberScene", "ChartScene", "CTAScene"],
+      "production_brief": {
+        "hook_strategy": "Open with the specific 72 divided by 9 approximation, then disclose its limit.",
+        "image_subject": "A restrained financial notebook showing a hand-worked approximation beside a simple timeline, without fabricated app screens.",
+        "cta_action": "Ask the viewer to test the approximation with a hypothetical rate.",
+        "expected_scene_evidence": ["Hook uses the approximation rather than a promise", "Number scene shows 72, 9%, or eight years", "Chart compares at least two sourced values from the example", "CTA labels the exercise hypothetical"]
+      }
+    },
+    {
+      "id": "wealth-v1-stability-investment-fees",
+      "title": "The Tiny Fee That Quietly Changes a 20-Year Portfolio",
+      "description": "Use the SEC hypothetical: $100,000 growing 4% annually for 20 years ends near $208,000 with a 0.25% annual fee, $198,000 with 0.50%, and $179,000 with 1.00%. Label all values hypothetical.",
+      "source_name": "Investor.gov - How Fees and Expenses Affect Your Investment Portfolio",
+      "source_url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins/updated",
+      "source_facts": ["Fees reduce the amount left invested to compound.", "In the SEC hypothetical, $100,000 grows at 4% annually for 20 years.", "The hypothetical ends near $208,000 with a 0.25% fee, $198,000 with a 0.50% fee, and $179,000 with a 1.00% fee."],
+      "forbidden_claims": ["future portfolio guarantee", "claim that every fund has these returns"],
+      "visual_test_focus": ["HookScene", "NumberScene", "ChartScene", "CTAScene"],
+      "production_brief": {
+        "hook_strategy": "Lead with the dollar gap created by a seemingly small annual fee.",
+        "image_subject": "A premium editorial portfolio statement with three clearly separated hypothetical fee paths and no broker branding.",
+        "cta_action": "Ask the viewer to locate the annual fee on one real fund document.",
+        "expected_scene_evidence": ["Hook identifies the fee as the variable", "Number scene labels values as hypothetical", "Chart contains the three sourced ending balances", "CTA asks for fee inspection, not a purchase"]
+      }
+    },
+    {
+      "id": "wealth-v1-stability-dollar-cost-averaging",
+      "title": "What Dollar-Cost Averaging Actually Does",
+      "description": "Explain equal investments at regular intervals regardless of market movement. The same contribution can buy more shares at lower prices and fewer shares at higher prices. Do not claim that the method eliminates risk or always outperforms another approach.",
+      "source_name": "Investor.gov - Dollar Cost Averaging",
+      "source_url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/dollar-cost-averaging",
+      "source_facts": ["Dollar-cost averaging uses equal portions at regular intervals.", "The same contribution buys more shares at lower prices and fewer at higher prices."],
+      "forbidden_claims": ["always beats lump-sum investing", "eliminates market risk"],
+      "visual_test_focus": ["HookScene", "ImageScene", "CTAScene"],
+      "production_brief": {
+        "hook_strategy": "Challenge the idea that a recurring contribution predicts the market.",
+        "image_subject": "A realistic recurring bank transfer schedule beside changing share-price receipts, presented as documentary finance imagery.",
+        "cta_action": "Ask the viewer to check whether their recurring transfer is active.",
+        "expected_scene_evidence": ["Hook separates process from prediction", "Image shows equal recurring contributions in a real-world context", "CTA requests a settings check rather than a trade"]
+      }
+    },
+    {
+      "id": "wealth-v1-stability-diversification",
+      "title": "Diversification Is More Than Owning Many Stocks",
+      "description": "Explain that diversification spreads investments among and within asset classes to manage concentration risk. It can reduce the risk of a major loss from one holding but cannot eliminate market losses.",
+      "source_name": "FINRA - Asset Allocation and Diversification",
+      "source_url": "https://www.finra.org/investors/investing/investing-basics/asset-allocation-diversification",
+      "source_facts": ["Diversification spreads investments among and within asset classes.", "It helps manage concentration risk."],
+      "forbidden_claims": ["diversification prevents all losses", "one portfolio fits everyone"],
+      "visual_test_focus": ["HookScene", "ImageScene", "CTAScene"],
+      "production_brief": {
+        "hook_strategy": "Open by distinguishing many tickers from genuine diversification.",
+        "image_subject": "A professional portfolio review table grouping holdings by asset class and concentration, with no fake performance figures.",
+        "cta_action": "Ask the viewer to identify their largest concentration.",
+        "expected_scene_evidence": ["Hook states the concentration problem", "Image groups assets rather than showing random logos", "CTA asks for a concentration check"]
+      }
+    },
+    {
+      "id": "wealth-v1-stability-high-interest-debt",
+      "title": "The Debt Check That Comes Before Investing",
+      "description": "Explain the Investor.gov guidance to consider eliminating high-interest credit-card debt before investing. Use the official example that many cards may charge around 18% or more, without implying every card has that rate.",
+      "source_name": "Investor.gov - Pay Off Credit Cards or Other High Interest Debt",
+      "source_url": "https://www.investor.gov/introduction-investing/investing-basics/save-and-invest/pay-credit-cards-or-other-high-interest",
+      "source_facts": ["High-interest debt can cost more than likely investment returns.", "Investor.gov uses credit-card rates around 18% or more as an example."],
+      "forbidden_claims": ["all debt must always be repaid before any saving", "guaranteed investment return comparison"],
+      "visual_test_focus": ["HookScene", "ImageScene", "NumberScene", "CTAScene"],
+      "production_brief": {
+        "hook_strategy": "Lead with the known debt rate before discussing uncertain returns.",
+        "image_subject": "A sober credit-card statement review with an interest-rate line and payment schedule, without luxury or shame imagery.",
+        "cta_action": "Ask the viewer to find the APR on their latest statement.",
+        "expected_scene_evidence": ["Hook contrasts known cost with uncertain return", "Image resembles a real statement review", "Number scene uses the sourced around-18% example", "CTA asks for APR verification"]
+      }
+    },
+    {
+      "id": "wealth-v1-stability-emergency-fund",
+      "title": "What an Emergency Fund Is Really Protecting",
+      "description": "Define an emergency fund as cash reserved for unplanned expenses such as repairs, medical bills, or income loss. Emphasize that even a small amount can help and the appropriate target depends on the person.",
+      "source_name": "Consumer Financial Protection Bureau - Emergency Fund Guide",
+      "source_url": "https://www.consumerfinance.gov/an-essential-guide-to-building-an-emergency-fund/",
+      "source_facts": ["An emergency fund is a cash reserve for unplanned expenses.", "Even a small reserve can provide some financial security."],
+      "forbidden_claims": ["one mandatory fund size for everyone", "investment advice for emergency cash"],
+      "visual_test_focus": ["HookScene", "ImageScene", "CTAScene"],
+      "production_brief": {
+        "hook_strategy": "Open on the decision protected by cash, not on a universal savings target.",
+        "image_subject": "A believable home-repair invoice and separate cash-reserve account viewed in a calm editorial composition.",
+        "cta_action": "Ask the viewer to name one expense their reserve should protect.",
+        "expected_scene_evidence": ["Hook names an unplanned expense", "Image shows a plausible emergency rather than generic cash", "CTA avoids prescribing a universal amount"]
+      }
+    },
+    {
+      "id": "wealth-v1-stability-automatic-saving",
+      "title": "How Automatic Saving Builds Consistency",
+      "description": "Explain automatic recurring transfers as a way to create a consistent savings habit. Include the CFPB warning to monitor checking balances so an automatic transfer does not trigger overdraft fees.",
+      "source_name": "Consumer Financial Protection Bureau - Emergency Fund Guide",
+      "source_url": "https://www.consumerfinance.gov/an-essential-guide-to-building-an-emergency-fund/",
+      "source_facts": ["Recurring transfers can build a consistent saving habit.", "Balances should be monitored to avoid overdraft fees."],
+      "forbidden_claims": ["automation guarantees wealth", "ignore account balances"],
+      "visual_test_focus": ["HookScene", "ImageScene", "CTAScene"],
+      "production_brief": {
+        "hook_strategy": "Open with consistency and immediately include the overdraft safeguard.",
+        "image_subject": "A realistic recurring-transfer setup screen paired with a checking-balance reminder, with no fabricated bank branding.",
+        "cta_action": "Ask the viewer to review both transfer timing and available balance.",
+        "expected_scene_evidence": ["Hook frames automation as a habit tool", "Image includes the balance-monitoring safeguard", "CTA requests a two-part settings review"]
+      }
+    },
+    {
+      "id": "wealth-v1-stability-time-horizon",
+      "title": "Your Time Horizon Changes the Risk You Can Carry",
+      "description": "Explain that asset allocation is personal and depends partly on time horizon and risk tolerance. Longer horizons may permit more volatility; shorter goals may call for less volatile assets. Do not prescribe an allocation.",
+      "source_name": "Investor.gov - Asset Allocation and Diversification",
+      "source_url": "https://www.investor.gov/introduction-investing/getting-started/asset-allocation",
+      "source_facts": ["Time horizon and risk tolerance influence asset allocation.", "Shorter goals may favor less volatile assets."],
+      "forbidden_claims": ["a universal stock allocation", "risk disappears over time"],
+      "visual_test_focus": ["HookScene", "ImageScene", "CTAScene"],
+      "production_brief": {
+        "hook_strategy": "Contrast a near-term goal with a long-term goal without prescribing allocations.",
+        "image_subject": "Two grounded planning scenes: a near-term purchase folder and a long-term retirement timeline, without performance projections.",
+        "cta_action": "Ask the viewer to write down the date of one financial goal.",
+        "expected_scene_evidence": ["Hook identifies two different horizons", "Image makes the time difference concrete", "CTA asks for a goal date, not an allocation"]
+      }
+    },
+    {
+      "id": "wealth-v1-stability-market-timing",
+      "title": "The Hidden Cost of Jumping In and Out of the Market",
+      "description": "Explain that market timing tries to profit from short-term moves, but exiting during a selloff can cause an investor to miss a recovery. Mention trading costs and taxes only as considerations, not personalized advice.",
+      "source_name": "FINRA - What Is Market Timing?",
+      "source_url": "https://www.finra.org/investors/insights/market-timing",
+      "source_facts": ["Market timing shifts money to exploit expected short-term price moves.", "Exiting during a temporary selloff can miss a later recovery."],
+      "forbidden_claims": ["buy-and-hold always wins", "market timing can never work"],
+      "visual_test_focus": ["HookScene", "ImageScene", "CTAScene"],
+      "production_brief": {
+        "hook_strategy": "Open on the irreversible decision to exit, not on a hindsight return chart.",
+        "image_subject": "A documentary-style order-history review during a selloff and subsequent recovery, with no invented prices or returns.",
+        "cta_action": "Ask the viewer to write an exit rule before the next volatile day.",
+        "expected_scene_evidence": ["Hook focuses on the exit decision", "Image shows order timing without fabricated gains", "CTA requests a written rule, not a trade"]
+      }
+    }
+  ]
+}

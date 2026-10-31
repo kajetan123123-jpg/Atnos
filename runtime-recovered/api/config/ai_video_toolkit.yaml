@@ -1,0 +1,148 @@
+toolkit:
+  name: Atnos AI Video Toolkit for Shorts
+  updated_at: 2026-05-18
+  default_policy:
+    local_pipeline_default: true
+    require_approval_before_publish: true
+    require_approval_before_spend: true
+    require_rights_for_source_footage: true
+    browser_saas_is_fallback: true
+
+  local_ready:
+    - id: atnos_local_short_pipeline
+      role: default_short_render
+      status: ready
+      access: local
+      notes: Script, voice, subtitles, render, QA, and manual upload package.
+    - id: ollama_qwen
+      role: script_rewrite_and_local_reasoning
+      status: ready
+      access: local
+      models:
+        - qwen3:8b
+        - qwen3-vl:8b
+    - id: piper_pl
+      role: polish_tts
+      status: ready
+      access: local
+    - id: whisper_cpp
+      role: local_transcription_and_subtitles
+      status: ready
+      access: local
+    - id: ffmpeg_imageio
+      role: mp4_rendering
+      status: ready
+      access: local_venv
+    - id: comfyui_desktop
+      role: image_video_asset_generation
+      status: ready
+      access: local
+      path: E:\Atnos\Tools\Comfy-Desktop\ComfyUI-Installs\Atnos\ComfyUI
+      fallback_path: E:\Atnos\Storage\Legacy\ComfyUI_windows_portable
+      models_path: E:\Atnos\Tools\Comfy-Desktop\ComfyUI-Shared\models
+    - id: yt_dlp
+      role: permitted_source_video_ingest
+      status: installed_in_api_venv
+      access: local_venv
+      safety: Use only owned footage, licensed material, or URLs where download and reuse are permitted.
+
+  core_external_candidates:
+    - id: youtube_api
+      role: publishing_and_analytics
+      status: account_oauth_required
+      priority: P1
+      approval_required: publish
+      env_vars:
+        - YOUTUBE_CLIENT_SECRET_FILE
+        - ALLOW_PUBLIC_UPLOAD
+        - REQUIRE_UPLOAD_APPROVAL
+    - id: zebracat
+      role: script_to_video_provider
+      status: optional_account_key_required
+      priority: P2
+      approval_required: spend
+      env_vars:
+        - ZEBRACAT_API_KEY
+        - ZEBRACAT_ENABLED
+    - id: runway
+      role: premium_ai_video_generation
+      status: account_key_required
+      priority: P2
+      approval_required: spend
+      env_vars:
+        - RUNWAY_API_KEY
+    - id: luma
+      role: premium_ai_video_generation
+      status: account_key_required
+      priority: P2
+      approval_required: spend
+      env_vars:
+        - LUMA_API_KEY
+    - id: klap
+      role: long_video_to_shorts_api
+      status: account_key_required
+      priority: P2
+      approval_required: spend
+      env_vars:
+        - KLAP_API_KEY
+
+  browser_recipe_candidates:
+    - id: opusclip
+      role: long_video_to_shorts_research
+      status: browser_login_required
+      priority: P3
+      core_backend: false
+    - id: vizard
+      role: long_video_to_shorts_research
+      status: browser_login_required
+      priority: P3
+      core_backend: false
+    - id: quso_vidyo
+      role: long_video_to_shorts_research
+      status: browser_login_required
+      priority: P3
+      core_backend: false
+    - id: capcut
+      role: manual_editor_and_caption_style_reference
+      status: browser_or_desktop_app
+      priority: P3
+      core_backend: false
+    - id: descript
+      role: transcript_based_clip_editing
+      status: browser_or_desktop_app
+      priority: P3
+      core_backend: false
+    - id: submagic
+      role: caption_style_reference
+      status: browser_login_required
+      priority: P3
+      core_backend: false
+    - id: chatgpt_ui_bridge
+      role: subscription_quality_gate
+      status: browser_login_required
+      priority: P3
+      auto_send: false
+    - id: claude_ui_bridge
+      role: subscription_quality_gate
+      status: browser_login_required
+      priority: P3
+      auto_send: false
+    - id: gemini_ui_bridge
+      role: subscription_quality_gate
+      status: browser_login_required
+      priority: P3
+      auto_send: false
+
+  missing_before_real_clip_factory:
+    - id: rights_safe_source_ingest
+      priority: P0
+      reason: Atnos needs owned/licensed input videos before clipping stream or creator footage.
+    - id: clip_candidate_detector
+      priority: P1
+      reason: Detect hooks, emotional spikes, topic shifts, dead air, and vertical crop candidates locally.
+    - id: youtube_oauth
+      priority: P1
+      reason: Publishing and analytics require authenticated YouTube API access.
+    - id: external_video_provider_key
+      priority: P2
+      reason: Premium AI video tools require account keys and spend approval.

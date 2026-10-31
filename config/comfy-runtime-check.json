@@ -1,0 +1,73 @@
+{
+  "system": {
+    "os": "win32",
+    "ram_total": 34279440384,
+    "ram_free": 17372459008,
+    "comfyui_version": "0.30.1",
+    "required_frontend_version": "1.47.12",
+    "installed_templates_version": "0.11.27",
+    "required_templates_version": "0.11.27",
+    "comfy_package_versions": [
+      {
+        "name": "comfyui-frontend-package",
+        "installed": "1.47.12",
+        "required": "1.47.12"
+      },
+      {
+        "name": "comfyui-workflow-templates",
+        "installed": "0.11.27",
+        "required": "0.11.27"
+      },
+      {
+        "name": "comfyui-embedded-docs",
+        "installed": "0.5.9",
+        "required": "0.5.9"
+      },
+      {
+        "name": "comfy-kitchen",
+        "installed": "0.2.26",
+        "required": "0.2.26"
+      },
+      {
+        "name": "comfy-aimdo",
+        "installed": "0.4.11",
+        "required": "0.4.11"
+      }
+    ],
+    "python_version": "3.12.12 (main, Feb 12 2026, 00:40:26) [MSC v.1944 64 bit (AMD64)]",
+    "pytorch_version": "2.9.1+rocm7.2.1",
+    "embedded_python": false,
+    "deploy_environment": "local-desktop2-standalone",
+    "argv": [
+      "main.py",
+      "--listen",
+      "127.0.0.1",
+      "--port",
+      "8188",
+      "--lowvram",
+      "--disable-async-offload",
+      "--disable-dynamic-vram",
+      "--reserve-vram",
+      "1.0",
+      "--cache-classic",
+      "--disable-all-custom-nodes",
+      "--extra-model-paths-config",
+      "E:\\Atnos\\App\\config\\comfy-shared-model-paths.yaml",
+      "--input-directory",
+      "E:\\Atnos\\Tools\\Comfy-Desktop\\ComfyUI-Shared\\input",
+      "--output-directory",
+      "E:\\Atnos\\Storage\\Data\\comfy-output"
+    ]
+  },
+  "devices": [
+    {
+      "name": "cuda:0 AMD Radeon RX 7600 XT : native",
+      "type": "cuda",
+      "index": 0,
+      "vram_total": 17163091968,
+      "vram_free": 17013112832,
+      "torch_vram_total": 0,
+      "torch_vram_free": 0
+    }
+  ]
+}

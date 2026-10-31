@@ -1,0 +1,52 @@
+{
+  "clip_sha256": "565aeaafa3822f73702cdab36b931bd79712ed527ae741bff22a05636031884a",
+  "frame_window": {
+    "end_frame_exclusive": 637,
+    "frame_rate": 30.0,
+    "start_frame": 430
+  },
+  "manifest_sha256": "98597f425f57b73c24beff8e6d36f4b3d26de321970982bc097adb3e47a9c22e",
+  "sample_frame_indices": [
+    430,
+    471,
+    512,
+    554,
+    595,
+    636
+  ],
+  "sampling": "six exact decoded frame indices inside the quantized ProjectManifest scene range on final MP4",
+  "scene_id": "s03",
+  "segment_id": "s03",
+  "source": "remotion_manifest_mp4",
+  "status": "failed",
+  "timing": {
+    "end_sec": 21.231,
+    "start_sec": 14.348
+  },
+  "verdict": {
+    "audit_input": {
+      "audit_height": 1020,
+      "audit_size_bytes": 160408,
+      "audit_width": 826,
+      "encoding": "jpeg",
+      "max_edge_px": 1024,
+      "original_height": 1020,
+      "original_width": 826,
+      "source_sha256": "21344c833d88085170a36a349ff7ec00fc9d651fb1b69d91b7c50315e29d40cb",
+      "source_size_bytes": 362320
+    },
+    "confidence": 5.0,
+    "contract_satisfied": false,
+    "model": "qwen3-vl:8b-instruct",
+    "response_field": "content",
+    "status": "fail",
+    "violations": [
+      "The illustration system is not 'wb_planning_desk_painted_v1' as required; it appears to be a flat, stylized icon-based design with no painted wall/window/wood surfaces or local pigment shading.",
+      "The materials do not match the contract: there are no irregular ink contours or shaded gradients on the notebook or desk. The objects appear as simple vector shapes without editorial texture.",
+      "The 'planning_desk_action' is 'shared-balance', but the visual does not show a coherent physical desk and account phone relationship; it shows only an open book-like object with annotations, which is insufficient for the required illustration system.",
+      "The visible_change requires that at the emergency claim/reduces speech cues, the emergency role is marked and the goal annotation changes to 'LESS AVAILABLE'. While this change occurs in later frames (e.g., FRAME595), it does not appear in earlier frames like FRAME430 or FRAME471 where the contract expects a visible state change. The required change is not consistently shown across all relevant panels.",
+      "The world_palette scope requires navy/indigo depth, teal wood, cream paper and restrained mint/amber/coral accents with shaded gradients and local pigments — none of these are visibly present in the frames."
+    ]
+  },
+  "video_sha256": "565aeaafa3822f73702cdab36b931bd79712ed527ae741bff22a05636031884a"
+}

@@ -1,0 +1,176 @@
+{
+  "review_format": "registered_named_v1",
+  "passed": false,
+  "editorial_checks": {
+    "criterion_0_segment_s01": {
+      "satisfied": true,
+      "field": "text",
+      "quote": "Your free trial renews only if auto-renewal applies. Check your agreement for the specific cancellation cutoff.",
+      "reason": "Addresses conditional renewal and checks terms without forbidden phrases."
+    },
+    "criterion_1_segment_s02": {
+      "satisfied": false,
+      "field": "text",
+      "quote": "Open your agreement now. Read the stated renewal price and record the specific cancellation cutoff date listed there clearly for yourself to see later.",
+      "reason": "Instructs enabling auto-renewal via 'Read' context, violating brief_fidelity rule against instructing enabling auto-re."
+    },
+    "criterion_2_segment_s03": {
+      "satisfied": true,
+      "field": "text",
+      "quote": "Set a reminder before that cutoff arrives. Decide whether to keep the useful service or cancel it, then check for provider confirmation if you choose cancellation.",
+      "reason": "Sets reminder without specific days; includes decision and verification steps within word limit."
+    },
+    "criterion_3_segment_s04": {
+      "satisfied": true,
+      "field": "text",
+      "quote": "Follow Wealth Blueprint and build wealth on purpose today.",
+      "reason": "Faithful paraphrase of authorized CTA preserving intent and scope."
+    },
+    "criterion_4_segment_s01": {
+      "satisfied": false,
+      "field": "on_screen",
+      "quote": "Check Renewal Status",
+      "reason": "Headline is a bare object list lacking imperative action objects per brief_fidelity visual_intent rule."
+    },
+    "criterion_4_segment_s02": {
+      "satisfied": true,
+      "field": "on_screen",
+      "quote": "Check Renewal Price & Cutoff",
+      "reason": "Imperative with objects matches scene content and satisfies headline requirement."
+    },
+    "criterion_4_segment_s03": {
+      "satisfied": false,
+      "field": "on_screen",
+      "quote": "Set Reminder & Decide",
+      "reason": "Headline is a bare object list lacking imperative action objects per brief_fidelity visual_intent rule."
+    },
+    "criterion_4_segment_s04": {
+      "satisfied": true,
+      "field": "on_screen",
+      "quote": "Build Wealth On Purpose",
+      "reason": "Imperative matches CTA intent and satisfies headline requirement."
+    },
+    "criterion_5_segment_s01": {
+      "satisfied": false,
+      "field": "text",
+      "quote": "Your free trial renews only if auto-renewal applies. Check your agreement for the specific cancellation cutoff.",
+      "reason": "Claims deadline is inherent rather than conditional on checking terms, violating brief_fidelity detail."
+    },
+    "criterion_5_segment_s02": {
+      "satisfied": true,
+      "field": "text",
+      "quote": "Open your agreement now. Read the stated renewal price and record the specific cancellation cutoff date listed there clearly for yourself to see later.",
+      "reason": "Explains viewer checks (price/cutoff) without scene prop instruction; equivalent natural wording acceptable."
+    },
+    "criterion_5_segment_s03": {
+      "satisfied": true,
+      "field": "text",
+      "quote": "Set a reminder before that cutoff arrives. Decide whether to keep the useful service or cancel it, then check for provider confirmation if you choose cancellation.",
+      "reason": "Includes all three operations naturally within 26 words without inventing days."
+    },
+    "criterion_5_segment_s04": {
+      "satisfied": true,
+      "field": "text",
+      "quote": "Follow Wealth Blueprint and build wealth on purpose today.",
+      "reason": "Preserves original CTA purpose; faithful paraphrase acceptable per brief_fidelity rule."
+    },
+    "criterion_6_segment_s01": {
+      "satisfied": false,
+      "field": "visual_intent",
+      "quote": "A physical paper agreement card lies flat on a neutral surface. A blank calendar sheet rests beside it, showing no specific dates or moving elements.",
+      "reason": "Calendar shows 'no specific dates' but brief_fidelity visual_intent requires distinct reminder/cutoff marks."
+    },
+    "criterion_6_segment_s02": {
+      "satisfied": true,
+      "field": "visual_intent",
+      "quote": "The same physical paper agreement remains visible with its text legible but unmarked. The adjacent blank calendar stays empty without any drawn reminders or cutoff lines added to the raster.",
+      "reason": "Accurately describes physical objects and positions; renderer adds wording per visual_intent rule."
+    },
+    "criterion_6_segment_s03": {
+      "satisfied": true,
+      "field": "visual_intent",
+      "quote": "A static illustration of a standard wall calendar shows two distinct marks: one small dot representing a reminder and another separate mark indicating the cancellation deadline, both fixed on the page surface.",
+      "reason": "Describes physical objects with required distinct marks; no UI switches or labels."
+    },
+    "criterion_6_segment_s04": {
+      "satisfied": true,
+      "field": "visual_intent",
+      "quote": "A static illustration of the 'Wealth Blueprint' logo centered clearly in a neutral background with no moving elements or embedded text other than what the renderer adds as captions.",
+      "reason": "Accurately describes physical object and position; supports closing per visual_intent rule."
+    }
+  },
+  "issues": [
+    {
+      "code": "brief_fidelity",
+      "segment_ids": [
+        "s02"
+      ],
+      "detail": "Instructing to 'Read' implies enabling auto-renewal context, violating prohibition against instructing enabling auto-renewal. Quote: Read the stated renewal price.",
+      "evidence": {
+        "segment_id": "s02",
+        "field": "text",
+        "quote": "Open your agreement now. Read the stated renewal price and record the specific cancellation cutoff date listed there clearly for yourself to see later."
+      }
+    },
+    {
+      "code": "brief_fidelity",
+      "segment_ids": [
+        "s01"
+      ],
+      "detail": "Narration claims trial renews conditionally but fails to explicitly state checking terms is required, violating detail on conditional nature of auto-renewal. Quote: Your free trial renews only if auto-renewal applies.",
+      "evidence": {
+        "segment_id": "s01",
+        "field": "text",
+        "quote": "Your free trial renews only if auto-renewal applies."
+      }
+    },
+    {
+      "code": "brief_fidelity",
+      "segment_ids": [
+        "s03"
+      ],
+      "detail": "Narration sets reminder without specific days (compliant) but includes 'check for provider confirmation' which is required per brief_fidelity s03 detail. Quote: then check for provider confirmation.",
+      "evidence": {
+        "segment_id": "s03",
+        "field": "text",
+        "quote": "Set a reminder before that cutoff arrives."
+      }
+    },
+    {
+      "code": "brief_fidelity",
+      "segment_ids": [
+        "s01"
+      ],
+      "detail": "Headline 'Check Renewal Status' is bare object list lacking imperative action objects, violating visual_intent rule. Quote: Check Renewal Status.",
+      "evidence": {
+        "segment_id": "s01",
+        "field": "on_screen",
+        "quote": "Check Renewal Status"
+      }
+    },
+    {
+      "code": "brief_fidelity",
+      "segment_ids": [
+        "s03"
+      ],
+      "detail": "Headline 'Set Reminder & Decide' is bare object list lacking imperative action objects, violating visual_intent rule. Quote: Set Reminder & Decide.",
+      "evidence": {
+        "segment_id": "s03",
+        "field": "on_screen",
+        "quote": "Set Reminder & Decide"
+      }
+    },
+    {
+      "code": "brief_fidelity",
+      "segment_ids": [
+        "s01"
+      ],
+      "detail": "Visual intent describes calendar with 'no specific dates' but brief_fidelity requires distinct reminder/cutoff marks. Quote: showing no specific dates or moving elements.",
+      "evidence": {
+        "segment_id": "s01",
+        "field": "visual_intent",
+        "quote": "A physical paper agreement card lies flat on a neutral surface."
+      }
+    }
+  ]
+}

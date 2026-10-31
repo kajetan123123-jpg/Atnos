@@ -1,0 +1,18 @@
+{
+  "language": "en",
+  "word_budget": [
+    66,
+    81
+  ],
+  "minimum_practical_share": 0.3333333333333333,
+  "narrative_rules": [
+    "Speak directly to the viewer, firmly and naturally, without breathy acting or hype.",
+    "At least one third must give specific achievable actions, not generic encouragement.",
+    "Spell out numbers for TTS. Separate adjacent amounts and durations into clear sentences.",
+    "Only when the topic requires a multi-year timeline, use ordinal year wording. Never invent a first-year or second-year schedule for a regular savings habit.",
+    "Give significant honest stakes, state assumptions and never promise market returns.",
+    "Use conditional everyday wording rather than repeated hypothetical hedging.",
+    "Distinguish accumulating starting capital from the later investment horizon.",
+    "Do not copy reference transcripts. End with one concrete action."
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "claim_classification_summary": {
+    "confirmed_count": 0,
+    "needs_source_count": 4,
+    "risky_promise_count": 0,
+    "source_policy": "never_invent_source"
+  },
+  "claim_classifications": [
+    {
+      "claim_ids": [],
+      "classification": "needs_source",
+      "confidence": 0.9,
+      "fact_ids": [],
+      "invented_source": false,
+      "issue_codes": [
+        "on_screen",
+        "unknown_source_fact",
+        "visual_intent",
+        "word_budget"
+      ],
+      "reason": "Liczba/fakt finansowy bez poprawnego claim/fact lub niezgodny z dowodem.",
+      "segment_id": "s01",
+      "source": "script_issues"
+    },
+    {
+      "claim_ids": [],
+      "classification": "needs_source",
+      "confidence": 0.9,
+      "fact_ids": [],
+      "invented_source": false,
+      "issue_codes": [
+        "on_screen",
+        "practical_share",
+        "unknown_source_fact",
+        "visual_intent",
+        "word_budget"
+      ],
+      "reason": "Liczba/fakt finansowy bez poprawnego claim/fact lub niezgodny z dowodem.",
+      "segment_id": "s02",
+      "source": "script_issues"
+    },
+    {
+      "claim_ids": [],
+      "classification": "needs_source",
+      "confidence": 0.9,
+      "fact_ids": [],
+      "invented_source": false,
+      "issue_codes": [
+        "on_screen",
+        "practical_share",
+        "unknown_source_fact",
+        "visual_intent",
+        "word_budget"
+      ],
+      "reason": "Liczba/fakt finansowy bez poprawnego claim/fact lub niezgodny z dowodem.",
+      "segment_id": "s03",
+      "source": "script_issues"
+    },
+    {
+      "claim_ids": [],
+      "classification": "needs_source",
+      "confidence": 0.9,
+      "fact_ids": [],
+      "invented_source": false,
+      "issue_codes": [
+        "on_screen",
+        "unknown_source_fact",
+        "visual_intent",
+        "word_budget"
+      ],
+      "reason": "Liczba/fakt finansowy bez poprawnego claim/fact lub niezgodny z dowodem.",
+      "segment_id": "s04",
+      "source": "script_issues"
+    },
+    {
+      "claim_ids": [],
+      "classification": "opinion",
+      "confidence": 0.7,
+      "fact_ids": [],
+      "invented_source": false,
+      "issue_codes": [
+        "on_screen",
+        "visual_intent",
+        "word_budget"
+      ],
+      "reason": "Hook/CTA bez claim — traktowane jako opinia/wezwanie, nie fakt.",
+      "segment_id": "s05",
+      "source": "segment_type"
+    }
+  ],
+  "editorial_checks": [],
+  "human_review": "not_performed",
+  "issue_evidence": [],
+  "issues": [
+    {
+      "code": "word_budget",
+      "detail": "The total spoken word count is likely below the minimum of 90 words. The script needs to be expanded to meet the word budget requirement.",
+      "fields": [],
+      "segment_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04",
+        "s05"
+      ]
+    },
+    {
+      "code": "practical_share",
+      "detail": "The practical instructions are not sufficiently concrete or actionable. The script needs to include more specific, achievable actions that align with the minimum practical share requirement.",
+      "fields": [],
+      "segment_ids": [
+        "s02",
+        "s03"
+      ]
+    },
+    {
+      "code": "unknown_source_fact",
+      "detail": "The script contains references to external facts that are not present in the immutable reviewed brief. These references must be removed or rephrased to align with the provided source material.",
+      "fields": [],
+      "segment_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04"
+      ]
+    },
+    {
+      "code": "visual_intent",
+      "detail": "The visual intent descriptions are not aligned with the user's design requirements. They should reflect the mature WB editorial design with navy, cream, and muted gold color schemes, and avoid fake bank UI or animated gestures.",
+      "fields": [],
+      "segment_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04",
+        "s05"
+      ]
+    },
+    {
+      "code": "on_screen",
+      "detail": "The on_screen captions are not fully aligned with the user's instruction to avoid karaoke-style highlighting, and should be natural phrases with a maximum of two readable lines.",
+      "fields": [],
+      "segment_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04",
+        "s05"
+      ]
+    }
+  ],
+  "revision": 1,
+  "script_hash": "0a60114b4f197937cd4203e2deed527de5e320173b628dc99202c99fdc0622f8",
+  "semantic_review": "model_reviewed",
+  "status": "failed",
+  "studio_recovery_digest": "b104b918a9fa54b6744208b896d4a90f5462695dde412200fbd8c95852c34d17"
+}

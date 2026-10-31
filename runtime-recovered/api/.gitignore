@@ -1,0 +1,63 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+client_secret*.json
+*_token*.json
+*_token*.pickle
+token*.pickle
+oauth*_authorization_url*.txt
+multi_account_oauth_links*.json
+
+# Runtime logs and process files
+*.log
+*.pid
+logs/*.log
+.codex_*.log
+.codex_*.pid
+tmp-*.log
+tmp_*.log
+oauth-live-*.log
+
+# Generated media and temporary render artifacts
+*TEMP_MPY*.mp4
+*.tmp
+*.bak
+tmp-*.png
+tmp_*.png
+tmp-*.mp4
+tmp_*.mp4
+outputs/
+
+# Local runtime scratch directories
+.tmp_*/
+tmp_*/
+tmp-*/
+tmp-test/
+tmp_comfyui_probe/
+tmp_readiness*/
+.codex_logs/
+.codex_*lock/
+
+# Node
+node_modules/
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

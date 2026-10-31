@@ -1,0 +1,16 @@
+{
+  "workflow_id": "dark_thumbnail_concept_v1",
+  "workflow_version": "v1",
+  "title": "DC_THUMBNAIL_CONCEPT",
+  "asset_type": "thumbnail",
+  "backend_preference": [
+    "flux2_klein",
+    "checkpoint"
+  ],
+  "default_width": 1280,
+  "default_height": 720,
+  "require_references": false,
+  "allow_transparent_bg": false,
+  "forbid_text_in_image": true,
+  "description": ""
+}

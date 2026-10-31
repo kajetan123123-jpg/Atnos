@@ -1,0 +1,16 @@
+{
+  "workflow_id": "wonder_character_pose_v1",
+  "workflow_version": "v1",
+  "title": "CHARACTER_POSE_REFERENCE",
+  "asset_type": "pose",
+  "backend_preference": [
+    "checkpoint",
+    "z_image_turbo"
+  ],
+  "default_width": 1024,
+  "default_height": 1024,
+  "require_references": true,
+  "allow_transparent_bg": false,
+  "forbid_text_in_image": true,
+  "description": ""
+}

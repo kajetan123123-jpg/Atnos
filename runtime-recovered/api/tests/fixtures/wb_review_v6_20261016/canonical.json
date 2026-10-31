@@ -1,0 +1,209 @@
+{
+  "claims": [
+    {
+      "assumptions": "One initial deposit of 10 dollars, no recurring deposits, 30 years at an assumed 8 percent annual rate. Annual compounding; not a forecast; before fees, tax and inflation.",
+      "id": "c1",
+      "operands": [
+        10.0,
+        0.08,
+        30.0
+      ],
+      "operation": "compound",
+      "result": 100.6265688907345,
+      "spoken_result": "one hundred one",
+      "spoken_rounding": 1,
+      "unit": "dollars"
+    }
+  ],
+  "description": "Every $10 you spend has two prices: what it costs today and what it could become. Learn how to think in opportunity cost.",
+  "provenance": {
+    "frozen_generator": "qwen3:14b",
+    "frozen_reviewer": "qwen3:14b",
+    "generator": "qwen3.5:9b",
+    "reference_source": {
+      "path": "learning/active-reference-shorts/latest_editorial_profile_wealth_blueprint.json",
+      "sha256": "920ba59cd7f31dcb7d2ab1a05d91e10c4d9e9584089275a8b694fd04600aaf1e"
+    },
+    "reviewer": "qwen3.5:9b",
+    "script_model_lane": {
+      "execution_scope": "normal_produce_script_authoring",
+      "model_digest": "6488c96fa5faab64bb65cbd30d4289e20e6130ef535a93ef9a49f42eda893ea7",
+      "receipt_digest": "625a3435b67d1b0754c5d4d38c82c4b423654ace9285eeb29be6998ce952f0f8"
+    },
+    "script_review_model_lane": {
+      "execution_scope": "normal_produce_script_review",
+      "model_digest": "6488c96fa5faab64bb65cbd30d4289e20e6130ef535a93ef9a49f42eda893ea7",
+      "receipt_digest": "6f872d26d6dc64a122386235fe8a7b1009cb56888343c38722d69c9bbc563d6e",
+      "same_model_as_writer": true
+    },
+    "studio_recovery": {
+      "attempts_reset": false,
+      "base_feedback_hash": null,
+      "budget_reset": false,
+      "request_digest": "866fa946982fbe53a72624e3e9e7aee7f42abf2c421d0b95355c14d867d11ec8",
+      "request_key": "auto-bcc12deb2640db8535bc9e63586dd764",
+      "user_appearance_approved": false
+    },
+    "usage": {
+      "knowledge_matches": 3,
+      "reference_samples": 40
+    }
+  },
+  "qa": {
+    "claim_classification_summary": {
+      "confirmed_count": 2,
+      "needs_source_count": 0,
+      "risky_promise_count": 0,
+      "source_policy": "never_invent_source"
+    },
+    "claim_classifications": [
+      {
+        "claim_ids": [
+          "c1"
+        ],
+        "classification": "confirmed",
+        "confidence": 0.8,
+        "fact_ids": [],
+        "invented_source": false,
+        "issue_codes": [],
+        "reason": "Segment powiązany z zatwierdzonym claim arytmetycznym (bez zewnętrznego faktu).",
+        "segment_id": "0",
+        "source": "numeric_claims"
+      },
+      {
+        "claim_ids": [],
+        "classification": "opinion",
+        "confidence": 0.65,
+        "fact_ids": [],
+        "invented_source": false,
+        "issue_codes": [],
+        "reason": "Brak claim/fact — treść jakościowa, nie potwierdzony fakt finansowy.",
+        "segment_id": "1",
+        "source": "absence_of_claim"
+      },
+      {
+        "claim_ids": [
+          "c1"
+        ],
+        "classification": "confirmed",
+        "confidence": 0.8,
+        "fact_ids": [],
+        "invented_source": false,
+        "issue_codes": [],
+        "reason": "Segment powiązany z zatwierdzonym claim arytmetycznym (bez zewnętrznego faktu).",
+        "segment_id": "2",
+        "source": "numeric_claims"
+      },
+      {
+        "claim_ids": [],
+        "classification": "opinion",
+        "confidence": 0.65,
+        "fact_ids": [],
+        "invented_source": false,
+        "issue_codes": [],
+        "reason": "Brak claim/fact — treść jakościowa, nie potwierdzony fakt finansowy.",
+        "segment_id": "3",
+        "source": "absence_of_claim"
+      },
+      {
+        "claim_ids": [],
+        "classification": "opinion",
+        "confidence": 0.65,
+        "fact_ids": [],
+        "invented_source": false,
+        "issue_codes": [],
+        "reason": "Brak claim/fact — treść jakościowa, nie potwierdzony fakt finansowy.",
+        "segment_id": "4",
+        "source": "absence_of_claim"
+      },
+      {
+        "claim_ids": [],
+        "classification": "opinion",
+        "confidence": 0.7,
+        "fact_ids": [],
+        "invented_source": false,
+        "issue_codes": [],
+        "reason": "Hook/CTA bez claim — traktowane jako opinia/wezwanie, nie fakt.",
+        "segment_id": "5",
+        "source": "segment_type"
+      }
+    ],
+    "human_review": "not_performed",
+    "issues": [],
+    "practical_word_share": 0.6324786324786325,
+    "revision": 0,
+    "script_hash": "9076b346db61ffe6396f4550ea2d9e36e19ab848baad6c71293b184a52218dac",
+    "semantic_review": "model_reviewed",
+    "status": "passed",
+    "studio_recovery_digest": "866fa946982fbe53a72624e3e9e7aee7f42abf2c421d0b95355c14d867d11ec8"
+  },
+  "segments": [
+    {
+      "claim_ids": [
+        "c1"
+      ],
+      "fact_ids": [],
+      "id": "0",
+      "on_screen": "$10 ≠ JUST TEN",
+      "pronunciation_terms": [],
+      "text": "This ten-dollar purchase isn't costing you just ten dollars.",
+      "type": "hook",
+      "visual_intent": "A $10 bill is shown next to a small shopping bag. Text appears: \"$10 ≠ Just Ten\". No host gesture."
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "1",
+      "on_screen": "INVEST INSTEAD OF SPENDING",
+      "pronunciation_terms": [],
+      "text": "Ask yourself if buying this item today is better than letting that money sit idle, assuming it earns nothing.",
+      "type": "practical",
+      "visual_intent": "Reveal a single plain blank teal paper slip representing the alternative alongside one blank-screen phone. Renderer holds still; labels added separately by renderer."
+    },
+    {
+      "claim_ids": [
+        "c1"
+      ],
+      "fact_ids": [],
+      "id": "2",
+      "on_screen": "Compound growth",
+      "pronunciation_terms": [],
+      "text": "If that ten dollars earned an assumed eight percent a year for thirty years, it could grow to roughly one hundred one dollars.",
+      "type": "explanation",
+      "visual_intent": "$10 → $22 → $47 → $101. A small graph grows upward. Text: “Compound growth”."
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "3",
+      "on_screen": "ENJOY NOW / CHOOSE LATER",
+      "pronunciation_terms": [],
+      "text": "Enjoy your coffee now, but ask if this optional spending is worth the future growth you are leaving behind by not investing it today.",
+      "type": "practical",
+      "visual_intent": "Renderer reveals an ordinary upright intact uncrossed coffee cup already still on the desk. Renderer holds this static illustration without internal transformation or hand motion."
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "4",
+      "on_screen": "BUY NOW / BUILD LATER",
+      "pronunciation_terms": [],
+      "text": "Weigh the immediate pleasure of spending against the value of growing that money over time by choosing to invest instead. Then decide if buying now is worth what you give up.",
+      "type": "practical",
+      "visual_intent": "A balance scale appears. Left: BUY NOW. Right: BUILD LATER. Alex stands between them."
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "5",
+      "on_screen": "PRICE ≠ COST / THINK IN OPPORTUNITY COST",
+      "pronunciation_terms": [],
+      "text": "Follow Wealth Blueprint and build wealth on purpose before you buy.",
+      "type": "cta",
+      "visual_intent": "Wealth Blueprint logo appears. Text: PRICE ≠ COST / Think in opportunity cost."
+    }
+  ],
+  "text": "This ten-dollar purchase isn't costing you just ten dollars. Ask yourself if buying this item today is better than letting that money sit idle, assuming it earns nothing. If that ten dollars earned an assumed eight percent a year for thirty years, it could grow to roughly one hundred one dollars. Enjoy your coffee now, but ask if this optional spending is worth the future growth you are leaving behind by not investing it today. Weigh the immediate pleasure of spending against the value of growing that money over time by choosing to invest instead. Then decide if buying now is worth what you give up. Follow Wealth Blueprint and build wealth on purpose before you buy.",
+  "title": "The $10 Trap That Keeps You Broke",
+  "word_count": 117
+}

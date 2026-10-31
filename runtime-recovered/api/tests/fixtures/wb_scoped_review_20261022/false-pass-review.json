@@ -1,0 +1,162 @@
+{
+  "claim_classification_summary": {
+    "confirmed_count": 0,
+    "needs_source_count": 0,
+    "risky_promise_count": 0,
+    "source_policy": "never_invent_source"
+  },
+  "claim_classifications": [
+    {
+      "claim_ids": [],
+      "classification": "estimate",
+      "confidence": 0.55,
+      "fact_ids": [],
+      "invented_source": false,
+      "issue_codes": [],
+      "reason": "Sformułowanie szacunkowe bez twardego claim — nie wymyślaj liczby.",
+      "segment_id": "s01",
+      "source": "heuristics"
+    },
+    {
+      "claim_ids": [],
+      "classification": "opinion",
+      "confidence": 0.65,
+      "fact_ids": [],
+      "invented_source": false,
+      "issue_codes": [],
+      "reason": "Brak claim/fact — treść jakościowa, nie potwierdzony fakt finansowy.",
+      "segment_id": "s02",
+      "source": "absence_of_claim"
+    },
+    {
+      "claim_ids": [],
+      "classification": "opinion",
+      "confidence": 0.65,
+      "fact_ids": [],
+      "invented_source": false,
+      "issue_codes": [],
+      "reason": "Brak claim/fact — treść jakościowa, nie potwierdzony fakt finansowy.",
+      "segment_id": "s03",
+      "source": "absence_of_claim"
+    },
+    {
+      "claim_ids": [],
+      "classification": "opinion",
+      "confidence": 0.7,
+      "fact_ids": [],
+      "invented_source": false,
+      "issue_codes": [],
+      "reason": "Hook/CTA bez claim — traktowane jako opinia/wezwanie, nie fakt.",
+      "segment_id": "s04",
+      "source": "segment_type"
+    }
+  ],
+  "editorial_checks": [
+    {
+      "criterion_index": 0,
+      "field": "text",
+      "quote": "Your free trial may have a hidden deadline: the renewal or cancellation cutoff. It's not about when you signed up, but when you need to act.",
+      "reason": "The hook introduces the renewal or cancellation cutoff as a key point, and it aligns with the brief's requirement to explain the deadline that matters may be the cutoff, not the sign-up date.",
+      "satisfied": true,
+      "segment_id": "s01"
+    },
+    {
+      "criterion_index": 1,
+      "field": "text",
+      "quote": "Check the trial agreement for renewal terms, price, and the cancellation cutoff date. Make sure automatic renewal is enabled in the terms.",
+      "reason": "The segment provides actionable steps to check the trial agreement for renewal terms, price, and the cancellation cutoff date, which satisfies the brief's requirement to give a useful sequence.",
+      "satisfied": true,
+      "segment_id": "s02"
+    },
+    {
+      "criterion_index": 2,
+      "field": "text",
+      "quote": "Set a reminder before the cutoff. Decide whether to keep or cancel the service. If you cancel, wait for a confirmation from the provider.",
+      "reason": "The segment provides actionable steps to set a reminder before the cutoff, decide whether to keep or cancel the service, and wait for a confirmation from the provider, which satisfies the brief's requirement to give a useful sequence.",
+      "satisfied": true,
+      "segment_id": "s03"
+    },
+    {
+      "criterion_index": 3,
+      "field": "text",
+      "quote": "Follow Wealth Blueprint. Build wealth on purpose.",
+      "reason": "The segment preserves the existing CTA as required by the brief.",
+      "satisfied": true,
+      "segment_id": "s04"
+    },
+    {
+      "criterion_index": 4,
+      "field": "on_screen",
+      "quote": "Renewal/Cancellation Cutoff",
+      "reason": "The on_screen text is a short meaningful English viewer message matching the scene.",
+      "satisfied": true,
+      "segment_id": "s01"
+    },
+    {
+      "criterion_index": 4,
+      "field": "on_screen",
+      "quote": "Check Renewal Terms, Price, Cutoff",
+      "reason": "The on_screen text is a short meaningful English viewer message matching the scene.",
+      "satisfied": true,
+      "segment_id": "s02"
+    },
+    {
+      "criterion_index": 4,
+      "field": "on_screen",
+      "quote": "Set Reminder, Keep or Cancel",
+      "reason": "The on_screen text is a short meaningful English viewer message matching the scene.",
+      "satisfied": true,
+      "segment_id": "s03"
+    },
+    {
+      "criterion_index": 4,
+      "field": "on_screen",
+      "quote": "Follow Wealth Blueprint. Build wealth on purpose.",
+      "reason": "The on_screen text is a short meaningful English viewer message matching the scene.",
+      "satisfied": true,
+      "segment_id": "s04"
+    },
+    {
+      "criterion_index": 5,
+      "field": "text",
+      "quote": "Your free trial may have a hidden deadline: the renewal or cancellation cutoff. It's not about when you signed up, but when you need to act.",
+      "reason": "The segment's text is within the word budget and provides a natural explanation of the topic.",
+      "satisfied": true,
+      "segment_id": "s01"
+    },
+    {
+      "criterion_index": 5,
+      "field": "text",
+      "quote": "Check the trial agreement for renewal terms, price, and the cancellation cutoff date. Make sure automatic renewal is enabled in the terms.",
+      "reason": "The segment's text is within the word budget and provides a natural explanation of the topic.",
+      "satisfied": true,
+      "segment_id": "s02"
+    },
+    {
+      "criterion_index": 5,
+      "field": "text",
+      "quote": "Set a reminder before the cutoff. Decide whether to keep or cancel the service. If you cancel, wait for a confirmation from the provider.",
+      "reason": "The segment's text is within the word budget and provides a natural explanation of the topic.",
+      "satisfied": true,
+      "segment_id": "s03"
+    },
+    {
+      "criterion_index": 5,
+      "field": "text",
+      "quote": "Follow Wealth Blueprint. Build wealth on purpose.",
+      "reason": "The segment's text is within the word budget and provides a natural explanation of the topic.",
+      "satisfied": true,
+      "segment_id": "s04"
+    }
+  ],
+  "feedback_checks": "performed",
+  "feedback_hash": "ac99ee557b4f8d9da1dd8f3b2b3e71cb53b15117eefcca2501b077cfa69dd81b",
+  "human_review": "not_performed",
+  "issue_evidence": [],
+  "issues": [],
+  "review_contract_version": 38,
+  "revision": 12,
+  "script_hash": "9e31b53afb16db73a28405cd6a201a08b8f83d09dd8f304948931342c571b014",
+  "semantic_review": "model_reviewed",
+  "status": "passed"
+}

@@ -1,0 +1,41 @@
+{
+  "scope": "ACTUAL_REJECTED_V8_OFFLINE_REGRESSION_NOT_ACCEPTANCE",
+  "files": {
+    "canonical.json": {
+      "source": "E:\\Atnos\\Profiles\\AtnosSystem\\AppData\\Roaming\\Atnos\\data\\production\\wealth_blueprint\\prod-d9c21367ddda\\script.json",
+      "sha256": "c277998b9143fe92b851ea7cb5bce7c4dc35778029fef1302ed4cbe40d7b78bb"
+    },
+    "request.json": {
+      "source": "E:\\Atnos\\App\\reports\\scenario_repair_production_delivery_20261009\\evidence\\text-v8-20261016\\DRAFT-v8-script-only-request-20261016.json",
+      "sha256": "7eb61a8061d05f4835b8063596df694519683b466d2e152d1021f78d6f97192b"
+    },
+    "37c8ad5ca1bb4d308e8b4697e89e84e0.json": {
+      "source": "E:\\Atnos\\App\\reports\\scenario_repair_production_delivery_20261009\\evidence\\text-v8-20261016\\actual-model-responses\\37c8ad5ca1bb4d308e8b4697e89e84e0.json",
+      "sha256": "1c5f4bb45a56233a055451d0298eb3329da29427903191a0573f26e1617ac251"
+    },
+    "37c8ad5ca1bb4d308e8b4697e89e84e0.raw.json": {
+      "source": "E:\\Atnos\\App\\reports\\scenario_repair_production_delivery_20261009\\evidence\\text-v8-20261016\\actual-model-responses\\37c8ad5ca1bb4d308e8b4697e89e84e0.raw.json",
+      "sha256": "5a2aaa2ac80b3aee7e3b87b22d1c54bac867ed6039a7b9d30bfbfe411d72f80a"
+    },
+    "f116d0e0b593453dbfbb801d8b625905.json": {
+      "source": "E:\\Atnos\\App\\reports\\scenario_repair_production_delivery_20261009\\evidence\\text-v8-20261016\\actual-model-responses\\f116d0e0b593453dbfbb801d8b625905.json",
+      "sha256": "caa82d45ca2b859c917cddf9f30c03540c97a1aad5a5b3bbd576ec090fbe4dbe"
+    },
+    "f116d0e0b593453dbfbb801d8b625905.raw.json": {
+      "source": "E:\\Atnos\\App\\reports\\scenario_repair_production_delivery_20261009\\evidence\\text-v8-20261016\\actual-model-responses\\f116d0e0b593453dbfbb801d8b625905.raw.json",
+      "sha256": "5db5652ee6ef1d615e6da2c9510138034e16070f52173737479ded836a7cb3ba"
+    },
+    "27363b0216f44adfa80e596a4054e1db.json": {
+      "source": "E:\\Atnos\\App\\reports\\scenario_repair_production_delivery_20261009\\evidence\\text-v8-20261016\\actual-model-responses\\27363b0216f44adfa80e596a4054e1db.json",
+      "sha256": "2b1333026070c67d4fbd7f291173a8f08c1ea02fd91ae1afc2959540990990e5"
+    },
+    "27363b0216f44adfa80e596a4054e1db.raw.json": {
+      "source": "E:\\Atnos\\App\\reports\\scenario_repair_production_delivery_20261009\\evidence\\text-v8-20261016\\actual-model-responses\\27363b0216f44adfa80e596a4054e1db.raw.json",
+      "sha256": "32e222c1ce81672bacdda4c5c03fd40a861bbb1055a87a090115b23592c4adba"
+    },
+    "production-order.json": {
+      "source": "Read-only frozen request of prod-d9c21367ddda at provider_calls311, 2026-10-16",
+      "sha256": "f7f5a33a8fda1c5cc12ae6159e7aadf41e9316458e581116e9da9d6a2f715546"
+    }
+  }
+}

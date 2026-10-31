@@ -1,0 +1,17 @@
+{
+  "workflow_id": "wonder_environment_concept_v1",
+  "workflow_version": "v1",
+  "title": "ENVIRONMENT_CONCEPT",
+  "asset_type": "environment",
+  "backend_preference": [
+    "checkpoint",
+    "z_image_turbo",
+    "flux2_klein"
+  ],
+  "default_width": 1344,
+  "default_height": 768,
+  "require_references": false,
+  "allow_transparent_bg": false,
+  "forbid_text_in_image": true,
+  "description": "Magical island / world concepts for Blender"
+}

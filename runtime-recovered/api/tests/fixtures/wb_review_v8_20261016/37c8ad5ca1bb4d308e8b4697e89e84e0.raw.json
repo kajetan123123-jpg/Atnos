@@ -1,0 +1,18 @@
+{
+  "response": {
+    "created_at": "2026-10-16T12:27:02.9578717Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 458,
+    "eval_duration": 25786705000,
+    "load_duration": 15790949100,
+    "message": {
+      "content": "{\n  \"replacements\": [\n    {\n      \"id\": \"1\",\n      \"type\": \"practical\",\n      \"text\": \"Ask if buying this item today is better than letting that money sit idle.\",\n      \"visual_intent\": \"Reveal a single plain blank teal paper slip representing the alternative alongside one blank-screen phone. Renderer holds still; labels added separately by renderer.\",\n      \"on_screen\": \"INVEST INSTEAD OF SPENDING\",\n      \"claim_ids\": [],\n      \"fact_ids\": []\n    },\n    {\n      \"id\": \"3\",\n      \"type\": \"practical\",\n      \"text\": \"Count the enjoyment of your coffee against leaving that money to grow. Decide if spending is worth giving up future growth.\",\n      \"visual_intent\": \"Renderer reveals an ordinary upright intact uncrossed coffee cup already still on the desk. Renderer holds this static illustration without internal transformation or hand motion.\",\n      \"on_screen\": \"ENJOY NOW / CHOOSE LATER\",\n      \"claim_ids\": [],\n      \"fact_ids\": []\n    },\n    {\n      \"id\": \"4\",\n      \"type\": \"practical\",\n      \"text\": \"Weigh the immediate pleasure of spending against growing that money over time. Decide if buying now is worth what you give up.\",\n      \"visual_intent\": \"Renderer reveals a balance scale showing two sides: one labeled BUY NOW and one BUILD LATER. Renderer holds this static illustration without internal transformation or hand motion.\",\n      \"on_screen\": \"BUY NOW / BUILD LATER\",\n      \"claim_ids\": [],\n      \"fact_ids\": []\n    },\n    {\n      \"id\": \"5\",\n      \"type\": \"cta\",\n      \"text\": \"Follow Wealth Blueprint and build wealth on purpose before you buy.\",\n      \"visual_intent\": \"Wealth Blueprint logo appears. Text: PRICE ≠ COST / Think in opportunity cost.\",\n      \"on_screen\": \"PRICE ≠ COST / THINK IN OPPORTUNITY COST\",\n      \"claim_ids\": [],\n      \"fact_ids\": []\n    }\n  ]\n}",
+      "role": "assistant"
+    },
+    "model": "qwen3.5:9b",
+    "prompt_eval_count": 3646,
+    "prompt_eval_duration": 5704380000,
+    "total_duration": 47314939500
+  }
+}

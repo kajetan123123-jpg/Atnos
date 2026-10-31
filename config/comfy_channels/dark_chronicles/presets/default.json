@@ -1,0 +1,6 @@
+{
+  "channel": "dark_chronicles",
+  "max_concurrent_gpu_jobs": 1,
+  "shared_models": true,
+  "reference_conditioning": "prompt_anchor_names"
+}

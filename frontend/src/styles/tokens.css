@@ -1,0 +1,180 @@
+:root {
+  color-scheme: dark;
+  /* Surface / background — OLED charcoal */
+  --bg-void: #070707;
+  --bg-shell: #0a0a0a;
+  --bg-panel: #121212;
+  --bg-elevated: #1a1a1a;
+  --surface-live: rgba(255, 79, 0, 0.12);
+  --scrim-sidebar-drawer: rgba(7, 7, 7, 0.88);
+  --glass-shell: rgba(12, 12, 12, 0.78);
+  --glass-panel: rgba(18, 18, 18, 0.72);
+  --glass-elevated: rgba(28, 28, 28, 0.82);
+  --aurora-cyan: transparent;
+  --aurora-violet: transparent;
+  --aurora-emerald: transparent;
+  --aurora-orange: rgba(255, 79, 0, 0.22);
+  --aurora-ember: rgba(255, 110, 40, 0.14);
+  --frost-line: rgba(255, 255, 255, 0.08);
+  --frost-line-strong: rgba(255, 255, 255, 0.14);
+  --frost-line-soft: rgba(255, 255, 255, 0.035);
+  --frost-wash: rgba(255, 255, 255, 0.03);
+  --shadow-mask: rgba(0, 0, 0, 0.82);
+  --panel-abyss: #0c0c0c;
+  --panel-abyss-strong: #070707;
+  --shell-topbar: rgba(10, 10, 10, 0.82);
+  --shell-bottom-nav: rgba(10, 10, 10, 0.9);
+
+  /* Accent — Formix/ember orange as live CTA */
+  --accent-primary: #ff4f00;
+  --accent-secondary: #ff6a2b;
+  --accent-on-primary: #0a0a0a;
+  --accent-ring: rgba(255, 79, 0, 0.55);
+  --accent-ring-soft: rgba(255, 79, 0, 0.35);
+
+  /* Semantic */
+  --sem-success: #7dcf8a;
+  --sem-warning: #f0b35a;
+  --sem-error: #ff4f00;
+
+  /* Assistant center: restrained signal colors, scoped to memory/runtime views. */
+  --assistant-accent: #8bdfc3;
+  --assistant-accent-dim: rgba(139, 223, 195, 0.12);
+  --assistant-note: #b9adf4;
+  --assistant-grid: rgba(139, 223, 195, 0.045);
+
+  /* Text */
+  --text-primary: #f5f5f5;
+  --text-secondary: #b8b3b0;
+  --text-tertiary: #7e7874;
+  --text-disabled: #4a4543;
+  --code-theme-bg: #101010;
+  --code-theme-foreground: #f5f5f5;
+  --code-theme-comment: #7e7874;
+  --code-theme-keyword: #7dcf8a;
+  --code-theme-string: #ff6a2b;
+
+  /* Borders */
+  --border-strong: rgba(255, 255, 255, 0.16);
+  --border-default: rgba(255, 255, 255, 0.1);
+  --border-subtle: rgba(255, 255, 255, 0.06);
+  --scrim-command-palette: rgba(4, 4, 6, 0.78);
+  --scrim-command-palette-low-perf: rgba(4, 4, 6, 0.92);
+
+  /* Typography */
+  --font-display: 'Geist', 'Inter', system-ui, sans-serif;
+  --font-body: 'Geist', 'Inter', system-ui, sans-serif;
+  --font-mono: 'Geist Mono', 'JetBrains Mono', ui-monospace, monospace;
+
+  --type-display-size: 56px;
+  --type-display-line: 60px;
+  --type-display-tracking: -0.02em;
+  --type-display-weight: 500;
+
+  --type-h1-size: 36px;
+  --type-h1-line: 44px;
+  --type-h1-tracking: -0.015em;
+  --type-h1-weight: 500;
+
+  --type-h2-size: 28px;
+  --type-h2-line: 36px;
+  --type-h2-tracking: -0.01em;
+  --type-h2-weight: 500;
+
+  --type-h3-size: 20px;
+  --type-h3-line: 28px;
+  --type-h3-tracking: -0.005em;
+  --type-h3-weight: 500;
+
+  --type-body-lg-size: 17px;
+  --type-body-lg-line: 28px;
+  --type-body-lg-tracking: 0;
+  --type-body-lg-weight: 400;
+
+  --type-body-size: 15px;
+  --type-body-line: 24px;
+  --type-body-tracking: 0;
+  --type-body-weight: 400;
+
+  --type-body-sm-size: 13px;
+  --type-body-sm-line: 20px;
+  --type-body-sm-tracking: 0.005em;
+  --type-body-sm-weight: 400;
+
+  --type-label-size: 11px;
+  --type-label-line: 16px;
+  --type-label-tracking: 0.12em;
+  --type-label-weight: 500;
+
+  --type-mono-sm-size: 12px;
+  --type-mono-sm-line: 18px;
+  --type-mono-sm-tracking: 0;
+  --type-mono-sm-weight: 400;
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+
+  /* Glow / shadow — soft ember bloom */
+  --glow-none: none;
+  --glow-soft: 0 0 24px rgba(255, 79, 0, 0.18);
+  --glow-medium: 0 0 36px rgba(255, 79, 0, 0.28);
+  --glow-hard: 0 0 48px rgba(255, 79, 0, 0.4);
+  --glow-extreme: 0 0 72px rgba(255, 79, 0, 0.5);
+  --glow-success: 0 0 24px rgba(125, 207, 138, 0.28);
+  --glow-error: 0 0 24px rgba(255, 79, 0, 0.35);
+  --shadow-panel: 0 12px 40px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  --shadow-floating: 0 18px 48px rgba(0, 0, 0, 0.55), 0 0 32px rgba(255, 79, 0, 0.12);
+  --shadow-inset-soft: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+
+  /* Shape / motion — soft agency radii */
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-pill: 999px;
+  --border-w: 1px;
+
+  --ease-standard: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --ease-decelerate: cubic-bezier(0, 0, 0.2, 1);
+  --ease-accelerate: cubic-bezier(0.4, 0, 1, 1);
+  --ease-spring: cubic-bezier(0.34, 1.4, 0.64, 1);
+
+  --dur-instant: 80ms;
+  --dur-fast: 160ms;
+  --dur-base: 240ms;
+  --dur-slow: 400ms;
+  --dur-deliberate: 800ms;
+
+  /* Z-index */
+  --z-page: 0;
+  --z-sidebar: 15;
+  --z-hud: 20;
+  --z-sidebar-drawer: 30;
+  --z-pipeline-sheet: 40;
+  --z-approval-gate: 50;
+  --z-toast: 60;
+  --z-command-palette: 70;
+  --z-modal: 80;
+}
+
+body[data-low-perf='true'],
+[data-low-perf='true'] {
+  --glow-soft: none;
+  --glow-medium: none;
+  --glow-hard: none;
+  --glow-extreme: none;
+  --glow-success: none;
+  --glow-error: none;
+  --shadow-floating: 0 12px 28px rgba(0, 0, 0, 0.5);
+  --glass-shell: #0a0a0a;
+  --glass-panel: #121212;
+  --glass-elevated: #1a1a1a;
+  --aurora-orange: transparent;
+  --aurora-ember: transparent;
+}

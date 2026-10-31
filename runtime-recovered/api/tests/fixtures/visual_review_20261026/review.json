@@ -1,0 +1,194 @@
+{
+  "claim_classification_summary": {
+    "confirmed_count": 0,
+    "needs_source_count": 0,
+    "risky_promise_count": 0,
+    "source_policy": "never_invent_source"
+  },
+  "claim_classifications": [
+    {
+      "claim_ids": [],
+      "classification": "opinion",
+      "confidence": 0.7,
+      "fact_ids": [],
+      "invented_source": false,
+      "issue_codes": [],
+      "reason": "Hook/CTA bez claim — traktowane jako opinia/wezwanie, nie fakt.",
+      "segment_id": "s01",
+      "source": "segment_type"
+    },
+    {
+      "claim_ids": [],
+      "classification": "opinion",
+      "confidence": 0.65,
+      "fact_ids": [],
+      "invented_source": false,
+      "issue_codes": [],
+      "reason": "Brak claim/fact — treść jakościowa, nie potwierdzony fakt finansowy.",
+      "segment_id": "s02",
+      "source": "absence_of_claim"
+    },
+    {
+      "claim_ids": [],
+      "classification": "opinion",
+      "confidence": 0.65,
+      "fact_ids": [],
+      "invented_source": false,
+      "issue_codes": [],
+      "reason": "Brak claim/fact — treść jakościowa, nie potwierdzony fakt finansowy.",
+      "segment_id": "s03",
+      "source": "absence_of_claim"
+    },
+    {
+      "claim_ids": [],
+      "classification": "opinion",
+      "confidence": 0.7,
+      "fact_ids": [],
+      "invented_source": false,
+      "issue_codes": [],
+      "reason": "Hook/CTA bez claim — traktowane jako opinia/wezwanie, nie fakt.",
+      "segment_id": "s04",
+      "source": "segment_type"
+    }
+  ],
+  "editorial_checks": [
+    {
+      "criterion_index": 0,
+      "field": "text",
+      "quote": "Your free trial renews only if auto-renewal applies. Check your agreement for the specific cancellation cutoff.",
+      "reason": "Addresses conditional renewal and checks terms naturally without forbidden phrases.",
+      "satisfied": true,
+      "segment_id": "s01"
+    },
+    {
+      "criterion_index": 1,
+      "field": "text",
+      "quote": "Open your agreement now. Read the stated renewal price and record the specific cancellation cutoff date listed there clearly for yourself to see later.",
+      "reason": "Gives concrete first check of terms/price/cutoff without instructing enabling auto-renewal.",
+      "satisfied": true,
+      "segment_id": "s02"
+    },
+    {
+      "criterion_index": 2,
+      "field": "text",
+      "quote": "Set a reminder before that cutoff arrives. Decide whether to keep the useful service or cancel it, then check for provider confirmation if you choose cancellation.",
+      "reason": "Sets reminder without specific days; includes keep/cancel choice and verification.",
+      "satisfied": true,
+      "segment_id": "s03"
+    },
+    {
+      "criterion_index": 3,
+      "field": "text",
+      "quote": "Follow Wealth Blueprint and build wealth on purpose today.",
+      "reason": "Preserves existing CTA purpose faithfully without promising returns or guides.",
+      "satisfied": true,
+      "segment_id": "s04"
+    },
+    {
+      "criterion_index": 4,
+      "field": "on_screen",
+      "quote": "Check Renewal Status",
+      "reason": "Concise imperative matching scene action; not a bare object list.",
+      "satisfied": true,
+      "segment_id": "s01"
+    },
+    {
+      "criterion_index": 4,
+      "field": "on_screen",
+      "quote": "Check Renewal Price & Cutoff",
+      "reason": "Imperative with objects describing the check action is valid headline format.",
+      "satisfied": true,
+      "segment_id": "s02"
+    },
+    {
+      "criterion_index": 4,
+      "field": "on_screen",
+      "quote": "Set Reminder & Decide",
+      "reason": "Concise imperative covering reminder and decision operations; ampersand acceptable.",
+      "satisfied": true,
+      "segment_id": "s03"
+    },
+    {
+      "criterion_index": 4,
+      "field": "on_screen",
+      "quote": "Build Wealth On Purpose",
+      "reason": "Short meaningful message matching closing CTA intent.",
+      "satisfied": true,
+      "segment_id": "s04"
+    },
+    {
+      "criterion_index": 5,
+      "field": "text",
+      "quote": "Your free trial renews only if auto-renewal applies. Check your agreement for the specific cancellation cutoff.",
+      "reason": "Segment word count 16 is within total budget constraints.",
+      "satisfied": true,
+      "segment_id": "s01"
+    },
+    {
+      "criterion_index": 5,
+      "field": "text",
+      "quote": "Open your agreement now. Read the stated renewal price and record the specific cancellation cutoff date listed there clearly for yourself to see later.",
+      "reason": "Segment word count 24 is within total budget constraints.",
+      "satisfied": true,
+      "segment_id": "s02"
+    },
+    {
+      "criterion_index": 5,
+      "field": "text",
+      "quote": "Set a reminder before that cutoff arrives. Decide whether to keep the useful service or cancel it, then check for provider confirmation if you choose cancellation.",
+      "reason": "Segment word count 26 is within total budget constraints.",
+      "satisfied": true,
+      "segment_id": "s03"
+    },
+    {
+      "criterion_index": 5,
+      "field": "text",
+      "quote": "Follow Wealth Blueprint and build wealth on purpose today.",
+      "reason": "Segment word count 9 is within total budget constraints; total script words align with range.",
+      "satisfied": true,
+      "segment_id": "s04"
+    },
+    {
+      "criterion_index": 6,
+      "field": "visual_intent",
+      "quote": "A physical paper agreement card lies flat on a neutral surface. A blank calendar sheet rests beside it, showing no specific dates or moving elements.",
+      "reason": "Describes physical objects and material; renderer adds wording/dates.",
+      "satisfied": true,
+      "segment_id": "s01"
+    },
+    {
+      "criterion_index": 6,
+      "field": "visual_intent",
+      "quote": "A physical paper agreement card lies flat. Beside it, a blank calendar sheet rests with no specific dates or moving elements.",
+      "reason": "Describes physical objects and material; renderer adds wording/dates.",
+      "satisfied": true,
+      "segment_id": "s02"
+    },
+    {
+      "criterion_index": 6,
+      "field": "visual_intent",
+      "quote": "The same static scene shows the paper agreement and blank calendar resting on the surface without movement or added labels.",
+      "reason": "Describes physical objects and material; renderer adds wording/dates.",
+      "satisfied": true,
+      "segment_id": "s03"
+    },
+    {
+      "criterion_index": 6,
+      "field": "visual_intent",
+      "quote": "A static illustration of the 'Wealth Blueprint' logo centered clearly in a neutral background with no moving elements or embedded text other than what the renderer adds as captions.",
+      "reason": "Describes physical object (logo) and material; renderer handles captioning.",
+      "satisfied": true,
+      "segment_id": "s04"
+    }
+  ],
+  "feedback_checks": "performed",
+  "feedback_hash": "f7a7434df24aecd330edd6f96a3f09a9600468c548e7648b060983b03ccdc4c4",
+  "human_review": "not_performed",
+  "issue_evidence": [],
+  "issues": [],
+  "review_contract_version": 42,
+  "revision": 13,
+  "script_hash": "957fa4cc29f4827c935980938230d8a41270416d168feccdf7802548e7cba8cf",
+  "semantic_review": "model_reviewed",
+  "status": "passed"
+}

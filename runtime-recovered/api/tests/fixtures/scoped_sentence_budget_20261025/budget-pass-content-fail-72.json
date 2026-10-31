@@ -1,0 +1,47 @@
+{
+  "claims": [],
+  "description": "Explain the conditional nature of auto-renewal, check specific terms and prices, set an early reminder for your decision, verify cancellation confirmation if needed, then follow Wealth Blueprint to build wealth on purpose.",
+  "segments": [
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s01",
+      "on_screen": "Check Renewal Status",
+      "pronunciation_terms": [],
+      "text": "Your free trial renews only if auto-renewal is enabled in your agreement terms.?",
+      "type": "hook",
+      "visual_intent": "A static illustration of a document titled 'Agreement Terms' with a small toggle switch labeled 'Auto-Renew' set to the ON position."
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s02",
+      "on_screen": "Check Renewal Price & Cutoff",
+      "pronunciation_terms": [],
+      "text": "Open your agreement now. Read the stated renewal price and record the specific cancellation cutoff date listed there clearly for yourself to see later.",
+      "type": "practical",
+      "visual_intent": "A static illustration of a document titled 'Agreement Terms' with text lines highlighting 'Renewal Price: $X.XX per month' and 'Cancellation Cutoff Date'."
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s03",
+      "on_screen": "Set Reminder & Decide",
+      "pronunciation_terms": [],
+      "text": "Set a reminder before that cutoff arrives. Decide whether to keep the useful service or cancel it, then check for provider confirmation if you choose cancellation.",
+      "type": "practical",
+      "visual_intent": "A static illustration of a calendar with a red marker placed on an earlier date labeled 'Reminder' and another marker closer to the edge labeled 'Cutoff', showing two distinct choices: Keep vs Cancel."
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s04",
+      "on_screen": "Build Wealth On Purpose",
+      "pronunciation_terms": [],
+      "text": "Follow Wealth Blueprint and build wealth on purpose today.",
+      "type": "cta",
+      "visual_intent": "A static illustration of the 'Wealth Blueprint' logo centered clearly in a neutral background with no moving elements or embedded text other than what the renderer adds as captions."
+    }
+  ],
+  "title": "Your free trial has a second deadline"
+}

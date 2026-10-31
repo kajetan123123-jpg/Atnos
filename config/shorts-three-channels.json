@@ -1,0 +1,59 @@
+{
+  "scope": "Three original assisted productions requested by the user. Local exports, not automatic publication.",
+  "language": "en",
+  "publish": false,
+  "channels": [
+    {
+      "key": "wealth_blueprint",
+      "title": "The Price of One Percent",
+      "filename": "01-Investments-The-Price-of-One-Percent.mp4",
+      "voice": "am_michael",
+      "speed": 0.95,
+      "style": "Animated financial explainer, navy, mint and cream, precise labeled arithmetic",
+      "description": "An illustrative comparison of annual investment fees on a constant $10,000 balance. 1% = $100, 0.25% = $25, difference = $75. Actual balances and charges vary. Educational content, not personalized investment advice.",
+      "sources": ["https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins/updated"],
+      "scenes": [
+        {"heading": "THE PRICE OF 1%", "text": "One percent sounds tiny. On a ten thousand dollar investment, it can mean one hundred dollars in annual fees."},
+        {"heading": "KEEP THE EXAMPLE SIMPLE", "text": "For this simple example, hold the account value constant. We are comparing costs, not predicting investment returns."},
+        {"heading": "SAME BALANCE. DIFFERENT FEE.", "text": "A quarter percent fee would cost twenty five dollars. That's seventy five dollars less for that year."},
+        {"heading": "SMALL COSTS ADD UP", "text": "Fees also leave less money invested to earn future returns. Over time, that difference can grow."},
+        {"heading": "CHECK THE WHOLE PICTURE", "text": "Before comparing investments, check ongoing fees, trading charges, and what service you receive. Lower cost alone does not mean lower risk."},
+        {"heading": "KNOW WHAT YOU PAY", "text": "Returns are uncertain. Costs deserve your attention."}
+      ]
+    },
+    {
+      "key": "children_stories",
+      "title": "Lila and the Little Lantern",
+      "filename": "02-Kids-Lila-and-the-Little-Lantern.mp4",
+      "voice": "af_heart",
+      "speed": 0.91,
+      "style": "Original gentle 2D storybook animation, one consistent red fox with a green leaf hat and one gray owl with a blue scarf",
+      "description": "Original fiction for children ages 4–7. A little fox returns Owl's lantern, and a kind friend lights the way home. Calm narration and a reassuring ending.",
+      "scenes": [
+        {"heading": "A LITTLE LIGHT", "text": "Lila the fox found a little lantern beside the path. Its warm light flickered in the evening breeze."},
+        {"heading": "SOMEONE NEEDS IT", "text": "Someone must be missing this, she thought. She lifted it gently and followed the trail toward Owl's tree."},
+        {"heading": "A FRIEND UP ABOVE", "text": "Owen peered from his doorway. My lantern! I couldn't find my way down in the dark."},
+        {"heading": "A KIND LITTLE FOX", "text": "Lila set the lantern on his doorstep. Owen came down slowly, smiling at his little friend."},
+        {"heading": "LET ME HELP YOU", "text": "Thank you, he said. Shall I light your way home? Lila nodded, her tail swishing happily."},
+        {"heading": "GOODNIGHT, LILA", "text": "Together they followed the golden glow. Soon Lila was snug in her den, and the forest settled into sleep."}
+      ]
+    },
+    {
+      "key": "horror_stories",
+      "title": "The Wrong Key",
+      "filename": "03-Horror-The-Wrong-Key.mp4",
+      "voice": "am_fenrir",
+      "speed": 0.89,
+      "style": "Original atmospheric 2D suspense animation, first-person locked door, phone and key, coherent supernatural payoff, no gore",
+      "description": "Original fictional horror. A call from inside a locked apartment reveals what the key in the narrator's hand really is. Suspense and a supernatural ending; no claim of real events.",
+      "scenes": [
+        {"heading": "THE WRONG KEY", "text": "At midnight, I stood outside my locked apartment. My phone rang. The caller was me."},
+        {"heading": "STILL IN MY HAND", "text": "A voice whispered, you left your key on the kitchen table. But my key was in my hand."},
+        {"heading": "SOMETHING INSIDE", "text": "Then a key scraped against wood on the other side of the door. I stopped breathing."},
+        {"heading": "LOOK AT YOUR PALM", "text": "Look at your palm, the voice said. Slowly, the brass key in my hand began turning black."},
+        {"heading": "THAT ISN'T YOUR KEY", "text": "The thing inside laughed with my voice. That's not your key, it whispered. That's my tooth."},
+        {"heading": "IT WAS SMILING", "text": "Something sharp unfolded against my skin. Behind the door, a mouth full of keys began to smile."}
+      ]
+    }
+  ]
+}

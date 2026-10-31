@@ -1,0 +1,16 @@
+{
+  "workflow_id": "wealth_background_v1",
+  "workflow_version": "v1",
+  "title": "WB_BACKGROUND",
+  "asset_type": "background",
+  "backend_preference": [
+    "flux2_klein",
+    "checkpoint"
+  ],
+  "default_width": 1080,
+  "default_height": 1920,
+  "require_references": false,
+  "allow_transparent_bg": false,
+  "forbid_text_in_image": true,
+  "description": "Clean vertical backgrounds"
+}

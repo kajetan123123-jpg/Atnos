@@ -1,0 +1,57 @@
+{
+  "claims": [],
+  "description": "Distinguish between money ready for emergencies and money set for long-term goals. Take actionable steps to build readiness without chasing returns.",
+  "segments": [
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s01",
+      "on_screen": "EMERGENCY FUND vs LONG-TERM GOAL",
+      "pronunciation_terms": [],
+      "text": "What if your money is working for you but not in the way you expect? Your emergency fund isn't an investment—it's a shield.",
+      "type": "hook",
+      "visual_intent": "A navy background with a split canvas: on the left, a simple wallet with a label 'EMERGENCY FUND'; on the right, a chart with a flat line labeled 'LONG-TERM GOAL'."
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s02",
+      "on_screen": "CAN I COVER THIS?",
+      "pronunciation_terms": [],
+      "text": "Identify a plausible essential expense, like a car repair or medical bill. Ask yourself: can I cover this without borrowing or selling something?",
+      "type": "practical",
+      "visual_intent": "A wallet on the left with a checkmark; on the right, a chart with a flat line and a label 'NOT GROWING'."
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s03",
+      "on_screen": "HIGH-ACCESS ACCOUNT",
+      "pronunciation_terms": [],
+      "text": "Label your emergency fund separately. Keep it in a high-access account, like a savings or money market account, where you can withdraw it quickly and without fees.",
+      "type": "practical",
+      "visual_intent": "A wallet on the left with a label 'EMERGENCY FUND'; on the right, a chart with a flat line and a label 'NOT GROWING'."
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s04",
+      "on_screen": "NOT ABOUT RETURNS",
+      "pronunciation_terms": [],
+      "text": "Your emergency fund isn't about returns. It's about readiness. It's not the same as investing for retirement or growth.",
+      "type": "explanation",
+      "visual_intent": "A wallet on the left with a label 'EMERGENCY FUND'; on the right, a chart with a flat line and a label 'NOT GROWING'."
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s05",
+      "on_screen": "FOLLOW WEALTH BLUEPRINT",
+      "pronunciation_terms": [],
+      "text": "Review your emergency fund regularly. If your needs change, adjust your allocation. Follow Wealth Blueprint. Build wealth on purpose.",
+      "type": "cta",
+      "visual_intent": "A wallet on the left with a label 'EMERGENCY FUND'; on the right, a chart with a flat line and a label 'NOT GROWING'."
+    }
+  ],
+  "title": "Your Emergency Fund Is Not an Investment"
+}

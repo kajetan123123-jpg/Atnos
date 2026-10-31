@@ -1,0 +1,181 @@
+{
+  "note": "One registered local script-only correction of the current canonical opportunity-cost story. Revise only segments 1, 3, 4 and 5; lock entire segments 0 and 2, all claims, the original intake, calculator assumptions, title and description. Present spending, saving and investing as context-dependent choices about the next-best alternative, not an order to invest or a claim that every purchase loses certain growth. Compare the value of enjoyment and other needs fairly. Keep second-person address, complete natural English sentences, 96-118 total spoken words and the frozen practical-content threshold. No new spoken amounts, rates or time periods in nonnumeric scenes. Retain the hypothetical wording in segment 2, before fees, taxes and inflation in its immutable claim context; do not describe the assumed rate as a historical average or a promise. The practical decision applies to allocating money, not exclusively checkout. Retain following Wealth Blueprint and building wealth on purpose as the final CTA. Renderer overlays all headings, labels and numbers; generated artwork contains no text. Preserve supported static objects, use reveal/hold only, and do not invent an unavailable Alex pose. This request grants no image, voice, scene-generation, render, publication, mail, restart or paid-API permission. Historical counts and v3 receipts must remain intact. A model PASS without complete current quotations and an independent semantic check is insufficient.",
+  "request_key": "wb-opportunity-user-review-20261010-v5",
+  "editorial_issues": [
+    {
+      "code": "naturalness",
+      "segment_ids": [
+        "1"
+      ],
+      "detail": "The actual canonical headline INVEST INSTEAD OF SPENDING is an instruction to invest. The actual narration contrasts buying with letting that money sit idle, assuming it earns nothing. Explain the next-best use of the same money and the value of the current option, with spending, saving and investing as context-dependent possibilities. Use a neutral heading. The alternative is not simply inactivity. No invented facts or numbers. Preserve the existing static blank-card and blank-screen-phone direction, with separate renderer labels."
+    },
+    {
+      "code": "practical_share",
+      "segment_ids": [
+        "3"
+      ],
+      "detail": "Actual narration says future growth you are leaving behind by not investing it today. It treats the hypothetical example as a certain lost return and qualifies enjoyment with guilt. Teach the viewer to count enjoyment and needs in the comparison; enjoyment can justify spending. Neither consumption nor investing is automatically the right answer. No claim of predictable growth, no invented numbers. Keep a complete natural second-person thought and the static intact uncrossed coffee cup."
+    },
+    {
+      "code": "practical_share",
+      "segment_ids": [
+        "4"
+      ],
+      "detail": "Actual canonical narration says growing that money over time by choosing to invest instead; rejected v3 substitutes letting that money sit idle. Explain a usable decision: identify the immediate benefit and next-best alternative use, consider the trade, then decide based on needs. Apply it to money allocation, not only purchases. Either choice may be reasonable; an investment return is uncertain. Use no new amounts or rates; preserve an understandable comparison and neutral renderer labels."
+    },
+    {
+      "code": "unsupported_visual_intent",
+      "segment_ids": [
+        "4"
+      ],
+      "detail": "The current visual_intent asks for Alex standing between BUY NOW and BUILD LATER despite no verified pose or action. Use the supported static balance-scale composition to explain alternatives, without an invented host pose, internal movement or lettering baked into the image. Labels belong to on_screen or the renderer and should describe the fair comparison; do not imply automatic investment profit."
+    },
+    {
+      "code": "structure",
+      "segment_ids": [
+        "5"
+      ],
+      "detail": "The actual closing appends before you buy to Follow Wealth Blueprint and build wealth on purpose. Preserve following the channel and intentional wealth-building as the CTA, without narrowing it to checkout or adding a new investment instruction. The decision rule belongs in segment 4. Use the native closing/logo direction, renderer overlay and consistent second-person address. Do not repeat the stale allegation of first-person wording: no I occurs in the actual text."
+    }
+  ],
+  "execution_scope": "script_only",
+  "operation_budget": {
+    "writes": 3,
+    "reviews": 3
+  },
+  "acceptance_criteria": [
+    {
+      "id": "K1",
+      "segment_ids": [
+        "1",
+        "4"
+      ],
+      "detail": "Temat: koszt alternatywny jako wartość następnej najlepszej możliwości, z której rezygnujesz | Cytaty tekstu i nagłówków scen 1 i 4; ocena całości 0–5 | Alternatywa to wyłącznie „sit idle”, ogólnik o pieniądzach albo zmiana tematu",
+      "fields": [
+        "text",
+        "on_screen"
+      ]
+    },
+    {
+      "id": "K2",
+      "segment_ids": [
+        "1",
+        "3",
+        "4"
+      ],
+      "detail": "Wydawanie, oszczędzanie i inwestowanie zależą od potrzeb i sytuacji; żadna opcja nie jest domyślnie nakazana | Cytaty scen 1, 3 i 4, w tym nagłówków; rzeczywiste uzasadnienie, jak przedstawiono alternatywy | INVEST INSTEAD OF SPENDING, zawsze inwestuj, oszczędzanie jako bezwartościowa bierność",
+      "fields": [
+        "text",
+        "on_screen"
+      ]
+    },
+    {
+      "id": "K3",
+      "segment_ids": [
+        "2"
+      ],
+      "detail": "Hipotetyczny wzrost pozostaje warunkowym obliczeniem | Pełny cytat sceny 2, identyczny claim c1 i jego założenia; porównanie scen 3/4 z tym kontekstem | „assumed” zastąpione nieudowodnioną średnią; „could” zastąpione pewnością; utracony przyszły zysk przedstawiony jako fakt",
+      "fields": [
+        "text"
+      ]
+    },
+    {
+      "id": "K4",
+      "segment_ids": [
+        "3",
+        "4"
+      ],
+      "detail": "Przyjemność i zaspokojenie potrzeb są uzasadnionymi korzyściami | Cytat sceny 3 i odnoszącej się do niej sceny 4; sens całego zdania, nie słowo „enjoy” w izolacji | Każdy zakup jest błędem; kawa/konsumpcja jako wina; „enjoy, but” połączone z nieuchronnym utraconym zyskiem",
+      "fields": [
+        "text"
+      ]
+    },
+    {
+      "id": "K5",
+      "segment_ids": [
+        "0",
+        "2"
+      ],
+      "detail": "Dane i prawidłowe informacje są zachowane | Sceny 0/2 i claims identyczne jako dane; zachowany intake i receipt kalkulatora; finansowy fingerprint | Zmiana kwoty, stopy, okresu, wyniku lub przypisania claim; nowa liczba w nienumerycznych scenach",
+      "fields": [
+        "text",
+        "on_screen",
+        "visual_intent"
+      ]
+    },
+    {
+      "id": "K6",
+      "segment_ids": [
+        "5"
+      ],
+      "detail": "CTA zachowuje follow Wealth Blueprint + build wealth on purpose i nie ogranicza tego do kupowania | Pełny cytat sceny 5 wraz z on_screen; decyzja praktyczna w scenie 4 | „before you buy” przyklejone do CTA; zastąpienie follow instrukcją inwestycyjną; nowy sens CTA",
+      "fields": [
+        "text",
+        "on_screen"
+      ]
+    },
+    {
+      "id": "K7",
+      "segment_ids": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "detail": "Spójna druga osoba i logiczne przejście: możliwość → przykład → wartość wyboru → decyzja → follow | Wszystkie pełne zdania i nagłówki 0–5; cytat rzeczywistego błędu, jeśli występuje | Powtórzenia „sit idle”, sprzeczne nagłówki, narracja przechodząca na I bez powodu; zarzut bez aktualnego cytatu",
+      "fields": [
+        "text",
+        "on_screen"
+      ]
+    },
+    {
+      "id": "K8",
+      "segment_ids": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "detail": "WB: angielski, pełne naturalne zdania, 96–118 słów, co najmniej 1/3 rzeczywiście praktycznej treści | Zliczenie text.split(), wynik aktualnych walidatorów, analiza czynności widza; osobne oznaczenie rodzaju dowodu | Dopisany filler, urwane zdania, obniżone progi, sztuczne przemianowanie segmentów na practical; typ segmentu nie dowodzi użytecznej treści",
+      "fields": [
+        "text"
+      ]
+    },
+    {
+      "id": "K9",
+      "segment_ids": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "detail": "Bez dodatkowych niezweryfikowanych twierdzeń lub obietnic | Lista nowych twierdzeń względem canonical, cytaty i Claim Evidence Gate | Nieuzasadniona średnia, pewny zwrot, rekomendacja produktu lub nowe stwierdzenie rynkowe bez źródła",
+      "fields": [
+        "text"
+      ]
+    },
+    {
+      "id": "K10",
+      "segment_ids": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "detail": "Niezależna ocena znaczenia przed przyjęciem canonical | Ocena każdej pozycji K1–K9 na tym samym hashu kandydata, cytaty + uzasadnienie; odrębna od piszącego modelu kontrola semantyczna | Same „passed=true”, sam JSON/schema, stare review lub przypisanie PASS z cytatem, który w rzeczywistości przeczy kryterium",
+      "fields": [
+        "text"
+      ]
+    }
+  ],
+  "expected_canonical_sha256": "c277998b9143fe92b851ea7cb5bce7c4dc35778029fef1302ed4cbe40d7b78bb",
+  "expected_plan_sha256": "408d105dfcb263839accf9336427bfd0790197d9a9d5ee6809c078293ff5b5a6"
+}

@@ -1,0 +1,49 @@
+{
+  "clip_sha256": "565aeaafa3822f73702cdab36b931bd79712ed527ae741bff22a05636031884a",
+  "frame_window": {
+    "end_frame_exclusive": 1021,
+    "frame_rate": 30.0,
+    "start_frame": 834
+  },
+  "manifest_sha256": "98597f425f57b73c24beff8e6d36f4b3d26de321970982bc097adb3e47a9c22e",
+  "sample_frame_indices": [
+    834,
+    871,
+    908,
+    946,
+    983,
+    1020
+  ],
+  "sampling": "six exact decoded frame indices inside the quantized ProjectManifest scene range on final MP4",
+  "scene_id": "s05",
+  "segment_id": "s05",
+  "source": "remotion_manifest_mp4",
+  "status": "failed",
+  "timing": {
+    "end_sec": 34.018,
+    "start_sec": 27.815
+  },
+  "verdict": {
+    "audit_input": {
+      "audit_height": 1020,
+      "audit_size_bytes": 160316,
+      "audit_width": 826,
+      "encoding": "jpeg",
+      "max_edge_px": 1024,
+      "original_height": 1020,
+      "original_width": 826,
+      "source_sha256": "49d4b89ea908ab36b6d142c8a27d4126e80ef592cc2b794e3fd905501a28d5cc",
+      "source_size_bytes": 502173
+    },
+    "confidence": 9.0,
+    "contract_satisfied": false,
+    "model": "qwen3-vl:8b-instruct",
+    "response_field": "content",
+    "status": "fail",
+    "violations": [
+      "The 'REVIEW GOAL DATE' text is not present in the first three frames (FRAME834, FRAME871, FRAME908). It only appears in the last three frames (FRAME946, FRAME983, FRAME1020), which violates the requirement that the change must be visible across chronological samples. The contract requires a visible state change where the competing goal is marked and attention moves closer to its undated timeline and REVIEW GOAL DATE question at the impact cue. This change does not occur in the first three frames",
+      "The illustration system 'wb_planning_desk_painted_v1' is not visibly confirmed as being used across all six panels; while the style is consistent, there's no explicit visual evidence of the specific painted wall/window/wood surfaces at their proper depth or local pigment shading that the contract requires. The frames appear to be flat vector illustrations rather than hand-drawn editorial paintings with irregular ink contours."
+    ]
+  },
+  "video_sha256": "565aeaafa3822f73702cdab36b931bd79712ed527ae741bff22a05636031884a"
+}

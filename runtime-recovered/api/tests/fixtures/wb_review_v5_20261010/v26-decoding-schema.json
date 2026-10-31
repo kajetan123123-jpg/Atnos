@@ -1,0 +1,429 @@
+{
+  "$defs": {
+    "CurrentIssueEvidence": {
+      "additionalProperties": false,
+      "properties": {
+        "field": {
+          "enum": [
+            "text",
+            "on_screen",
+            "visual_intent",
+            "title",
+            "description"
+          ],
+          "title": "Field",
+          "type": "string"
+        },
+        "issue_index": {
+          "title": "Issue Index",
+          "type": "integer"
+        },
+        "quote": {
+          "minLength": 1,
+          "title": "Quote",
+          "type": "string"
+        },
+        "segment_id": {
+          "title": "Segment Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "issue_index",
+        "segment_id",
+        "field",
+        "quote"
+      ],
+      "title": "CurrentIssueEvidence",
+      "type": "object"
+    },
+    "EditorialCriterionCheck": {
+      "additionalProperties": false,
+      "properties": {
+        "criterion_index": {
+          "title": "Criterion Index",
+          "type": "integer"
+        },
+        "field": {
+          "enum": [
+            "text",
+            "on_screen",
+            "visual_intent"
+          ],
+          "title": "Field",
+          "type": "string"
+        },
+        "quote": {
+          "minLength": 1,
+          "title": "Quote",
+          "type": "string"
+        },
+        "reason": {
+          "minLength": 1,
+          "title": "Reason",
+          "type": "string"
+        },
+        "satisfied": {
+          "title": "Satisfied",
+          "type": "boolean"
+        },
+        "segment_id": {
+          "title": "Segment Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "criterion_index",
+        "satisfied",
+        "segment_id",
+        "field",
+        "quote",
+        "reason"
+      ],
+      "title": "EditorialCriterionCheck",
+      "type": "object"
+    },
+    "ScriptIssue": {
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "maxLength": 80,
+          "minLength": 1,
+          "title": "Code",
+          "type": "string"
+        },
+        "detail": {
+          "title": "Detail",
+          "type": "string"
+        },
+        "fields": {
+          "items": {
+            "enum": [
+              "text",
+              "on_screen",
+              "visual_intent",
+              "title",
+              "description"
+            ],
+            "type": "string"
+          },
+          "title": "Fields",
+          "type": "array"
+        },
+        "segment_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Segment Ids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "code",
+        "segment_ids",
+        "detail"
+      ],
+      "title": "ScriptIssue",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "editorial_checks": {
+      "items": {
+        "anyOf": [
+          {
+            "additionalProperties": false,
+            "properties": {
+              "criterion_index": {
+                "enum": [
+                  0
+                ],
+                "title": "Criterion Index",
+                "type": "integer"
+              },
+              "field": {
+                "enum": [
+                  "text",
+                  "on_screen",
+                  "visual_intent"
+                ],
+                "title": "Field",
+                "type": "string"
+              },
+              "quote": {
+                "minLength": 1,
+                "title": "Quote",
+                "type": "string"
+              },
+              "reason": {
+                "minLength": 1,
+                "title": "Reason",
+                "type": "string"
+              },
+              "satisfied": {
+                "title": "Satisfied",
+                "type": "boolean"
+              },
+              "segment_id": {
+                "enum": [
+                  "1"
+                ],
+                "title": "Segment Id",
+                "type": "string"
+              }
+            },
+            "required": [
+              "criterion_index",
+              "satisfied",
+              "segment_id",
+              "field",
+              "quote",
+              "reason"
+            ],
+            "title": "EditorialCriterionCheck",
+            "type": "object"
+          },
+          {
+            "additionalProperties": false,
+            "properties": {
+              "criterion_index": {
+                "enum": [
+                  1
+                ],
+                "title": "Criterion Index",
+                "type": "integer"
+              },
+              "field": {
+                "enum": [
+                  "text",
+                  "on_screen",
+                  "visual_intent"
+                ],
+                "title": "Field",
+                "type": "string"
+              },
+              "quote": {
+                "minLength": 1,
+                "title": "Quote",
+                "type": "string"
+              },
+              "reason": {
+                "minLength": 1,
+                "title": "Reason",
+                "type": "string"
+              },
+              "satisfied": {
+                "title": "Satisfied",
+                "type": "boolean"
+              },
+              "segment_id": {
+                "enum": [
+                  "3"
+                ],
+                "title": "Segment Id",
+                "type": "string"
+              }
+            },
+            "required": [
+              "criterion_index",
+              "satisfied",
+              "segment_id",
+              "field",
+              "quote",
+              "reason"
+            ],
+            "title": "EditorialCriterionCheck",
+            "type": "object"
+          },
+          {
+            "additionalProperties": false,
+            "properties": {
+              "criterion_index": {
+                "enum": [
+                  2
+                ],
+                "title": "Criterion Index",
+                "type": "integer"
+              },
+              "field": {
+                "enum": [
+                  "text",
+                  "on_screen",
+                  "visual_intent"
+                ],
+                "title": "Field",
+                "type": "string"
+              },
+              "quote": {
+                "minLength": 1,
+                "title": "Quote",
+                "type": "string"
+              },
+              "reason": {
+                "minLength": 1,
+                "title": "Reason",
+                "type": "string"
+              },
+              "satisfied": {
+                "title": "Satisfied",
+                "type": "boolean"
+              },
+              "segment_id": {
+                "enum": [
+                  "4"
+                ],
+                "title": "Segment Id",
+                "type": "string"
+              }
+            },
+            "required": [
+              "criterion_index",
+              "satisfied",
+              "segment_id",
+              "field",
+              "quote",
+              "reason"
+            ],
+            "title": "EditorialCriterionCheck",
+            "type": "object"
+          },
+          {
+            "additionalProperties": false,
+            "properties": {
+              "criterion_index": {
+                "enum": [
+                  3
+                ],
+                "title": "Criterion Index",
+                "type": "integer"
+              },
+              "field": {
+                "enum": [
+                  "text",
+                  "on_screen",
+                  "visual_intent"
+                ],
+                "title": "Field",
+                "type": "string"
+              },
+              "quote": {
+                "minLength": 1,
+                "title": "Quote",
+                "type": "string"
+              },
+              "reason": {
+                "minLength": 1,
+                "title": "Reason",
+                "type": "string"
+              },
+              "satisfied": {
+                "title": "Satisfied",
+                "type": "boolean"
+              },
+              "segment_id": {
+                "enum": [
+                  "4"
+                ],
+                "title": "Segment Id",
+                "type": "string"
+              }
+            },
+            "required": [
+              "criterion_index",
+              "satisfied",
+              "segment_id",
+              "field",
+              "quote",
+              "reason"
+            ],
+            "title": "EditorialCriterionCheck",
+            "type": "object"
+          },
+          {
+            "additionalProperties": false,
+            "properties": {
+              "criterion_index": {
+                "enum": [
+                  4
+                ],
+                "title": "Criterion Index",
+                "type": "integer"
+              },
+              "field": {
+                "enum": [
+                  "text",
+                  "on_screen",
+                  "visual_intent"
+                ],
+                "title": "Field",
+                "type": "string"
+              },
+              "quote": {
+                "minLength": 1,
+                "title": "Quote",
+                "type": "string"
+              },
+              "reason": {
+                "minLength": 1,
+                "title": "Reason",
+                "type": "string"
+              },
+              "satisfied": {
+                "title": "Satisfied",
+                "type": "boolean"
+              },
+              "segment_id": {
+                "enum": [
+                  "5"
+                ],
+                "title": "Segment Id",
+                "type": "string"
+              }
+            },
+            "required": [
+              "criterion_index",
+              "satisfied",
+              "segment_id",
+              "field",
+              "quote",
+              "reason"
+            ],
+            "title": "EditorialCriterionCheck",
+            "type": "object"
+          }
+        ]
+      },
+      "maxItems": 5,
+      "minItems": 5,
+      "title": "Editorial Checks",
+      "type": "array"
+    },
+    "issue_evidence": {
+      "items": {
+        "$ref": "#/$defs/CurrentIssueEvidence"
+      },
+      "title": "Issue Evidence",
+      "type": "array"
+    },
+    "issues": {
+      "items": {
+        "$ref": "#/$defs/ScriptIssue"
+      },
+      "title": "Issues",
+      "type": "array"
+    },
+    "passed": {
+      "title": "Passed",
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "passed",
+    "issues",
+    "editorial_checks",
+    "issue_evidence"
+  ],
+  "title": "ScriptReview",
+  "type": "object"
+}

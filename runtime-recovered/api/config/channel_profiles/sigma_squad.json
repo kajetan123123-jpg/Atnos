@@ -1,0 +1,149 @@
+{
+  "account_id": "yt-sigma-squad",
+  "channel_id": "",
+  "channel_name": "Sigma Squad",
+  "channel_handle": "@SigmaSquadBase",
+  "niche": "gen_alpha_brainrot",
+  "sub_niches": [
+    "Gen Alpha internet culture",
+    "Skibidi and Sigma meme content",
+    "Ohio vs Sigma simulations",
+    "brainrot slang explainers",
+    "mewing and rizz humor"
+  ],
+  "language": "en",
+  "region": "US",
+  "target_market": "US/Global",
+  "target_audience": "Kids and teens aged 8-16, heavy users of TikTok and YouTube Shorts, Gen Alpha internet culture natives",
+  "format": "shorts",
+  "max_duration_seconds": 55,
+  "publish_mode": "private_only",
+  "upload_as_private_first": true,
+  "auto_publish_after_qa": false,
+  "made_for_kids": false,
+  "self_declared_made_for_kids": false,
+  "publish_mode_note": "Manual review required before publishing. Verify copyright clearance, youth-safety compliance, and made-for-kids classification before each batch publish.",
+  "schedule": {
+    "phase_1_flood": {
+      "weeks": "1-6",
+      "videos_per_day": 4,
+      "note": "High-volume flood strategy. Batch-review 4 videos every evening, publish next morning."
+    },
+    "phase_2_data_driven": {
+      "weeks": "7+",
+      "videos_per_day": 3,
+      "note": "Reduce to top-performing topic types only, identified by Atnos analytics loop."
+    }
+  },
+  "style": "maximalist_absurd_kids",
+  "visual_style": "Full saturation chaos. Hot pink, cyan, toxic green, neon yellow. Deep-fried 3D renders. Oversaturated Roblox meets reaction meme compilation.",
+  "narration_style": "energetic_fast",
+  "narration_notes": "Fast paced, 180+ wpm. Use brainrot slang naturally, not forced. Young and energetic voice. No robotic TTS cadence.",
+  "tts_voice": "en-US-JennyNeural",
+  "tts_voice_fallback": "en-US-AriaNeural",
+  "hook_strategy": "First frame must be visually overwhelming. Text overlay with Sigma or Ohio in first 0.5 seconds. Audio hook should be loud and unexpected using royalty-free meme-style SFX.",
+  "hook_target_seconds": 0.8,
+  "slang_refresh": {
+    "signals_refresh_hours": 24,
+    "note": "Brainrot slang has a 6-12 week lifecycle. Research engine must check trending slang daily.",
+    "active_slang_tracking": ["sigma", "skibidi", "ohio", "rizz", "mewing", "fanum tax", "gyatt", "based", "NPC", "W/L ratio"]
+  },
+  "reference_channels": [
+    "@LankyBox",
+    "@DaFuqBoom",
+    "Kai Cenat clip compilations",
+    "Speed highlight channels",
+    "Generic Gen Alpha meme compilations top 100"
+  ],
+  "competitor_channels": [
+    "TTS-over-Minecraft-parkour channels",
+    "TTS-over-Subway-Surfers channels",
+    "Copy-paste brainrot factory channels"
+  ],
+  "allowed_topics": [
+    "Sigma vs Ohio simulations",
+    "Skibidi Toilet lore and battles",
+    "mewing tier lists",
+    "rizz level rankings",
+    "brainrot slang explainers for boomers",
+    "NPC behavior compilations animated",
+    "fanum tax scenarios",
+    "W vs L moments animated",
+    "Gen Alpha vs Millennial culture clash",
+    "cursed Ohio facts",
+    "Roblox and Minecraft cross-lore"
+  ],
+  "forbidden_topics": [
+    "NSFW content of any kind",
+    "actual profanity",
+    "dangerous real-life challenges",
+    "cyberbullying promotion",
+    "real person targeting or doxxing",
+    "political content",
+    "copyright-infringing audio",
+    "dietary or health misinformation"
+  ],
+  "monetization": {
+    "primary": "AdSense_volume",
+    "rpm_estimate_usd": { "min": 1.5, "max": 4 },
+    "rpm_warning": "RPM is critically low. Channel is only viable at 500k+ views/month. At lower volumes, AdSense alone does not justify 4 videos/day production cost.",
+    "secondary": [
+      {
+        "type": "merch_affiliate",
+        "partner": "Printful",
+        "placement": "link in bio / pinned comment",
+        "products": ["Sigma hoodie", "Ohio t-shirt", "Skibidi mug"],
+        "margin_per_sale_usd": "8-18"
+      },
+      {
+        "type": "community_tab_engagement",
+        "note": "Activate at 500 subscribers. Polls and meme posts drive return visits."
+      }
+    ],
+    "pivot_trigger": "If channel does not reach 200k views/month by week 6, pivot topic strategy to educational brainrot: explain real science/history using brainrot slang.",
+    "ypp_target": {
+      "subscribers": 500,
+      "views_needed": "3M Shorts views",
+      "estimated_timeline_weeks": "6-10 at 4 videos/day",
+      "note": "Shorts YPP is a volume game. 4 videos/day for 7 weeks is around 200 videos. If average 15k views each, total reaches 3M."
+    }
+  },
+  "brand": {
+    "colors": {
+      "primary": "#FF00D4",
+      "secondary": "#00FFFF",
+      "accent": "#CCFF00",
+      "warning": "#FF6B00",
+      "background": "#0D0D0D"
+    },
+    "thumbnail_style": "visual_chaos_maximalist",
+    "thumbnail_rules": [
+      "Giant bold impact font mood: Impact or Bangers",
+      "Text mood must include one brainrot keyword: SIGMA, OHIO, SKIBIDI, RIZZ",
+      "Red arrow, fire, or lightning overlay only if original asset",
+      "Neon outline on main subject",
+      "Background: chaotic gradient or deep-fried texture",
+      "Expression: shocked, laughing, or determined animated character"
+    ],
+    "logo_description": "Deep-fried oversaturated 3D render of a crying-laughing emoji wearing a golden crown with laser eyes. Pure chaotic Gen Alpha energy.",
+    "example_video_titles": [
+      "When your bro tries to mew in class",
+      "Skibidi Toilet vs Ohio Boss - Who has more Rizz?",
+      "NPC mode activated in Ohio",
+      "Sigma grindset hits different at 3am in Ohio",
+      "Fanum Tax explained by an NPC"
+    ],
+    "notes": "Content must feel authentically chaotic, not manufactured. If it feels like an adult pretending to be a kid, redo it. Speed up audio 5-10% for energy. Use only royalty-free meme-style SFX."
+  },
+  "qa_gate": {
+    "min_duration_seconds": 15,
+    "max_duration_seconds": 55,
+    "min_file_size_kb": 500,
+    "resolution": [1080, 1920],
+    "require_subtitles": true,
+    "require_thumbnail": true,
+    "min_script_words": 40,
+    "audio_min_rms_db": -30,
+    "manual_review_required": true
+  }
+}

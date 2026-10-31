@@ -1,0 +1,172 @@
+{
+  "account_id": "yt-dark-chronicles",
+  "channel_id": "",
+  "channel_name": "Dark Chronicles",
+  "channel_handle": "@DarkChroniclesYT",
+  "niche": "historical_curiosities",
+  "sub_niches": [
+    "forgotten and bizarre historical facts",
+    "macabre and dark history",
+    "mysterious disappearances and unsolved events",
+    "medieval and ancient world oddities",
+    "mythology and folklore verified sources only",
+    "psychological and sociological historical events"
+  ],
+  "language": "en",
+  "region": "US",
+  "secondary_regions": ["GB"],
+  "target_market": "US/UK/Global English",
+  "target_audience": "Adults 24-45, curious and educated, interested in history, documentaries, true crime, podcasts and books.",
+  "format": "shorts",
+  "max_duration_seconds": 58,
+  "publish_mode": "private_only",
+  "upload_as_private_first": true,
+  "auto_publish_after_qa": false,
+  "made_for_kids": false,
+  "self_declared_made_for_kids": false,
+  "schedule": {
+    "phase_1_bootstrap": {
+      "weeks": "1-8",
+      "videos_per_day": 2,
+      "publish_times_utc": ["13:00", "21:00"],
+      "note": "Two daily slots target US afternoon and UK evening simultaneously."
+    },
+    "phase_2_steady": {
+      "weeks": "9+",
+      "videos_per_day": 1,
+      "publish_times_utc": ["18:00"],
+      "note": "Quality over quantity. This audience rewards depth and consistency more than volume."
+    },
+    "longform_cadence": "Every 4th topic as a 4-7 minute video using the same script expanded with context and atmosphere."
+  },
+  "style": "dark_cinematic_educational",
+  "visual_style": "Pure black backgrounds, deep crimson and burgundy accents, antique matte gold for highlights. Chiaroscuro lighting on a single subject. BBC documentary meets gothic woodcut illustration.",
+  "narration_style": "storytelling_cinematic",
+  "narration_notes": "Deep, measured, slightly raspy. British or deep American narrative tone preferred. 130-150 wpm. Build tension before the reveal. Never rush the hook.",
+  "tts_voice": "en-GB-RyanNeural",
+  "tts_voice_fallback": "en-US-DavisNeural",
+  "hook_strategy": "Open with the most disturbing or baffling verified fact, then withhold the explanation. First sentence is the entire reason to watch.",
+  "hook_target_seconds": 2.0,
+  "reference_channels": [
+    "@WeirdHistory",
+    "@WeirdHistoryFood",
+    "@TheInfographicsShow",
+    "@VoicesOfThePast",
+    "@Cogito"
+  ],
+  "competitor_channels": [
+    "faceless channels reading Wikipedia verbatim with stock footage",
+    "low-effort top-10 history lists with no narrative",
+    "ancient aliens and pseudohistory channels"
+  ],
+  "allowed_topics": [
+    "bizarre medieval practices and laws",
+    "mysterious historical disappearances",
+    "forgotten plagues and mass hysteria events",
+    "unusual deaths of historical figures",
+    "lost civilizations evidence-based only",
+    "psychological experiments from history",
+    "forgotten wars and battles",
+    "strange historical inventions and failures",
+    "historical frauds and imposters",
+    "mythology and folklore with historical basis",
+    "dark side of famous historical periods",
+    "unusual animal roles in history",
+    "bizarre court cases from history"
+  ],
+  "forbidden_topics": [
+    "pseudoscience and unfounded conspiracy theories",
+    "glorification of totalitarian or genocidal regimes",
+    "gore without clear historical and educational context",
+    "unverified claims presented as fact",
+    "living persons without consent",
+    "religious mockery",
+    "Holocaust denial or minimization",
+    "content that could be used to promote violence"
+  ],
+  "monetization": {
+    "primary": "AdSense",
+    "rpm_estimate_usd": { "min": 8, "max": 22 },
+    "rpm_note": "UK audience can push RPM higher. History/documentary niche can attract publishers and streaming advertisers.",
+    "secondary": [
+      {
+        "type": "patreon",
+        "tiers": [
+          { "name": "The Archivist", "price_usd": 5, "benefit": "Early access and extended cuts" },
+          { "name": "The Chronicler", "price_usd": 12, "benefit": "Monthly deep-dive PDF and Discord" }
+        ],
+        "cta_placement": "End of every short and video description",
+        "revenue_at_1000_patrons_usd": 5000,
+        "note": "Build Patreon funnel from day 1."
+      },
+      {
+        "type": "amazon_affiliate",
+        "category": "history books and documentaries",
+        "placement": "video description: Further reading",
+        "estimated_per_sale_usd": "0.50-3.00",
+        "note": "Curate 2-3 relevant books per topic."
+      },
+      {
+        "type": "sponsored_segment",
+        "suitable_brands": ["Audible", "Brilliant.org", "CuriosityStream", "Skillshare"],
+        "note": "Activate at 10k subscribers."
+      }
+    ],
+    "ypp_target": {
+      "subscribers": 500,
+      "watch_hours_or_views": "3M Shorts views OR 4000 longform watch hours",
+      "estimated_timeline_months": "4-6"
+    }
+  },
+  "brand": {
+    "colors": {
+      "primary": "#000000",
+      "secondary": "#4A0E17",
+      "accent": "#C5A059",
+      "mid": "#2A0A0F",
+      "text_light": "#F0EAD6"
+    },
+    "thumbnail_style": "cinematic_chiaroscuro",
+    "thumbnail_rules": [
+      "Movie-still aesthetic with one disturbing or intriguing artifact in sharp focus",
+      "Heavy shadows: 70 percent of frame in darkness, subject lit dramatically from one side",
+      "Max 2-3 words as hook, ominous and provocative",
+      "Font mood: Cinzel or Playfair Display",
+      "Gold accent on text only",
+      "No red arrows, no clickbait borders, no emoji",
+      "Aspect ratio strictly 16:9 for thumbnail and 9:16 for the short itself"
+    ],
+    "logo_description": "A gothic hourglass with dark mist instead of sand, stylized in woodcut or etching art style. Antique matte gold on pure black.",
+    "example_video_titles": [
+      "The strangest medieval weapon you've never heard of",
+      "Why this ancient village vanished from maps overnight",
+      "The Dancing Plague of 1518: They danced until they died",
+      "The real reason medieval people didn't bathe",
+      "He faked his own death and became a king"
+    ],
+    "sound_design_notes": "Use a low ambient drone under narration, subtle reverb on voice, and period-appropriate sound effects such as quill scratching, distant church bell, and crackling fire.",
+    "notes": "Every claim must have a source. If uncertain, say 'some historians believe' rather than 'historians agree'. Credibility is the entire brand."
+  },
+  "research": {
+    "signals_refresh_hours": 6,
+    "trend_sources": ["YouTube Data API", "Google Trends US+UK", "Reddit r/history r/AskHistorians", "reference_channels"],
+    "source_quality_requirement": "Only topics verifiable through at least one academic or established journalistic source. Wikipedia is acceptable as starting point only.",
+    "seasonal_topics": {
+      "october": ["dark history of Halloween", "real historical horrors", "medieval death practices"],
+      "december": ["strange Christmas traditions history", "forgotten winter solstice rituals"],
+      "june": ["summer plagues of history", "bizarre summer festivals from the past"]
+    },
+    "keyword_strategy": "Mix evergreen deep-cuts with trending history hooks. Ratio: 70 percent evergreen, 30 percent topical."
+  },
+  "qa_gate": {
+    "min_duration_seconds": 30,
+    "max_duration_seconds": 58,
+    "min_file_size_kb": 1000,
+    "resolution": [1080, 1920],
+    "require_subtitles": true,
+    "require_thumbnail": true,
+    "min_script_words": 100,
+    "audio_min_rms_db": -40,
+    "narration_quality_check": "Reject if audio sounds robotic or lacks tonal variation. Flag for manual review."
+  }
+}

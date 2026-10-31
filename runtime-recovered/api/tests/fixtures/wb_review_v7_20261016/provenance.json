@@ -1,0 +1,35 @@
+{
+  "scope": "EXACT_REJECTED_V7_OFFLINE_REGRESSION_NOT_ACCEPTANCE_RECEIPT",
+  "files": [
+    {
+      "fixture": "8a51a5dd89be4c639bcecaea306a444f.json",
+      "source": "E:\\Atnos\\App\\reports\\scenario_repair_production_delivery_20261009\\evidence\\review-contract-20261016\\v7-actual-model-responses\\8a51a5dd89be4c639bcecaea306a444f.json",
+      "sha256": "b035304d773084c223a3f2ed79891f66c02201a3ca34c52bb8ea8895de69338c"
+    },
+    {
+      "fixture": "8a51a5dd89be4c639bcecaea306a444f.raw.json",
+      "source": "E:\\Atnos\\App\\reports\\scenario_repair_production_delivery_20261009\\evidence\\review-contract-20261016\\v7-actual-model-responses\\8a51a5dd89be4c639bcecaea306a444f.raw.json",
+      "sha256": "b6cabe327323f761a3aa182a7ceda4e504f4a6a72d07726450935b6b3a2e5bd4"
+    },
+    {
+      "fixture": "e1ab719babfd40b1bed7821e18a30940.json",
+      "source": "E:\\Atnos\\App\\reports\\scenario_repair_production_delivery_20261009\\evidence\\review-contract-20261016\\v7-actual-model-responses\\e1ab719babfd40b1bed7821e18a30940.json",
+      "sha256": "47cf03ad7ef118ed8234ebc9d93002d1575bd12cee0b3fc7313bd9045879e70d"
+    },
+    {
+      "fixture": "e1ab719babfd40b1bed7821e18a30940.raw.json",
+      "source": "E:\\Atnos\\App\\reports\\scenario_repair_production_delivery_20261009\\evidence\\review-contract-20261016\\v7-actual-model-responses\\e1ab719babfd40b1bed7821e18a30940.raw.json",
+      "sha256": "7491b8472f8b62e120eb0f2c662cf05d00aae6060d2ba27e8c818e03e5c3ee30"
+    },
+    {
+      "fixture": "f93c00e1187b4530993d237edbc4ab2c.json",
+      "source": "E:\\Atnos\\App\\reports\\scenario_repair_production_delivery_20261009\\evidence\\review-contract-20261016\\v7-actual-model-responses\\f93c00e1187b4530993d237edbc4ab2c.json",
+      "sha256": "366b084c7f01245c748b81d8a1eb62ca8d1ba7a117e498085ea0dd507d3a1851"
+    },
+    {
+      "fixture": "f93c00e1187b4530993d237edbc4ab2c.raw.json",
+      "source": "E:\\Atnos\\App\\reports\\scenario_repair_production_delivery_20261009\\evidence\\review-contract-20261016\\v7-actual-model-responses\\f93c00e1187b4530993d237edbc4ab2c.raw.json",
+      "sha256": "26877f66b4b88aa47243e75fb123d464ee0349357fc1c5b305e2e9afd2596056"
+    }
+  ]
+}

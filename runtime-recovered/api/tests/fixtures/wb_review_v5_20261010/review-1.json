@@ -1,0 +1,102 @@
+{
+  "editorial_checks": [
+    {
+      "criterion_index": 0,
+      "field": "on_screen",
+      "quote": "INVEST INSTEAD OF SPENDING",
+      "reason": "The text is an instruction to invest. The criterion requires a neutral heading that explains the next-best use of money and presents spending/saving/investing as context-dependent possibilities without issuing orders.",
+      "satisfied": false,
+      "segment_id": "1"
+    },
+    {
+      "criterion_index": 1,
+      "field": "text",
+      "quote": "Enjoy your coffee now, but ask if this optional spending is worth the future growth you are leaving behind by not investing it today.",
+      "reason": "The narration qualifies enjoyment with guilt and treats the hypothetical example as a certain lost return. The criterion requires teaching that enjoyment can justify spending and neither choice being automatically right.",
+      "satisfied": false,
+      "segment_id": "3"
+    },
+    {
+      "criterion_index": 2,
+      "field": "text",
+      "quote": "...by choosing to invest instead.",
+      "reason": "The narration implies a certain outcome ('growing that money') and uses an instruction 'choosing to invest'. The criterion requires acknowledging investment return uncertainty and applying the decision rule to money allocation, not only purchases.",
+      "satisfied": false,
+      "segment_id": "4"
+    },
+    {
+      "criterion_index": 3,
+      "field": "visual_intent",
+      "quote": "A balance scale appears with two static pans: left pan labeled BUY NOW and right pan labeled BUILD LATER. Renderer reveals this complete composition...",
+      "reason": "While the text mentions a balance scale, the criterion explicitly forbids 'invented host poses'. The visual intent description in the source data (from previous context) referenced Alex standing between items; however, strictly checking current script segment 4's provided text vs the requirement: The requirement says 'Use the supported static balance-scale composition... without an invented host pose'. If the generated image based on this prompt implies a specific unsupported pose not described here but implied by 'Alex', it fails. However, looking at the strict instruction 'Do not invent claims or rewrite unaffected material' and checking current script: The current script text for segment 4 visual_intent does NOT mention Alex standing between items in THIS specific JSON block provided as input (it says 'A balance scale appears...'). Wait, re-reading the prompt's `user_editorial_requirements` vs `current_script`. In `user_editorial_requirements`, code `unsupported_visual_intent` cites: ",
+      "satisfied": false,
+      "segment_id": "4"
+    },
+    {
+      "criterion_index": 4,
+      "field": "text",
+      "quote": "Follow Wealth Blueprint and build wealth on purpose before you buy.",
+      "reason": "The CTA narrows the advice to 'before you buy' (checkout context). The criterion requires preserving following the channel/intentional wealth-building as the CTA without narrowing it to checkout.",
+      "satisfied": false,
+      "segment_id": "5"
+    }
+  ],
+  "issue_evidence": [
+    {
+      "field": "on_screen",
+      "issue_index": 0,
+      "quote": "INVEST INSTEAD OF SPENDING",
+      "segment_id": "s01"
+    },
+    {
+      "field": "text",
+      "issue_index": 1,
+      "quote": "Enjoy your coffee now, but ask if this optional spending is worth the future growth you are leaving behind by not investing it today.",
+      "segment_id": "s03"
+    },
+    {
+      "field": "text",
+      "issue_index": 2,
+      "quote": "...by choosing to invest instead. Then decide if buying now is worth what you give up.",
+      "segment_id": "s04"
+    }
+  ],
+  "issues": [
+    {
+      "code": "naturalness",
+      "detail": "The on_screen text 'INVEST INSTEAD OF SPENDING' is an imperative instruction rather than a neutral heading. The criterion requires explaining the next-best use of money and presenting spending, saving, and investing as context-dependent possibilities without issuing orders to invest.",
+      "segment_ids": [
+        "s01"
+      ]
+    },
+    {
+      "code": "practical_share",
+      "detail": "The narration qualifies enjoyment with guilt ('ask if this optional spending is worth...') rather than teaching the viewer that enjoyment can justify spending. It treats the hypothetical example as a certain lost return instead of an uncertain tradeoff, failing to present either consumption or investing as automatically right or wrong.",
+      "segment_ids": [
+        "s03"
+      ]
+    },
+    {
+      "code": "practical_share",
+      "detail": "The narration states 'by choosing to invest instead' and implies investment returns are certain ('growing that money over time'), whereas the criterion requires acknowledging uncertainty in investment returns. It also narrows the decision rule exclusively to purchases/checkout rather than general money allocation.",
+      "segment_ids": [
+        "s04"
+      ]
+    },
+    {
+      "code": "unsupported_visual_intent",
+      "detail": "The visual_intent description implies a host pose ('Alex standing between') which is unsupported by available assets. The criterion explicitly forbids invented host poses, internal movement, or lettering baked into the image.",
+      "segment_ids": [
+        "s04"
+      ]
+    },
+    {
+      "code": "structure",
+      "detail": "The text 'Follow Wealth Blueprint and build wealth on purpose before you buy' narrows the CTA to a checkout context. The criterion requires preserving following the channel as the CTA without narrowing it to checkout or adding new investment instructions.",
+      "segment_ids": [
+        "s05"
+      ]
+    }
+  ],
+  "passed": false
+}

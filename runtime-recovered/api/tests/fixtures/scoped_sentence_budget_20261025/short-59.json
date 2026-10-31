@@ -1,0 +1,47 @@
+{
+  "claims": [],
+  "description": "Explain conditional auto-renewal checks, cancellation cutoffs, reminders, keep/cancel choices, and Wealth Blueprint closure.",
+  "segments": [
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s01",
+      "on_screen": "CHECK TERMS",
+      "pronunciation_terms": [],
+      "text": "Your trial renewal deadline matters only if automatic renewal is enabled in your agreement terms today.",
+      "type": "hook",
+      "visual_intent": "Physical illustrated still of a calendar page showing the cancellation cutoff date with text 'Check Terms' above it."
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s02",
+      "on_screen": "READ PRICE AND DATE",
+      "pronunciation_terms": [],
+      "text": "Read your document to find the specific renewal price and exact cancellation cutoff date listed clearly.",
+      "type": "practical",
+      "visual_intent": "Physical illustrated still of a trial agreement card displaying 'Renewal Price' and 'Cutoff Date' fields highlighted."
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s03",
+      "on_screen": "SET EARLY REMINDER",
+      "pronunciation_terms": [],
+      "text": "Set an early reminder to decide whether you will keep this service active or cancel it before the deadline arrives.",
+      "type": "practical",
+      "visual_intent": "Physical illustrated still of a calendar page with a marked reminder line preceding the cutoff and text 'Decide Keep/Cancel'."
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s04",
+      "on_screen": "FOLLOW WEALTH BLUEPRINT",
+      "pronunciation_terms": [],
+      "text": "Follow Wealth Blueprint. Build wealth on purpose.",
+      "type": "cta",
+      "visual_intent": "Physical illustrated still of a calendar page with the provider confirmation logo visible and text 'Build Wealth' below it."
+    }
+  ],
+  "title": "Your free trial has a second deadline"
+}

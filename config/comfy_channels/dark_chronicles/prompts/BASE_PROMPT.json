@@ -1,0 +1,15 @@
+{
+  "channel": "dark_chronicles",
+  "role": "base",
+  "compose": [
+    "style",
+    "asset_type",
+    "subject",
+    "action",
+    "emotion",
+    "composition",
+    "lighting",
+    "camera",
+    "quality"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "workflow_id": "wonder_character_reference_v1",
+  "workflow_version": "v1",
+  "title": "CHARACTER_REFERENCE",
+  "asset_type": "character_reference",
+  "backend_preference": [
+    "checkpoint",
+    "z_image_turbo",
+    "flux2_klein"
+  ],
+  "default_width": 1024,
+  "default_height": 1024,
+  "require_references": true,
+  "allow_transparent_bg": false,
+  "forbid_text_in_image": true,
+  "description": "Niko/Pif/Tika/Mira reference for 3D pipeline"
+}

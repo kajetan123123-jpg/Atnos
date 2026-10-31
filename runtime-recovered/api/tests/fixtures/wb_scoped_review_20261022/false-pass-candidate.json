@@ -1,0 +1,47 @@
+{
+  "claims": [],
+  "description": "A short explanation of the renewal and cancellation deadlines for a free trial, with actionable steps to manage it.",
+  "segments": [
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s01",
+      "on_screen": "Renewal/Cancellation Cutoff",
+      "pronunciation_terms": [],
+      "text": "Your free trial may have a hidden deadline: the renewal or cancellation cutoff. It's not about when you signed up, but when you need to act.",
+      "type": "hook",
+      "visual_intent": "Show a calendar with a highlighted date and a trial card with a 'Renewal/Cancellation Cutoff' label. No motion or text inside the card."
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s02",
+      "on_screen": "Check Renewal Terms, Price, Cutoff",
+      "pronunciation_terms": [],
+      "text": "Check the trial agreement for renewal terms, price, and the cancellation cutoff date. Make sure automatic renewal is enabled in the terms.",
+      "type": "practical",
+      "visual_intent": "Show a trial agreement card with 'Renewal Terms', 'Price', and 'Cancellation Cutoff' as text cards. No motion or internal labels."
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s03",
+      "on_screen": "Set Reminder, Keep or Cancel",
+      "pronunciation_terms": [],
+      "text": "Set a reminder before the cutoff. Decide whether to keep or cancel the service. If you cancel, wait for a confirmation from the provider.",
+      "type": "practical",
+      "visual_intent": "Show a calendar with a reminder set before the cutoff date and a trial card with 'Keep' and 'Cancel' as text cards."
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s04",
+      "on_screen": "Follow Wealth Blueprint. Build wealth on purpose.",
+      "pronunciation_terms": [],
+      "text": "Follow Wealth Blueprint. Build wealth on purpose.",
+      "type": "cta",
+      "visual_intent": "Show the channel's existing CTA text card with the phrase 'Follow Wealth Blueprint. Build wealth on purpose.'"
+    }
+  ],
+  "title": "Your free trial has a second deadline"
+}

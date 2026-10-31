@@ -1,0 +1,79 @@
+{
+  "version": 2,
+  "policy": "Every production order selects exactly one channel project. Never mix project assets, prompts, palettes, voices or workflows. Models stay in the shared Comfy library — never duplicated per channel.",
+  "comfy_models_root": "E:\\Atnos\\Tools\\Comfy-Desktop\\ComfyUI-Shared\\models",
+  "max_concurrent_comfy_gpu_jobs": 1,
+  "canonical_channel_ids": ["wealth_blueprint", "wonder_crew", "dark_chronicles"],
+  "aliases": {
+    "children_stories": "wonder_crew",
+    "kids": "wonder_crew",
+    "horror_stories": "dark_chronicles",
+    "horror": "dark_chronicles"
+  },
+  "ollama_models": {
+    "script_and_editorial": {"model": "qwen3:14b", "required": true},
+    "visual_qa": {"model": "qwen3-vl:8b-instruct", "required": true},
+    "retrieval": {"model": "bge-m3:latest", "required": true},
+    "fast_local_fallback": {"model": "qwen3:8b", "required": true}
+  },
+  "projects": {
+    "wealth_blueprint": {
+      "comfy_profile": "wealth_blueprint",
+      "comfy_project_dir": "E:\\Atnos\\Tools\\Comfy-Desktop\\ComfyUI-Projects\\wealth_blueprint",
+      "generated_output_subdir": "wealth_blueprint",
+      "image_models": ["diffusion_models/flux-2-klein-base-4b.safetensors", "text_encoders/qwen_3_4b.safetensors", "vae/flux2-vae.safetensors"],
+      "image_fallback": "checkpoints/sd_xl_turbo_1.0_fp16.safetensors",
+      "voice": {"provider": "elevenlabs", "voice": "iP95p4xoKVk53GoZ742B", "pace_wpm": [135, 155], "tone": "calm, precise, conversational, restrained confidence"},
+      "visual": {"palette": ["#142633", "#F0E5D2", "#426579", "#4B7977", "#C18A49", "#D5AD6C", "#995E4B"], "style": "premium hand-drawn editorial blueprint, subtle 2.5D, paper texture, restrained gold", "motion": "diagram-led; Alex appears only with a narrative function", "avoid": ["neon fintech", "stock businessman", "luxury flex", "random Alex pasted beside diagrams"], "reference_files": ["E:\\Atnos\\App\\config\\channel_references\\20260916\\image-1.png", "E:\\Atnos\\App\\config\\channel_references\\20260916\\image-2.png"], "character_bible": {"host": "Alex", "role": "channel host only: narrates, reacts or interacts with a diagram", "design": "adult man with dark swept hair, navy overshirt and light shirt, realistic hand-drawn editorial proportions", "expressions": ["neutral", "small smile", "confident", "thinking", "curious", "skeptical", "concerned", "surprised", "explaining", "pointing", "listening", "doubtful", "understanding", "determined", "friendly laugh"], "pose_rules": ["Use a pose only when the beat requires Alex to speak, react or point.", "Never paste Alex beside a diagram as decoration.", "Keep face, hair, wardrobe and proportions consistent with the two reference sheets."], "allowed_scene_roles": ["host", "reaction", "diagram_interaction"]}},
+      "language": {"script": "English", "sentences": "short, concrete, one idea per sentence; question -> mechanism -> insight", "no_cta": true}
+    },
+    "wonder_crew": {
+      "comfy_profile": "wonder_crew",
+      "legacy_project_key": "children_stories",
+      "comfy_project_dir": "E:\\Atnos\\Tools\\Comfy-Desktop\\ComfyUI-Projects\\wonder_crew",
+      "generated_output_subdir": "wonder_crew",
+      "image_models": ["checkpoints/sd_xl_turbo_1.0_fp16.safetensors"],
+      "image_fallback": "diffusion_models/z_image_turbo_bf16.safetensors",
+      "voice": {"provider": "kokoro", "voice": "af_heart", "pace_wpm": [105, 125], "tone": "warm, gentle, reassuring, clear"},
+      "visual": {"palette": ["#F6E7C8", "#7CB6A3", "#E79B72", "#89A9D6", "#4D6473"], "style": "high-quality stylized children's 3D feature concept art inspiration; Comfy is reference-only for Blender", "motion": "n/a for Comfy stills; 3D pipeline owns motion", "avoid": ["horror imagery", "photoreal skin", "uncanny faces", "Alex", "finance visuals"], "reference_files": ["E:\\Atnos\\App\\config\\channel_references\\20260916\\image-3.png", "E:\\Atnos\\App\\config\\channel_references\\20260916\\image-4.png", "E:\\Atnos\\App\\config\\channel_references\\20260916\\image-5.png", "E:\\Atnos\\App\\config\\channel_references\\20260916\\image-6.png", "E:\\Atnos\\App\\config\\channel_references\\20260916\\archipelag-snow-world.png"], "world_bible": {"world": "Archipelag Snów: floating islands, compass motifs, navy and warm paper framing, each island has one simple rule and a gentle lesson.", "character_bible": {"cast": ["Niko", "Pif", "Tika", "Mira"]}}},
+      "language": {"script": "English", "sentences": "simple sentences for ages 4-7, concrete vocabulary, reassuring resolution", "no_cta": true}
+    },
+    "dark_chronicles": {
+      "comfy_profile": "dark_chronicles",
+      "legacy_project_key": "horror_stories",
+      "comfy_project_dir": "E:\\Atnos\\Tools\\Comfy-Desktop\\ComfyUI-Projects\\dark_chronicles",
+      "generated_output_subdir": "dark_chronicles",
+      "image_models": ["diffusion_models/flux-2-klein-base-4b.safetensors", "text_encoders/qwen_3_4b.safetensors", "vae/flux2-vae.safetensors"],
+      "image_fallback": "checkpoints/sd_xl_turbo_1.0_fp16.safetensors",
+      "voice": {"provider": "kokoro", "voice": "am_fenrir", "pace_wpm": [120, 145], "tone": "low, intimate, controlled tension, deliberate pauses"},
+      "visual": {"palette": ["#0B1016", "#B8A88A", "#6B2737", "#473A4A", "#C39A55"], "style": "atmospheric cinematic horror, film composition over cheap jumpscare aesthetic", "motion": "slow reveal concepts for storyboard; Comfy stills only", "avoid": ["gore splash", "comedy", "Wonder Crew style", "Alex", "finance visuals"]},
+      "language": {"script": "English", "sentences": "short cinematic sentences, concrete sensory detail, escalation, decisive ending", "no_cta": true}
+    },
+    "children_stories": {
+      "_deprecated_alias_of": "wonder_crew",
+      "comfy_profile": "wonder_crew",
+      "comfy_project_dir": "E:\\Atnos\\Tools\\Comfy-Desktop\\ComfyUI-Projects\\children_stories",
+      "image_models": ["checkpoints/sd_xl_turbo_1.0_fp16.safetensors"],
+      "image_fallback": "diffusion_models/z_image_turbo_bf16.safetensors",
+      "note": "Legacy key retained for older orders; prefer wonder_crew."
+    },
+    "horror_stories": {
+      "_deprecated_alias_of": "dark_chronicles",
+      "comfy_profile": "dark_chronicles",
+      "comfy_project_dir": "E:\\Atnos\\Tools\\Comfy-Desktop\\ComfyUI-Projects\\horror_stories",
+      "image_models": ["diffusion_models/flux-2-klein-base-4b.safetensors", "text_encoders/qwen_3_4b.safetensors", "vae/flux2-vae.safetensors"],
+      "image_fallback": "checkpoints/sd_xl_turbo_1.0_fp16.safetensors",
+      "note": "Legacy key retained for older orders; prefer dark_chronicles."
+    }
+  },
+  "production_gate": {
+    "require_project_selection": true,
+    "require_model_files_present": true,
+    "require_voice_match": true,
+    "require_style_contract_hash": true,
+    "reject_mixed_channel_assets": true,
+    "reject_generic_fallback_style": true,
+    "record_prompt_workflow_model_voice_hashes": true,
+    "fail_before_render_when_contract_missing": true
+  }
+}

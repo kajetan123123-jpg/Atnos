@@ -1,0 +1,127 @@
+{
+  "claim_classification_summary": {
+    "confirmed_count": 0,
+    "needs_source_count": 0,
+    "risky_promise_count": 0,
+    "source_policy": "never_invent_source"
+  },
+  "claim_classifications": [
+    {
+      "claim_ids": [],
+      "classification": "opinion",
+      "confidence": 0.7,
+      "fact_ids": [],
+      "invented_source": false,
+      "issue_codes": [
+        "brief_fidelity",
+        "word_budget"
+      ],
+      "reason": "Hook/CTA bez claim — traktowane jako opinia/wezwanie, nie fakt.",
+      "segment_id": "s01",
+      "source": "segment_type"
+    },
+    {
+      "claim_ids": [],
+      "classification": "opinion",
+      "confidence": 0.65,
+      "fact_ids": [],
+      "invented_source": false,
+      "issue_codes": [
+        "brief_fidelity",
+        "word_budget"
+      ],
+      "reason": "Brak claim/fact — treść jakościowa, nie potwierdzony fakt finansowy.",
+      "segment_id": "s02",
+      "source": "absence_of_claim"
+    },
+    {
+      "claim_ids": [],
+      "classification": "opinion",
+      "confidence": 0.65,
+      "fact_ids": [],
+      "invented_source": false,
+      "issue_codes": [
+        "brief_fidelity",
+        "word_budget"
+      ],
+      "reason": "Brak claim/fact — treść jakościowa, nie potwierdzony fakt finansowy.",
+      "segment_id": "s03",
+      "source": "absence_of_claim"
+    },
+    {
+      "claim_ids": [],
+      "classification": "opinion",
+      "confidence": 0.7,
+      "fact_ids": [],
+      "invented_source": false,
+      "issue_codes": [
+        "brief_fidelity",
+        "word_budget"
+      ],
+      "reason": "Hook/CTA bez claim — traktowane jako opinia/wezwanie, nie fakt.",
+      "segment_id": "s04",
+      "source": "segment_type"
+    }
+  ],
+  "editorial_checks": [],
+  "feedback_checks": "performed",
+  "feedback_hash": "00460d38b2fd1459594e664be7fdf96ab69a0efdc704b514a1105f8f1db25115",
+  "human_review": "not_performed",
+  "issue_evidence": [],
+  "issues": [
+    {
+      "code": "word_budget",
+      "detail": "65 words; expected 66-81",
+      "segment_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04"
+      ]
+    },
+    {
+      "code": "word_budget",
+      "detail": "65 words; expected 66-81",
+      "fields": [],
+      "segment_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04"
+      ]
+    },
+    {
+      "code": "brief_fidelity",
+      "detail": "The claim that the cutoff is 'hidden' is unsupported and may mislead the viewer. The hook should clarify that the cutoff is part of the trial agreement, not hidden.",
+      "fields": [],
+      "segment_ids": [
+        "s01"
+      ]
+    },
+    {
+      "code": "brief_fidelity",
+      "detail": "The closing line should be: 'Follow Wealth Blueprint. Build wealth on purpose.' This is the user's requested CTA and must be preserved.",
+      "fields": [],
+      "segment_ids": [
+        "s01",
+        "s04"
+      ]
+    },
+    {
+      "code": "brief_fidelity",
+      "detail": "The 'on_screen' fields (e.g., 'trial card, calendar') are production notes, not viewer-facing headlines. They should be replaced with concise, meaningful English viewer messages that match each thought.",
+      "fields": [],
+      "segment_ids": [
+        "s01",
+        "s02",
+        "s03",
+        "s04"
+      ]
+    }
+  ],
+  "review_contract_version": 36,
+  "revision": 12,
+  "script_hash": "fad0a623da62d9fb837e9d26026e4755c1db5b442a47f04b6e20afc2d64ba952",
+  "semantic_review": "model_reviewed",
+  "status": "failed"
+}

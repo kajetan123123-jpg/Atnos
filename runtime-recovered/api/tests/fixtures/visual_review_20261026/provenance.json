@@ -1,0 +1,10 @@
+{
+  "fixtures": {
+    "feedback.json": "e05a993b2c628acb077bac9f015a1f3b84b9db5df2ef055e0b25abc858dcfd08",
+    "candidate.json": "e30885ac23b942f78bbec39df9ccd823d8ff20bb7fc2f95d0acdf22afe5fd184",
+    "review.json": "1c6670d9aa7d63f0b24da6cb8cef0dc06d66e99c526c284878df540f022be903"
+  },
+  "job_id": "prod-60eff989e0b6",
+  "feedback_hash": "f7a7434df24aecd330edd6f96a3f09a9600468c548e7648b060983b03ccdc4c4",
+  "scope": "Actual candidate and completed verdict, not raw reasoning; replay is OFFLINE"
+}

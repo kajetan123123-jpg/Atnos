@@ -1,0 +1,25 @@
+{
+  "version": "wb_visual_styles_v2",
+  "styles": {
+    "A": {
+      "name": "Pracownia Blueprint",
+      "prompt": "mature hand-drawn editorial rendering of exactly the requested subject, tactile natural materials, navy graphite outlines of varied width, warm cream highlights, sparse antique-gold accent, soft side lighting, gentle physical depth, carefully shaded surfaces and clear silhouette, restrained construction marks only on the requested object, no written text, no handwritten marks, no letters, no numbers, no labels, no logos, no charts, no photorealism, no neon",
+      "brand": {"background": "#142633", "panel": "#1C3344", "accent": "#D5AD6C", "accentSoft": "#426579", "text": "#F0E5D2", "muted": "#4B7977", "captionStyle": "plain_phrase"}
+    },
+    "B": {
+      "name": "Księga decyzji",
+      "prompt": "mature editorial rendering of exactly the requested subject using layered cut-paper shapes, warm cream paper texture, precise navy ink contours, subtly torn edges and soft paper-layer shadows, illustrated real objects with tactile depth, restrained antique-gold detail, bright editorial lighting, no written text, no handwriting, no letters, no numbers, no labels, no logos, no charts, no flat vector boxes, no photorealism, no neon",
+      "brand": {"background": "#E9DDC8", "panel": "#F5EBDD", "accent": "#A8783A", "accentSoft": "#6B8C96", "text": "#142633", "muted": "#4B7977", "captionStyle": "plain_phrase"}
+    },
+    "C": {
+      "name": "Przekrój mechanizmu",
+      "prompt": "mature technical ink rendering of exactly the requested financial subject, precise navy and blueprint-blue drafting contours, dimensional graphite shading, restrained antique-gold detail, fine hatching that explains material and volume, large legible silhouette and controlled side lighting, intact real object unless the subject explicitly requests a section, no invented machinery, no written text, no handwriting, no letters, no numbers, no labels, no logos, no quantitative arrows, no photorealism, no neon",
+      "brand": {"background": "#102332", "panel": "#19394B", "accent": "#D5AD6C", "accentSoft": "#527F99", "text": "#F0E5D2", "muted": "#82A4AE", "captionStyle": "plain_phrase"}
+    },
+    "D": {
+      "name": "WB Illustrated Explainer — zaakceptowany kierunek",
+      "prompt": "2D illustrated educational animation with organic curved silhouettes and two-tone graphic shadows, deep indigo and navy shadows, turquoise and mint objects, warm cream surfaces, amber light and coral accents, clear foreground and background color planes, crisp designed contours and clean silhouettes, coherent soft ground shadows, no written text, no handwriting, no letters, no numbers, no labels, no logos, no charts, no photorealism, no plastic 3D, no anime",
+      "brand": {"background": "#171A3B", "panel": "#343265", "accent": "#F2B54A", "accentSoft": "#18AAA6", "text": "#FFF2D5", "muted": "#AFE5CC", "captionStyle": "plain_phrase"}
+    }
+  }
+}

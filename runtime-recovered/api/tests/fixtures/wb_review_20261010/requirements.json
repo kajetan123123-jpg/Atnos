@@ -1,0 +1,37 @@
+[
+  {
+    "code": "naturalness",
+    "detail": "The actual canonical headline INVEST INSTEAD OF SPENDING is an instruction to invest. The actual narration contrasts buying with letting that money sit idle, assuming it earns nothing. Explain the next-best use of the same money and the value of the current option, with spending, saving and investing as context-dependent possibilities. Use a neutral heading. The alternative is not simply inactivity. No invented facts or numbers. Preserve the existing static blank-card and blank-screen-phone direction, with separate renderer labels.",
+    "segment_ids": [
+      "1"
+    ]
+  },
+  {
+    "code": "practical_share",
+    "detail": "Actual narration says future growth you are leaving behind by not investing it today. It treats the hypothetical example as a certain lost return and qualifies enjoyment with guilt. Teach the viewer to count enjoyment and needs in the comparison; enjoyment can justify spending. Neither consumption nor investing is automatically the right answer. No claim of predictable growth, no invented numbers. Keep a complete natural second-person thought and the static intact uncrossed coffee cup.",
+    "segment_ids": [
+      "3"
+    ]
+  },
+  {
+    "code": "practical_share",
+    "detail": "Actual canonical narration says growing that money over time by choosing to invest instead; rejected v3 substitutes letting that money sit idle. Explain a usable decision: identify the immediate benefit and next-best alternative use, consider the trade, then decide based on needs. Apply it to money allocation, not only purchases. Either choice may be reasonable; an investment return is uncertain. Use no new amounts or rates; preserve an understandable comparison and neutral renderer labels.",
+    "segment_ids": [
+      "4"
+    ]
+  },
+  {
+    "code": "unsupported_visual_intent",
+    "detail": "The current visual_intent asks for Alex standing between BUY NOW and BUILD LATER despite no verified pose or action. Use the supported static balance-scale composition to explain alternatives, without an invented host pose, internal movement or lettering baked into the image. Labels belong to on_screen or the renderer and should describe the fair comparison; do not imply automatic investment profit.",
+    "segment_ids": [
+      "4"
+    ]
+  },
+  {
+    "code": "structure",
+    "detail": "The actual closing appends before you buy to Follow Wealth Blueprint and build wealth on purpose. Preserve following the channel and intentional wealth-building as the CTA, without narrowing it to checkout or adding a new investment instruction. The decision rule belongs in segment 4. Use the native closing/logo direction, renderer overlay and consistent second-person address. Do not repeat the stale allegation of first-person wording: no I occurs in the actual text.",
+    "segment_ids": [
+      "5"
+    ]
+  }
+]

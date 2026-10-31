@@ -1,0 +1,86 @@
+{
+  "title": "The $10 Trap That Keeps You Broke",
+  "description": "Every $10 you spend has two prices: what it costs today and what it could become. Learn how to think in opportunity cost.",
+  "segments": [
+    {
+      "id": "0",
+      "type": "hook",
+      "text": "This ten-dollar purchase isn't costing you just ten dollars.",
+      "visual_intent": "A $10 bill is shown next to a small shopping bag. Text appears: \"$10 ≠ Just Ten\". No host gesture.",
+      "on_screen": "$10 ≠ JUST TEN",
+      "claim_ids": [
+        "c1"
+      ],
+      "fact_ids": [],
+      "pronunciation_terms": []
+    },
+    {
+      "id": "1",
+      "type": "practical",
+      "text": "Ask if buying this item today is better than letting that money sit idle, assuming it earns nothing.",
+      "visual_intent": "Reveal a single plain blank teal paper slip representing the alternative alongside one blank-screen phone. Renderer holds still; labels added separately by renderer.",
+      "on_screen": "INVEST INSTEAD OF SPENDING",
+      "claim_ids": [],
+      "fact_ids": [],
+      "pronunciation_terms": []
+    },
+    {
+      "id": "2",
+      "type": "explanation",
+      "text": "If that ten dollars earned an assumed eight percent a year for thirty years, it could grow to roughly one hundred one dollars.",
+      "visual_intent": "$10 → $22 → $47 → $101. A small graph grows upward. Text: “Compound growth”.",
+      "on_screen": "Compound growth",
+      "claim_ids": [
+        "c1"
+      ],
+      "fact_ids": [],
+      "pronunciation_terms": []
+    },
+    {
+      "id": "3",
+      "type": "practical",
+      "text": "Enjoy your coffee now, but ask if this optional spending is worth the future growth you are leaving behind by not investing it today.",
+      "visual_intent": "Renderer reveals an ordinary upright intact uncrossed coffee cup already still on the desk. Renderer holds this static illustration without internal transformation or hand motion.",
+      "on_screen": "ENJOY NOW / CHOOSE LATER",
+      "claim_ids": [],
+      "fact_ids": [],
+      "pronunciation_terms": []
+    },
+    {
+      "id": "4",
+      "type": "practical",
+      "text": "Weigh immediate pleasure against growing money over time by choosing to invest. Decide if buying now is worth what you give up.",
+      "visual_intent": "A balance scale appears showing fair comparison between alternatives, without an invented host pose or lettering baked into the image.",
+      "on_screen": "BUY NOW / BUILD LATER",
+      "claim_ids": [],
+      "fact_ids": [],
+      "pronunciation_terms": []
+    },
+    {
+      "id": "5",
+      "type": "cta",
+      "text": "Follow Wealth Blueprint and build wealth on purpose before you buy.",
+      "visual_intent": "Wealth Blueprint logo appears. Text: PRICE ≠ COST / Think in opportunity cost.",
+      "on_screen": "PRICE ≠ COST / THINK IN OPPORTUNITY COST",
+      "claim_ids": [],
+      "fact_ids": [],
+      "pronunciation_terms": []
+    }
+  ],
+  "claims": [
+    {
+      "id": "c1",
+      "operation": "compound",
+      "operands": [
+        10.0,
+        0.08,
+        30.0
+      ],
+      "result": 100.6265688907345,
+      "unit": "dollars",
+      "spoken_result": "one hundred one",
+      "spoken_rounding": 1,
+      "assumptions": "One initial deposit of 10 dollars, no recurring deposits, 30 years at an assumed 8 percent annual rate. Annual compounding; not a forecast; before fees, tax and inflation."
+    }
+  ]
+}

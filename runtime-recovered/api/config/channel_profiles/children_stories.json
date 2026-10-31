@@ -1,0 +1,44 @@
+{
+  "account_id": "local-children_stories",
+  "channel_name": "Archipelag Snów",
+  "look_bank_kit": "archipelag-snow-v1",
+  "language": "en",
+  "production": {
+    "version": 1,
+    "content_kind": "children_story",
+    "language": "en",
+    "audience": "Children aged four to seven, English-speaking",
+    "duration_seconds": [
+      35,
+      50
+    ],
+    "word_budget": [
+      90,
+      115
+    ],
+    "max_attempts_per_element": 20,
+    "max_provider_calls": 10000,
+    "max_cost_usd": 1000,
+    "script_model": {
+      "generator": "qwen3:14b",
+      "reviewer": "qwen3:14b",
+      "context_tokens": 12288,
+      "output_tokens": 7000,
+      "timeout_seconds": 750,
+      "thinking": false
+    },
+    "narrative_rules": [
+      "Use simple concrete English suited to ages four to seven.",
+      "Tell one calm, self-contained story with at most two main characters.",
+      "Let a small problem be solved through a clear action and kind help.",
+      "End with safety, reassurance and a resolved situation.",
+      "No frightening threats, adult themes, dangerous imitation, mockery or promotional calls to action."
+    ],
+    "visual_rules": [
+      "Warm storybook illustrations with readable shapes and soft colors.",
+      "Keep each character, outfit and important prop consistent across all six scenes.",
+      "Describe one clear visible moment per scene; no frantic action or flashes."
+    ],
+    "publish": false
+  }
+}

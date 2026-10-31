@@ -1,0 +1,195 @@
+{
+  "version": 1,
+  "description": "Versioned per-channel img2img presets. Workflows reference preset_id only.",
+  "presets": {
+    "WB_IMG2IMG_V1": {
+      "channel": "wealth_blueprint",
+      "preset_id": "WB_IMG2IMG_V1",
+      "status": "active",
+      "goal": "Alex: face/hair/clothes lock; pose/emotion freedom",
+      "reference_mode": "core_img2img",
+      "reference_denoise": 0.4,
+      "preferred_reference": "crops/alex_portrait_v1.png",
+      "selected_scores": {
+        "identity_quality": 0.4494,
+        "style_quality": 0.4039,
+        "face_lock": 0.5239,
+        "useful_variation": 0.3398,
+        "artifact_rate": 0.0,
+        "generation_time": 48.922,
+        "quality_per_second": 0.00919,
+        "composite": 0.4895
+      },
+      "rejected_variants": [
+        {
+          "denoise": 0.56,
+          "reason": "identity_below_floor_0.411",
+          "scores": {
+            "identity_quality": 0.4038,
+            "style_quality": 0.4237,
+            "face_lock": 0.4742,
+            "useful_variation": 0.3679,
+            "artifact_rate": 0.0,
+            "generation_time": 35.55,
+            "quality_per_second": 0.01136,
+            "composite": 0.4668
+          }
+        }
+      ],
+      "ranking": [
+        {
+          "denoise": 0.4,
+          "composite": 0.4895,
+          "identity": 0.4494
+        },
+        {
+          "denoise": 0.44,
+          "composite": 0.4787,
+          "identity": 0.4366
+        },
+        {
+          "denoise": 0.48,
+          "composite": 0.4718,
+          "identity": 0.4262
+        },
+        {
+          "denoise": 0.52,
+          "composite": 0.468,
+          "identity": 0.4218
+        },
+        {
+          "denoise": 0.56,
+          "composite": 0.4668,
+          "identity": 0.4038
+        }
+      ],
+      "updated_at": "2026-09-18T07:51:14.227490+00:00"
+    },
+    "WC_IMG2IMG_V1": {
+      "channel": "wonder_crew",
+      "preset_id": "WC_IMG2IMG_V1",
+      "status": "active",
+      "goal": "Niko: max consistency",
+      "reference_mode": "core_img2img",
+      "reference_denoise": 0.36,
+      "preferred_reference": "crops/niko_portrait_v1.png",
+      "selected_scores": {
+        "identity_quality": 0.6298,
+        "style_quality": 0.4982,
+        "face_lock": 0.7461,
+        "useful_variation": 0.1655,
+        "artifact_rate": 0.0,
+        "generation_time": 47.965,
+        "quality_per_second": 0.01313,
+        "composite": 0.6555
+      },
+      "rejected_variants": [],
+      "ranking": [
+        {
+          "denoise": 0.36,
+          "composite": 0.6555,
+          "identity": 0.6298
+        },
+        {
+          "denoise": 0.4,
+          "composite": 0.6387,
+          "identity": 0.614
+        },
+        {
+          "denoise": 0.48,
+          "composite": 0.6216,
+          "identity": 0.5947
+        },
+        {
+          "denoise": 0.44,
+          "composite": 0.6208,
+          "identity": 0.5971
+        },
+        {
+          "denoise": 0.52,
+          "composite": 0.6117,
+          "identity": 0.5844
+        }
+      ],
+      "updated_at": "2026-09-18T07:51:14.227502+00:00"
+    },
+    "DC_IMG2IMG_V1": {
+      "channel": "dark_chronicles",
+      "preset_id": "DC_IMG2IMG_V1",
+      "status": "active",
+      "goal": "Environments: composition + mood",
+      "reference_mode": "core_img2img",
+      "reference_denoise": 0.7,
+      "preferred_reference": "crops/dc_env_mood_anchor_v1.png",
+      "selected_scores": {
+        "identity_quality": 0.7408,
+        "style_quality": 0.8279,
+        "mood_composition": 0.6333,
+        "useful_variation": 0.2617,
+        "artifact_rate": 0.0,
+        "generation_time": 39.094,
+        "quality_per_second": 0.0162,
+        "composite": 0.6333
+      },
+      "rejected_variants": [
+        {
+          "denoise": 0.55,
+          "reason": "insufficient_scene_variation_for_env_goal",
+          "scores": {
+            "identity_quality": 0.9043,
+            "style_quality": 0.9603,
+            "mood_composition": 0.7381,
+            "useful_variation": 0.1472,
+            "artifact_rate": 0.0,
+            "generation_time": 40.25,
+            "quality_per_second": 0.01834,
+            "composite": 0.7381
+          }
+        },
+        {
+          "denoise": 0.85,
+          "reason": "mood_drop_vs_0.70",
+          "scores": {
+            "identity_quality": 0.6207,
+            "style_quality": 0.7609,
+            "mood_composition": 0.5751,
+            "useful_variation": 0.3397,
+            "artifact_rate": 0.0,
+            "generation_time": 40.359,
+            "quality_per_second": 0.01425,
+            "composite": 0.5751
+          }
+        }
+      ],
+      "ranking": [
+        {
+          "denoise": 0.55,
+          "composite": 0.7381,
+          "identity": 0.9043
+        },
+        {
+          "denoise": 0.62,
+          "composite": 0.705,
+          "identity": 0.8603
+        },
+        {
+          "denoise": 0.7,
+          "composite": 0.6333,
+          "identity": 0.7408
+        },
+        {
+          "denoise": 0.78,
+          "composite": 0.6048,
+          "identity": 0.6927
+        },
+        {
+          "denoise": 0.85,
+          "composite": 0.5751,
+          "identity": 0.6207
+        }
+      ],
+      "updated_at": "2026-09-18T07:51:38.134652+00:00",
+      "selection_note": "Raw composite favored 0.55 (high ref lock). For environments, selected 0.70 for mood+composition with useful scene variation."
+    }
+  }
+}

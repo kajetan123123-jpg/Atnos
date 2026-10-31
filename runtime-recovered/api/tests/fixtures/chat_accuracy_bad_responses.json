@@ -1,0 +1,4 @@
+{
+  "web": "Przeanalizowałem źródło `https://example.org/`.\n\nNotatka Obsidian: `brak`\nCurated note: `brak`\nModel analizy: `ollama-local` / `ollama-local/chat-default`\nArtefakty browsera: cdp_target_id=A75D99C3892D91F2BA952A281DC661A6, cdp_final_url=https://example.org/, cdp_title=Example Domain\n\n**Nagłówek strony:** This domain is for use in documentation examples without needing permission. (Dostępne również w językach arabskim, chińskim, francuskim, rosyjskim i hiszpańskim).\n\n**Źródło:** https://example.org/",
+  "file": "Pierwsza linia pliku to:  \n```\"\\\"\\\"\\u201dClosed actions actually implemented by the painted planning-desk renderer.\\u201d\\\"\"```.\n\nNazwa funkcji wybierającej akcję sceny to `planning_desk_action`."
+}

@@ -1,0 +1,55 @@
+{
+  "claims": [],
+  "description": "Understand why your emergency fund belongs in a separate place from long-term goals, focusing on accessibility over returns.",
+  "segments": [
+    {
+      "claim_ids": [],
+      "fact_ids": [
+        "emergency_fund_accessibility"
+      ],
+      "id": "s01",
+      "on_screen": "Idle or Ready Money",
+      "pronunciation_terms": [],
+      "text": "Is money sitting idle or ready to help you instantly when life throws an unexpected curveball?",
+      "type": "hook",
+      "visual_intent": "footage showing a hand holding cash, transitioning smoothly into a simple diagram of two distinct containers labeled 'Reserve' and 'Goal'. The background uses navy blue with cream accents."
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [
+        "reserve_purpose"
+      ],
+      "id": "s02",
+      "on_screen": "Ready For Repairs",
+      "pronunciation_terms": [],
+      "text": "An emergency reserve is about immediate accessibility for repairs or car trouble, not chasing high returns.",
+      "type": "explanation",
+      "visual_intent": "flow diagram with arrows connecting a 'Car Repair' icon to the 'Reserve' container. The arrow highlights speed and ease of access without showing specific numbers."
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [
+        "goal_separation"
+      ],
+      "id": "s03",
+      "on_screen": "Separate Paths",
+      "pronunciation_terms": [],
+      "text": "Keep your long-term goals separate so you do not accidentally dip into funds meant for a future home purchase.",
+      "type": "explanation",
+      "visual_intent": "flow diagram showing two distinct paths: one labeled 'Future Goal' leading to a house icon, and another labeled 'Reserve' leading to immediate needs. No numerical comparisons are made visually."
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [
+        "account_labeling"
+      ],
+      "id": "s04",
+      "on_screen": "Label Your Accounts",
+      "pronunciation_terms": [],
+      "text": "Review your accounts today and label them clearly to build wealth on purpose without confusion.",
+      "type": "cta",
+      "visual_intent": "footage of a hand pointing to labels on two distinct jars or containers, one marked 'Reserve' in navy blue ink. The motion is calm and deliberate, ending with the Wealth Blueprint logo subtly appearing."
+    }
+  ],
+  "title": "Your Emergency Fund Is Not an Investment"
+}

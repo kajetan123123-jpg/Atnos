@@ -1,0 +1,57 @@
+{
+  "claims": [],
+  "description": "Distinguish between money ready for emergencies and money set for long-term goals. Take actionable steps to build readiness without chasing returns.",
+  "segments": [
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s01",
+      "on_screen": "EMERGENCY FUND vs LONG-TERM GOAL",
+      "pronunciation_terms": [],
+      "text": "What if the money you save isn’t meant to grow? Your emergency fund is not an investment—it’s a tool for unexpected needs.",
+      "type": "hook",
+      "visual_intent": "A navy background with a split canvas: on the left, a simple wallet with a label 'EMERGENCY FUND'; on the right, a text card labeled 'LONG-TERM GOAL'."
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s02",
+      "on_screen": "CAN I COVER THIS?",
+      "pronunciation_terms": [],
+      "text": "Think of a necessary expense, like a car repair or medical bill. Can you pay for it without borrowing or selling something else?",
+      "type": "practical",
+      "visual_intent": "A wallet on the left with a checkmark; on the right, a text card labeled 'NEED'."
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s03",
+      "on_screen": "ACCESS CONDITIONS",
+      "pronunciation_terms": [],
+      "text": "Keep your emergency fund in a high-access account. Check the terms: are there fees or limits on withdrawals?",
+      "type": "practical",
+      "visual_intent": "A wallet on the left with a label 'EMERGENCY FUND'; on the right, a text card labeled 'ACCESS CONDITIONS'."
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s04",
+      "on_screen": "NOT ABOUT RETURNS",
+      "pronunciation_terms": [],
+      "text": "An emergency fund is not about returns. It’s about being prepared for life’s unexpected costs, not chasing growth.",
+      "type": "explanation",
+      "visual_intent": "A wallet on the left with a label 'EMERGENCY FUND'; on the right, a text card labeled 'NOT ABOUT RETURNS'."
+    },
+    {
+      "claim_ids": [],
+      "fact_ids": [],
+      "id": "s05",
+      "on_screen": "FOLLOW WEALTH BLUEPRINT",
+      "pronunciation_terms": [],
+      "text": "Review your emergency fund regularly. If your needs change, update your plan. Follow Wealth Blueprint. Build wealth on purpose.",
+      "type": "cta",
+      "visual_intent": "A wallet on the left with a label 'EMERGENCY FUND'; on the right, a text card labeled 'FOLLOW WEALTH BLUEPRINT'."
+    }
+  ],
+  "title": "Your Emergency Fund Is Not an Investment"
+}

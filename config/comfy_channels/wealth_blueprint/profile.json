@@ -1,0 +1,123 @@
+{
+  "channel_id": "wealth_blueprint",
+  "display_name": "Wealth Blueprint",
+  "legacy_project_key": "wealth_blueprint",
+  "comfy_project_dir": "E:\\Atnos\\Tools\\Comfy-Desktop\\ComfyUI-Projects\\wealth_blueprint",
+  "role": "2D motion-design reusable assets for Remotion (no AI charts/text)",
+  "style_summary": "premium editorial finance illustration",
+  "primary_characters": [
+    "alex"
+  ],
+  "reference_files": [
+    "E:\\Atnos\\App\\config\\channel_references\\20260916\\crops\\alex_portrait_v1.png",
+    "E:\\Atnos\\App\\config\\channel_references\\20260916\\crops\\alex_front_v1.png",
+    "E:\\Atnos\\App\\config\\channel_references\\20260916\\image-1.png",
+    "E:\\Atnos\\App\\config\\channel_references\\20260916\\image-2.png"
+  ],
+  "image_models": [
+    "checkpoints/sd_xl_turbo_1.0_fp16.safetensors",
+    "checkpoints/sd_xl_base_1.0_0.9vae.safetensors"
+  ],
+  "image_fallback": "checkpoints/sd_xl_base_1.0_0.9vae.safetensors",
+  "workflows": [
+    {
+      "workflow_id": "wealth_character_v1",
+      "workflow_version": "v1",
+      "title": "WB_CHARACTER",
+      "asset_type": "character",
+      "backend_preference": [
+        "flux2_klein",
+        "checkpoint"
+      ],
+      "default_width": 1024,
+      "default_height": 1024,
+      "require_references": true,
+      "allow_transparent_bg": true,
+      "forbid_text_in_image": true,
+      "description": "Alex and character poses for Remotion stills"
+    },
+    {
+      "workflow_id": "wealth_object_v1",
+      "workflow_version": "v1",
+      "title": "WB_OBJECT",
+      "asset_type": "object",
+      "backend_preference": [
+        "flux2_klein",
+        "checkpoint"
+      ],
+      "default_width": 1024,
+      "default_height": 1024,
+      "require_references": false,
+      "allow_transparent_bg": true,
+      "forbid_text_in_image": true,
+      "description": "Finance objects / icons without text"
+    },
+    {
+      "workflow_id": "wealth_editorial_scene_v1",
+      "workflow_version": "v1",
+      "title": "WB_EDITORIAL_SCENE",
+      "asset_type": "editorial_scene",
+      "backend_preference": [
+        "flux2_klein",
+        "checkpoint"
+      ],
+      "default_width": 1024,
+      "default_height": 1024,
+      "require_references": false,
+      "allow_transparent_bg": false,
+      "forbid_text_in_image": true,
+      "description": "Symbolic editorial finance scenes (no charts/numbers)"
+    },
+    {
+      "workflow_id": "wealth_background_v1",
+      "workflow_version": "v1",
+      "title": "WB_BACKGROUND",
+      "asset_type": "background",
+      "backend_preference": [
+        "flux2_klein",
+        "checkpoint"
+      ],
+      "default_width": 1080,
+      "default_height": 1920,
+      "require_references": false,
+      "allow_transparent_bg": false,
+      "forbid_text_in_image": true,
+      "description": "Clean vertical backgrounds"
+    },
+    {
+      "workflow_id": "wealth_icon_or_symbol_v1",
+      "workflow_version": "v1",
+      "title": "WB_ICON_OR_SYMBOL",
+      "asset_type": "icon",
+      "backend_preference": [
+        "flux2_klein",
+        "checkpoint"
+      ],
+      "default_width": 768,
+      "default_height": 768,
+      "require_references": false,
+      "allow_transparent_bg": true,
+      "forbid_text_in_image": true,
+      "description": "Simple finance symbols"
+    },
+    {
+      "workflow_id": "wealth_reference_variation_v1",
+      "workflow_version": "v1",
+      "title": "WB_REFERENCE_VARIATION",
+      "asset_type": "character",
+      "backend_preference": [
+        "flux2_klein",
+        "checkpoint"
+      ],
+      "default_width": 1024,
+      "default_height": 1024,
+      "require_references": true,
+      "allow_transparent_bg": false,
+      "forbid_text_in_image": true,
+      "description": "Controlled Alex variation from anchors"
+    }
+  ],
+  "output_subdir": "wealth_blueprint",
+  "negative_profile_id": "wealth_blueprint",
+  "prompt_profile_id": "wealth_blueprint"
+}

@@ -1,0 +1,266 @@
+[
+  {
+    "id": "TEXT_FADE",
+    "label": "Text Fade",
+    "category": "text",
+    "defaults": {
+      "duration": 0.55,
+      "delay": 0,
+      "easing": "ease_out",
+      "intensity": 0.45,
+      "direction": "in"
+    }
+  },
+  {
+    "id": "TEXT_SLIDE_UP",
+    "label": "Text Slide Up",
+    "category": "text",
+    "defaults": {
+      "duration": 0.6,
+      "delay": 0,
+      "easing": "ease_out_cubic",
+      "intensity": 0.5,
+      "direction": "up"
+    }
+  },
+  {
+    "id": "TEXT_SLIDE_LEFT",
+    "label": "Text Slide Left",
+    "category": "text",
+    "defaults": {
+      "duration": 0.6,
+      "delay": 0,
+      "easing": "ease_out_cubic",
+      "intensity": 0.5,
+      "direction": "left"
+    }
+  },
+  {
+    "id": "TEXT_POP",
+    "label": "Text Pop",
+    "category": "text",
+    "defaults": {
+      "duration": 0.5,
+      "delay": 0,
+      "easing": "ease_out_back",
+      "intensity": 0.4,
+      "direction": "in"
+    }
+  },
+  {
+    "id": "TEXT_REVEAL",
+    "label": "Text Reveal",
+    "category": "text",
+    "defaults": {
+      "duration": 0.7,
+      "delay": 0,
+      "easing": "ease_in_out",
+      "intensity": 0.5,
+      "direction": "up"
+    }
+  },
+  {
+    "id": "NUMBER_COUNT",
+    "label": "Number Count",
+    "category": "number",
+    "defaults": {
+      "duration": 1.1,
+      "delay": 0,
+      "easing": "ease_out_cubic",
+      "intensity": 0.55,
+      "direction": "in"
+    }
+  },
+  {
+    "id": "ICON_POP",
+    "label": "Icon Pop",
+    "category": "icon",
+    "defaults": {
+      "duration": 0.45,
+      "delay": 0,
+      "easing": "ease_out_back",
+      "intensity": 0.45,
+      "direction": "in"
+    }
+  },
+  {
+    "id": "ICON_FLOAT",
+    "label": "Icon Float",
+    "category": "icon",
+    "defaults": {
+      "duration": 2.4,
+      "delay": 0,
+      "easing": "ease_in_out",
+      "intensity": 0.35,
+      "direction": "up"
+    }
+  },
+  {
+    "id": "ASSET_SLIDE",
+    "label": "Asset Slide",
+    "category": "asset",
+    "defaults": {
+      "duration": 0.7,
+      "delay": 0,
+      "easing": "ease_out_cubic",
+      "intensity": 0.5,
+      "direction": "left"
+    }
+  },
+  {
+    "id": "ASSET_SCALE",
+    "label": "Asset Scale",
+    "category": "asset",
+    "defaults": {
+      "duration": 0.65,
+      "delay": 0,
+      "easing": "ease_out",
+      "intensity": 0.45,
+      "direction": "in"
+    }
+  },
+  {
+    "id": "CHARACTER_ENTER_LEFT",
+    "label": "Character Enter Left",
+    "category": "character",
+    "defaults": {
+      "duration": 0.75,
+      "delay": 0,
+      "easing": "ease_out_cubic",
+      "intensity": 0.55,
+      "direction": "right"
+    }
+  },
+  {
+    "id": "CHARACTER_ENTER_RIGHT",
+    "label": "Character Enter Right",
+    "category": "character",
+    "defaults": {
+      "duration": 0.75,
+      "delay": 0,
+      "easing": "ease_out_cubic",
+      "intensity": 0.55,
+      "direction": "left"
+    }
+  },
+  {
+    "id": "CHARACTER_IDLE_FLOAT",
+    "label": "Character Idle Float",
+    "category": "character",
+    "defaults": {
+      "duration": 3.2,
+      "delay": 0,
+      "easing": "ease_in_out",
+      "intensity": 0.3,
+      "direction": "up"
+    }
+  },
+  {
+    "id": "CHART_GROW",
+    "label": "Chart Grow",
+    "category": "chart",
+    "defaults": {
+      "duration": 1,
+      "delay": 0,
+      "easing": "ease_out_cubic",
+      "intensity": 0.5,
+      "direction": "up"
+    }
+  },
+  {
+    "id": "LINE_DRAW",
+    "label": "Line Draw",
+    "category": "chart",
+    "defaults": {
+      "duration": 1.15,
+      "delay": 0,
+      "easing": "ease_in_out",
+      "intensity": 0.5,
+      "direction": "right"
+    }
+  },
+  {
+    "id": "BAR_GROW",
+    "label": "Bar Grow",
+    "category": "chart",
+    "defaults": {
+      "duration": 0.85,
+      "delay": 0,
+      "easing": "ease_out_cubic",
+      "intensity": 0.5,
+      "direction": "up"
+    }
+  },
+  {
+    "id": "HIGHLIGHT",
+    "label": "Highlight",
+    "category": "fx",
+    "defaults": {
+      "duration": 0.7,
+      "delay": 0,
+      "easing": "ease_out",
+      "intensity": 0.55,
+      "direction": "in"
+    }
+  },
+  {
+    "id": "CAMERA_PUSH",
+    "label": "Camera Push",
+    "category": "camera",
+    "defaults": {
+      "duration": 1.2,
+      "delay": 0,
+      "easing": "ease_in_out",
+      "intensity": 0.4,
+      "direction": "in"
+    }
+  },
+  {
+    "id": "PARALLAX",
+    "label": "Parallax",
+    "category": "camera",
+    "defaults": {
+      "duration": 1.4,
+      "delay": 0,
+      "easing": "ease_in_out",
+      "intensity": 0.45,
+      "direction": "left"
+    }
+  },
+  {
+    "id": "SHAKE_LIGHT",
+    "label": "Shake Light",
+    "category": "fx",
+    "defaults": {
+      "duration": 0.45,
+      "delay": 0,
+      "easing": "ease_out",
+      "intensity": 0.35,
+      "direction": "left"
+    }
+  },
+  {
+    "id": "IMPACT",
+    "label": "Impact",
+    "category": "fx",
+    "defaults": {
+      "duration": 0.4,
+      "delay": 0,
+      "easing": "ease_out_back",
+      "intensity": 0.5,
+      "direction": "in"
+    }
+  },
+  {
+    "id": "MASK_REVEAL",
+    "label": "Mask Reveal",
+    "category": "fx",
+    "defaults": {
+      "duration": 0.8,
+      "delay": 0,
+      "easing": "ease_in_out",
+      "intensity": 0.5,
+      "direction": "up"
+    }
+  }
+]

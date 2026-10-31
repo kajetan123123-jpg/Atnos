@@ -1,0 +1,96 @@
+{
+  "contract_id": "COMFYUI_WONDER_CREW_REFERENCES_TO_BLENDER_3D",
+  "version": 2,
+  "channel": "wonder_crew",
+  "status": "active",
+  "purpose": "Approved Comfy character references are the single source of truth for future Blender modeling/rigging/texturing. This contract does not implement Blender.",
+  "characters": ["niko", "pif", "tika", "mira"],
+  "naming": {
+    "asset_pattern": "WC_<CHARACTER>_<REFERENCE_TYPE>_V<NNN>",
+    "package_pattern": "WC_<CHARACTER>_V<NNN>",
+    "character_case": "UPPER",
+    "version_digits": 3,
+    "examples": [
+      "WC_NIKO_FRONT_V001",
+      "WC_NIKO_EXPRESSION_V002",
+      "WC_NIKO_V001"
+    ]
+  },
+  "reference_types": {
+    "FRONT": { "required_for_3d": true, "description": "Orthographic / clear front view" },
+    "THREE_QUARTER": { "required_for_3d": true, "description": "3/4 view for volume" },
+    "SIDE": { "required_for_3d": true, "description": "Profile / side view" },
+    "BACK": { "required_for_3d": true, "description": "Back view for costume/hair" },
+    "EXPRESSION": { "required_for_3d": true, "description": "Expression sheet or multi-emotion panel" },
+    "COLOR": { "required_for_3d": true, "description": "Color / palette reference" },
+    "OUTFIT": { "required_for_3d": true, "description": "Costume / outfit reference" },
+    "PROP_DETAIL": { "required_for_3d": false, "description": "Signature prop or detail close-up" }
+  },
+  "package_statuses": [
+    "DRAFT",
+    "COMPLETE",
+    "AWAITING_REVIEW",
+    "APPROVED",
+    "READY_FOR_3D",
+    "SUPERSEDED",
+    "NOT_READY"
+  ],
+  "gates": {
+    "structure": [
+      "all_required_reference_types_present",
+      "all_listed_files_exist",
+      "same_character_version_fields",
+      "same_costume_version_fields",
+      "dimensions_within_policy",
+      "manifest_schema_present"
+    ],
+    "content_control": [
+      "mandatory_turnaround_views_front_side_back_three_quarter",
+      "view_matches_label_for_each_turnaround",
+      "content_status_pass_required",
+      "same_character_and_outfit_version_asserted",
+      "missing_content_control_is_not_pass",
+      "filename_resolution_presence_insufficient"
+    ],
+    "production_approval": [
+      "approval_audit_required",
+      "production_approved_true",
+      "production_approved_by_not_bootstrap",
+      "production_approved_at_present"
+    ]
+  },
+  "ready_for_3d_requires": [
+    "structure_ok",
+    "content_control_ok",
+    "production_approval_audit_ok",
+    "canonical_pointer_matches_when_canonical_true"
+  ],
+  "builder_policy": {
+    "test_builder_may_auto_approve": false,
+    "test_builder_may_set_canonical": false,
+    "bootstrap_approvers_never_grant_ready_for_3d": [
+      "handoff_contract_bootstrap",
+      "build_niko_test_package",
+      "test_builder",
+      "auto",
+      "bootstrap"
+    ]
+  },
+  "dimensions_policy": {
+    "min_width": 256,
+    "min_height": 256,
+    "prefer_square_or_portrait": true
+  },
+  "roots": {
+    "packages": "E:/Atnos/App/data/wonder_crew_3d_handoff/packages",
+    "evidence": "E:/Atnos/App/data/wonder_crew_3d_handoff/evidence",
+    "canonical_registry": "E:/Atnos/App/config/wonder_crew_3d_handoff/canonical_characters.json",
+    "contract": "E:/Atnos/App/config/wonder_crew_3d_handoff/contract.json"
+  },
+  "blender_consumer": {
+    "entry_file": "character_reference_manifest.json",
+    "must_not_scan_folders_manually": true,
+    "resolve_canonical_via": "canonical_characters.json",
+    "require_ready_for_3d": true
+  }
+}

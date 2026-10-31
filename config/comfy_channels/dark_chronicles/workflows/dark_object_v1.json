@@ -1,0 +1,16 @@
+{
+  "workflow_id": "dark_object_v1",
+  "workflow_version": "v1",
+  "title": "DC_OBJECT",
+  "asset_type": "object",
+  "backend_preference": [
+    "flux2_klein",
+    "checkpoint"
+  ],
+  "default_width": 1024,
+  "default_height": 1024,
+  "require_references": false,
+  "allow_transparent_bg": false,
+  "forbid_text_in_image": true,
+  "description": ""
+}
